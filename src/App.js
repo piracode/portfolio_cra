@@ -1,10 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, createContext } from 'react'
 import './scss/styles.scss'
 import Logo from './components/Logo'
 import Home from './pages/Home'
+import Header from './components/Header'
+
+export const ThemeContext = createContext()
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
   const [animationComplete, setAnimationComplete] = useState(false)
 
   useEffect(() => {
@@ -17,21 +21,34 @@ function App() {
     }
   }, [])
 
+  function toggleTheme() {
+    setIsDarkMode((d) => !d)
+  }
+
+  useEffect(() => {
+    document.body.classList = isDarkMode ? 'dark' : 'light'
+    document.body.classList = isDarkMode ? 'light' : 'dark'
+  }, [isDarkMode])
+
   return (
     <div className='site-wrapper'>
       <BrowserRouter>
-        <main>
-          {!animationComplete ? (
-            <div className='introduction'>
-              <Logo />
-            </div>
-          ) : (
-            <Routes>
-              <Route path='/' element={<Home />} />
-              {/* Other routes here */}
-            </Routes>
-          )}
-        </main>
+        <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+          <main>
+            {!animationComplete ? (
+              <div className='introduction'>
+                <Logo />
+              </div>
+            ) : (
+              <>
+                <Header />
+                <Routes>
+                  <Route path='/' element={<Home />} />
+                </Routes>
+              </>
+            )}
+          </main>
+        </ThemeContext.Provider>
       </BrowserRouter>
     </div>
   )
