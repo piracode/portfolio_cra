@@ -4,13 +4,47 @@
 
 // Colors
 
+/* Main Background Color*/
+$light-bg-main: #f2ecec;
+$dark-bg-main: #202022;
+
+/* Navigation Background Color*/
+$light-bg-nav: #fff;
+$dark-bg-nav: #000;
+
+/* Button Background Color*/
+$light-bg-button: #d5dbf2;
+$dark-bg-button: #f2ecec;
+
+/* Heading Color*/
+$light-heading-primary: #13385c;
+$dark-heading-primary: #ccd6f6;
+$light-heading-secondary: #5464ae;
+$dark-heading-primary: #f2ecec;
+
+/* Logo Fill Color*/
+$logo-primary-fill: #1da6bc;
+$logo-secondary-fill: #5464ae;
+
+/* Main Text Color*/
+$light-text-main: #13385c;
+$dark-text-main: #8892af;
+
+/* Accent Text Color*/
+$teal-accent-color: #1da6bc;
+$purple-accent-color: #5d64ae;
+$dark-blue-accent-color: #033e4d;
+
 // Fonts
+$font: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 // Layout
-
 // Type
-
 body {
+  font-family: $font;
+  // background-color: #033e4d;
 }
 
 h1,
@@ -24,6 +58,7 @@ h2,
 h3,
 h4,
 p {
+  font-family: $font;
 }
 
 main {

@@ -1,5 +1,8 @@
 // Resets
 @use './base/reset';
+@use './base/settings';
 
 // Components
 @use './components/logo';
+@use './components/light-theme';
+@use './components/dark-theme';
