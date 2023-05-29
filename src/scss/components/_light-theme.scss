@@ -3,8 +3,32 @@
 .light {
   color: $light-text-main;
   background-color: $light-bg-main;
-  //   .text {
-  //   }
-  //   .background {
-  //   }
+
+  .header,
+  .navigation {
+    background-color: $light-bg-nav;
+
+    &-link-number {
+      color: $purple-accent-color;
+    }
+    &-menu-dropdown {
+      background-color: $light-bg-nav;
+
+      .line {
+        stroke: $dark-bg-main;
+      }
+    }
+  }
+}
+
+a:link,
+a:visited {
+  color: $light-heading-primary;
+}
+
+a:hover {
+  color: $purple-accent-color;
+}
+a:active {
+  // color:
 }

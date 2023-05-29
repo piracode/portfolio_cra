@@ -1,0 +1,46 @@
+.navigation-container {
+  position: relative;
+}
+.opened .navigation {
+  animation: slideInMenu 0.3s ease forwards;
+}
+
+.navigation {
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.6em;
+  position: absolute;
+  top: 100%;
+  right: -16px;
+  padding: 1em;
+  height: 80vh;
+  width: 80vw;
+
+  &-button {
+    border: none;
+    height: 5rem; //this is my trick to remove the weird shadow created by the headlessUI Button component
+  }
+
+  &-item {
+    text-align: center;
+  }
+  &-link-number {
+    display: block;
+  }
+}
+
+.nav-button {
+  display: block;
+  margin-top: 0.6em;
+}
+
+@keyframes slideInMenu {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

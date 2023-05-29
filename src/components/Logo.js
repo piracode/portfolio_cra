@@ -11,6 +11,7 @@ const Logo = () => {
       style={{ enableBackground: 'new 0 0 512 512' }}
       xmlSpace='preserve'
       className='introduction-logo'
+      aria-label='Martha Villa Martin Logo'
     >
       <path
         id='third_M'
