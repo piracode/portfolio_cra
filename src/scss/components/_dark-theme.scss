@@ -3,8 +3,33 @@
 .dark {
   background-color: $dark-bg-main;
   color: $dark-text-main;
-  //   .background {
-  //   }
-  //   .text {
-  //   }
+
+  .header,
+  .navigation {
+    background-color: $dark-bg-nav;
+
+    &-link-number {
+      color: $light-blue-accent-color;
+    }
+    &-menu-dropdown {
+      background-color: $dark-bg-nav;
+
+      .line {
+        // stroke: $light-bg-nav;
+        stroke: $light-bg-main;
+      }
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: $dark-heading-primary;
+  }
+
+  a:hover {
+    color: $light-blue-accent-color;
+  }
+  a:active {
+    // color:
+  }
 }
