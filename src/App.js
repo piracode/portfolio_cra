@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import React, { useEffect, useState, createContext } from 'react'
+import React, { useEffect, useState, createContext, Suspense } from 'react'
 import './scss/styles.scss'
 import Logo from './components/Logo'
 import Home from './pages/Home'
@@ -43,10 +43,12 @@ function App() {
               </div>
             ) : (
               <>
-                <Header />
-                <Routes>
-                  <Route path='/' element={<Home />} />
-                </Routes>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Header />
+                  <Routes>
+                    <Route path='/' element={<Home />} />
+                  </Routes>
+                </Suspense>
               </>
             )}
           </main>

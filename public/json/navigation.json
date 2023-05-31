@@ -1,0 +1,26 @@
+{
+  "en": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "lab": "Lab",
+    "resume": "Resume",
+    "toggleTheme": "Toggle Theme"
+  },
+  "fr": {
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "lab": "Lab",
+    "resume": "CV",
+    "toggleTheme": "changer de thème"
+  },
+  "es": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "lab": "Lab",
+    "resume": "Currículum",
+    "toggleTheme": "Cambiar el tema"
+  }
+}
