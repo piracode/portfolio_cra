@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../App'
 import { Menu } from '@headlessui/react'
-
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
+import { useTranslation } from 'react-i18next' // Import useTranslation from react-i18next
+import i18n from '../utilities/i18n' // Import the i18n instance
 
 const Navigation = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { t, i18n } = useTranslation() // Use the useTranslation hook to access translations
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -15,6 +17,11 @@ const Navigation = () => {
 
   const openResumePDF = () => {
     window.open('/path/to/resume.pdf', '_blank')
+  }
+
+  //handle language switching
+  const switchLanguage = (language) => {
+    i18n.changeLanguage(language)
   }
 
   // const handleToggleTheme = (event) => {
@@ -40,7 +47,8 @@ const Navigation = () => {
             {({ active }) => (
               <a className={`nav-link ${active ? 'active' : ''}`} href='/about'>
                 <span className='navigation-link-number'>01.</span>
-                About
+                {/* Use the t function to access translations */}
+                {t('about')}
               </a>
             )}
           </Menu.Item>
@@ -51,7 +59,7 @@ const Navigation = () => {
                 href='/projects'
               >
                 <span className='navigation-link-number'>02.</span>
-                Projects
+                {t('projects')}
               </a>
             )}
           </Menu.Item>
@@ -62,7 +70,7 @@ const Navigation = () => {
                 href='/contact'
               >
                 <span className='navigation-link-number'>03.</span>
-                Contact
+                {t('contact')}
               </a>
             )}
           </Menu.Item>
@@ -70,7 +78,7 @@ const Navigation = () => {
             {({ active }) => (
               <a className={`nav-link ${active ? 'active' : ''}`} href='/lab'>
                 <span className='navigation-link-number'>04.</span>
-                Lab
+                {t('lab')}
               </a>
             )}
           </Menu.Item>
@@ -88,7 +96,7 @@ const Navigation = () => {
                 } ${active ? 'active' : ''}`}
                 onClick={openResumePDF}
               >
-                Resume
+                {t('resume')}
               </button>
             )}
           </Menu.Item>
@@ -96,7 +104,7 @@ const Navigation = () => {
           <Menu.Item className='navigation-item'>
             {/* <button className='nav-button' onClick={handleToggleTheme}> */}
             <button className='nav-button' onClick={toggleTheme}>
-              Toggle Theme
+              {t('toggleTheme')}
             </button>
           </Menu.Item>
           {/* <Menu.Item disabled> */}
@@ -104,6 +112,13 @@ const Navigation = () => {
               Type programming language (could it be type prog. lang.? Do I need to add a tooltip?)
             </button> */}
           {/* </Menu.Item> */}
+          <Menu.Item>
+            <div>
+              <button onClick={() => switchLanguage('en')}>English</button>
+              <button onClick={() => switchLanguage('fr')}>French</button>
+              <button onClick={() => switchLanguage('es')}>Spanish</button>
+            </div>
+          </Menu.Item>
         </Menu.Items>
       </Menu>
     </div>
