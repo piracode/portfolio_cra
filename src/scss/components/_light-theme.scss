@@ -18,6 +18,10 @@
         stroke: $dark-bg-main;
       }
     }
+
+    &-separator {
+      background-color: $light-bg-button;
+    }
   }
 }
 

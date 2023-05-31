@@ -1,0 +1,26 @@
+@import '../base/settings';
+
+@mixin btn-styles {
+  width: 8em;
+  padding: 0.8em 1em;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.2em;
+  border: $light-blue-accent-color 6px solid;
+}
+
+.resume-button {
+  &.light-theme {
+    background-color: $light-bg-button;
+    color: $dark-blue-accent-color;
+    margin-bottom: 1.4em;
+    @include btn-styles;
+  }
+
+  &.dark-theme {
+    background-color: $dark-bg-button;
+    color: $light-text-main;
+    margin-bottom: 1.4em;
+    @include btn-styles;
+  }
+}

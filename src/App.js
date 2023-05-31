@@ -23,11 +23,13 @@ function App() {
 
   function toggleTheme() {
     setIsDarkMode((d) => !d)
+    console.log(isDarkMode)
   }
 
   useEffect(() => {
     document.body.classList = isDarkMode ? 'dark' : 'light'
-    document.body.classList = isDarkMode ? 'light' : 'dark'
+    // document.body.classList = isDarkMode ? 'light' : 'dark'
+    // document.body.classList = !isDarkMode ? 'light' : 'dark'
   }, [isDarkMode])
 
   return (

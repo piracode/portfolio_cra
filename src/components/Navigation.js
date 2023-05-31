@@ -10,14 +10,22 @@ const Navigation = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+    console.log(isMenuOpen)
   }
 
   const openResumePDF = () => {
     window.open('/path/to/resume.pdf', '_blank')
   }
 
+  // const handleToggleTheme = (event) => {
+  //   event.stopPropagation() // Prevent event propagation
+
+  //   console.log('Propagation stopped:', event.isPropagationStopped())
+
+  //   toggleTheme()
+  // }
+
   return (
-    // <Menu className='navigation'>
     <div className={`navigation-container ${isMenuOpen ? 'opened' : ''}`}>
       <Menu>
         <Menu.Button
@@ -68,22 +76,34 @@ const Navigation = () => {
           </Menu.Item>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
+              // <button
+              //   className={`nav-button ${active ? 'active' : ''}`}
+              //   onClick={openResumePDF}
+              // >
+              //   Resume
+              // </button>
               <button
-                className={`nav-button ${active ? 'active' : ''}`}
+                className={`nav-button resume-button ${
+                  isDarkMode ? 'dark-theme' : 'light-theme'
+                } ${active ? 'active' : ''}`}
                 onClick={openResumePDF}
               >
                 Resume
               </button>
             )}
           </Menu.Item>
+          <div className='navigation-separator'>&nbsp;</div>
           <Menu.Item className='navigation-item'>
+            {/* <button className='nav-button' onClick={handleToggleTheme}> */}
             <button className='nav-button' onClick={toggleTheme}>
               Toggle Theme
             </button>
           </Menu.Item>
-          {/* <Menu.Item disabled>
-          <span className='disabled'>Search a language (coming soon!)</span>
-        </Menu.Item> */}
+          {/* <Menu.Item disabled> */}
+          {/* <button className='nav-button disabled'>
+              Type programming language (could it be type prog. lang.? Do I need to add a tooltip?)
+            </button> */}
+          {/* </Menu.Item> */}
         </Menu.Items>
       </Menu>
     </div>
