@@ -19,6 +19,10 @@
         stroke: $light-bg-main;
       }
     }
+
+    &-separator {
+      background-color: $dark-bg-main;
+    }
   }
 
   a:link,
