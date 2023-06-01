@@ -2,21 +2,22 @@ import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../App'
 import { Menu } from '@headlessui/react'
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
-import { useTranslation } from 'react-i18next' // Import useTranslation from react-i18next
-import i18n from '../utilities/i18n' // Import the i18n instance
+import { useTranslation } from 'react-i18next'
+import search from '../assets/magnifier.svg'
+import moon from '../assets/moon.svg'
+import sun from '../assets/sun.svg'
+import resume from '../assets/resume.pdf'
+import i18n from '../utilities/i18n'
 
 const Navigation = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { t, i18n } = useTranslation() // Use the useTranslation hook to access translations
+  const { t, i18n } = useTranslation()
+  const [showTooltip, setShowTooltip] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
     console.log(isMenuOpen)
-  }
-
-  const openResumePDF = () => {
-    window.open('/path/to/resume.pdf', '_blank')
   }
 
   //handle language switching
@@ -31,6 +32,14 @@ const Navigation = () => {
 
   //   toggleTheme()
   // }
+
+  const getClassNames = (baseClassName) => {
+    return `${baseClassName} ${isDarkMode ? 'dark-theme' : 'light-theme'}`
+  }
+
+  const toggleTooltip = () => {
+    setShowTooltip(!showTooltip)
+  }
 
   return (
     <div className={`navigation-container ${isMenuOpen ? 'opened' : ''}`}>
@@ -82,36 +91,50 @@ const Navigation = () => {
               </a>
             )}
           </Menu.Item>
-          <Menu.Item className='navigation-item'>
+          <Menu.Item className={getClassNames('navigation-item')}>
             {({ active }) => (
-              // <button
-              //   className={`nav-button ${active ? 'active' : ''}`}
-              //   onClick={openResumePDF}
-              // >
-              //   Resume
-              // </button>
-              <button
-                className={`nav-button resume-button ${
-                  isDarkMode ? 'dark-theme' : 'light-theme'
-                } ${active ? 'active' : ''}`}
-                onClick={openResumePDF}
+              <a
+                className={`nav-button primary-button resume-button ${
+                  active ? 'active' : ''
+                }`}
+                href={resume}
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 {t('resume')}
-              </button>
+              </a>
             )}
           </Menu.Item>
           <div className='navigation-separator'>&nbsp;</div>
-          <Menu.Item className='navigation-item'>
-            {/* <button className='nav-button' onClick={handleToggleTheme}> */}
-            <button className='nav-button' onClick={toggleTheme}>
-              {t('toggleTheme')}
+          <Menu.Item className={getClassNames('navigation-item')}>
+            <button
+              className={`nav-button secondary-button`}
+              onClick={toggleTheme}
+            >
+              {isDarkMode ? (
+                <img src={sun} alt='Sun Icon' className='theme-icon' />
+              ) : (
+                <img src={moon} alt='Moon Icon' className='theme-icon' />
+              )}
+              {t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
             </button>
           </Menu.Item>
-          {/* <Menu.Item disabled> */}
-          {/* <button className='nav-button disabled'>
-              Type programming language (could it be type prog. lang.? Do I need to add a tooltip?)
-            </button> */}
-          {/* </Menu.Item> */}
+          <Menu.Item>
+            <div className={getClassNames('secondary-button')}>
+              <img src={search} alt='Search Icon' className='search-icon' />
+              <div className='input-container'>
+                <input
+                  className={getClassNames('input')}
+                  type='text'
+                  placeholder={t('search')}
+                  onClick={toggleTooltip}
+                />
+              </div>
+              {showTooltip && (
+                <span className='tooltip'>{t('searchTooltip')}</span>
+              )}
+            </div>
+          </Menu.Item>
           <Menu.Item>
             <div>
               <button onClick={() => switchLanguage('en')}>English</button>

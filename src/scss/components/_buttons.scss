@@ -1,26 +1,78 @@
 @import '../base/settings';
 
-@mixin btn-styles {
+@mixin primary-btn {
   width: 8em;
   padding: 0.8em 1em;
   border-radius: 7px;
   font-weight: 600;
   font-size: 1.2em;
   border: $light-blue-accent-color 6px solid;
+  margin-bottom: 1.4em;
 }
 
-.resume-button {
+@mixin secondary-btn {
+  width: 12em;
+  padding: 0.8em 1em;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.primary-button,
+a.resume-button {
   &.light-theme {
     background-color: $light-bg-button;
     color: $dark-blue-accent-color;
-    margin-bottom: 1.4em;
-    @include btn-styles;
+    @include primary-btn;
+    // margin-bottom: 1.4em;
   }
 
   &.dark-theme {
     background-color: $dark-bg-button;
     color: $light-text-main;
     margin-bottom: 1.4em;
-    @include btn-styles;
+    @include primary-btn;
+  }
+}
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+
+  &.light-theme {
+    background-color: $light-bg-main;
+    color: $dark-bg-main;
+    border: $light-text-main 3px solid;
+    @include secondary-btn;
+  }
+
+  &.dark-theme {
+    background-color: $dark-bg-main;
+    color: $light-bg-nav;
+    border: $dark-text-main 3px solid;
+    @include secondary-btn;
+  }
+}
+
+.input-container input {
+  width: 100%;
+  border: none;
+
+  &.light-theme {
+    background-color: $light-bg-main;
+
+    &::placeholder {
+      color: $dark-bg-main;
+    }
+  }
+
+  &.dark-theme {
+    background-color: $dark-bg-main;
+
+    &::placeholder {
+      // color: $light-bg-nav;
+      color: red;
+    }
   }
 }

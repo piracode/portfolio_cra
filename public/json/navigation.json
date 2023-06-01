@@ -5,7 +5,12 @@
     "contact": "Contact",
     "lab": "Lab",
     "resume": "Resume",
-    "toggleTheme": "Toggle Theme"
+    "toggleTheme": {
+      "dark": "Light theme",
+      "light": "Dark theme"
+    },
+    "search": "Search",
+    "searchTooltip": "Search for programming language"
   },
   "fr": {
     "about": "À propos",
@@ -13,7 +18,12 @@
     "contact": "Contact",
     "lab": "Lab",
     "resume": "CV",
-    "toggleTheme": "changer de thème"
+    "toggleTheme": {
+      "dark": "Thème clair",
+      "light": "Thème sombre"
+    },
+    "search": "Rechercher",
+    "searchTooltip": "Rechercher un langage de programmation"
   },
   "es": {
     "about": "Sobre mí",
@@ -21,6 +31,11 @@
     "contact": "Contacto",
     "lab": "Lab",
     "resume": "Currículum",
-    "toggleTheme": "Cambiar el tema"
+    "toggleTheme": {
+      "dark": "Tema claro",
+      "light": "Tema oscuro"
+    },
+    "search": "Buscar",
+    "searchTooltip": "Buscar lenguaje de programación"
   }
 }
