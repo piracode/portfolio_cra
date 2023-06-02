@@ -53,3 +53,18 @@
     transform: translateX(0);
   }
 }
+
+// @media (min-width: 768px) {
+//   .navigation-container .navigation-button {
+//     display: none;
+//   }
+
+//   .navigation-container.opened .navigation {
+//     animation: none;
+//     transform: translateX(0);
+//   }
+
+//   .navigation-container:not(.opened) .navigation {
+//     display: flex;
+//   }
+// }

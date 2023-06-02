@@ -1,4 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { ThemeContext } from '../App'
 import { Menu } from '@headlessui/react'
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
@@ -16,9 +17,16 @@ const Navigation = () => {
   const [showTooltip, setShowTooltip] = useState(false)
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-    console.log(isMenuOpen)
+    setIsMenuOpen(!isMenuOpen) // flip the value from true to false or from false to true
   }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  // const openMenu = () => {
+  //   setIsMenuOpen(true)
+  // }
 
   //handle language switching
   const switchLanguage = (language) => {
@@ -47,50 +55,60 @@ const Navigation = () => {
         <Menu.Button
           type='button'
           onClick={toggleMenu}
-          className='navigation-button'
+          className='navigation-button hamburger-desktop'
         >
           <Hamburger alt='Menu Dropdown' className='navigation-menu-dropdown' />
         </Menu.Button>
         <Menu.Items className='navigation'>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <a className={`nav-link ${active ? 'active' : ''}`} href='/about'>
+              <Link
+                to='/about'
+                className={`nav-link ${active ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
                 <span className='navigation-link-number'>01.</span>
-                {/* Use the t function to access translations */}
                 {t('about')}
-              </a>
+              </Link>
             )}
           </Menu.Item>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <a
+              <Link
+                to='/projects'
                 className={`nav-link ${active ? 'active' : ''}`}
-                href='/projects'
+                onClick={closeMenu}
               >
                 <span className='navigation-link-number'>02.</span>
                 {t('projects')}
-              </a>
+              </Link>
             )}
           </Menu.Item>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <a
+              <Link
+                to='/contact'
                 className={`nav-link ${active ? 'active' : ''}`}
-                href='/contact'
+                onClick={closeMenu}
               >
                 <span className='navigation-link-number'>03.</span>
                 {t('contact')}
-              </a>
+              </Link>
             )}
           </Menu.Item>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <a className={`nav-link ${active ? 'active' : ''}`} href='/lab'>
+              <Link
+                to='/lab'
+                className={`nav-link ${active ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
                 <span className='navigation-link-number'>04.</span>
                 {t('lab')}
-              </a>
+              </Link>
             )}
           </Menu.Item>
+
           <Menu.Item className={getClassNames('navigation-item')}>
             {({ active }) => (
               <a
@@ -100,6 +118,7 @@ const Navigation = () => {
                 href={resume}
                 target='_blank'
                 rel='noopener noreferrer'
+                onClick={closeMenu}
               >
                 {t('resume')}
               </a>
@@ -109,7 +128,10 @@ const Navigation = () => {
           <Menu.Item className={getClassNames('navigation-item')}>
             <button
               className={`nav-button secondary-button`}
-              onClick={toggleTheme}
+              onClick={() => {
+                toggleTheme()
+                closeMenu() //Fix this so the menu doesnt close but also doesnt get all messsed up, same for search and for the langages
+              }}
             >
               {isDarkMode ? (
                 <img src={sun} alt='Sun Icon' className='theme-icon' />
