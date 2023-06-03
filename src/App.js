@@ -1,8 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import React, { useEffect, useState, createContext } from 'react'
 import './scss/styles.scss'
 import Logo from './components/Logo'
 import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Lab from './pages/Lab'
 import Header from './components/Header'
 
 export const ThemeContext = createContext()
@@ -43,12 +47,16 @@ function App() {
               </div>
             ) : (
               <>
-                {/* <Suspense fallback={<div>Loading...</div>}> */}
                 <Header />
-                <Routes>
-                  <Route path='/' element={<Home />} />
-                </Routes>
-                {/* </Suspense> */}
+                <div className='parallax-container'>
+                  <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/projects' element={<Projects />} />
+                    <Route path='/contact' element={<Contact />} />
+                    <Route path='/lab' element={<Lab />} />
+                  </Routes>
+                </div>
               </>
             )}
           </main>

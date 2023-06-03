@@ -1,5 +1,6 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 import { ThemeContext } from '../App'
 import { Menu } from '@headlessui/react'
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
@@ -15,6 +16,13 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { t, i18n } = useTranslation()
   const [showTooltip, setShowTooltip] = useState(false)
+
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView()
+    }
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen) // flip the value from true to false or from false to true
@@ -59,57 +67,62 @@ const Navigation = () => {
         >
           <Hamburger alt='Menu Dropdown' className='navigation-menu-dropdown' />
         </Menu.Button>
+
         <Menu.Items className='navigation'>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <Link
-                to='/about'
+              <a
+                href='#about'
                 className={`nav-link ${active ? 'active' : ''}`}
                 onClick={closeMenu}
               >
                 <span className='navigation-link-number'>01.</span>
                 {t('about')}
-              </Link>
+              </a>
             )}
           </Menu.Item>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <Link
-                to='/projects'
+              <a
+                href='#projects'
                 className={`nav-link ${active ? 'active' : ''}`}
                 onClick={closeMenu}
               >
                 <span className='navigation-link-number'>02.</span>
                 {t('projects')}
-              </Link>
+              </a>
             )}
           </Menu.Item>
           <Menu.Item className='navigation-item'>
             {({ active }) => (
-              <Link
-                to='/contact'
+              <a
+                href='#contact'
                 className={`nav-link ${active ? 'active' : ''}`}
                 onClick={closeMenu}
               >
                 <span className='navigation-link-number'>03.</span>
                 {t('contact')}
-              </Link>
-            )}
-          </Menu.Item>
-          <Menu.Item className='navigation-item'>
-            {({ active }) => (
-              <Link
-                to='/lab'
-                className={`nav-link ${active ? 'active' : ''}`}
-                onClick={closeMenu}
-              >
-                <span className='navigation-link-number'>04.</span>
-                {t('lab')}
-              </Link>
+              </a>
             )}
           </Menu.Item>
 
-          <Menu.Item className={getClassNames('navigation-item')}>
+          <Menu.Item className='navigation-item'>
+            {({ active }) => (
+              <a
+                href='#lab'
+                className={`nav-link ${active ? 'active' : ''}`}
+                onClick={(event) => {
+                  handleScrollTo('lab')
+                  closeMenu()
+                }}
+              >
+                <span className='navigation-link-number'>04.</span>
+                {t('lab')}
+              </a>
+            )}
+          </Menu.Item>
+
+          {/* <Menu.Item className={getClassNames('navigation-item')}>
             {({ active }) => (
               <a
                 className={`nav-button primary-button resume-button ${
@@ -123,7 +136,7 @@ const Navigation = () => {
                 {t('resume')}
               </a>
             )}
-          </Menu.Item>
+          </Menu.Item> */}
           <div className='navigation-separator'>&nbsp;</div>
           <Menu.Item className={getClassNames('navigation-item')}>
             <button
