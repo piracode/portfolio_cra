@@ -1,21 +1,18 @@
-import React, { useContext, useState, useEffect, useRef } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 import { ThemeContext } from '../App'
 import { Menu } from '@headlessui/react'
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
 import { useTranslation } from 'react-i18next'
-import search from '../assets/magnifier.svg'
-import moon from '../assets/moon.svg'
-import sun from '../assets/sun.svg'
-import resume from '../assets/resume.pdf'
-import i18n from '../utilities/i18n'
+import ThemeToggleButton from './ThemeToggleButton'
+import LanguageSwitcher from './LanguageSwitcher'
+import SearchFeature from './SearchFeature'
 
 const Navigation = () => {
-  const { isDarkMode, toggleTheme } = useContext(ThemeContext)
+  const { isDarkMode } = useContext(ThemeContext)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { t, i18n } = useTranslation()
-  const [showTooltip, setShowTooltip] = useState(false)
+  const { t } = useTranslation()
 
   const handleScrollTo = (id) => {
     const element = document.getElementById(id)
@@ -25,36 +22,15 @@ const Navigation = () => {
   }
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen) // flip the value from true to false or from false to true
+    setIsMenuOpen(!isMenuOpen) // flip the value
   }
 
   const closeMenu = () => {
     setIsMenuOpen(false)
   }
 
-  // const openMenu = () => {
-  //   setIsMenuOpen(true)
-  // }
-
-  //handle language switching
-  const switchLanguage = (language) => {
-    i18n.changeLanguage(language)
-  }
-
-  // const handleToggleTheme = (event) => {
-  //   event.stopPropagation() // Prevent event propagation
-
-  //   console.log('Propagation stopped:', event.isPropagationStopped())
-
-  //   toggleTheme()
-  // }
-
   const getClassNames = (baseClassName) => {
     return `${baseClassName} ${isDarkMode ? 'dark-theme' : 'light-theme'}`
-  }
-
-  const toggleTooltip = () => {
-    setShowTooltip(!showTooltip)
   }
 
   return (
@@ -111,7 +87,7 @@ const Navigation = () => {
               <a
                 href='#lab'
                 className={`nav-link ${active ? 'active' : ''}`}
-                onClick={(event) => {
+                onClick={() => {
                   handleScrollTo('lab')
                   closeMenu()
                 }}
@@ -121,61 +97,15 @@ const Navigation = () => {
               </a>
             )}
           </Menu.Item>
-
-          {/* <Menu.Item className={getClassNames('navigation-item')}>
-            {({ active }) => (
-              <a
-                className={`nav-button primary-button resume-button ${
-                  active ? 'active' : ''
-                }`}
-                href={resume}
-                target='_blank'
-                rel='noopener noreferrer'
-                onClick={closeMenu}
-              >
-                {t('resume')}
-              </a>
-            )}
-          </Menu.Item> */}
           <div className='navigation-separator'>&nbsp;</div>
           <Menu.Item className={getClassNames('navigation-item')}>
-            <button
-              className={`nav-button secondary-button`}
-              onClick={() => {
-                toggleTheme()
-                closeMenu() //Fix this so the menu doesnt close but also doesnt get all messsed up, same for search and for the langages
-              }}
-            >
-              {isDarkMode ? (
-                <img src={sun} alt='Sun Icon' className='theme-icon' />
-              ) : (
-                <img src={moon} alt='Moon Icon' className='theme-icon' />
-              )}
-              {t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
-            </button>
+            <ThemeToggleButton />
           </Menu.Item>
           <Menu.Item>
-            <div className={getClassNames('secondary-button')}>
-              <img src={search} alt='Search Icon' className='search-icon' />
-              <div className='input-container'>
-                <input
-                  className={getClassNames('input')}
-                  type='text'
-                  placeholder={t('search')}
-                  onClick={toggleTooltip}
-                />
-              </div>
-              {showTooltip && (
-                <span className='tooltip'>{t('searchTooltip')}</span>
-              )}
-            </div>
+            <SearchFeature getClassNames={getClassNames} />
           </Menu.Item>
           <Menu.Item>
-            <div>
-              <button onClick={() => switchLanguage('en')}>English</button>
-              <button onClick={() => switchLanguage('fr')}>French</button>
-              <button onClick={() => switchLanguage('es')}>Spanish</button>
-            </div>
+            <LanguageSwitcher />
           </Menu.Item>
         </Menu.Items>
       </Menu>
