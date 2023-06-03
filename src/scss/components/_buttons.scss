@@ -76,3 +76,18 @@ a.resume-button {
     }
   }
 }
+
+#about,
+#projects,
+#lab,
+#contact {
+  height: 100vh;
+}
+
+#about {
+  background-color: red;
+}
+
+#projects {
+  background-color: yellow;
+}
