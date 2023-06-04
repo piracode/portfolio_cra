@@ -1,4 +1,5 @@
 @import '../base/settings';
+// buttons.scss or another relevant SCSS file
 
 @mixin primary-btn {
   width: 8em;
@@ -16,6 +17,11 @@
   border-radius: 40px;
   font-weight: 500;
   font-size: 1.1em;
+}
+
+@mixin secondary-btn-desktopNav {
+  width: 9em;
+  padding: 0.2em 0.5em;
 }
 
 .primary-button,
@@ -59,11 +65,15 @@ a.resume-button {
   width: 100%;
   border: none;
 
+  // font-family: inherit;
+
   &.light-theme {
     background-color: $light-bg-main;
 
     &::placeholder {
       color: $dark-bg-main;
+      font-size: 1.1em;
+      font-weight: 500;
     }
   }
 
@@ -73,6 +83,18 @@ a.resume-button {
     &::placeholder {
       // color: $light-bg-nav;
       color: red;
+    }
+  }
+}
+
+//Desktop Navigation button
+.navigation {
+  &-desktop {
+    .secondary-button {
+      &.light-theme,
+      &.dark-theme {
+        @include secondary-btn-desktopNav;
+      }
     }
   }
 }
