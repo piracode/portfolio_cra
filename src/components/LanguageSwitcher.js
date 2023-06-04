@@ -7,7 +7,7 @@ const LanguageSwitcher = () => {
   }
 
   return (
-    <div>
+    <div className='navigation-language-container'>
       <button onClick={() => switchLanguage('en')}>English</button>
       <button onClick={() => switchLanguage('fr')}>French</button>
       <button onClick={() => switchLanguage('es')}>Spanish</button>
