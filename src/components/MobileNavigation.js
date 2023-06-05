@@ -6,7 +6,7 @@ import ThemeToggleButton from './ThemeToggleButton'
 import LanguageSwitcher from './LanguageSwitcher'
 import SearchFeature from './SearchFeature'
 
-const MobileNavigation = ({ getClassNames }) => {
+const MobileNavigation = ({ getClassNames, isMobile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -31,13 +31,13 @@ const MobileNavigation = ({ getClassNames }) => {
         <Menu.Items className='navigation'>
           <NavigationLinks closeMenu={closeMenu} />
           <Menu.Item className={getClassNames('navigation-item')}>
-            <ThemeToggleButton />
+            <ThemeToggleButton isMobile={isMobile} />
           </Menu.Item>
           <Menu.Item>
-            <SearchFeature getClassNames={getClassNames} />
+            <SearchFeature isMobile={isMobile} getClassNames={getClassNames} />
           </Menu.Item>
           <Menu.Item>
-            <LanguageSwitcher />
+            <LanguageSwitcher isMobile={isMobile} />
           </Menu.Item>
         </Menu.Items>
       </Menu>

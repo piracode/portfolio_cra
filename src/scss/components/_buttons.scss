@@ -20,8 +20,8 @@
 }
 
 @mixin secondary-btn-desktopNav {
-  width: 9em;
-  padding: 0.2em 0.5em;
+  width: fit-content;
+  padding: 0.5em;
 }
 
 .primary-button,
@@ -87,6 +87,14 @@ a.resume-button {
   }
 }
 
+.light-icon {
+  fill: $dark-blue-accent-color;
+}
+
+.dark-icon {
+  fill: $light-bg-button;
+}
+
 //Desktop Navigation button
 .navigation {
   &-desktop {
@@ -96,6 +104,25 @@ a.resume-button {
         @include secondary-btn-desktopNav;
       }
     }
+    .input-container {
+      display: none;
+    }
+  }
+
+  &-btn-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-link-box {
+    place-items: center;
+    gap: 1rem;
+  }
+
+  &-link-number {
+    padding-right: 0.3em;
   }
 }
 

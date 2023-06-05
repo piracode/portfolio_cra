@@ -10,7 +10,7 @@ const Navigation = () => {
   useEffect(() => {
     // Function to handle window resize
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767)
+      setIsMobile(window.innerWidth <= 800)
     }
 
     // Add event listener to handle window resize
@@ -30,9 +30,9 @@ const Navigation = () => {
   }
 
   return isMobile ? (
-    <MobileNavigation getClassNames={getClassNames} />
+    <MobileNavigation getClassNames={getClassNames} isMobile={isMobile} />
   ) : (
-    <DesktopNavigation isMobile={isMobile} getClassNames={getClassNames} />
+    <DesktopNavigation getClassNames={getClassNames} isMobile={isMobile} />
   )
 }
 
