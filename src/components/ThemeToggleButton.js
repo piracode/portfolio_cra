@@ -1,11 +1,11 @@
 import React from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '../App'
-import moon from '../assets/moon.svg'
-import sun from '../assets/sun.svg'
+import { ReactComponent as SunIcon } from '../assets/sun.svg'
+import { ReactComponent as MoonIcon } from '../assets/moon.svg'
 import { useTranslation } from 'react-i18next'
 
-const ThemeToggleButton = ({ className }) => {
+const ThemeToggleButton = ({ className, isMobile }) => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext)
   const { t } = useTranslation()
 
@@ -15,11 +15,15 @@ const ThemeToggleButton = ({ className }) => {
       onClick={toggleTheme}
     >
       {isDarkMode ? (
-        <img src={sun} alt='Sun Icon' className='theme-icon' />
+        <SunIcon
+          className={`theme-icon ${isDarkMode ? 'dark-icon' : 'light-icon'}`}
+        />
       ) : (
-        <img src={moon} alt='Moon Icon' className='theme-icon' />
+        <MoonIcon
+          className={`theme-icon ${isDarkMode ? 'dark-icon' : 'light-icon'}`}
+        />
       )}
-      {t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
+      {isMobile && t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
     </button>
   )
 }

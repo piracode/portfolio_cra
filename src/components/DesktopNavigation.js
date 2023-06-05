@@ -19,10 +19,15 @@ const DesktopNavigation = ({ getClassNames, isMobile }) => {
     >
       <div className='navigation-link-box'>
         <NavigationLinks />
-        <ThemeToggleButton className={getClassNames('navigation-item')} />
-        <SearchFeature getClassNames={getClassNames} />
       </div>
-      <LanguageSwitcher />
+      <div className='navigation-btn-container'>
+        <ThemeToggleButton
+          isMobile={isMobile}
+          className={getClassNames('navigation-item')}
+        />
+        <SearchFeature isMobile={isMobile} getClassNames={getClassNames} />
+      </div>
+      <LanguageSwitcher isMobile={isMobile} />
     </nav>
   )
 }

@@ -16,7 +16,7 @@
   top: 100%;
   right: -16px;
   padding-top: 2em;
-  height: 100vh;
+  height: 60vh;
   width: 70vw;
 
   .nav-link {
@@ -38,6 +38,21 @@
     width: 60%;
     height: 2px;
   }
+
+  .language-container-mobile {
+    gap: 1rem;
+  }
+
+  &-language-container {
+    display: flex;
+    & > button {
+      border: none;
+      background-color: transparent;
+    }
+    .flag-box {
+      width: 3rem;
+    }
+  }
 }
 
 .nav-button {
@@ -57,23 +72,27 @@
 //Destop styles
 .navigation {
   &-desktop {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 2rem;
 
     .nav-button {
       margin-top: 0;
     }
 
     .navigation {
+      &-link-box {
+        display: flex;
+        .nav-link > span {
+          display: inline-block;
+        }
+        .navigation-btn-container {
+          grid-column: 2/3;
+        }
+      }
       &-language-container {
         display: flex;
         flex-wrap: wrap;
-        width: 10%;
-        gap: 1em;
-      }
-
-      &-link-box {
-        display: flex;
-        place-items: center;
+        grid-column: 3/4;
       }
     }
   }
