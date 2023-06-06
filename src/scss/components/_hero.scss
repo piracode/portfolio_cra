@@ -12,6 +12,7 @@
   }
   &-img {
     width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -39,6 +40,8 @@
   }
 }
 
+//Dark theme/ Light theme
+
 .light-theme .hero {
   &-greeting,
   &-subdescription {
@@ -57,4 +60,32 @@
   &-name {
     color: $light-bg-button;
   }
+}
+
+//400px
+@media (min-width: 25em) {
+  .hero-button {
+    display: inline-block;
+    margin: 0;
+  }
+}
+//600px
+@media (min-width: 37.5em) {
+  .hero {
+    display: flex;
+
+    &-img {
+      margin-right: 3rem;
+    }
+
+    &-text-container {
+      max-width: 23.5rem;
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  // .hero {
+  //   padding-right: 5rem;
+  // }
 }
