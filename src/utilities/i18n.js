@@ -1,31 +1,57 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-const loadNavigationJSON = async (language) => {
-  const response = await fetch(`/json/navigation.json`)
+// load JSON data from a file
+const loadJSON = async (filename) => {
+  const response = await fetch(`/json/${filename}.json`)
   const data = await response.json()
-  return data[language]
+  console.log(`filename: ${filename}`, data)
+  return data
 }
 
-const loadNavigationTranslations = async () => {
-  const enNavigation = await loadNavigationJSON('en')
-  const frNavigation = await loadNavigationJSON('fr')
-  const esNavigation = await loadNavigationJSON('es')
-
-  return {
-    en: enNavigation,
-    fr: frNavigation,
-    es: esNavigation,
+// load translations for different languages
+const loadTranslations = async () => {
+  const files = {
+    hero: 'hero',
+    navigation: 'navigation',
   }
+
+  const languages = ['en', 'fr', 'es']
+
+  const translations = {}
+
+  // Iterate over each language
+  for (const language of languages) {
+    translations[language] = {}
+
+    // Iterate over each file and load the JSON data
+    for (const [file, filename] of Object.entries(files)) {
+      const jsonData = await loadJSON(filename)
+      // Merge the translation data into the corresponding language object
+      translations[language] = {
+        ...translations[language],
+        ...jsonData[language],
+      }
+    }
+  }
+
+  return translations
 }
 
 const resources = {}
 
-loadNavigationTranslations().then((translations) => {
-  resources.en = { translation: translations.en }
-  resources.fr = { translation: translations.fr }
-  resources.es = { translation: translations.es }
+// Load the translations and initialize the i18n library
+loadTranslations().then((translations) => {
+  for (const [language, translation] of Object.entries(translations)) {
+    resources[language] = { translation: {} }
 
+    // Populate the resources object with the translation data
+    for (const [file, data] of Object.entries(translation)) {
+      resources[language].translation[file] = data
+    }
+  }
+
+  // Initialize the i18n library with the loaded resources
   i18n.use(initReactI18next).init({
     resources,
     lng: 'en', // Set the default language to English

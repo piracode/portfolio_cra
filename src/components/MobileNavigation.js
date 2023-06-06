@@ -30,6 +30,7 @@ const MobileNavigation = ({ getClassNames, isMobile }) => {
         </Menu.Button>
         <Menu.Items className='navigation'>
           <NavigationLinks closeMenu={closeMenu} />
+          <div className='navigation-separator'>&nbsp;</div>
           <Menu.Item className={getClassNames('navigation-item')}>
             <ThemeToggleButton isMobile={isMobile} />
           </Menu.Item>

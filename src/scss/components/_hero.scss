@@ -1,0 +1,60 @@
+@import '../base/settings';
+
+.hero {
+  padding: 3rem;
+
+  &-intro-box {
+    padding: 3rem 0 2rem 0;
+  }
+
+  &-description-box {
+    margin-bottom: 1.5rem;
+  }
+  &-img {
+    width: 12rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: $light-heading-secondary 2px solid;
+  }
+
+  &-greeting,
+  &-name,
+  &-subdescription {
+    font-weight: 500;
+  }
+
+  &-role {
+    font-weight: 400;
+  }
+
+  &-subdescription,
+  &-description {
+    display: inline;
+  }
+
+  &-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.light-theme .hero {
+  &-greeting,
+  &-subdescription {
+    color: $teal-accent-color;
+  }
+  &-role {
+    color: $purple-accent-color;
+  }
+}
+
+.dark-theme .hero {
+  &-greeting,
+  &-subdescription {
+    color: $teal-accent-color;
+  }
+  &-name {
+    color: $light-bg-button;
+  }
+}
