@@ -1,8 +1,15 @@
 .navigation-container {
   position: relative;
+
+  button {
+    border: none;
+    height: 0;
+    //this is my trick to remove the weird shadow
+    //created by the headlessUI Button component
+  }
 }
 
-.opened .navigation {
+.navigation[data-headlessui-state='open'] {
   animation: slideInMenu 0.5s ease forwards;
 }
 
@@ -23,12 +30,10 @@
     text-align: center;
   }
 
-  &-button {
-    border: none;
-    height: 0;
-    //this is my trick to remove the weird shadow
-    //created by the headlessUI Button component
-  }
+  // &-button {
+  //   border: none;
+
+  // }
 
   &-link-number {
     display: block;

@@ -11,6 +11,9 @@ const Hero = () => {
   const buttonClassName = isDarkMode
     ? 'primary-button hero-button dark-theme'
     : 'primary-button hero-button light-theme'
+  const anchorClassName = isDarkMode
+    ? 'button-link dark-theme'
+    : 'button-link light-theme'
 
   return (
     <section className={sectionClassName}>
@@ -31,7 +34,11 @@ const Hero = () => {
             {t('descriptionPart2')}
           </strong>
         </div>
-        <button className={buttonClassName}>{t('SeeProjectsCTA')}</button>
+        <button className={buttonClassName}>
+          <a className={anchorClassName} href='#projects'>
+            {t('SeeProjectsCTA')}
+          </a>
+        </button>
       </div>
     </section>
   )

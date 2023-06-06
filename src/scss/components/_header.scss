@@ -10,14 +10,14 @@ header {
   z-index: 1;
 }
 
-// .sticky {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: 999;
-// }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 
-// .mb {
-//   margin-bottom: 68px;
-// }
+.parallax-container {
+  margin-top: 68px;
+}

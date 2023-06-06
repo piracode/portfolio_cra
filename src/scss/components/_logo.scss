@@ -5,19 +5,19 @@
   height: 100vh;
 }
 
+@mixin animations {
+  fill: transparent;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}
+
 .introduction-logo {
   width: 13rem;
 }
 
-body {
-  // background: #0b192e;
-}
-
 .st1 {
   stroke: #5d64ae;
-  fill: transparent;
-  stroke-dasharray: 800;
-  stroke-dashoffset: 800;
+  @include animations;
   animation: firstMAnimation 1.3s linear forwards;
 }
 
@@ -30,9 +30,7 @@ body {
 
 .st2 {
   stroke: #1da6bc;
-  fill: transparent;
-  stroke-dasharray: 800;
-  stroke-dashoffset: 800;
+  @include animations;
   animation: secondMAnimation 1.3s linear forwards;
   animation-delay: 0.5s;
 }
@@ -47,9 +45,7 @@ body {
 .st3 {
   fill: #1da6bc;
   stroke: #1da6bc;
-  fill: transparent;
-  stroke-dasharray: 800;
-  stroke-dashoffset: 800;
+  @include animations;
   animation: thirdMAnimation 1.3s linear forwards;
   animation-delay: 0.7s;
 }

@@ -14,6 +14,7 @@ const loadTranslations = async () => {
   const files = {
     hero: 'hero',
     navigation: 'navigation',
+    about: 'about',
   }
 
   const languages = ['en', 'fr', 'es']
@@ -25,7 +26,7 @@ const loadTranslations = async () => {
     translations[language] = {}
 
     // Iterate over each file and load the JSON data
-    for (const [file, filename] of Object.entries(files)) {
+    for (const [filename] of Object.entries(files)) {
       const jsonData = await loadJSON(filename)
       // Merge the translation data into the corresponding language object
       translations[language] = {
