@@ -1,7 +1,7 @@
 @import '../base/settings';
 
 .hero {
-  padding: 3rem;
+  padding: 1rem;
 
   &-intro-box {
     padding: 3rem 0 2rem 0;
@@ -17,6 +17,7 @@
     display: block;
     margin: 0 auto;
     border: $light-heading-secondary 2px solid;
+    align-self: center;
   }
 
   &-greeting,
@@ -39,11 +40,16 @@
     margin: 0 auto;
 
     a {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 }
 
+.hero.light-theme {
+  .hero-img {
+    border: $teal-accent-color 2px solid;
+  }
+}
 //Dark theme/ Light theme
 
 .light-theme .hero {
@@ -88,8 +94,8 @@
   }
 }
 
-@media (min-width: 50em) {
-  // .hero {
-  //   padding-right: 5rem;
-  // }
+@media (min-width: 53em) {
+  .hero {
+    padding-right: 5rem;
+  }
 }

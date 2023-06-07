@@ -23,9 +23,9 @@ const DesktopNavigation = ({ getClassNames, isMobile }) => {
       <div className='navigation-btn-container'>
         <ThemeToggleButton
           isMobile={isMobile}
-          className={getClassNames('navigation-item')}
+          className={getClassNames('theme-toggle-desktop')}
         />
-        <SearchFeature isMobile={isMobile} getClassNames={getClassNames} />
+        {/* <SearchFeature isMobile={isMobile} getClassNames={getClassNames} /> */}
       </div>
       <LanguageSwitcher isMobile={isMobile} />
     </nav>

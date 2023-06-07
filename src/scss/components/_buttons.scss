@@ -6,7 +6,6 @@
   border-radius: 7px;
   font-weight: 600;
   font-size: 1.2em;
-  border: $light-blue-accent-color 3px solid;
   margin-bottom: 1.4em;
 }
 
@@ -39,16 +38,17 @@
   }
 }
 
-a.button-link {
-  &.dark-theme:visited {
-    color: $light-text-main;
-  }
-}
+// a.button-link {
+//   &.dark-theme:visited {
+//     color: $light-text-main;
+//   }
+// }
 
 .secondary-button {
   display: flex;
   align-items: center;
   gap: 1.4em;
+  // padding: 1rem;
 
   &.light-theme {
     background-color: $light-bg-main;
@@ -130,12 +130,26 @@ a.button-link {
   }
 }
 
-#projects,
-#lab,
-#contact {
-  height: 100vh;
+.navigation .themeMobile {
+  padding: 1.5em;
+}
+.header .navigation-btn-container .theme-toggle-desktop {
+  padding: 1rem;
+  border-radius: 50%;
 }
 
-#projects {
-  background-color: rgb(30, 0, 255);
+.dark {
+  a.button-link:visited {
+    color: $light-text-main;
+  }
+
+  .primary-button {
+    border: $purple-accent-color 2px solid;
+  }
+}
+
+.light {
+  .primary-button {
+    border: $teal-accent-color 2px solid;
+  }
 }

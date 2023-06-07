@@ -6,9 +6,10 @@
     "paragraph3": "I finally took the leap to pursue programming seriously by enrolling in the Front-End Development program at BCIT.",
     "paragraph4": "When I'm not refining my skills on the laptop, you can find me hiking with my dog, singing, ",
     "youtubeLink": "playing musical instruments",
-    "QuillerinaLink": ", creating art with paper ",
+    "QuillerinaLink": ", creating art with paper",
     "paragraph4-continued": " (website coming soon), and actively engaging in the flamenco community.",
-    "seePhotosCTA": "browse my photos"
+    "seePhotosCTA": "Browse my photos",
+    "techStack": "My Tech Stack:"
   },
   "fr": {
     "titleSection": "À propos de moi",
@@ -17,18 +18,21 @@
     "paragraph3": "J'ai finalement franchi le pas pour me consacrer sérieusement à la programmation en m'inscrivant au programme de développement Front-End à BCIT.",
     "paragraph4": "Quand je ne suis pas en train de perfectionner mes compétences sur l'ordinateur, vous pouvez me trouver en train de faire de la randonnée avec mon chien, de chanter, de ",
     "youtubeLink": "jouer des instruments de musique",
-    "QuillerinaLink": ", de créer de l'art avec du papier ",
+    "QuillerinaLink": ", de créer de l'art avec du papier",
     "paragraph4-continued": "  (site web à venir) et de m'impliquer activement dans la communauté flamenco.",
-    "seePhotosCTA": "parcourir mes photos"
+    "seePhotosCTA": "Parcourir mes photos",
+    "techStack": "Mon Stack technologique:"
   },
   "es": {
+    "titleSection": "Sobre mí",
     "paragraph1": "¡Bienvenido(a)s! Soy Martha. Crecí entre Francia y España y ahora vivo en Vancouver, Columbia Británica.",
     "paragraph2": "Mi interés por el desarrollo web comenzó a florecer en 2018 cuando quise ayudar a mis padres a construir un sitio web para su pizzería en España.",
     "paragraph3": "Finalmente di el paso para dedicarme seriamente a la programación al inscribirme en el programa de Desarrollo Front-End en BCIT.",
     "paragraph4": "Cuando no estoy perfeccionando mis habilidades en la computadora, me encontrarás haciendo senderismo con mi perro, cantando, ",
     "youtubeLink": "tocando instrumentos musicales",
-    "QuillerinaLink": ",  creando arte con papel ",
+    "QuillerinaLink": ",  creando arte con papel",
     "paragraph4-continued": " (próximamente un sitio web) y participando activamente en la comunidad de flamenco.",
-    "seePhotosCTA": "ver mis fotos"
+    "seePhotosCTA": "Ver mis fotos",
+    "techStack": "Mi stack tecnológico:"
   }
 }

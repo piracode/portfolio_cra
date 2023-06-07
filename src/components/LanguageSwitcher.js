@@ -9,8 +9,8 @@ const LanguageSwitcher = ({ isMobile }) => {
   }
 
   const containerClassName = isMobile
-    ? 'language-container-mobile'
-    : 'language-container-desktop'
+    ? 'navigation-language-container-mobile'
+    : 'navigation-language-container-desktop'
 
   return (
     <div className={`navigation-language-container ${containerClassName}`}>

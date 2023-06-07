@@ -40,14 +40,17 @@ const MobileNavigation = ({ getClassNames, isMobile }) => {
               <NavigationLinks closeMenu={close} />
               <div className='navigation-separator'>&nbsp;</div>
               <Menu.Item className={getClassNames('navigation-item')}>
-                <ThemeToggleButton isMobile={isMobile} />
+                <ThemeToggleButton
+                  isMobile={isMobile}
+                  className='themeMobile'
+                />
               </Menu.Item>
-              <Menu.Item>
+              {/* <Menu.Item>
                 <SearchFeature
                   isMobile={isMobile}
                   getClassNames={getClassNames}
                 />
-              </Menu.Item>
+              </Menu.Item> */}
               <Menu.Item>
                 <LanguageSwitcher isMobile={isMobile} />
               </Menu.Item>

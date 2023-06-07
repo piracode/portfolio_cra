@@ -4,12 +4,16 @@
   background-color: $dark-bg-main;
   color: $dark-text-main;
 
+  .parallax-link-number {
+    color: $teal-accent-color;
+  }
+
   .header,
   .navigation {
     background-color: $dark-bg-nav;
 
     &-link-number {
-      color: $light-blue-accent-color;
+      color: $teal-accent-color;
     }
     &-menu-dropdown {
       background-color: $dark-bg-nav;
@@ -31,7 +35,7 @@
   }
 
   a:hover {
-    color: $light-blue-accent-color;
+    color: $teal-accent-color;
   }
   a:active {
     // color:
