@@ -1,0 +1,60 @@
+@import '../base/settings';
+
+.about {
+  margin-bottom: 3rem;
+  max-width: 27.5rem;
+
+  &-text-container {
+    margin-bottom: 1.5em;
+  }
+  &-paragraph-2,
+  &-paragraph-3 {
+    padding-bottom: 1em;
+  }
+  &-paragraph-4,
+  &-paragraph-4-continued {
+    display: inline;
+  }
+  &-paragraph-3 {
+    padding-bottom: 1em;
+  }
+
+  a.about-youtubeLink,
+  a.about-facebookLink {
+    font-size: 1em;
+    text-decoration: underline;
+  }
+
+  button.about-button {
+    display: block;
+    margin: 0 auto;
+    width: 13em;
+  }
+
+  &-stack-title {
+    font-weight: 500;
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  &-stack-icons-container {
+    max-width: 24.5rem;
+  }
+
+  &-stack-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+.light {
+  a.about-youtubeLink,
+  a.about-facebookLink {
+    color: $dark-bg-main;
+  }
+}
+.dark {
+  a.about-youtubeLink,
+  a.about-facebookLink {
+    color: $light-bg-button;
+  }
+}

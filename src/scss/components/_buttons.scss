@@ -1,13 +1,11 @@
 @import '../base/settings';
-// buttons.scss or another relevant SCSS file
 
 @mixin primary-btn {
-  width: 8em;
-  padding: 0.8em 1em;
+  width: 10em;
+  padding: 0.4em;
   border-radius: 7px;
   font-weight: 600;
   font-size: 1.2em;
-  border: $light-blue-accent-color 6px solid;
   margin-bottom: 1.4em;
 }
 
@@ -24,8 +22,7 @@
   padding: 0.5em;
 }
 
-.primary-button,
-a.resume-button {
+.primary-button {
   &.light-theme {
     background-color: $light-bg-button;
     color: $dark-blue-accent-color;
@@ -41,10 +38,17 @@ a.resume-button {
   }
 }
 
+// a.button-link {
+//   &.dark-theme:visited {
+//     color: $light-text-main;
+//   }
+// }
+
 .secondary-button {
   display: flex;
   align-items: center;
   gap: 1.4em;
+  // padding: 1rem;
 
   &.light-theme {
     background-color: $light-bg-main;
@@ -64,6 +68,7 @@ a.resume-button {
 .input-container input {
   width: 100%;
   border: none;
+  font-size: 1rem;
 
   // font-family: inherit;
 
@@ -81,8 +86,7 @@ a.resume-button {
     background-color: $dark-bg-main;
 
     &::placeholder {
-      // color: $light-bg-nav;
-      color: red;
+      color: $light-bg-nav;
     }
   }
 }
@@ -126,17 +130,26 @@ a.resume-button {
   }
 }
 
-#about,
-#projects,
-#lab,
-#contact {
-  height: 100vh;
+.navigation .themeMobile {
+  padding: 1.5em;
+}
+.header .navigation-btn-container .theme-toggle-desktop {
+  padding: 1rem;
+  border-radius: 50%;
 }
 
-#about {
-  background-color: red;
+.dark {
+  a.button-link:visited {
+    color: $light-text-main;
+  }
+
+  .primary-button {
+    border: $purple-accent-color 2px solid;
+  }
 }
 
-#projects {
-  background-color: yellow;
+.light {
+  .primary-button {
+    border: $teal-accent-color 2px solid;
+  }
 }

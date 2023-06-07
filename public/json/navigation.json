@@ -3,7 +3,7 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact",
-    "lab": "Lab",
+    "lab": "Workshop",
     "resume": "Resume",
     "toggleTheme": {
       "dark": "Light theme",
@@ -16,7 +16,7 @@
     "about": "À propos",
     "projects": "Projets",
     "contact": "Contact",
-    "lab": "Lab",
+    "lab": "Atelier",
     "resume": "CV",
     "toggleTheme": {
       "dark": "Thème clair",
@@ -26,10 +26,10 @@
     "searchTooltip": "Rechercher un langage de programmation"
   },
   "es": {
-    "about": "Sobre mí",
+    "about": "Sobre mí ",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "lab": "Lab",
+    "lab": "Taller",
     "resume": "Currículum",
     "toggleTheme": {
       "dark": "Tema claro",

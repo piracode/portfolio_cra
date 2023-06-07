@@ -1,0 +1,101 @@
+@import '../base/settings';
+
+.hero {
+  padding: 1rem;
+
+  &-intro-box {
+    padding: 3rem 0 2rem 0;
+  }
+
+  &-description-box {
+    margin-bottom: 1.5rem;
+  }
+  &-img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: $light-heading-secondary 2px solid;
+    align-self: center;
+  }
+
+  &-greeting,
+  &-name,
+  &-subdescription {
+    font-weight: 500;
+  }
+
+  &-role {
+    font-weight: 400;
+  }
+
+  &-subdescription,
+  &-description {
+    display: inline;
+  }
+
+  &-button {
+    display: block;
+    margin: 0 auto;
+
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.hero.light-theme {
+  .hero-img {
+    border: $teal-accent-color 2px solid;
+  }
+}
+//Dark theme/ Light theme
+
+.light-theme .hero {
+  &-greeting,
+  &-subdescription {
+    color: $teal-accent-color;
+  }
+  &-role {
+    color: $purple-accent-color;
+  }
+}
+
+.dark-theme .hero {
+  &-greeting,
+  &-subdescription {
+    color: $teal-accent-color;
+  }
+  &-name {
+    color: $light-bg-button;
+  }
+}
+
+//400px
+@media (min-width: 25em) {
+  .hero-button {
+    display: inline-block;
+    margin: 0;
+  }
+}
+//600px
+@media (min-width: 37.5em) {
+  .hero {
+    display: flex;
+
+    &-img {
+      margin-right: 3rem;
+    }
+
+    &-text-container {
+      max-width: 23.5rem;
+    }
+  }
+}
+
+@media (min-width: 53em) {
+  .hero {
+    padding-right: 5rem;
+  }
+}

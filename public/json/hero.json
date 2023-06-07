@@ -1,0 +1,26 @@
+{
+  "en": {
+    "greeting": "Bonjour, my name is",
+    "name": "Martha Villa Martin.",
+    "role": "I'm a front-end developer.",
+    "descriptionPart1": "A trilingual individual in French, English and Spanish with a background in hospitality and education. I am currently enrolled in the ",
+    "descriptionPart2": "Front-End Development program at BCIT.",
+    "SeeProjectsCTA": "See my projects"
+  },
+  "fr": {
+    "greeting": "Bonjour, je m'appelle",
+    "name": "Martha Villa Martin.",
+    "role": "Je suis une développeuse front-end.",
+    "descriptionPart1": "Une personne trilingue en français, anglais et espagnol, dotée d'une expérience dans les secteurs de l'hôtellerie et de l'éducation. Je suis actuellement inscrite au ",
+    "descriptionPart2": "programme de développement front-end à BCIT.",
+    "SeeProjectsCTA": "Voir mes projets"
+  },
+  "es": {
+    "greeting": "Bonjour, mi nombre es",
+    "name": "Martha Villa Martin.",
+    "role": "Soy una desarrolladora front-end.",
+    "descriptionPart1": "Una persona trilingüe en francés, inglés y español con experiencia en hostelería y educación. Actualmente estoy inscrita en el ",
+    "descriptionPart2": "programa de Desarrollo Front-End en BCIT.",
+    "SeeProjectsCTA": "Ver mis proyectos"
+  }
+}

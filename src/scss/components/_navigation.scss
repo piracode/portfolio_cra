@@ -1,8 +1,15 @@
 .navigation-container {
   position: relative;
+
+  button {
+    border: none;
+    height: 0;
+    //this is my trick to remove the weird shadow
+    //created by the headlessUI Button component
+  }
 }
 
-.opened .navigation {
+.navigation[data-headlessui-state='open'] {
   animation: slideInMenu 0.5s ease forwards;
 }
 
@@ -16,19 +23,22 @@
   top: 100%;
   right: -16px;
   padding-top: 2em;
-  height: 60vh;
+  height: 70vh;
   width: 70vw;
+
+  &-language-container-mobile {
+    display: flex;
+    gap: 1rem;
+  }
 
   .nav-link {
     text-align: center;
   }
 
-  &-button {
-    border: none;
-    height: 0;
-    //this is my trick to remove the weird shadow
-    //created by the headlessUI Button component
-  }
+  // &-button {
+  //   border: none;
+
+  // }
 
   &-link-number {
     display: block;
@@ -44,7 +54,9 @@
   }
 
   &-language-container {
-    display: flex;
+    // display: flex;
+    gap: 1rem;
+
     & > button {
       border: none;
       background-color: transparent;
@@ -74,6 +86,7 @@
   &-desktop {
     display: grid;
     grid-template-columns: 2fr 1.2fr 2rem;
+    place-items: center;
 
     .nav-button {
       margin-top: 0;
@@ -90,9 +103,13 @@
         }
       }
       &-language-container {
-        display: flex;
-        flex-wrap: wrap;
-        grid-column: 3/4;
+        // display: flex;
+        // flex-wrap: wrap;
+
+        &-desktop {
+          gap: 1.5rem;
+          grid-column: 3/4;
+        }
       }
     }
   }

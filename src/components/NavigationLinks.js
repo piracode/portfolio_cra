@@ -6,13 +6,6 @@ const NavigationLinks = ({ closeMenu }) => {
   const { isDarkMode } = useContext(ThemeContext)
   const { t } = useTranslation()
 
-  //   const handleScrollTo = (id) => {
-  //     const element = document.getElementById(id)
-  //     if (element) {
-  //       element.scrollIntoView()
-  //     }
-  //   }
-
   const getClassNames = (baseClassName) => {
     return `${baseClassName} ${isDarkMode ? 'dark-theme' : 'light-theme'}`
   }
@@ -31,14 +24,7 @@ const NavigationLinks = ({ closeMenu }) => {
         <span className='navigation-link-number'>03.</span>
         {t('contact')}
       </a>
-      <a
-        href='#lab'
-        className={`nav-link`}
-        onClick={() => {
-          //   handleScrollTo('lab')
-          closeMenu()
-        }}
-      >
+      <a href='#lab' className={`nav-link`} onClick={closeMenu}>
         <span className='navigation-link-number'>04.</span>
         {t('lab')}
       </a>
