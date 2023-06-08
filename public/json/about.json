@@ -1,6 +1,6 @@
 {
   "en": {
-    "titleSection": "About Me",
+    "titleSectionAbout": "About Me",
     "paragraph1": "Welcome! I'm Martha. I grew up between France and Spain and I am now based in Vancouver, BC.",
     "paragraph2": "My interest in web development started to flourish in 2018 when I wanted to help my parents build a website for their pizzeria in Spain.",
     "paragraph3": "I finally took the leap to pursue programming seriously by enrolling in the Front-End Development program at BCIT.",
@@ -12,7 +12,7 @@
     "techStack": "My Tech Stack:"
   },
   "fr": {
-    "titleSection": "À propos de moi",
+    "titleSectionAbout": "À propos de moi",
     "paragraph1": "Bienvenu(e)s! Je suis Martha. J'ai grandi entre la France et l'Espagne et je suis maintenant basée à Vancouver, en Colombie-Britannique.",
     "paragraph2": "Mon intérêt pour le développement web a commencé à s'épanouir en 2018 lorsque j'ai voulu aider mes parents à construire un site web pour leur pizzeria en Espagne.",
     "paragraph3": "J'ai finalement franchi le pas pour me consacrer sérieusement à la programmation en m'inscrivant au programme de développement Front-End à BCIT.",
@@ -24,7 +24,7 @@
     "techStack": "Mon Stack technologique:"
   },
   "es": {
-    "titleSection": "Sobre mí",
+    "titleSectionAbout": "Sobre mí",
     "paragraph1": "¡Bienvenido(a)s! Soy Martha. Crecí entre Francia y España y ahora vivo en Vancouver, Columbia Británica.",
     "paragraph2": "Mi interés por el desarrollo web comenzó a florecer en 2018 cuando quise ayudar a mis padres a construir un sitio web para su pizzería en España.",
     "paragraph3": "Finalmente di el paso para dedicarme seriamente a la programación al inscribirme en el programa de Desarrollo Front-End en BCIT.",

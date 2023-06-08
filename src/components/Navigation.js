@@ -25,14 +25,16 @@ const Navigation = () => {
     }
   }, [])
 
-  const getClassNames = (baseClassName) => {
-    return `${baseClassName} ${isDarkMode ? 'dark-theme' : 'light-theme'}`
-  }
+  // const getClassNames = (baseClassName) => {
+  //   return `${baseClassName} ${isDarkMode ? 'dark-theme' : 'light-theme'}`
+  // }
 
   return isMobile ? (
-    <MobileNavigation getClassNames={getClassNames} isMobile={isMobile} />
+    // <MobileNavigation getClassNames={getClassNames} isMobile={isMobile} />
+    <MobileNavigation isMobile={isMobile} />
   ) : (
-    <DesktopNavigation getClassNames={getClassNames} isMobile={isMobile} />
+    // <DesktopNavigation getClassNames={getClassNames} isMobile={isMobile} />
+    <DesktopNavigation isMobile={isMobile} />
   )
 }
 
