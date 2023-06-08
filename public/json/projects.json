@@ -1,11 +1,279 @@
-[
-  {
-    "title": "Project 1"
-  },
-  {
-    "title": "Project 2"
-  },
-  {
-    "title": "Project 3"
+{
+  "projects": {
+    "selected": {
+      "en": {
+        "titleSectionProjects": "Selected Projects",
+        "projects": [
+          {
+            "id": "1",
+            "title": "Flixr",
+            "slug": "flixr",
+            "thumbnail": "/images/flixr2.png",
+            "skills": [
+              "HTML",
+              "CSS",
+              "React",
+              "Sass",
+              "PhotoShop",
+              "JavaScript",
+              "AdobeXD"
+            ],
+            "excerpt": "Lorem ipsum 1111",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          },
+          {
+            "id": "2",
+            "title": "Lord of the Rings",
+            "slug": "matching-game",
+            "thumbnail": "/images/matchingGame.png",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Lorem ipsum 2222",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          },
+          {
+            "id": "3",
+            "title": "www.martha.codes",
+            "slug": "marthasportfolio",
+            "thumbnail": "/images/portfolio.png",
+            "skills": ["HTML", "CSS", "React", "Sass", "JavaScript", "AdobeXD"],
+            "excerpt": "Lorem ipsum 2222",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          },
+          {
+            "id": "4",
+            "title": "Capstone(Coming soon)",
+            "slug": "capstone",
+            "thumbnail": "/images/placeholder.png",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Lorem ipsum 2222",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          }
+        ]
+      },
+      "fr": {
+        "titleSectionProjects": "Projets sélectionnés",
+        "projects": [
+          {
+            "id": "1",
+            "title": "Flixr",
+            "slug": "flixr",
+            "thumbnail": "/images/flixr1.png",
+            "skills": [
+              "HTML",
+              "CSS",
+              "React",
+              "Sass",
+              "PhotoShop",
+              "JavaScript",
+              "AdobeXD"
+            ],
+            "excerpt": "Lorem ipsum prject 1",
+            "liveSiteCTA": "Site Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Détails",
+            "post": {
+              "intro": "C'est l'introduction",
+              "content": ["Contenu 1", "Contenu 2", "Contenu 3"]
+            }
+          },
+          {
+            "id": "2",
+            "title": "Projet 2",
+            "slug": "projet-2",
+            "thumbnail": "/images/projet2.png",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Lorem ipsum projet 2",
+            "liveSiteCTA": "Site Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Détails",
+            "post": {
+              "intro": "C'est l'introduction",
+              "content": ["Contenu 1", "Contenu 2", "Contenu 3"]
+            }
+          },
+          {
+            "id": "3",
+            "title": "www.martha.codes",
+            "slug": "marthasportfolio",
+            "thumbnail": "/images/portfolio.png",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Lorem ipsum 2222",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          }
+        ]
+      },
+      "es": {
+        "titleSectionProjects": "Proyectos seleccionados",
+        "projects": [
+          {
+            "id": "1",
+            "title": "Flixr",
+            "slug": "flixr",
+            "thumbnail": "/images/flixr1.png",
+            "skills": [
+              "HTML",
+              "CSS",
+              "React",
+              "Sass",
+              "PhotoShop",
+              "JavaScript",
+              "AdobeXD"
+            ],
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Sitio Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Detalles",
+            "post": {
+              "intro": "Esta es la introducción",
+              "content": ["Contenido 1", "Contenido 2", "Contenido 3"]
+            }
+          },
+
+          {
+            "id": "2",
+            "title": "Proyecto 2",
+            "slug": "proyecto-2",
+            "thumbnail": "/images/proyecto2.png",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Sitio Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Detalles",
+            "post": {
+              "intro": "Esta es la introducción",
+              "content": ["Contenido 1", "Contenido 2", "Contenido 3"]
+            }
+          },
+          {
+            "id": "3",
+            "title": "www.martha.codes",
+            "slug": "marthasportfolio",
+            "thumbnail": "/images/portfolio.png",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Lorem ipsum 2222",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          }
+        ]
+      }
+    },
+    "workshop": {
+      "en": {
+        "titleSectionProjects": "Workshop Projects",
+        "projects": [
+          {
+            "id": "10",
+            "title": "Workshop Project 1",
+            "slug": "workshop-project-1",
+            "thumbnail": "/images/workshop1.png",
+            "skills": "Skills",
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details"
+          },
+          {
+            "id": "11",
+            "title": "Workshop Project 2",
+            "slug": "workshop-project-2",
+            "thumbnail": "/images/workshop2.png",
+            "skills": "Skills",
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Live Site",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Details"
+          }
+        ]
+      },
+      "fr": {
+        "titleSectionProjects": "Projets d'atelier",
+        "projects": [
+          {
+            "id": "10",
+            "title": "Projet d'atelier 1",
+            "slug": "projet-atelier-1",
+            "thumbnail": "/images/atelier1.png",
+            "skills": "Compétences",
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Site Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Détails"
+          },
+          {
+            "id": "11",
+            "title": "Projet d'atelier 2",
+            "slug": "projet-atelier-2",
+            "thumbnail": "/images/atelier2.png",
+            "skills": "Compétences",
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Site Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Détails"
+          }
+        ]
+      },
+      "es": {
+        "titleSectionProjects": "Proyectos de taller",
+        "projects": [
+          {
+            "id": "10",
+            "title": "Proyecto de taller 1",
+            "slug": "proyecto-taller-1",
+            "thumbnail": "/images/taller1.png",
+            "skills": "Habilidades",
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Sitio Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Detalles"
+          },
+          {
+            "id": "11",
+            "title": "Proyecto de taller 2",
+            "slug": "proyecto-taller-2",
+            "thumbnail": "/images/taller2.png",
+            "skills": "Habilidades",
+            "excerpt": "Lorem ipsum",
+            "liveSiteCTA": "Sitio Web",
+            "gitHubCTA": "GitHub",
+            "detailsCTA": "Detalles"
+          }
+        ]
+      }
+    }
   }
-]
+}

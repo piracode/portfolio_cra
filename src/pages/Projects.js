@@ -1,9 +1,65 @@
+import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+
 const Projects = () => {
+  const { i18n } = useTranslation()
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/json/projects.json')
+      const jsonData = await response.json()
+      setData(jsonData)
+    }
+
+    fetchData()
+  }, [])
+
+  const currentLanguage = i18n.language // Retrieve the currently selected language
+  const selectedLanguageData = data?.projects.selected[currentLanguage] // Retrieve the language-specific data from the 'data' object based on the current language
+  const titleSectionProjects = selectedLanguageData?.titleSectionProjects // Extract the value of the 'titleSectionProjects' property from the language-specific data
+  const selectedProjects = selectedLanguageData?.projects // Extract the value of the 'projects' property from the language-specific data
+
   return (
     <>
-      <section id='projects'>
-        <p>This is prject section</p>
-      </section>
+      {data ? (
+        <section id='projects'>
+          <h3>
+            <span className='parallax-link-number'> 02. </span>
+            <span className='title-text'>{titleSectionProjects}</span>
+            <span className='title-line'>&nbsp;</span>
+          </h3>
+          {selectedProjects.map((project, index) => (
+            <article
+              key={project.id}
+              className={
+                index % 2 === 0
+                  ? 'project project-section even'
+                  : 'project project-section odd'
+              }
+            >
+              <h4 className='project-title'>{project.title}</h4>
+              <img
+                className='project-img'
+                src={project.thumbnail}
+                alt={project.title}
+              />
+              <p className='project-excerpt'>{project.excerpt}</p>
+              <button className='primary-button project-button'>
+                {project.liveSiteCTA}
+              </button>
+              <button className='primary-button project-button'>
+                {project.gitHubCTA}
+              </button>
+              <button className='primary-button project-button'>
+                {project.detailsCTA}
+              </button>
+            </article>
+          ))}
+        </section>
+      ) : (
+        <p>Loading...</p>
+      )}
     </>
   )
 }

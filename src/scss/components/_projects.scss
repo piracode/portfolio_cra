@@ -1,0 +1,10 @@
+@import '../base/settings';
+
+.project-section.even {
+  background-color: #073743;
+}
+
+.project-section.odd {
+  background-color: $dark-blue-color-2;
+  //   background-color: $light-heading-primary;
+}

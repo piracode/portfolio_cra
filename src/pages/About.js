@@ -24,16 +24,11 @@ const About = () => {
   const { isDarkMode } = useContext(ThemeContext)
   const { t } = useTranslation()
 
-  const sectionClassName = isDarkMode ? 'about dark-theme' : 'about light-theme'
-  const buttonClassName = isDarkMode
-    ? 'primary-button about-button dark-theme'
-    : 'primary-button about-button light-theme'
-
   return (
-    <section id='about' className={sectionClassName}>
+    <section id='about' className='about'>
       <h3 className='section-title'>
         <span className='parallax-link-number'> 01. </span>
-        <span className='title-text'>{t('titleSection')}</span>
+        <span className='title-text'>{t('titleSectionAbout')}</span>
         <span className='title-line'>&nbsp;</span>
       </h3>
       <div className='about-text-container'>
@@ -61,7 +56,7 @@ const About = () => {
           {t('paragraph4-continued')}
         </p>
       </div>
-      <button className={buttonClassName}>
+      <button className='primary-button about-button'>
         <a className='button-link' href='#'>
           {t('seePhotosCTA')}
         </a>

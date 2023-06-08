@@ -22,73 +22,10 @@
   padding: 0.5em;
 }
 
-.primary-button {
-  &.light-theme {
-    background-color: $light-bg-button;
-    color: $dark-blue-accent-color;
-    @include primary-btn;
-    // margin-bottom: 1.4em;
-  }
-
-  &.dark-theme {
-    background-color: $dark-bg-button;
-    color: $light-text-main;
-    margin-bottom: 1.4em;
-    @include primary-btn;
-  }
-}
-
-// a.button-link {
-//   &.dark-theme:visited {
-//     color: $light-text-main;
-//   }
-// }
-
-.secondary-button {
-  display: flex;
-  align-items: center;
-  gap: 1.4em;
-  // padding: 1rem;
-
-  &.light-theme {
-    background-color: $light-bg-main;
-    color: $dark-bg-main;
-    border: $light-text-main 3px solid;
-    @include secondary-btn;
-  }
-
-  &.dark-theme {
-    background-color: $dark-bg-main;
-    color: $light-bg-nav;
-    border: $dark-text-main 3px solid;
-    @include secondary-btn;
-  }
-}
-
 .input-container input {
   width: 100%;
   border: none;
   font-size: 1rem;
-
-  // font-family: inherit;
-
-  &.light-theme {
-    background-color: $light-bg-main;
-
-    &::placeholder {
-      color: $dark-bg-main;
-      font-size: 1.1em;
-      font-weight: 500;
-    }
-  }
-
-  &.dark-theme {
-    background-color: $dark-bg-main;
-
-    &::placeholder {
-      color: $light-bg-nav;
-    }
-  }
 }
 
 .light-icon {
@@ -102,12 +39,6 @@
 //Desktop Navigation button
 .navigation {
   &-desktop {
-    .secondary-button {
-      &.light-theme,
-      &.dark-theme {
-        @include secondary-btn-desktopNav;
-      }
-    }
     .input-container {
       display: none;
     }
@@ -138,6 +69,7 @@
   border-radius: 50%;
 }
 
+//Dark theme
 .dark {
   a.button-link:visited {
     color: $light-text-main;
@@ -145,11 +77,69 @@
 
   .primary-button {
     border: $purple-accent-color 2px solid;
+    color: $light-text-main;
+    margin-bottom: 1.4em;
+    @include primary-btn;
+  }
+
+  .secondary-button {
+    background-color: $dark-bg-main;
+    color: $light-bg-nav;
+    border: $dark-text-main 3px solid;
+    @include secondary-btn;
+  }
+
+  .navigation-desktop {
+    .secondary-button {
+      @include secondary-btn-desktopNav;
+    }
+  }
+
+  .input-container input {
+    background-color: $dark-bg-main;
+
+    &::placeholder {
+      color: $light-bg-nav;
+    }
   }
 }
+
+//Light theme
 
 .light {
   .primary-button {
     border: $teal-accent-color 2px solid;
+    background-color: $light-bg-button;
+    color: $dark-blue-accent-color;
+    @include primary-btn;
   }
+
+  .secondary-button {
+    background-color: $light-bg-main;
+    color: $dark-bg-main;
+    border: $light-text-main 3px solid;
+    @include secondary-btn;
+  }
+
+  .navigation-desktop {
+    .secondary-button {
+      @include secondary-btn-desktopNav;
+    }
+  }
+
+  .input-container input {
+    background-color: $light-bg-main;
+
+    &::placeholder {
+      color: $dark-bg-main;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+  }
+}
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
 }
