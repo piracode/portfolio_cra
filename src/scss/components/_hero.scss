@@ -83,6 +83,8 @@
 @media (min-width: 37.5em) {
   .hero {
     display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     &-img {
       margin-right: 3rem;
@@ -94,8 +96,20 @@
   }
 }
 
-@media (min-width: 48em) {
+@include mq(490) {
   .hero {
-    padding-right: 15rem;
+    padding: 4rem;
+  }
+}
+
+@include mq(768) {
+  .hero {
+    padding-top: 10rem;
+  }
+}
+
+@include mq(900) {
+  .hero {
+    max-width: 60rem;
   }
 }

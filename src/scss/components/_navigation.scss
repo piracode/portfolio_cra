@@ -149,3 +149,11 @@ nav .language-box-desktop,
     grid-column: 1/2;
   }
 }
+
+@include mq(1050) {
+  .navigation-container {
+    width: 200px;
+    // overflow: hidden;
+    overflow-x: hidden;
+  }
+}

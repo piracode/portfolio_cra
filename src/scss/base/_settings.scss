@@ -80,3 +80,21 @@ a {
 ul {
   list-style: none;
 }
+
+//Mixins for Media Queries
+@function em($px, $bc: 16) {
+  @return $px / $bc * 1em;
+}
+
+@function rem($px) {
+  @return $px / 16 * 1rem;
+}
+
+// Media Query Mixin
+@mixin mq($w) {
+  $w: em($w);
+
+  @media (min-width: #{$w}) {
+    @content;
+  }
+}
