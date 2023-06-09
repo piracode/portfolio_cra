@@ -2,13 +2,10 @@
 
 .project {
   margin-top: 1.3rem;
+  padding: 0 1rem;
   border-radius: 10px;
-  &-section.even {
-    background-color: #073743;
-  }
-  &-section.odd {
-    background-color: $dark-blue-color-2;
-    //   background-color: $light-heading-primary;
+
+  &-article {
   }
 
   &-title {
@@ -19,10 +16,82 @@
     padding: 1rem;
   }
 
+  &-skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  &-skill {
+    padding: 0.3rem;
+    // border: $dark-bg-button 1px solid;
+    border-radius: 15px;
+  }
+
   &-img {
     padding: 1rem;
     // height: 300px;
     // width: 100%;
     // object-fit: cover;
+  }
+
+  &-cta-box {
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1.3rem;
+
+    // .details {
+    //   background-color: $teal-accent-color;
+    // }
+  }
+
+  &-icon-link {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+}
+
+.light {
+  .project {
+    &-article {
+      background-color: $dark-text-main;
+      // background-color: $project-bg-light;
+    }
+    &-article.even:hover {
+      background-color: $dark-blue-accent-color;
+    }
+
+    &-article.odd:hover {
+      background-color: $dark-blue-color-2;
+    }
+    &-skill {
+      color: $dark-text-main;
+      background-color: $dark-blue-color-2;
+    }
+    // &-exer
+  }
+}
+
+.dark {
+  .project {
+    &-article {
+      background-color: $dark-blue-color-2;
+    }
+
+    &-article.even:hover {
+      background-color: $dark-text-main;
+    }
+
+    &-article.odd:hover {
+      background-color: $teal-accent-color;
+    }
+
+    &-skill {
+      background-color: $dark-text-main;
+      color: $dark-blue-color-2;
+    }
   }
 }

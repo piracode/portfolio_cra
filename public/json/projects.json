@@ -9,18 +9,10 @@
             "title": "Flixr",
             "slug": "flixr",
             "thumbnail": "/images/flix-mobile.png",
-            "skills": [
-              "HTML",
-              "CSS",
-              "React",
-              "Sass",
-              "PhotoShop",
-              "JavaScript",
-              "AdobeXD"
-            ],
-            "excerpt": "Lorem ipsum 1111",
+            "skills": ["HTML", "SCSS", "React", "JSX", "PhotoShop", "AdobeXD"],
+            "excerpt": "A movie database built in React.js using themoviedb.org API.",
             "liveSiteCTA": "Live Site",
-            "gitHubCTA": "GitHub",
+            "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
               "intro": "This is the intro",
