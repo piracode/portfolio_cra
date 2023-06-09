@@ -1,60 +1,60 @@
-.navigation-container {
-  position: relative;
+@import '../base/settings';
 
-  button {
-    border: none;
-    height: 0;
-    //this is my trick to remove the weird shadow
-    //created by the headlessUI Button component
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.navigation-link.logo-desktop-link {
+  display: none;
+}
+
+// .logo-container,
+.logo-header {
+  z-index: 1;
+}
+
+// .language-box-desktop {
+//   display: none;
+// }
+
+.light {
+  .navigation-container {
+    // background-color: $dark-bg-main;
+    background-color: $light-bg-nav;
   }
 }
 
-.navigation[data-headlessui-state='open'] {
-  animation: slideInMenu 0.5s ease forwards;
+.dark {
+  .navigation-container {
+    // background-color: $light-bg-button;
+    background-color: $dark-bg-nav;
+  }
+}
+
+nav .language-box-desktop,
+.logo-desktop {
+  display: none;
+}
+
+.navigation-link-icon svg {
+  width: 2rem;
+  height: auto;
+}
+
+.navigation-link-text {
+  font-size: 0.8rem;
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.6em;
-  position: absolute;
-  transform: translateX(100%);
-  top: 100%;
-  right: -16px;
-  padding-top: 2em;
-  height: 70vh;
-  width: 70vw;
-
-  &-language-container-mobile {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .nav-link {
-    text-align: center;
-  }
-
-  // &-button {
-  //   border: none;
-
-  // }
-
-  &-link-number {
-    display: block;
-  }
-
-  &-separator {
-    width: 60%;
-    height: 2px;
-  }
-
-  .language-container-mobile {
-    gap: 1rem;
+  &-container {
+    padding: 1rem 0.4rem;
   }
 
   &-language-container {
-    // display: flex;
+    display: flex;
     gap: 1rem;
 
     & > button {
@@ -62,55 +62,90 @@
       background-color: transparent;
     }
     .flag-box {
-      width: 3rem;
+      width: 1.7rem;
     }
   }
-}
 
-.nav-button {
-  display: block;
-  margin-top: 0.6em;
-}
-
-@keyframes slideInMenu {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-//Destop styles
-.navigation {
-  &-desktop {
+  &-links {
     display: grid;
-    grid-template-columns: 2fr 1.2fr 2rem;
-    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+  }
 
-    .nav-button {
-      margin-top: 0;
+  &-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+@media (min-width: 48em) {
+  .navigation {
+    &-links {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 2%;
+      right: 0;
+      z-index: 9999;
     }
-
-    .navigation {
-      &-link-box {
-        display: flex;
-        .nav-link > span {
-          display: inline-block;
-        }
-        .navigation-btn-container {
-          grid-column: 2/3;
-        }
-      }
-      &-language-container {
-        // display: flex;
-        // flex-wrap: wrap;
-
-        &-desktop {
-          gap: 1.5rem;
-          grid-column: 3/4;
-        }
-      }
+    &-container {
+      grid-column: 2/3;
+      position: static;
     }
+  }
+  .header {
+    display: none;
+  }
+  .language-box-desktop,
+  .logo-desktop,
+  .navigation-link.logo-desktop-link,
+  nav .language-box-desktop {
+    display: block;
+  }
+
+  .navigation-link.logo-desktop-link {
+    display: flex;
+    justify-self: center;
+  }
+
+  .header,
+  main .parallax-container {
+    padding: 0;
+  }
+
+  .light {
+    .header {
+      background-color: $light-bg-main;
+    }
+  }
+  .dark {
+    .header {
+      background-color: $dark-bg-main;
+    }
+  }
+
+  .logo-desktop {
+    width: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  nav .language-box-desktop {
+    padding-top: 8rem;
+    display: flex;
+  }
+
+  .navigation-links .second-link {
+    grid-column: 1/2;
   }
 }

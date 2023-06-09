@@ -1,8 +1,7 @@
 @import '../base/settings';
 
 .parallax-container {
-  margin-top: 8rem;
-  padding: 0 0.7rem;
+  padding: 1rem 0.7rem;
 }
 
 .section-title {
@@ -19,5 +18,13 @@
 .light {
   .title-text {
     color: $dark-bg-nav;
+  }
+}
+
+@media (min-width: 48em) {
+  .parallax-container {
+    display: grid;
+    grid-template-columns: 3fr 120px;
+    grid-template-areas: 'section navigation';
   }
 }

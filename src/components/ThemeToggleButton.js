@@ -1,30 +1,41 @@
-import React from 'react'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from '../App'
-import { ReactComponent as SunIcon } from '../assets/sun.svg'
-import { ReactComponent as MoonIcon } from '../assets/moon.svg'
 import { useTranslation } from 'react-i18next'
+import { FaSun, FaMoon } from 'react-icons/fa'
 
 const ThemeToggleButton = ({ className, isMobile }) => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext)
   const { t } = useTranslation()
 
+  const handleToggle = () => {
+    toggleTheme()
+  }
+
   return (
-    <button
-      className={`nav-button secondary-button ${className}`}
-      onClick={toggleTheme}
-    >
-      {isDarkMode ? (
-        <SunIcon
-          className={`theme-icon ${isDarkMode ? 'dark-icon' : 'light-icon'}`}
-        />
-      ) : (
-        <MoonIcon
-          className={`theme-icon ${isDarkMode ? 'dark-icon' : 'light-icon'}`}
-        />
-      )}
-      {isMobile && t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
-    </button>
+    <div className={`nav-button-container ${className}`} onClick={handleToggle}>
+      <div className='nav-button secondary-button'>
+        {isDarkMode ? (
+          <span className='navigation-link-icon'>
+            <FaSun
+              className={`theme-icon ${
+                isDarkMode ? 'dark-icon' : 'light-icon'
+              }`}
+            />
+          </span>
+        ) : (
+          <span className='navigation-link-icon'>
+            <FaMoon
+              className={`theme-icon ${
+                isDarkMode ? 'dark-icon' : 'light-icon'
+              }`}
+            />
+          </span>
+        )}
+      </div>
+      <span className='navigation-link-text'>
+        {t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
+      </span>
+    </div>
   )
 }
 

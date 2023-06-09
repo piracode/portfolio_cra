@@ -3,17 +3,13 @@ import i18n from '../utilities/i18n'
 import frFlag from '../assets/flags/france-flag.png'
 import enFlag from '../assets/flags/uk-flag.png'
 import esFlag from '../assets/flags/spain-flag.png'
-const LanguageSwitcher = ({ isMobile }) => {
+const LanguageSwitcher = () => {
   const switchLanguage = (language) => {
     i18n.changeLanguage(language)
   }
 
-  const containerClassName = isMobile
-    ? 'navigation-language-container-mobile'
-    : 'navigation-language-container-desktop'
-
   return (
-    <div className={`navigation-language-container ${containerClassName}`}>
+    <>
       <button onClick={() => switchLanguage('en')} title='English Flag'>
         <img src={enFlag} alt='English Flag' className='flag-box' />
       </button>
@@ -23,7 +19,7 @@ const LanguageSwitcher = ({ isMobile }) => {
       <button onClick={() => switchLanguage('es')} title='Spanish Flag'>
         <img src={esFlag} alt='Spanish Flag' className='flag-box' />
       </button>
-    </div>
+    </>
   )
 }
 
