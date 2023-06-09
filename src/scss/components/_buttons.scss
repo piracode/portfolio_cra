@@ -9,18 +9,18 @@
   margin-bottom: 1.4em;
 }
 
-@mixin secondary-btn {
-  width: 12em;
-  padding: 0.8em 1em;
-  border-radius: 40px;
-  font-weight: 500;
-  font-size: 1.1em;
-}
+// @mixin secondary-btn {
+//   width: 12em;
+//   padding: 0.8em 1em;
+//   border-radius: 40px;
+//   font-weight: 500;
+//   font-size: 1.1em;
+// }
 
-@mixin secondary-btn-desktopNav {
-  width: fit-content;
-  padding: 0.5em;
-}
+// @mixin secondary-btn-desktopNav {
+//   width: fit-content;
+//   padding: 0.5em;
+// }
 
 .input-container input {
   width: 100%;
@@ -28,13 +28,13 @@
   font-size: 1rem;
 }
 
-.light-icon {
-  fill: $dark-blue-accent-color;
-}
+// .light-icon {
+//   fill: $dark-blue-accent-color;
+// }
 
-.dark-icon {
-  fill: $light-bg-button;
-}
+// .dark-icon {
+//   fill: $light-bg-button;
+// }
 
 //Desktop Navigation button
 .navigation {
@@ -82,16 +82,16 @@
     @include primary-btn;
   }
 
-  .secondary-button {
-    background-color: $dark-bg-main;
-    color: $light-bg-nav;
-    border: $dark-text-main 3px solid;
-    @include secondary-btn;
-  }
+  // .secondary-button {
+  //   background-color: $dark-bg-main;
+  //   color: $light-bg-nav;
+  //   border: $dark-text-main 3px solid;
+  //   @include secondary-btn;
+  // }
 
   .navigation-desktop {
     .secondary-button {
-      @include secondary-btn-desktopNav;
+      // @include secondary-btn-desktopNav;
     }
   }
 
@@ -114,17 +114,17 @@
     @include primary-btn;
   }
 
-  .secondary-button {
-    background-color: $light-bg-main;
-    color: $dark-bg-main;
-    border: $light-text-main 3px solid;
-    @include secondary-btn;
-  }
+  // .secondary-button {
+  //   background-color: $light-bg-main;
+  //   color: $dark-bg-main;
+  //   border: $light-text-main 3px solid;
+  //   @include secondary-btn;
+  // }
 
   .navigation-desktop {
-    .secondary-button {
-      @include secondary-btn-desktopNav;
-    }
+    // .secondary-button {
+    //   @include secondary-btn-desktopNav;
+    // }
   }
 
   .input-container input {
@@ -138,8 +138,8 @@
   }
 }
 
-.secondary-button {
-  display: flex;
-  align-items: center;
-  gap: 1.4em;
-}
+// .secondary-button {
+//   display: flex;
+//   align-items: center;
+//   gap: 1.4em;
+// }

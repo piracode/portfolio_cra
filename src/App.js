@@ -48,15 +48,15 @@ function App() {
             ) : (
               <>
                 <Header />
-                <div className='parallax-container'>
-                  <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/projects' element={<Projects />} />
-                    <Route path='/contact' element={<Contact />} />
-                    <Route path='/lab' element={<Lab />} />
-                  </Routes>
-                </div>
+                {/* <div className='parallax-container'> */}
+                <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/about' element={<About />} />
+                  <Route path='/projects' element={<Projects />} />
+                  <Route path='/contact' element={<Contact />} />
+                  <Route path='/lab' element={<Lab />} />
+                </Routes>
+                {/* </div> */}
               </>
             )}
           </main>

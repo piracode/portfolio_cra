@@ -9,7 +9,7 @@
       "dark": "Light theme",
       "light": "Dark theme"
     },
-    "search": "Search",
+    "search": "Search Stack",
     "searchTooltip": "Search for programming language"
   },
   "fr": {
@@ -22,7 +22,7 @@
       "dark": "Thème clair",
       "light": "Thème sombre"
     },
-    "search": "Rechercher",
+    "search": "Rechercher Stack",
     "searchTooltip": "Rechercher un langage de programmation"
   },
   "es": {
@@ -35,7 +35,7 @@
       "dark": "Tema claro",
       "light": "Tema oscuro"
     },
-    "search": "Buscar",
+    "search": "Buscar Stack",
     "searchTooltip": "Buscar lenguaje de programación"
   }
 }
