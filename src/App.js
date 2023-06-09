@@ -32,8 +32,6 @@ function App() {
 
   useEffect(() => {
     document.body.classList = isDarkMode ? 'dark' : 'light'
-    // document.body.classList = isDarkMode ? 'light' : 'dark'
-    // document.body.classList = !isDarkMode ? 'light' : 'dark'
   }, [isDarkMode])
 
   return (
@@ -48,7 +46,6 @@ function App() {
             ) : (
               <>
                 <Header />
-                {/* <div className='parallax-container'> */}
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='/about' element={<About />} />
@@ -56,7 +53,6 @@ function App() {
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/lab' element={<Lab />} />
                 </Routes>
-                {/* </div> */}
               </>
             )}
           </main>

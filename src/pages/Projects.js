@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { BsPlusCircleFill } from 'react-icons/bs'
+// import {
+//   TbArrowBigRightLinesFilled,
+//   TbArrowBigRightLineFilled,
+// } from 'react-icons/tb'
 
 const Projects = () => {
   const { i18n } = useTranslation()
@@ -34,18 +40,26 @@ const Projects = () => {
               key={project.id}
               className={
                 index % 2 === 0
-                  ? 'project project-section even'
-                  : 'project project-section odd'
+                  ? 'project project-article even'
+                  : 'project project-article odd'
               }
             >
               <h4 className='project-title'>{project.title}</h4>
-              <img
+              {/* <img
                 className='project-img'
                 src={project.thumbnail}
                 alt={project.title}
-              />
+              /> */}
               <p className='project-excerpt'>{project.excerpt}</p>
-              <button className='primary-button project-button'>
+              <div className='project-skills-box'>
+                {/* <span className='skill-label'>Skills: </span> */}
+                {project.skills.map((skill, skillIndex) => (
+                  <span key={skillIndex} className='project-skill'>
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              {/* <button className='primary-button project-button'>
                 {project.liveSiteCTA}
               </button>
               <button className='primary-button project-button'>
@@ -53,7 +67,59 @@ const Projects = () => {
               </button>
               <button className='primary-button project-button'>
                 {project.detailsCTA}
-              </button>
+              </button> */}
+              <div className='project-cta-box'>
+                <div className='project-icon-box github'>
+                  <a
+                    className='project-icon-link'
+                    href='https://github.com/piracode/flixr_react'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaGithub />
+                    <span className='project-icon-title'>
+                      {project.gitHubCTA}
+                    </span>
+                  </a>
+                </div>
+                <div className='project-icon-box liveSite'>
+                  <a
+                    className='project-icon-link'
+                    href='https://martha.codes/flixr/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaExternalLinkAlt />
+                    <span className='project-icon-title'>
+                      {project.liveSiteCTA}
+                    </span>
+                  </a>
+                </div>
+                <div className='project-icon-box details  '>
+                  <a
+                    className='project-icon-link'
+                    href={`/projects/${project.slug}`}
+                  >
+                    <BsPlusCircleFill />
+                    <span className='project-icon-title'>
+                      {project.detailsCTA}
+                    </span>
+                  </a>
+                </div>
+                {/* <button className='project-icon-box liveSite primary-button project-button'>
+                  <a
+                    className='project-icon-link'
+                    href={project.liveSiteLink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <BsPlusCircleFill />
+                    <span className='project-icon-title'>
+                      {project.detailsCTA}
+                    </span>
+                  </a>
+                </button> */}
+              </div>
             </article>
           ))}
         </section>

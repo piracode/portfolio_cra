@@ -28,3 +28,15 @@
     grid-template-areas: 'section navigation';
   }
 }
+
+@include mq(1050) {
+  .parallax-container {
+    grid-template-columns: 3fr 200px;
+  }
+}
+
+@include mq(1200) {
+  .parallax-container {
+    grid-template-columns: 3fr 300px;
+  }
+}
