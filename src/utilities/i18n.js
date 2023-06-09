@@ -16,6 +16,7 @@ const loadTranslations = async () => {
     navigation: 'navigation',
     about: 'about',
     projects: 'projects',
+    contact: 'contact',
   }
 
   const languages = ['en', 'fr', 'es']

@@ -1,0 +1,22 @@
+.contact {
+  margin-top: 3rem;
+  padding-bottom: 11rem;
+
+  &-icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #3e75c3;
+    fill: #007bbc;
+  }
+  &-icons-box {
+    display: flex;
+    gap: 1rem;
+    // place-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-text {
+    padding-bottom: 2rem;
+  }
+}
