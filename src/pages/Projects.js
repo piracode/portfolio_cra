@@ -36,14 +36,7 @@ const Projects = () => {
             <span className='title-line'>&nbsp;</span>
           </h3>
           {selectedProjects.map((project, index) => (
-            <article
-              key={project.id}
-              className={
-                index % 2 === 0
-                  ? 'project project-article even'
-                  : 'project project-article odd'
-              }
-            >
+            <article key={project.id} className='project project-article'>
               <h4 className='project-title'>{project.title}</h4>
               {/* <img
                 className='project-img'
@@ -76,10 +69,12 @@ const Projects = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <FaGithub />
-                    <span className='project-icon-title'>
-                      {project.gitHubCTA}
-                    </span>
+                    <div className='project-icon-wrapper'>
+                      <FaGithub />
+                      <span className='project-icon-title'>
+                        {project.gitHubCTA}
+                      </span>
+                    </div>
                   </a>
                 </div>
                 <div className='project-icon-box liveSite'>
@@ -89,10 +84,12 @@ const Projects = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <FaExternalLinkAlt />
-                    <span className='project-icon-title'>
-                      {project.liveSiteCTA}
-                    </span>
+                    <div className='project-icon-wrapper'>
+                      <FaExternalLinkAlt />
+                      <span className='project-icon-title'>
+                        {project.liveSiteCTA}
+                      </span>
+                    </div>
                   </a>
                 </div>
                 <div className='project-icon-box details  '>
@@ -100,10 +97,12 @@ const Projects = () => {
                     className='project-icon-link'
                     href={`/projects/${project.slug}`}
                   >
-                    <BsPlusCircleFill />
-                    <span className='project-icon-title'>
-                      {project.detailsCTA}
-                    </span>
+                    <div className='project-icon-wrapper'>
+                      <BsPlusCircleFill />
+                      <span className='project-icon-title'>
+                        {project.detailsCTA}
+                      </span>
+                    </div>
                   </a>
                 </div>
                 {/* <button className='project-icon-box liveSite primary-button project-button'>

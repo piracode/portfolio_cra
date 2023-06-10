@@ -1,16 +1,24 @@
 @import '../base/settings';
 
+.project-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-icon-box {
+  flex-grow: 1;
+  flex-basis: 100%;
+  transition: flex-grow 600ms ease-in-out, flex-basis 600ms ease-in-out;
+}
+
 .project {
   margin-top: 1.3rem;
   padding: 0 1rem;
   border-radius: 10px;
 
-  &-article {
-  }
-
   &-title {
-    text-transform: uppercase;
-    color: $dark-heading-primary;
     font-size: 1.4rem;
     text-align: center;
     padding: 1rem;
@@ -24,8 +32,7 @@
   }
 
   &-skill {
-    padding: 0.3rem;
-    // border: $dark-bg-button 1px solid;
+    padding: 0.4rem 0.5rem;
     border-radius: 15px;
   }
 
@@ -36,15 +43,18 @@
     // object-fit: cover;
   }
 
-  &-cta-box {
-    // display: flex;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  // &-cta-box {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   padding-bottom: 1.3rem;
+  //   gap: 0.5rem;
+  //   transition: grid-template-columns 300ms ease-in-out;
+  // }
+  .project-cta-box {
+    display: flex;
+    gap: 1rem;
     padding-bottom: 1.3rem;
-
-    // .details {
-    //   background-color: $teal-accent-color;
-    // }
+    justify-content: center;
   }
 
   &-icon-link {
@@ -54,44 +64,157 @@
   }
 }
 
+////////  LIGHT THEME  ////////////////
+
+.project-article:hover .project-icon-box.details {
+  flex-grow: 2;
+  flex-basis: 600px;
+  // transition: flex-grow 300ms ease-in-out, flex-basis 300ms ease-in-out;
+}
+
 .light {
   .project {
-    &-article {
-      background-color: $dark-text-main;
-      // background-color: $project-bg-light;
+    &-title {
+      color: $dark-bg-main;
     }
-    &-article.even:hover {
-      background-color: $dark-blue-accent-color;
+    &-article {
+      .project-icon-box {
+        background-color: $light-theme-project-bg;
+        padding: 0.2rem;
+        border-radius: 5px;
+      }
+    }
+    &-icon-box.details a {
+      // color: $dark-blue-color-2;
+      color: #000b25;
+      // color: #002526;
+      // border: $dark-blue-color-2 1px solid;
+    }
+    &-article {
+      background-color: $light-theme-project-bg;
     }
 
-    &-article.odd:hover {
-      background-color: $dark-blue-color-2;
+    //HOVER !!!
+    &-article:hover {
+      background-color: $dark-blue-accent-color;
+      .project {
+        &-title {
+          color: $dark-heading-primary;
+          // color: $logo-primary-fill;
+        }
+        &-excerpt {
+          color: $light-bg-button;
+        }
+        &-icon-link svg {
+          fill: $dark-bg-main;
+          fill: $light-bg-button;
+        }
+
+        &-icon-title {
+          color: $light-bg-button;
+        }
+        &-skill {
+          color: $dark-blue-color-2;
+          background-color: $light-theme-project-bg;
+        }
+
+        &-icon-box {
+          background-color: $dark-blue-accent-color;
+          padding: 0.2rem;
+          border-radius: 5px;
+        }
+        &-icon-box.details {
+          background-color: $logo-primary-fill;
+
+          .project-icon-title {
+            // color: $logo-primary-fill;
+            color: $dark-blue-color-2;
+          }
+          svg {
+            // fill: $logo-primary-fill;
+            fill: $dark-blue-color-2;
+          }
+        }
+      }
     }
+
     &-skill {
-      color: $dark-text-main;
+      color: #76b2bc;
       background-color: $dark-blue-color-2;
     }
-    // &-exer
   }
 }
 
+////////// DARK THEME ////////////////
+
 .dark {
   .project {
+    &-title {
+      color: $teal-accent-color;
+      color: #f2ecec;
+    }
     &-article {
-      background-color: $dark-blue-color-2;
+      .project-icon-box {
+        // background-color: $dark-blue-accent-color;
+        padding: 0.2rem;
+        border-radius: 5px;
+      }
     }
 
-    &-article.even:hover {
-      background-color: $dark-text-main;
+    &-excerpt,
+    &-icon-box a {
+      color: $light-bg-button;
     }
 
-    &-article.odd:hover {
-      background-color: $teal-accent-color;
+    &-icon-box.details a {
+      color: #fff;
+    }
+    &-article {
+      background-color: $dark-blue-accent-color;
+    }
+
+    //HOVER !!!
+
+    &-article:hover {
+      background-color: $light-theme-project-bg;
+      .project {
+        &-title {
+          color: $dark-bg-main;
+          // color: $purple-accent-color;
+        }
+        &-excerpt,
+        &-icon-title {
+          color: $dark-blue-color-2;
+        }
+        &-icon-link svg {
+          fill: $dark-blue-color-2;
+        }
+
+        &-skill {
+          color: #76b2bc;
+          background-color: $dark-blue-color-2;
+        }
+
+        &-icon-box {
+          padding: 0.2rem;
+          border-radius: 5px;
+        }
+        &-icon-box.details {
+          background-color: $purple-accent-color;
+
+          .project-icon-title {
+            color: #dde6fc;
+          }
+          svg {
+            fill: #dde6fc;
+          }
+        }
+      }
     }
 
     &-skill {
-      background-color: $dark-text-main;
       color: $dark-blue-color-2;
+      background-color: $light-theme-project-bg;
     }
   }
 }
