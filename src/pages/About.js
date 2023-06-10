@@ -1,5 +1,3 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../App'
 import { useTranslation } from 'react-i18next'
 import {
   SiHtml5,
@@ -21,7 +19,6 @@ import {
 import { FaGit, FaSass } from 'react-icons/fa'
 
 const About = () => {
-  const { isDarkMode } = useContext(ThemeContext)
   const { t } = useTranslation()
 
   return (
@@ -38,15 +35,18 @@ const About = () => {
           <p className='about-paragraph-3'>{t('paragraph3')}</p>
           <p className='about-paragraph-4'>{t('paragraph4')}</p>
           <a
-            className='about-youtubeLink'
+            className='about-link'
             href='https://www.youtube.com/watch?v=aMr2pchOeBA'
             target='_blank'
             rel='noopener noreferrer'
           >
             {t('youtubeLink')}
           </a>
+          <p className='about-paragraph-4-continued'>
+            {t('paragraph4-continued1')}
+          </p>
           <a
-            className='about-facebookLink'
+            className='about-link'
             href='https://www.facebook.com/quillerina.paperart'
             target='_blank'
             rel='noopener noreferrer'
@@ -54,8 +54,16 @@ const About = () => {
             {t('QuillerinaLink')}
           </a>
           <p className='about-paragraph-4-continued'>
-            {t('paragraph4-continued')}
+            {t('paragraph4-continued2')}
           </p>
+          <a
+            className='about-link'
+            href='https://newsinteractives.cbc.ca/longform/25-years-of-flamenco-at-the-kino/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {t('flamencoCBCLink')}
+          </a>
         </div>
         <button className='primary-button about-button'>
           <a className='button-link' href='#'>

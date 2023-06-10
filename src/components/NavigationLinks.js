@@ -1,5 +1,3 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../App'
 import { useTranslation } from 'react-i18next'
 import {
   BsFillBriefcaseFill,
@@ -22,7 +20,6 @@ import { ReactComponent as Logo } from '../assets/mvm-logo.svg'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const NavigationLinks = () => {
-  const { isDarkMode } = useContext(ThemeContext)
   const { t } = useTranslation()
 
   return (

@@ -3,6 +3,7 @@
     "selected": {
       "en": {
         "titleSectionProjects": "Selected Projects",
+        "introSelectedProjects": "Selected Projects",
         "projects": [
           {
             "id": "1",
@@ -10,7 +11,7 @@
             "slug": "flixr",
             "thumbnail": "/images/flix-mobile.png",
             "skills": ["HTML", "SCSS", "React", "JSX", "PhotoShop", "AdobeXD"],
-            "excerpt": "A movie database built in React.js using themoviedb.org API.",
+            "excerpt": "A movie database built in React.js using themoviedb.org API that enables users to explore, search, and bookmark movies.",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -25,7 +26,7 @@
             "slug": "matching-game",
             "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "Lorem ipsum 2222",
+            "excerpt": "A matching game with added sound effects, implemented in JavaScript.",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -40,7 +41,7 @@
             "slug": "marthasportfolio",
             "thumbnail": "/images/portfolio-mobile.png",
             "skills": ["HTML", "CSS", "React", "Sass", "JavaScript", "AdobeXD"],
-            "excerpt": "Lorem ipsum 2222",
+            "excerpt": "33333",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -83,7 +84,7 @@
               "JavaScript",
               "AdobeXD"
             ],
-            "excerpt": "Lorem ipsum prject 1",
+            "excerpt": "Une base de données de films construite en React.js utilisant l'API themoviedb.org, qui permet aux utilisateurs d'explorer, rechercher et mettre en favoris des films.",
             "liveSiteCTA": "Voir",
             "gitHubCTA": "Code",
             "detailsCTA": "Détails",
@@ -94,11 +95,11 @@
           },
           {
             "id": "2",
-            "title": "Projet 2",
-            "slug": "projet-2",
-            "thumbnail": "/images/projet2.png",
+            "title": "Lord of the Rings",
+            "slug": "matching-game",
+            "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "Lorem ipsum projet 2",
+            "excerpt": "Un jeu de correspondance avec des effets sonores ajoutés, implémenté en JavaScript.",
             "liveSiteCTA": "Voir",
             "gitHubCTA": "Code",
             "detailsCTA": "Détails",
@@ -141,7 +142,7 @@
               "JavaScript",
               "AdobeXD"
             ],
-            "excerpt": "Lorem ipsum",
+            "excerpt": "Una base de datos de películas construida en React.js utilizando la API de themoviedb.org que permite a los usuarios explorar, buscar y marcar películas como favoritas.",
             "liveSiteCTA": "Ver",
             "gitHubCTA": "Code",
             "detailsCTA": "Detalles",
@@ -153,11 +154,11 @@
 
           {
             "id": "2",
-            "title": "Proyecto 2",
-            "slug": "proyecto-2",
-            "thumbnail": "/images/proyecto2.png",
+            "title": "Lord of the Rings",
+            "slug": "matching-game",
+            "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "Lorem ipsum",
+            "excerpt": "Un juego de emparejamiento con efectos de sonido añadidos, implementado en JavaScript.",
             "liveSiteCTA": "Ver",
             "gitHubCTA": "Code",
             "detailsCTA": "Detalles",

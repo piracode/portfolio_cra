@@ -45,14 +45,9 @@
   }
 }
 
-.hero.light-theme {
-  .hero-img {
-    border: $teal-accent-color 2px solid;
-  }
-}
 //Dark theme/ Light theme
 
-.light-theme .hero {
+.light .hero {
   &-greeting,
   &-subdescription {
     color: $teal-accent-color;
@@ -62,7 +57,7 @@
   }
 }
 
-.dark-theme .hero {
+.dark .hero {
   &-greeting,
   &-subdescription {
     color: $teal-accent-color;
@@ -72,19 +67,16 @@
   }
 }
 
-//400px
-@media (min-width: 25em) {
+@include mq(400) {
   .hero-button {
     display: inline-block;
     margin: 0;
   }
 }
-//600px
-@media (min-width: 37.5em) {
+
+@include mq(600) {
   .hero {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
 
     &-img {
       margin-right: 3rem;

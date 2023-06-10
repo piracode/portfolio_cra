@@ -46,3 +46,13 @@
     grid-template-columns: 3fr 300px;
   }
 }
+
+@include mq(600) {
+  .section-title {
+    padding-left: 1.5rem;
+  }
+
+  .parallax-container {
+    padding: 1rem;
+  }
+}
