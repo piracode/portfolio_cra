@@ -1,3 +1,5 @@
+@import '../base/settings';
+
 .contact {
   margin-top: 3rem;
   padding-bottom: 11rem;
@@ -11,12 +13,26 @@
   &-icons-box {
     display: flex;
     gap: 1rem;
-    // place-items: center;
     justify-content: center;
     align-items: center;
   }
 
   &-text {
     padding-bottom: 2rem;
+  }
+}
+
+@include mq(600) {
+  .contact {
+    max-width: 27rem;
+  }
+}
+
+@include mq(768) {
+  .contact {
+    &-section {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

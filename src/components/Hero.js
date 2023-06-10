@@ -1,22 +1,11 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../App'
 import { useTranslation } from 'react-i18next'
 import profilePic from '../assets/profile.png'
 
 const Hero = () => {
-  const { isDarkMode } = useContext(ThemeContext)
   const { t } = useTranslation()
 
-  const sectionClassName = isDarkMode ? 'hero dark-theme' : 'hero light-theme'
-  const buttonClassName = isDarkMode
-    ? 'primary-button hero-button dark-theme'
-    : 'primary-button hero-button light-theme'
-  const anchorClassName = isDarkMode
-    ? 'button-link dark-theme'
-    : 'button-link light-theme'
-
   return (
-    <section className={sectionClassName}>
+    <section className='hero'>
       <img
         className='hero-img'
         src={profilePic}
@@ -34,8 +23,8 @@ const Hero = () => {
             {t('descriptionPart2')}
           </strong>
         </div>
-        <button className={buttonClassName}>
-          <a className={anchorClassName} href='#projects'>
+        <button className='primary-button hero-button'>
+          <a className='button-link' href='#projects'>
             {t('SeeProjectsCTA')}
           </a>
         </button>
