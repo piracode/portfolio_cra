@@ -9,6 +9,11 @@
   font-weight: 500;
 }
 
+.parallax-link-number,
+.title-text {
+  font-size: 1.8rem;
+}
+
 .dark {
   .title-text {
     color: $light-bg-nav;
@@ -17,7 +22,8 @@
 
 .light {
   .title-text {
-    color: $dark-bg-nav;
+    color: $dark-bg-main;
+    color: #3c3c3c;
   }
 }
 
