@@ -2,16 +2,31 @@
   "projects": {
     "selected": {
       "en": {
-        "titleSectionProjects": "Selected Projects",
-        "introSelectedProjects": "Selected Projects",
+        "titleSectionProjects": "Projects",
+        "introSelectedProjects": "Discover a diverse range of projects, from featured works to learning experiences, in the Workshop section. Stay tuned for more updates!",
+        "buttonProjectTitleFeatured": "Selected",
+        "buttonProjectTitleAll": "All ",
+        "buttonProjectTitleWorkshop": "Workshop",
         "projects": [
           {
+            "workshop": false,
+            "featured": true,
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
             "thumbnail": "/images/flix-mobile.png",
-            "skills": ["HTML", "SCSS", "React", "JSX", "PhotoShop", "AdobeXD"],
+            "skills": [
+              "SCSS",
+              "React",
+              "RestAPI",
+              "JSX",
+              "PhotoShop",
+              "GitHub",
+              "AdobeXD"
+            ],
             "excerpt": "A movie database built in React.js using themoviedb.org API that enables users to explore, search, and bookmark movies.",
+            "gitHubLink": "https://github.com/piracode/flixr_react",
+            "liveSiteLink": "https://martha.codes/flixr/",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -21,6 +36,8 @@
             }
           },
           {
+            "workshop": false,
+            "featured": true,
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
@@ -36,12 +53,14 @@
             }
           },
           {
+            "workshop": false,
+            "featured": true,
             "id": "3",
             "title": "www.martha.codes",
-            "slug": "marthasportfolio",
+            "slug": "martha-portfolio",
             "thumbnail": "/images/portfolio-mobile.png",
-            "skills": ["HTML", "CSS", "React", "Sass", "JavaScript", "AdobeXD"],
-            "excerpt": "33333",
+            "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
+            "excerpt": "My portfolio is a multilingual site that showcases a React project where I fetch data from a JSON API. It features captivating animations and includes a dark/light theme option, project sorting, and upcoming plans to add an input search functionality.",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -51,12 +70,32 @@
             }
           },
           {
+            "workshop": false,
+            "featured": true,
             "id": "4",
             "title": "Capstone(Coming soon)",
             "slug": "capstone",
             "thumbnail": "/images/placeholder.png",
+            "skills": ["Wordpress", "WooCommerce", "PHP"],
+            "excerpt": "Wordpress Website Capstone Project Coming Soon.",
+            "liveSiteCTA": "View",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          },
+
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "8",
+            "title": "TESTTTTT",
+            "slug": "matching-game",
+            "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "Lorem ipsum 2222",
+            "excerpt": "TESSRTRTRTTTTT",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -67,21 +106,28 @@
           }
         ]
       },
+
       "fr": {
         "titleSectionProjects": "Projets sélectionnés",
+        "introSelectedProjects": "Découvrez une diversité de projets, des projets phares aux expériences d'apprentissage, dans la section des Ateliers. Restez à l'écoute pour plus de mises à jour !",
+        "buttonProjectTitleFeatured": "Sélectionnés",
+        "buttonProjectTitleAll": "Tous",
+        "buttonProjectTitleWorkshop": "Atelier",
         "projects": [
           {
+            "workshop": false,
+            "featured": true,
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
             "thumbnail": "/images/flixr1.png",
             "skills": [
-              "HTML",
-              "CSS",
+              "SCSS",
               "React",
-              "Sass",
+              "RestAPI",
+              "JSX",
               "PhotoShop",
-              "JavaScript",
+              "GitHub",
               "AdobeXD"
             ],
             "excerpt": "Une base de données de films construite en React.js utilisant l'API themoviedb.org, qui permet aux utilisateurs d'explorer, rechercher et mettre en favoris des films.",
@@ -94,6 +140,8 @@
             }
           },
           {
+            "workshop": false,
+            "featured": true,
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
@@ -109,13 +157,32 @@
             }
           },
           {
+            "workshop": false,
+            "featured": true,
             "id": "3",
             "title": "www.martha.codes",
             "slug": "marthasportfolio",
             "thumbnail": "/images/portfolio.png",
-            "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "Lorem ipsum 2222",
+            "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
+            "excerpt": "Mon portfolio est un site multilingue qui présente un projet React où je récupère des données à partir d'une API JSON. Il propose des animations captivantes et inclut une option de thème clair/sombre, un tri de projets et des projets futurs visant à ajouter une fonctionnalité de recherche par saisie. ",
             "liveSiteCTA": "Voir",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"]
+            }
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "4",
+            "title": "Capstone(Coming soon)",
+            "slug": "capstone",
+            "thumbnail": "/images/placeholder.png",
+            "skills": ["Wordpress", "WooCommerce", "PHP"],
+            "excerpt": "Wordpress Website Capstone Project Coming Soon.",
+            "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -125,21 +192,28 @@
           }
         ]
       },
+
       "es": {
         "titleSectionProjects": "Proyectos seleccionados",
+        "introSelectedProjects": "Descubra una amplia variedad de proyectos, desde proyectos destacados hasta experiencias de aprendizaje, en la sección de Talleres. ¡Manténgase atento/a para más actualizaciones!",
+        "buttonProjectTitleFeatured": "Destacados",
+        "buttonProjectTitleAll": "Todos",
+        "buttonProjectTitleWorkshop": "Taller",
         "projects": [
           {
+            "workshop": false,
+            "featured": true,
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
             "thumbnail": "/images/flixr1.png",
             "skills": [
-              "HTML",
-              "CSS",
+              "SCSS",
               "React",
-              "Sass",
+              "RestAPI",
+              "JSX",
               "PhotoShop",
-              "JavaScript",
+              "GitHub",
               "AdobeXD"
             ],
             "excerpt": "Una base de datos de películas construida en React.js utilizando la API de themoviedb.org que permite a los usuarios explorar, buscar y marcar películas como favoritas.",
@@ -153,6 +227,8 @@
           },
 
           {
+            "workshop": false,
+            "featured": true,
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
@@ -172,98 +248,34 @@
             "title": "www.martha.codes",
             "slug": "marthasportfolio",
             "thumbnail": "/images/portfolio.png",
-            "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "Lorem ipsum 2222",
+            "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
+            "excerpt": "Mi portafolio es un sitio multilingüe que muestra un proyecto de React donde obtengo datos de una API JSON. Presenta animaciones cautivadoras e incluye una opción de tema claro/oscuro, clasificación de proyectos y planes futuros para agregar una funcionalidad de búsqueda por entrada. ",
             "liveSiteCTA": "Ver",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Details",
+            "post": {
+              "intro": "This is the intro",
+              "content": ["Content 1", "Content 2", "Content 3"],
+              "workshop": false,
+              "featured": true
+            }
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "4",
+            "title": "Capstone(Coming soon)",
+            "slug": "capstone",
+            "thumbnail": "/images/placeholder.png",
+            "skills": ["Wordpress", "WooCommerce", "PHP"],
+            "excerpt": "Wordpress Website Capstone Project Coming Soon.",
+            "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
               "intro": "This is the intro",
               "content": ["Content 1", "Content 2", "Content 3"]
             }
-          }
-        ]
-      }
-    },
-    "workshop": {
-      "en": {
-        "titleSectionProjects": "Workshop Projects",
-        "projects": [
-          {
-            "id": "10",
-            "title": "Workshop Project 1",
-            "slug": "workshop-project-1",
-            "thumbnail": "/images/workshop1.png",
-            "skills": "Skills",
-            "excerpt": "Lorem ipsum",
-            "liveSiteCTA": "View",
-            "gitHubCTA": "Code",
-            "detailsCTA": "Details"
-          },
-          {
-            "id": "11",
-            "title": "Workshop Project 2",
-            "slug": "workshop-project-2",
-            "thumbnail": "/images/workshop2.png",
-            "skills": "Skills",
-            "excerpt": "Lorem ipsum",
-            "liveSiteCTA": "View",
-            "gitHubCTA": "Code",
-            "detailsCTA": "Details"
-          }
-        ]
-      },
-      "fr": {
-        "titleSectionProjects": "Projets d'atelier",
-        "projects": [
-          {
-            "id": "10",
-            "title": "Projet d'atelier 1",
-            "slug": "projet-atelier-1",
-            "thumbnail": "/images/atelier1.png",
-            "skills": "Compétences",
-            "excerpt": "Lorem ipsum",
-            "liveSiteCTA": "Site Web",
-            "gitHubCTA": "GitHub",
-            "detailsCTA": "Détails"
-          },
-          {
-            "id": "11",
-            "title": "Projet d'atelier 2",
-            "slug": "projet-atelier-2",
-            "thumbnail": "/images/atelier2.png",
-            "skills": "Compétences",
-            "excerpt": "Lorem ipsum",
-            "liveSiteCTA": "Site Web",
-            "gitHubCTA": "GitHub",
-            "detailsCTA": "Détails"
-          }
-        ]
-      },
-      "es": {
-        "titleSectionProjects": "Proyectos de taller",
-        "projects": [
-          {
-            "id": "10",
-            "title": "Proyecto de taller 1",
-            "slug": "proyecto-taller-1",
-            "thumbnail": "/images/taller1.png",
-            "skills": "Habilidades",
-            "excerpt": "Lorem ipsum",
-            "liveSiteCTA": "Sitio Web",
-            "gitHubCTA": "GitHub",
-            "detailsCTA": "Detalles"
-          },
-          {
-            "id": "11",
-            "title": "Proyecto de taller 2",
-            "slug": "proyecto-taller-2",
-            "thumbnail": "/images/taller2.png",
-            "skills": "Habilidades",
-            "excerpt": "Lorem ipsum",
-            "liveSiteCTA": "Sitio Web",
-            "gitHubCTA": "GitHub",
-            "detailsCTA": "Detalles"
           }
         ]
       }

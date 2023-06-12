@@ -1,14 +1,49 @@
 @import '../base/settings';
 
+// .project-article {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   height: 100%;
+// }
+
+// .project-fotter {
+//   flex-grow: 1;
+// }
+
+// .project-skills-box,
+// .project-cta-box {
+//   margin-top: auto;
+// }
+
 .project {
   margin-top: 1.3rem;
   padding: 0 1rem;
   border-radius: 10px;
 
+  &-filter-buttons {
+    display: flex;
+    gap: 0.6rem;
+    // align-items: center;
+    justify-content: center;
+  }
+
+  &-button {
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+  }
+
   &-title {
     font-size: 1.4rem;
     text-align: center;
     padding: 1rem;
+  }
+
+  &-intro-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    max-width: 40rem;
   }
 
   &-skills-box {
@@ -41,6 +76,7 @@
     display: flex;
     flex-direction: column;
     place-items: center;
+    cursor: pointer;
   }
 
   &-icon-box {
@@ -69,6 +105,13 @@
     &-title {
       color: $dark-bg-main;
     }
+
+    &-button.active {
+      background-color: $teal-accent-color;
+      border-color: $purple-accent-color;
+      color: $dark-bg-main;
+    }
+
     &-article {
       .project-icon-box {
         background-color: $light-theme-project-bg;
@@ -142,6 +185,13 @@
       color: $teal-accent-color;
       color: #f2ecec;
     }
+
+    &-button.active {
+      background-color: $purple-accent-color;
+      border-color: $teal-accent-color;
+      color: #dde6fc;
+    }
+
     &-article {
       .project-icon-box {
         // background-color: $dark-blue-accent-color;

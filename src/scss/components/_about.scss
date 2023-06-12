@@ -23,6 +23,9 @@
   a.about-link {
     font-size: 1em;
     text-decoration: underline;
+    &:visited {
+      color: $dark-heading-primary;
+    }
   }
 
   button.about-button {
