@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Lab from './pages/Lab'
 import Header from './components/Header'
+import ProjectDetails from './pages/ProjectDetails'
 
 export const ThemeContext = createContext()
 
@@ -50,6 +51,7 @@ function App() {
                   <Route path='/' element={<Home />} />
                   <Route path='/about' element={<About />} />
                   <Route path='/projects' element={<Projects />} />
+                  <Route path='/projects/:slug' element={<ProjectDetails />} />
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/lab' element={<Lab />} />
                 </Routes>

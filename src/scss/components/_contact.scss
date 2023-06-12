@@ -2,19 +2,22 @@
 
 .contact {
   margin-top: 3rem;
-  padding-bottom: 11rem;
+  padding-bottom: 9rem;
 
   &-icon {
     width: 3rem;
     height: 3rem;
-    fill: #3e75c3;
     fill: #007bbc;
+    &:hover {
+      fill: $logo-primary-fill;
+    }
   }
   &-icons-box {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
   }
 
   &-text {

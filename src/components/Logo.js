@@ -1,5 +1,8 @@
+// import { Link } from 'react-router-dom'
+
 const Logo = () => {
   return (
+    // <Link to='/'>
     <svg
       version='1.1'
       id='mvm_x5F_logo'
@@ -37,6 +40,7 @@ const Logo = () => {
         fill='#1DA6BC'
       />
     </svg>
+    // </Link>
   )
 }
 

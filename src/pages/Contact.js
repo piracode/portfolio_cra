@@ -22,10 +22,17 @@ const Contact = () => {
           </a>
         </button>
         <div className='contact-icons-box'>
-          <FaGithub className='contact-icon contact-icon-github' />
+          <a href='https://github.com/piracode'>
+            <FaGithub className='contact-icon contact-icon-github' />
+          </a>
 
-          <FaLinkedin className='contact-icon contact-icon-linkedin' />
-          <SiCodepen className='contact-icon contact-icon-codepen' />
+          <a href='https://www.linkedin.com/in/marthavillamartin/'>
+            <FaLinkedin className='contact-icon contact-icon-linkedin' />
+          </a>
+
+          <a href='https://codepen.io/piracode'>
+            <SiCodepen className='contact-icon contact-icon-codepen' />
+          </a>
         </div>
       </section>
     </div>
