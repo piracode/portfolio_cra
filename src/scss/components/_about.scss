@@ -23,9 +23,9 @@
   a.about-link {
     font-size: 1em;
     text-decoration: underline;
-    &:visited {
-      color: $dark-heading-primary;
-    }
+    // &:visited {
+    //   color: $dark-heading-primary;
+    // }
   }
 
   button.about-button {
@@ -55,6 +55,12 @@
   a.about-youtubeLink,
   a.about-facebookLink {
     color: $light-bg-button;
+  }
+
+  a.aout-link {
+    &:visited {
+      color: $dark-heading-primary;
+    }
   }
 }
 

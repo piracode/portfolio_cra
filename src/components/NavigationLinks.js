@@ -24,15 +24,49 @@ import LanguageSwitcher from './LanguageSwitcher'
 
 import { FaGithub, FaLinkedin, FaCodepen } from 'react-icons/fa'
 import { SiCodepen } from 'react-icons/si'
+import { useEffect, useState } from 'react'
 
 const NavigationLinks = () => {
   const { t } = useTranslation()
+  const [activeLink, setActiveLink] = useState('')
 
   const handleLogoClick = () => {
     // Redirect to the home page
     window.location.href = '/'
   }
 
+  const handleLinkClick = (link) => {
+    setActiveLink(link)
+  }
+
+  useEffect(() => {
+    // Intersection observer callback function
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Set the active link based on the observed section
+          setActiveLink(entry.target.id)
+        }
+      })
+    }
+
+    // Create a new intersection observer
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: '-50% 0px -50% 0px', // Adjust the root margin as needed
+      threshold: 0, // Trigger callback when the section is fully visible
+    })
+
+    // Observe all the sections in the document
+    const sections = document.querySelectorAll('section')
+    sections.forEach((section) => {
+      observer.observe(section)
+    })
+
+    // Cleanup function to disconnect the observer when the component unmounts
+    return () => {
+      observer.disconnect()
+    }
+  }, []) // Empty dependency array ensures the effect runs only once
   return (
     <>
       <ul className='navigation-links'>

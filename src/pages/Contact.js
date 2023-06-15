@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
-import { FaGithub, FaLinkedin, FaCodepen } from 'react-icons/fa'
-import { SiCodepen } from 'react-icons/si'
+import Footer from '../components/Footer'
+// import { FaGithub, FaLinkedin, FaCodepen } from 'react-icons/fa'
+// import { SiCodepen } from 'react-icons/si'
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -21,7 +22,7 @@ const Contact = () => {
             {t('sendEmailCTA')}
           </a>
         </button>
-        <div className='contact-icons-box'>
+        {/* <div className='contact-icons-box'>
           <a href='https://github.com/piracode'>
             <FaGithub className='contact-icon contact-icon-github' />
           </a>
@@ -33,7 +34,8 @@ const Contact = () => {
           <a href='https://codepen.io/piracode'>
             <SiCodepen className='contact-icon contact-icon-codepen' />
           </a>
-        </div>
+        </div> */}
+        <Footer />
       </section>
     </div>
   )

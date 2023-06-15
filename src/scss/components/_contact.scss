@@ -2,7 +2,7 @@
 
 .contact {
   margin-top: 3rem;
-  padding-bottom: 9rem;
+  // padding-bottom: 9rem;
 
   &-icon {
     width: 3rem;
@@ -22,6 +22,15 @@
 
   &-text {
     padding-bottom: 2rem;
+  }
+
+  &-footer {
+    padding-bottom: 9rem;
+  }
+
+  &-icons-box + p {
+    text-align: center;
+    padding-top: 2rem;
   }
 }
 
