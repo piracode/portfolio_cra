@@ -21,11 +21,14 @@ header {
     // background-color: $dark-bg-main;
     background-color: $light-bg-nav;
   }
-  .navigation-link:hover {
+  .navigation-link:hover,
+  .navigation-link.active a .navigation-link-icon,
+  .navigation-link.active a .navigation-link-text {
     color: #202022;
   }
 
-  .hover:hover {
+  .hover:hover,
+  .navigation-link.active {
     background-color: $teal-accent-color;
   }
 }
@@ -40,11 +43,14 @@ header {
     color: $dark-text-main;
   }
 
-  .navigation-link:hover {
+  .navigation-link:hover,
+  .navigation-link.active a .navigation-link-icon,
+  .navigation-link.active a .navigation-link-text {
     color: #f2ecec;
   }
 
-  .hover:hover {
+  .hover:hover,
+  .navigation-link.active {
     background-color: $purple-accent-color;
   }
 }
@@ -228,7 +234,7 @@ nav .language-box-desktop,
   }
 
   .contact-box-desktop {
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
   }
 
   nav .language-box-desktop {
@@ -240,3 +246,8 @@ nav .language-box-desktop,
     }
   }
 }
+
+// .hover:hover,
+// .navigation-link.active {
+//   background-color: $teal-accent-color;
+// }

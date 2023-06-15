@@ -49,19 +49,23 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
           ))}
         </div>
         <div className='project-cta-box'>
-          <div className='project-icon-box github'>
-            <a
-              className='project-icon-link'
-              href={project.gitHubLink}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <div className='project-icon-wrapper'>
-                <FaGithub />
-                <span className='project-icon-title'>{project.gitHubCTA}</span>
-              </div>
-            </a>
-          </div>
+          {!project.design && (
+            <div className='project-icon-box github'>
+              <a
+                className='project-icon-link'
+                href={project.gitHubLink}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='project-icon-wrapper'>
+                  <FaGithub />
+                  <span className='project-icon-title'>
+                    {project.gitHubCTA}
+                  </span>
+                </div>
+              </a>
+            </div>
+          )}
           <div className='project-icon-box liveSite'>
             <a
               className='project-icon-link'

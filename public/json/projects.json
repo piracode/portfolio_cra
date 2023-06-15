@@ -31,9 +31,30 @@
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
-              "intro": "This is the intro",
-              "content": ["Content 1", "Content 2", "Content 3"]
-            }
+              "overview": "This is the overview for Flixr",
+              "accordions": [
+                {
+                  "title": "Project Requirements",
+                  "content": "Requirement flixr"
+                },
+                {
+                  "title": "Design",
+                  "content": "Design process flixr"
+                },
+                {
+                  "title": "Development Highlights",
+                  "subtitle1": "Carousel",
+                  "content1": "content Carousel",
+                  "subtitle2": "Local Storage",
+                  "content2": "content local storage"
+                },
+                {
+                  "title": "Reflection",
+                  "content": "reflection flixr What I learned or Porject Takeawaym What i would improive, nesxt steps"
+                }
+              ]
+            },
+            "design": false
           },
           {
             "workshop": false,
@@ -50,7 +71,8 @@
             "post": {
               "intro": "This is the intro",
               "content": ["Content 1", "Content 2", "Content 3"]
-            }
+            },
+            "design": false
           },
           {
             "workshop": false,
@@ -61,13 +83,14 @@
             "thumbnail": "/images/portfolio-mobile.png",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "My portfolio is a multilingual site that showcases a React project where I fetch data from a JSON API. It features captivating animations and includes a dark/light theme option, project sorting, and upcoming plans to add an input search functionality.",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
               "intro": "This is the intro",
               "content": ["Content 1", "Content 2", "Content 3"]
-            }
+            },
+            "design": false
           },
           {
             "workshop": false,
@@ -84,7 +107,8 @@
             "post": {
               "intro": "This is the intro",
               "content": ["Content 1", "Content 2", "Content 3"]
-            }
+            },
+            "design": false
           },
 
           {
@@ -102,7 +126,59 @@
             "post": {
               "intro": "This is the intro",
               "content": ["Content 1", "Content 2", "Content 3"]
-            }
+            },
+            "design": false
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "9",
+            "title": "Best Buy Usability Report",
+            "slug": "best-buy-usability-report",
+            "thumbnail": "/images/best-buy.png",
+            "skills": [
+              "Usability Evaluation",
+              "Research Methodology",
+              "Data Analysis",
+              "Report Writing"
+            ],
+            "excerpt": "In a collaborative effort with a team of five, we conducted a comprehensive usability report for Best Buy, assessing its user experience and documenting key findings.",
+            "liveSiteCTA": "PDF",
+            "detailsCTA": "Details",
+            "post": {
+              "overview": "This is the overview for Best Buy report",
+              "accordions": [
+                {
+                  "title": "Introduction?",
+                  "content": "Intro best buy"
+                },
+                {
+                  "title": "Methodology",
+                  "content": "research methodology used for conducting the usability evaluation. It includes details on the evaluation techniques, tools, and procedures employed during the assessment."
+                },
+                {
+                  "title": "Data Collection",
+                  "content": "information about the participants,and the specific data collected during the evaluation, such as user feedback, observations, and task completion metrics",
+                  "subtitle1": "subtitle 1",
+                  "content1": "content 1",
+                  "subtitle2": "subtitle 2",
+                  "content2": "content 2"
+                },
+                {
+                  "title": "Data Analysis",
+                  "content": "process of analyzing the collected data. It covers the techniques used for qualitative and quantitative data analysis"
+                },
+                {
+                  "title": "Recommendations",
+                  "content": "actionable recommendations based on the findings of the usability evaluation"
+                },
+                {
+                  "title": "Conclusion",
+                  "content": "summarizes the overall findings and recommendations of the Best Buy Usability Report. It emphasizes the importance of usability evaluation and its potential impact on improving the user experience."
+                }
+              ]
+            },
+            "design": true
           }
         ]
       },
