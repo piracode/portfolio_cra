@@ -1,0 +1,38 @@
+{
+  "en": {
+    "titleSkills": "Skills",
+    "skills": [
+      {
+        "title": "UX and Web Design",
+        "list": ["Graphic Design", "Web Design", "UI/UX Design"]
+      },
+      {
+        "title": "Front-End Development",
+        "list": ["JavaScript", "Python", "Java", "C++"]
+      },
+      {
+        "title": "Language Fluency",
+        "list": ["French", "Spanish", "English"]
+      },
+      {
+        "title": "Soft Skills",
+        "list": [
+          "Collaboration",
+          "Problem-solving",
+          "Communication",
+          "Adaptability",
+          "Time management",
+          "Creativity",
+          "Flexibility",
+          "Attention to detail",
+          "Empathy",
+          "Emotional intelligence",
+          "Networking",
+          "Customer service"
+        ]
+      }
+    ]
+  },
+  "fr": {},
+  "es": {}
+}

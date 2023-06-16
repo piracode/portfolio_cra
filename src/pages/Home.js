@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import Navigation from '../components/Navigation'
+import NavigationLinks from '../components/NavigationLinks'
 import About from './About'
 import Contact from './Contact'
 import Lab from './Lab'
@@ -15,7 +16,8 @@ const Home = () => {
         <Contact />
         {/* <Lab /> */}
       </div>
-      <Navigation />
+      {/* <NavigationLinks /> */}
+      <NavigationLinks />
     </div>
   )
 }

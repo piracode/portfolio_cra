@@ -71,7 +71,7 @@ nav .language-box-desktop,
 
 .navigation {
   &-link {
-    padding: 0.8rem;
+    padding: 0.8rem 0.1rem;
   }
 
   &-language-container {
@@ -90,8 +90,8 @@ nav .language-box-desktop,
 
   &-links {
     display: grid;
-    // grid-template-columns: repeat(5, 1fr);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    // grid-template-columns: repeat(4, 1fr);
     // grid-gap: 1rem;
   }
 
@@ -221,6 +221,14 @@ nav .language-box-desktop,
     }
   }
 }
+
+// @include mq(420) {
+//   .navigation {
+//     &-link {
+//       padding: 0.8rem;
+//     }
+//   }
+// }
 
 @include mq(1050) {
   .navigation-contact-icons-box {

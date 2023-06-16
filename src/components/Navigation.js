@@ -1,12 +1,12 @@
-import React from 'react'
-import NavigationLinks from './NavigationLinks'
+// import React from 'react'
+// import NavigationLinks from './NavigationLinks'
 
-const Navigation = () => {
-  return (
-    <nav className='navigation-container sticky'>
-      <NavigationLinks />
-    </nav>
-  )
-}
+// const Navigation = () => {
+//   return (
+//     <nav className='navigation-container sticky'>
+//       <NavigationLinks />
+//     </nav>
+//   )
+// }
 
-export default Navigation
+// export default Navigation
