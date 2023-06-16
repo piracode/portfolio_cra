@@ -15,6 +15,7 @@ const loadTranslations = async () => {
     hero: 'hero',
     navigation: 'navigation',
     about: 'about',
+    skills: 'skills',
     projects: 'projects',
     contact: 'contact',
   }

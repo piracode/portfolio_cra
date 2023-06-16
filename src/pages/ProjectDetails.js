@@ -1,19 +1,25 @@
-import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import { useEffect, useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Accordion from '../components/Accordion'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
+import NavigationLinks from '../components/NavigationLinks'
 
 const ProjectDetails = () => {
   const { slug } = useParams() // Retrieve the project slug from the URL
   const { i18n } = useTranslation() // Access the i18n translation object
+  const navigate = useNavigate()
 
   const [projectDetails, setProjectDetails] = useState(null)
   const [project, setProject] = useState(null)
   const [data, setData] = useState(null)
+
+  const aboutRef = useRef(null)
+  const projectsRef = useRef(null)
+  const contactRef = useRef(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -92,7 +98,18 @@ const ProjectDetails = () => {
           <Accordion accordions={projectDetails.post.accordions} />
         )}
       </section>
-      <Navigation />
+      {/* <Navigation
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+        slug={slug}
+      /> */}
+      <NavigationLinks
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+        slug={slug}
+      />
       <Footer />
     </div>
   )

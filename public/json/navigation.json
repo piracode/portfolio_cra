@@ -4,6 +4,7 @@
     "projects": "Projects",
     "contact": "Contact",
     "lab": "Workshop",
+    "skills": "Skills",
     "resume": "Resume",
     "toggleTheme": {
       "dark": "Light theme",
@@ -17,6 +18,7 @@
     "projects": "Projets",
     "contact": "Contact",
     "lab": "Atelier",
+    "skills": "Compétences",
     "resume": "CV",
     "toggleTheme": {
       "dark": "Thème clair",
@@ -30,6 +32,7 @@
     "projects": "Proyectos",
     "contact": "Contacto",
     "lab": "Taller",
+    "skills": "Habilidades",
     "resume": "Currículum",
     "toggleTheme": {
       "dark": "Tema claro",

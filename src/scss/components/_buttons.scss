@@ -53,7 +53,7 @@
   }
 
   .primary-button {
-    border: $purple-accent-color 2px solid;
+    border: $purple-accent-color 1px solid;
     color: $light-text-main;
     margin-bottom: 1.4em;
     @include primary-btn;
@@ -78,7 +78,7 @@
 
 .light {
   .primary-button {
-    border: $teal-accent-color 2px solid;
+    border: $teal-accent-color 1px solid;
     background-color: $light-bg-button;
     color: $dark-blue-accent-color;
     @include primary-btn;
@@ -92,5 +92,19 @@
       font-size: 1.1em;
       font-weight: 500;
     }
+  }
+
+  .primary-button:hover {
+    background-color: #1da6bc;
+    border-color: #5d64ae;
+
+    a:hover {
+      color: #202022;
+    }
+  }
+
+  .project-button:hover {
+    background-color: initial;
+    border-color: initial;
   }
 }
