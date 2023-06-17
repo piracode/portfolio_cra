@@ -17,10 +17,6 @@ const ProjectDetails = () => {
   const [project, setProject] = useState(null)
   const [data, setData] = useState(null)
 
-  const aboutRef = useRef(null)
-  const projectsRef = useRef(null)
-  const contactRef = useRef(null)
-
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('/json/projects.json')
@@ -60,7 +56,7 @@ const ProjectDetails = () => {
         {/* <button>{project.liveSiteCTA}</button>
         <button>{project.gitHubCTA}</button> */}
         <div className='project-details-cta-box'>
-          {!project.design && (
+          {!project.design ? (
             <div className='project-icon-box github'>
               <a
                 className='project-icon-link'
@@ -70,6 +66,23 @@ const ProjectDetails = () => {
               >
                 <div className='project-icon-wrapper'>
                   <FaGithub />
+                  <span className='project-icon-title'>
+                    {project.gitHubCTA}
+                  </span>
+                </div>
+              </a>
+            </div>
+          ) : (
+            <div className='project-icon-box design'>
+              <a
+                className='project-icon-link'
+                href={project.gitHubLink}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='project-icon-wrapper'>
+                  {/* Render a different icon for design=true */}
+                  <BsPlusCircleFill />
                   <span className='project-icon-title'>
                     {project.gitHubCTA}
                   </span>
@@ -104,12 +117,7 @@ const ProjectDetails = () => {
         contactRef={contactRef}
         slug={slug}
       /> */}
-      <NavigationLinks
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-        slug={slug}
-      />
+      <NavigationLinks />
       <Footer />
     </div>
   )

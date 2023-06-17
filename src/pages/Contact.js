@@ -11,7 +11,7 @@ const Contact = () => {
     <div className='contact-section'>
       <section id='contact' className='contact'>
         <h3 className='section-title'>
-          <span className='parallax-link-number'> 03. </span>
+          <span className='parallax-link-number'> 04. </span>
           <span className='title-text'>{t('titleSectionContact')}</span>
           <span className='title-line'>&nbsp;</span>
         </h3>

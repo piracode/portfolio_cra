@@ -21,6 +21,9 @@ import { FaGit, FaSass } from 'react-icons/fa'
 const About = () => {
   const { t } = useTranslation()
 
+  //retrieves the skills object from the translation file using the t function provided by the useTranslation hook.
+  const skillsData = t('skills', { returnObjects: true })
+
   return (
     <section id='about' className='about'>
       <article className='about-text-container'>
@@ -79,6 +82,18 @@ const About = () => {
           <span className='title-text'>{t('titleSkills')}</span>
           <span className='title-line'>&nbsp;</span>
         </h3>
+        {skillsData.map((section, index) => (
+          <div key={index} className='skills-section-box'>
+            <h4 className='skills-section-subtitle'>{section.title}</h4>
+            <ul className='skills-section-list-items'>
+              {section.list.map((skill, skillIndex) => (
+                <li className='skills-section-list-item' key={skillIndex}>
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </article>
     </section>
   )
