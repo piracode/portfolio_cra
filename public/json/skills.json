@@ -33,6 +33,72 @@
       }
     ]
   },
-  "fr": {},
-  "es": {}
+  "fr": {
+    "titleSkills": "Compétences",
+    "skills": [
+      {
+        "title": "UX et Web Design",
+        "list": ["Design graphique", "Design web", "Conception UI/UX"]
+      },
+      {
+        "title": "Développement Front-End",
+        "list": ["JavaScript", "Python", "Java", "C++"]
+      },
+      {
+        "title": "Maîtrise des langues",
+        "list": ["Français", "Espagnol", "Anglais"]
+      },
+      {
+        "title": "Soft Skills",
+        "list": [
+          "Collaboration",
+          "Résolution de problèmes",
+          "Communication",
+          "Adaptabilité",
+          "Gestion du temps",
+          "Créativité",
+          "Flexibilité",
+          "Attention aux détails",
+          "Empathie",
+          "Intelligence émotionnelle",
+          "Réseautage",
+          "Service client"
+        ]
+      }
+    ]
+  },
+  "es": {
+    "titleSkills": "Habilidades",
+    "skills": [
+      {
+        "title": "Diseño UX y Web",
+        "list": ["Diseño gráfico", "Diseño web", "Diseño UI/UX"]
+      },
+      {
+        "title": "Desarrollo Front-End",
+        "list": ["JavaScript", "Python", "Java", "C++"]
+      },
+      {
+        "title": "Fluidez en idiomas",
+        "list": ["Francés", "Español", "Inglés"]
+      },
+      {
+        "title": "Habilidades blandas",
+        "list": [
+          "Colaboración",
+          "Resolución de problemas",
+          "Comunicación",
+          "Adaptabilidad",
+          "Gestión del tiempo",
+          "Creatividad",
+          "Flexibilidad",
+          "Atención al detalle",
+          "Empatía",
+          "Inteligencia emocional",
+          "Networking",
+          "Servicio al cliente"
+        ]
+      }
+    ]
+  }
 }

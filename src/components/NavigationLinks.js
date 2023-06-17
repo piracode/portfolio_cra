@@ -119,16 +119,17 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <a
+            <HashLink
               className='navigation-link'
-              href='#skills'
+              smooth
+              to='/#skills'
               // onClick={() => handleLinkClick('skills')}
             >
               <span className='navigation-link-icon'>
                 <GiSkills />
               </span>
               <span className='navigation-link-text'>{t('titleSkills')}</span>
-            </a>
+            </HashLink>
           </li>
           {/* <li className='navigation-link'>
           <SearchFeature className='search-link' />

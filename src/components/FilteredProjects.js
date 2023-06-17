@@ -30,7 +30,10 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
   console.log('Workshop Projects:', filteredProjects)
 
   const renderProject = (project) => (
-    <article key={project.id} className='project project-article'>
+    <article
+      key={project.id}
+      className={`project project-article project-${project.id}`}
+    >
       <h4 className='project-title'>{project.title}</h4>
       {/* <img
     className='project-img'
@@ -49,7 +52,8 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
           ))}
         </div>
         <div className='project-cta-box'>
-          {!project.design && (
+          {/* Render different icons based on design property */}
+          {!project.design ? (
             <div className='project-icon-box github'>
               <a
                 className='project-icon-link'
@@ -65,7 +69,24 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
                 </div>
               </a>
             </div>
+          ) : (
+            <div className='project-icon-box design'>
+              <a
+                className='project-icon-link'
+                href={project.gitHubLink}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <div className='project-icon-wrapper'>
+                  <BsPlusCircleFill />
+                  <span className='project-icon-title'>
+                    {project.gitHubCTA}
+                  </span>
+                </div>
+              </a>
+            </div>
           )}
+
           <div className='project-icon-box liveSite'>
             <a
               className='project-icon-link'

@@ -46,7 +46,7 @@ const Projects = () => {
       {data ? (
         <section id='projects' className='project-section'>
           <h3 className='section-title'>
-            <span className='parallax-link-number'> 02. </span>
+            <span className='parallax-link-number'> 03. </span>
             <span className='title-text'>{titleSectionProjects}</span>
             <span className='title-line'>&nbsp;</span>
           </h3>

@@ -30,26 +30,49 @@
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
+            "prototypeCinevoxMobileLink": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
+            "prototypeCinevoxDesktopLink": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
+            "prototypeFlix": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
             "post": {
-              "overview": "This is the overview for Flixr",
+              "titleOverview": "Overview",
+              "overview": "A movie database built in React.js, utilizing the themoviedb.org API. It incorporates a feature that allows users to add movies to their favorites, with persistent storage ensured through local storage. In addition, a mockup was created using Photoshop and a prototype was developed using Adobe XD to visualize the design and functionality of the application.",
               "accordions": [
                 {
                   "title": "Project Requirements",
-                  "content": "Requirement flixr"
+                  "content": "The project involved building an app connected to the themoviedb.org API. The main requirement was to create a homepage that displays a grid of movies, sortable by popularity, top ratings, current releases, and upcoming releases. Each movie card on the grid should link to a detailed movie page, showcasing additional information like a summary and a backdrop image. Additionally, a favorites page was implemented to show the user's selected movies. The ability to add or remove favorites was implemented on the homepage, movie pages, and the favorites page using local storage."
                 },
                 {
-                  "title": "Design",
-                  "content": "Design process flixr"
+                  "title": "UX / UI Design",
+                  "subtitle1": "Adobe Illustrator",
+                  "content1": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
+                  "subtitle2": "Adobe Photoshop",
+                  "content2": "The mockup of the application was designed using Adobe Photoshop, capturing the overall layout and aesthetic. You can view the mockup in Photoshop by following these two links: ",
+                  "subtitle3": "Mobile Link",
+                  "subtitle4": "Desktop Link",
+                  "subtitle5": "Adobe XD",
+                  "content4": "For the prototype, I used Adobe XD to create an interactive representation of the movie database. ",
+                  "subtitle6": "Final Design decision",
+                  "content5": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate. This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database. To view the design, please click on the following link: "
                 },
                 {
                   "title": "Development Highlights",
-                  "subtitle1": "Carousel",
-                  "content1": "content Carousel",
-                  "subtitle2": "Local Storage",
-                  "content2": "content local storage"
+                  "subtitle1": "Event Bubbling",
+                  "content1": "Ask Randy for clarification what was done",
+                  "image": "/images/excalidrawEventBubbling.png",
+                  "subtitle2": "Search Feature",
+                  "subtitle3": "UseLocation Hook",
+                  "content2": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
+                  "content3": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found",
+                  "subtitle4": "URLSearchParams API",
+                  "content4": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
+                  "code1": "/codeSnippets/codeSnippet1.js",
+                  "content5": "In the code above, new URLSearchParams(location.search) creates a new URLSearchParams object using the location.search property, which represents the query string part of the current URL. Then, .get('query') is called on that object to retrieve the value of the 'query' parameter from the URL. This extracts the search query entered by the user.",
+                  "subtitle5": "URLSearchParams API",
+                  "content6": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
+                  "code2": "/codeSnippets/codeSnippet2.js"
                 },
                 {
-                  "title": "Reflection",
+                  "title": "Retrospective",
                   "content": "reflection flixr What I learned or Porject Takeawaym What i would improive, nesxt steps"
                 }
               ]
@@ -65,6 +88,8 @@
             "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "A matching game with added sound effects, implemented in JavaScript.",
+            "gitHubLink": "https://github.com/piracode",
+            "liveSiteLink": "https://martha.codes/maching-game",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -83,9 +108,13 @@
             "thumbnail": "/images/portfolio-mobile.png",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "My portfolio is a multilingual site that showcases a React project where I fetch data from a JSON API. It features captivating animations and includes a dark/light theme option, project sorting, and upcoming plans to add an input search functionality.",
+            "gitHubLink": "https://github.com/piracode/portfolio_CRA",
+            "liveSiteLink": "https://martha.codes",
             "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
+            "prototypePortfolioMobileLink": "hthttps://xd.adobe.com/view/51d86c46-805d-4afe-bbd7-e86bc174db39-048b/",
+            "prototypePortfolioDesktopLink": "https://xd.adobe.com/view/d783c70e-7df2-47e1-af60-b05c435aa56a-82d0/",
             "post": {
               "intro": "This is the intro",
               "content": ["Content 1", "Content 2", "Content 3"]
@@ -101,6 +130,8 @@
             "thumbnail": "/images/placeholder.png",
             "skills": ["Wordpress", "WooCommerce", "PHP"],
             "excerpt": "Wordpress Website Capstone Project Coming Soon.",
+            "gitHubLink": "https://github.com/piracode",
+            "liveSiteLink": "https://martha.codes",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -120,6 +151,8 @@
             "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "TESSRTRTRTTTTT",
+            "gitHubLink": "https://github.com/piracode",
+            "liveSiteLink": "https://martha.codes/maching-game",
             "liveSiteCTA": "View",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
@@ -143,8 +176,11 @@
               "Report Writing"
             ],
             "excerpt": "In a collaborative effort with a team of five, we conducted a comprehensive usability report for Best Buy, assessing its user experience and documenting key findings.",
-            "liveSiteCTA": "PDF",
+            "gitHubLink": "https://github.com/piracode",
+            "liveSiteLink": "https://martha.codes/maching-game",
+            "liveSiteCTA": "Prototype",
             "detailsCTA": "Details",
+            "gitHubCTA": "To delete",
             "post": {
               "overview": "This is the overview for Best Buy report",
               "accordions": [
@@ -175,6 +211,120 @@
                 {
                   "title": "Conclusion",
                   "content": "summarizes the overall findings and recommendations of the Best Buy Usability Report. It emphasizes the importance of usability evaluation and its potential impact on improving the user experience."
+                }
+              ]
+            },
+            "design": true
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "10",
+            "title": "French Baking App - Case Study",
+            "slug": "french-baking-app-case-study",
+            "thumbnail": "/images/french-baking-app.png",
+            "skills": [
+              "User Research",
+              "User Personas",
+              "Usability Testing",
+              "Information Architecture",
+              "Interaction Design",
+              "Wireframing",
+              "Prototyping",
+              "Adobe XD"
+            ],
+            "excerpt": "Conducted a comprehensive case study during the Google UX Certificate program, focusing on designing a fictional French baking app using Adobe XD.",
+            "liveSiteCTA": "Prototype",
+            "detailsCTA": "Details",
+            "gitHubCTA": "Code",
+            "wireframeFrenchBakingMobileLink": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Untitled?type=design&t=66lsG4rFv5IVsP7x-1",
+            "prototypeFrenchBakingDesktopLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?type=design&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A141&node-id=5-37",
+
+            "post": {
+              "overview": "This is the overview for the French Baking App case study",
+              "accordions": [
+                {
+                  "title": "Introduction",
+                  "content": "Intro to the French Baking App case study and its objectives"
+                },
+                {
+                  "title": "User Research",
+                  "content": "Details on the user research methodologies used to understand the target audience's needs and preferences"
+                },
+                {
+                  "title": "User Personas",
+                  "content": "Development of user personas to represent the app's target users"
+                },
+                {
+                  "title": "Usability Testing",
+                  "content": "Conducting usability testing to identify areas for improvement in the app's design and functionality"
+                },
+                {
+                  "title": "Information Architecture",
+                  "content": "Iteratively refining the app's information architecture to optimize user navigation and organization of content"
+                },
+                {
+                  "title": "Interaction Design",
+                  "content": "Designing the app's interaction elements and flows to enhance user experience"
+                },
+                {
+                  "title": "Wireframes and Prototypes",
+                  "content": "Creating wireframes and interactive prototypes using Adobe XD to demonstrate the proposed user interface and user flows"
+                },
+                {
+                  "title": "Conclusion",
+                  "content": "Summarizing the overall findings and outcomes of the French Baking App case study, highlighting the importance of user-centered design in creating successful digital products"
+                }
+              ]
+            },
+            "design": true
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "11",
+            "title": "Craigslist Design Brief",
+            "slug": "craigslist-design-brief",
+            "thumbnail": "/images/craigslist-design-brief.png",
+            "skills": [
+              "Design Brief",
+              "User Research",
+              "User-centered Design",
+              "Usability Enhancement",
+              "Visual Design",
+              "Wireframing",
+              "Low-fidelity Prototyping"
+            ],
+            "excerpt": "Developed a design brief for Craigslist, outlining user-centered design solutions to enhance the platform's usability and visual appeal.",
+            "liveSiteCTA": "Prototype",
+            "detailsCTA": "Details",
+            "gitHubCTA": "Code",
+            "post": {
+              "overview": "This is the overview for the Craigslist Design Brief",
+              "accordions": [
+                {
+                  "title": "Introduction",
+                  "content": "Intro to the Craigslist Design Brief and its objectives"
+                },
+                {
+                  "title": "User Research",
+                  "content": "Conducting user research to identify pain points and opportunities for improvement in Craigslist's usability and visual appeal"
+                },
+                {
+                  "title": "Design Solutions",
+                  "content": "Development of user-centered design solutions to address the identified pain points and enhance the platform's overall user experience"
+                },
+                {
+                  "title": "Wireframes",
+                  "content": "Creating wireframes to visually represent the proposed design changes and improvements for Craigslist"
+                },
+                {
+                  "title": "Low-fidelity Prototypes",
+                  "content": "Developing low-fidelity prototypes to illustrate the proposed design changes and gather feedback on the updated interface and user flows"
+                },
+                {
+                  "title": "Conclusion",
+                  "content": "Summarizing the overall findings and outcomes of the Craigslist Design Brief, emphasizing the potential impact of user-centered design solutions on the platform's usability and visual appeal"
                 }
               ]
             },
