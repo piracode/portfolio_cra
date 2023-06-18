@@ -44,6 +44,12 @@ const ProjectDetails = () => {
     return <p>Loading...</p>
   }
 
+  // Extract titleOverview and overview from projectDetails.post
+  const { titleOverview, overview, accordions } = projectDetails.post
+  console.log(titleOverview)
+  console.log(overview)
+  console.log(accordions)
+
   return (
     <div className='parallax-container'>
       <section className='project-details-box'>
@@ -53,6 +59,8 @@ const ProjectDetails = () => {
           src={project.thumbnail}
           alt={slug}
         />
+        <h3>{titleOverview}</h3>
+        <p>{overview}</p>
         {/* <button>{project.liveSiteCTA}</button>
         <button>{project.gitHubCTA}</button> */}
         <div className='project-details-cta-box'>
@@ -106,9 +114,13 @@ const ProjectDetails = () => {
             </a>
           </div>
         </div>
-        {/* If data exist , render compoent with accordions data */}
-        {projectDetails.post && projectDetails.post.accordions && (
-          <Accordion accordions={projectDetails.post.accordions} />
+        {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
+        {projectDetails.post && accordions && (
+          <Accordion
+            // titleOverview={titleOverview}
+            // overview={overview}
+            accordions={accordions}
+          />
         )}
       </section>
       {/* <Navigation

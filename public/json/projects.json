@@ -39,37 +39,79 @@
               "accordions": [
                 {
                   "title": "Project Requirements",
-                  "content": "The project involved building an app connected to the themoviedb.org API. The main requirement was to create a homepage that displays a grid of movies, sortable by popularity, top ratings, current releases, and upcoming releases. Each movie card on the grid should link to a detailed movie page, showcasing additional information like a summary and a backdrop image. Additionally, a favorites page was implemented to show the user's selected movies. The ability to add or remove favorites was implemented on the homepage, movie pages, and the favorites page using local storage."
+                  "content": "The project involved building an app connected to the themoviedb.org API. The main requirement was to create a homepage that displays a grid of movies, sortable by popularity, top ratings, current releases, and upcoming releases. Each movie card on the grid should link to a detailed movie page, showcasing additional information like a summary and a backdrop image. Additionally, a favorites page was implemented to show the user's selected movies. The ability to add or remove favorites was implemented on the homepage, movie pages, and the favorites page using local storage.",
+                  "content1": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors."
                 },
                 {
                   "title": "UX / UI Design",
-                  "subtitle1": "Adobe Illustrator",
-                  "content1": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
-                  "subtitle2": "Adobe Photoshop",
-                  "content2": "The mockup of the application was designed using Adobe Photoshop, capturing the overall layout and aesthetic. You can view the mockup in Photoshop by following these two links: ",
-                  "subtitle3": "Mobile Link",
-                  "subtitle4": "Desktop Link",
-                  "subtitle5": "Adobe XD",
-                  "content4": "For the prototype, I used Adobe XD to create an interactive representation of the movie database. ",
-                  "subtitle6": "Final Design decision",
-                  "content5": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate. This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database. To view the design, please click on the following link: "
+                  "intro": "intro for the UX/UI design section",
+                  "tabs": [
+                    {
+                      "subtitle": "Adobe Illustrator",
+                      "content": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
+                      "image": "/images/best-buy.png",
+                      "CTALink1": " THIS IS link1",
+                      "CTALink2": "Link2",
+                      "content1": "test content1",
+                      "content2": "test content2"
+                    },
+                    {
+                      "subtitle": "Adobe Photoshop",
+                      "image": "/images/best-buy.png",
+                      "content1": "test content1",
+                      "content2": "test content2",
+                      "content": "The mockup of the application was designed using Adobe Photoshop, capturing the overall layout and aesthetic. You can view the mockup in Photoshop by following these two links: ",
+                      "CTALink1": "Link2"
+                    },
+                    {
+                      "subtitle": "Adobe XD",
+                      "content": "For the prototype, I used Adobe XD to create an interactive representation of the movie database.",
+                      "CTALink2": "Link2",
+                      "image": "/images/best-buy.png"
+                    },
+                    {
+                      "subtitle": "Final Design decision",
+                      "content": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate. This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database. To view the design, please click on the following link:",
+                      "CTALink2": "Link2",
+                      "image": "/images/best-buy.png"
+                    }
+                  ]
                 },
+
                 {
                   "title": "Development Highlights",
-                  "subtitle1": "Event Bubbling",
-                  "content1": "Ask Randy for clarification what was done",
-                  "image": "/images/excalidrawEventBubbling.png",
-                  "subtitle2": "Search Feature",
-                  "subtitle3": "UseLocation Hook",
-                  "content2": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
-                  "content3": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found",
-                  "subtitle4": "URLSearchParams API",
-                  "content4": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
-                  "code1": "/codeSnippets/codeSnippet1.js",
-                  "content5": "In the code above, new URLSearchParams(location.search) creates a new URLSearchParams object using the location.search property, which represents the query string part of the current URL. Then, .get('query') is called on that object to retrieve the value of the 'query' parameter from the URL. This extracts the search query entered by the user.",
-                  "subtitle5": "URLSearchParams API",
-                  "content6": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
-                  "code2": "/codeSnippets/codeSnippet2.js"
+                  "intro": "intro for the developement higlights design section",
+                  "tabs": [
+                    {
+                      "subtitle": "Event Bubbling",
+                      "content": "Ask Randy for clarification what was done",
+                      "CTALink2": "Link2",
+                      "image": "/images/excalidrawEventBubbling.png",
+                      "content1": "test content1",
+                      "CTALink1": "Link2"
+                    },
+                    {
+                      "subtitle": "Search Feature",
+                      "tabSections": [
+                        {
+                          "tabTitle": "UseLocation Hook",
+                          "CTALink3": "Link3",
+                          "content": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
+                          "content2": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found",
+                          "CTALink2": "Link2",
+                          "CTALink1": "Link2",
+                          "image": "/images/best-buy.png"
+                        },
+                        {
+                          "tabTitle": "URLSearchParams API",
+                          "content": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
+
+                          "content4": "In the code above, new URLSearchParams(location.search) creates a new URLSearchParams object using the location.search property, which represents the query string part of the current URL. Then, .get('query') is called on that object to retrieve the value of the 'query' parameter from the URL. This extracts the search query entered by the user.",
+                          "CTALink2": "Link2"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "title": "Retrospective",
@@ -79,6 +121,7 @@
             },
             "design": false
           },
+
           {
             "workshop": false,
             "featured": true,

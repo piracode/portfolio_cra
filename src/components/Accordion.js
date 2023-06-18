@@ -1,69 +1,73 @@
-import { useState, useEffect } from 'react'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import {
-  RiArrowUpSLine,
-  RiArrowUpSFill,
-  RiArrowDownSLine,
-  RiArrowDownSFill,
-} from 'react-icons/ri'
-
-import { SlArrowUp, SlArrowDown } from 'react-icons/sl'
-import { RxDoubleArrowDown, RxDoubleArrowUp } from 'react-icons/rx'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   MdKeyboardDoubleArrowDown,
-  MdKeyboardDoubleArrowUp,
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md'
 
 export const Accordion = ({ accordions }) => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(0)
-  const [codeSnippets, setCodeSnippets] = useState({})
+  const [activeTabs, setActiveTabs] = useState({})
 
-  const loadCodeSnippet = (snippetFilePath, index, key) => {
-    // Fetch the code snippet file
-    fetch(snippetFilePath)
-      .then((response) => response.text())
-      .then((snippet) => {
-        // Update the state with the loaded code snippet
-        setCodeSnippets((prev) => {
-          // Create a new object by spreading the previous state
-          //and adding the new code snippet with a unique key
-          return { ...prev, [`${index}-${key}`]: snippet }
-        })
-      })
-      .catch((error) => {
-        console.error('Error loading code snippet:', error)
-      })
+  const { t } = useTranslation()
+
+  const handleTabClick = (accordionIndex, tabIndex) => {
+    setActiveTabs((prev) => ({ ...prev, [accordionIndex]: tabIndex }))
   }
 
-  // useEffect(() => {
-  //   // Call the function to load the code snippet
-  //   loadCodeSnippet('/codeSnippets/codeSnippet1.js')
-  // }, [])
-
-  useEffect(() => {
-    accordions.forEach((accordion, index) => {
-      Object.keys(accordion).forEach((key) => {
-        // Check if the key starts with 'code'
-        if (key.startsWith('code')) {
-          // Call the loadCodeSnippet function with the code snippet file path,
-          //accordion index, and key
-          loadCodeSnippet(accordion[key], index, key)
-        }
-      })
-    })
-  }, [accordions])
-
   const toggleAccordion = (index) => {
-    // If the current 'openAccordionIndex' is equal to the passed 'index',
-    //set the state to -1 (no accordion open), otherwise set it to the new 'index'
     setOpenAccordionIndex(openAccordionIndex === index ? -1 : index)
+  }
+
+  const renderElement = (key, value) => {
+    switch (key) {
+      case 'content':
+      case 'content1':
+      case 'content2':
+        return <p>{t(value)}</p>
+      case 'image':
+        return <img src={value} alt='Accordion Image' />
+      case 'CTALink1':
+      case 'CTALink2':
+        return (
+          <a href={value} target='_blank' rel='noopener noreferrer'>
+            {t(value)}
+          </a>
+        )
+      default:
+        return null
+    }
+  }
+
+  const renderSection = (section) => {
+    return (
+      <div key={section.tabTitle}>
+        <h3>{t(section.tabTitle)}</h3>
+        {Object.entries(section).map(([key, value]) =>
+          renderElement(key, value)
+        )}
+      </div>
+    )
+  }
+
+  const renderTabContent = (tab, index, tabIndex) => {
+    if (activeTabs[index] === tabIndex) {
+      return (
+        <div key={tabIndex} className='tab-content'>
+          {tab.tabSections
+            ? tab.tabSections.map((section) => renderSection(section))
+            : Object.entries(tab).map(([key, value]) =>
+                renderElement(key, value)
+              )}
+        </div>
+      )
+    } else {
+      return null
+    }
   }
 
   return (
     <div>
-      {/* Iterate through the 'accordions' array and create a new accordion item for each element */}
       {accordions.map((accordion, index) => (
         <section key={index}>
           <div
@@ -72,42 +76,35 @@ export const Accordion = ({ accordions }) => {
             aria-expanded={openAccordionIndex === index ? 'true' : 'false'}
             aria-controls={`accordion-content-${index}`}
           >
-            <h2 className='accordion-title'>{accordion.title}</h2>
-            {/* Render the arrow component based on the open/close state */}
+            <h2 onClick={() => setOpenAccordionIndex(index)}>
+              {t(accordion.title)}
+            </h2>
             {openAccordionIndex === index ? (
               <MdKeyboardDoubleArrowRight className='accordion-icon' />
             ) : (
               <MdKeyboardDoubleArrowDown className='accordion-icon' />
             )}
           </div>
-          {/* If 'openAccordionIndex' is equal to the current index, render the accordion content */}
           {openAccordionIndex === index && (
             <div>
-              {Object.keys(accordion).map((key) => {
-                if (key.startsWith('content')) {
-                  return <p key={key}>{accordion[key]}</p>
-                } else if (key.startsWith('subtitle')) {
-                  return <h3 key={key}>{accordion[key]}</h3>
-                } else if (key === 'image') {
-                  return (
-                    <img key={key} src={accordion[key]} alt='Accordion Image' />
-                  )
-                } else if (key.startsWith('code')) {
-                  return (
-                    <div className='container' key={key}>
-                      <SyntaxHighlighter
-                        language='javascript'
-                        style={darcula}
-                        className='code-snippet-container'
-                      >
-                        {codeSnippets[`${index}-${key}`]}
-                      </SyntaxHighlighter>
-                    </div>
-                  )
-                } else {
-                  return null
-                }
-              })}
+              {accordion.content && <p>{t(accordion.content)}</p>}
+              {accordion.intro && <p>{t(accordion.intro)}</p>}
+              <div className='tabs'>
+                {accordion.tabs?.map((tab, tabIndex) => (
+                  <button
+                    key={tabIndex}
+                    onClick={() => handleTabClick(index, tabIndex)}
+                    className={`tab ${
+                      activeTabs[index] === tabIndex ? 'active' : ''
+                    }`}
+                  >
+                    {t(tab.subtitle)}
+                  </button>
+                ))}
+              </div>
+              {accordion.tabs?.map((tab, tabIndex) =>
+                renderTabContent(tab, index, tabIndex)
+              )}
             </div>
           )}
         </section>
