@@ -55,14 +55,7 @@
   .primary-button {
     border: $purple-accent-color 1px solid;
     color: $light-text-main;
-    margin-bottom: 1.4em;
     @include primary-btn;
-  }
-
-  .navigation-desktop {
-    .secondary-button {
-      // @include secondary-btn-desktopNav;
-    }
   }
 
   .input-container input {
@@ -70,6 +63,14 @@
 
     &::placeholder {
       color: $light-bg-nav;
+    }
+  }
+
+  .primary-button:hover {
+    background-color: $light-heading-secondary;
+
+    a:hover {
+      color: $dark-blue-color-2;
     }
   }
 }
@@ -96,7 +97,7 @@
 
   .primary-button:hover {
     background-color: #1da6bc;
-    border-color: #5d64ae;
+    // border-color: #5d64ae;
 
     a:hover {
       color: #202022;

@@ -3,32 +3,26 @@
     "titleSkills": "Skills",
     "skills": [
       {
-        "title": "UX and Web Design",
-        "list": ["Graphic Design", "Web Design", "UI/UX Design"]
+        "title": "Front-End Development",
+        "list": ["JavaScript", "React.js", "SASS", "PHP", "Wordpress"]
       },
       {
-        "title": "Front-End Development",
-        "list": ["JavaScript", "Python", "Java", "C++"]
+        "title": "UX and Web Design",
+        "list": ["UI/UX Design", "AdobeXD", "Figma", "Photoshop"]
       },
       {
         "title": "Language Fluency",
         "list": ["French", "Spanish", "English"]
       },
       {
-        "title": "Soft Skills",
+        "title": "Key Soft Skills",
         "list": [
           "Collaboration",
           "Problem-solving",
           "Communication",
           "Adaptability",
-          "Time management",
-          "Creativity",
-          "Flexibility",
           "Attention to detail",
-          "Empathy",
-          "Emotional intelligence",
-          "Networking",
-          "Customer service"
+          "Empathy"
         ]
       }
     ]
@@ -37,32 +31,26 @@
     "titleSkills": "Compétences",
     "skills": [
       {
-        "title": "UX et Web Design",
-        "list": ["Design graphique", "Design web", "Conception UI/UX"]
-      },
-      {
         "title": "Développement Front-End",
-        "list": ["JavaScript", "Python", "Java", "C++"]
+        "list": ["JavaScript", "React.js", "SASS", "PHP", "Wordpress"]
       },
       {
-        "title": "Maîtrise des langues",
+        "title": "UX et Design Web",
+        "list": ["Design UI/UX", "AdobeXD", "Figma", "Photoshop"]
+      },
+      {
+        "title": "Maîtrise des Langues",
         "list": ["Français", "Espagnol", "Anglais"]
       },
       {
-        "title": "Soft Skills",
+        "title": "Compétences Clés",
         "list": [
           "Collaboration",
           "Résolution de problèmes",
           "Communication",
           "Adaptabilité",
-          "Gestion du temps",
-          "Créativité",
-          "Flexibilité",
           "Attention aux détails",
-          "Empathie",
-          "Intelligence émotionnelle",
-          "Réseautage",
-          "Service client"
+          "Empathie"
         ]
       }
     ]
@@ -71,32 +59,27 @@
     "titleSkills": "Habilidades",
     "skills": [
       {
-        "title": "Diseño UX y Web",
-        "list": ["Diseño gráfico", "Diseño web", "Diseño UI/UX"]
+        "title": "Desarrollo Front-End",
+        "list": ["JavaScript", "React.js", "SASS", "PHP", "Wordpress"]
       },
       {
-        "title": "Desarrollo Front-End",
-        "list": ["JavaScript", "Python", "Java", "C++"]
+        "title": "Diseño UX y Web",
+        "list": ["Diseño gráfico", "Diseño web", "Diseño UI/UX"]
       },
       {
         "title": "Fluidez en idiomas",
         "list": ["Francés", "Español", "Inglés"]
       },
       {
-        "title": "Habilidades blandas",
+        "title": "Habilidades Clave",
         "list": [
           "Colaboración",
           "Resolución de problemas",
           "Comunicación",
           "Adaptabilidad",
-          "Gestión del tiempo",
-          "Creatividad",
           "Flexibilidad",
           "Atención al detalle",
-          "Empatía",
-          "Inteligencia emocional",
-          "Networking",
-          "Servicio al cliente"
+          "Empatía"
         ]
       }
     ]

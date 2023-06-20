@@ -1,0 +1,125 @@
+@import '../base/settings';
+
+.accordion {
+  &-title {
+    font-size: 1.3rem;
+  }
+  &-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: black solid 1px;
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: $light-bg-button;
+  }
+
+  &-icon {
+    fill: #13385c;
+    font-size: 1.6rem;
+  }
+
+  &-paragraph {
+    padding-bottom: 1rem;
+  }
+}
+
+.sub-category-container {
+  padding: -0.9rem 0 0.1rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #13385c99;
+  border-radius: 7rem;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+// .sub-category-button:not(:last-child) {
+//   border-right: 1px solid rgba(255, 255, 255, 0.2); // Add this line
+// }
+
+.sub-category-button {
+  color: white;
+  border: none;
+  padding: 0.9rem 0.1rem;
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+}
+
+.sub-category-button.active {
+  background-color: #13385c;
+  border-radius: 5rem;
+}
+
+.project-details {
+  &-box {
+    padding: 0.5rem;
+  }
+  &-title {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+  }
+
+  &-img {
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  &-cta-box {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  &-overview-title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  &-overview-paragraph {
+    padding-bottom: 1rem;
+  }
+}
+
+//Light theme
+
+.light {
+  .accordion {
+    &-tab {
+      background-color: $light-bg-button;
+    }
+
+    &-icon {
+      fill: $light-text-main;
+    }
+  }
+}
+
+//Dark theme
+
+.dark {
+  .project-icon-wrapper,
+  .project-details-overview-title,
+  .project-details-title {
+    color: $dark-heading-primary;
+  }
+  .accordion {
+    &-tab {
+      background-color: $dark-blue-accent-color;
+    }
+
+    &-icon {
+      fill: $dark-bg-button;
+    }
+
+    &-title {
+      color: $dark-bg-button;
+    }
+  }
+}
