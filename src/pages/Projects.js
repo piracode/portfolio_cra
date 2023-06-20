@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
 import FilteredProjects from '../components/FilteredProjects'
+import { InView, useInView } from 'react-intersection-observer'
+
 // import {
 //   TbArrowBigRightLinesFilled,
 //   TbArrowBigRightLineFilled,
@@ -12,6 +14,8 @@ const Projects = () => {
   const { i18n } = useTranslation()
   const [data, setData] = useState(null)
   const [filterType, setFilterType] = useState('Featured') //to display the featured projcts on page load
+
+  const [ref, inView] = useInView()
 
   const handleFilterButtonClick = (type) => {
     setFilterType(type)
@@ -41,10 +45,18 @@ const Projects = () => {
   const btnAll = selectedLanguageData?.buttonProjectTitleAll
   const btnWorkshop = selectedLanguageData?.buttonProjectTitleWorkshop
 
+  console.log('projects inView:', inView)
+
   return (
     <>
       {data ? (
-        <section id='projects' className='project-section'>
+        <section
+          ref={ref}
+          id='projects'
+          className={`project-section ${
+            inView ? 'fade-up fade-up-active' : ''
+          }`}
+        >
           <h3 className='section-title'>
             <span className='parallax-link-number'> 03. </span>
             <span className='title-text'>{titleSectionProjects}</span>

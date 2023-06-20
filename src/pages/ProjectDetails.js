@@ -1,8 +1,7 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useEffect, useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Accordion from '../components/Accordion'
-import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
@@ -11,7 +10,6 @@ import NavigationLinks from '../components/NavigationLinks'
 const ProjectDetails = () => {
   const { slug } = useParams() // Retrieve the project slug from the URL
   const { i18n } = useTranslation() // Access the i18n translation object
-  const navigate = useNavigate()
 
   const [projectDetails, setProjectDetails] = useState(null)
   const [project, setProject] = useState(null)
@@ -45,9 +43,10 @@ const ProjectDetails = () => {
   }
 
   // Extract titleOverview and overview from projectDetails.post
-  const { titleOverview, overview, accordions } = projectDetails.post
+  const { titleOverview, overview1, overview2, accordions } =
+    projectDetails.post
   console.log(titleOverview)
-  console.log(overview)
+  // console.log(overview)
   console.log(accordions)
 
   return (
@@ -57,15 +56,12 @@ const ProjectDetails = () => {
         <img
           className='project-details-img'
           src={project.thumbnail}
-          alt={slug}
+          alt={project.alt}
         />
-        <h3>{titleOverview}</h3>
-        <p>{overview}</p>
-        {/* <button>{project.liveSiteCTA}</button>
-        <button>{project.gitHubCTA}</button> */}
         <div className='project-details-cta-box'>
+          {/* IF design is false , display the icons below the IMG in project details page for web dev porjects */}
           {!project.design ? (
-            <div className='project-icon-box github'>
+            <div className='project-icon-box-details-page'>
               <a
                 className='project-icon-link'
                 href={project.gitHubLink}
@@ -73,7 +69,7 @@ const ProjectDetails = () => {
                 rel='noopener noreferrer'
               >
                 <div className='project-icon-wrapper'>
-                  <FaGithub />
+                  <FaGithub className='project-icon-svg' />
                   <span className='project-icon-title'>
                     {project.gitHubCTA}
                   </span>
@@ -81,7 +77,8 @@ const ProjectDetails = () => {
               </a>
             </div>
           ) : (
-            <div className='project-icon-box design'>
+            // If design is true, display the icons below the IMG in project details page for design proejcts
+            <div className='project-icon-box-details design'>
               <a
                 className='project-icon-link'
                 href={project.gitHubLink}
@@ -92,7 +89,8 @@ const ProjectDetails = () => {
                   {/* Render a different icon for design=true */}
                   <BsPlusCircleFill />
                   <span className='project-icon-title'>
-                    {project.gitHubCTA}
+                    {/* {project.gitHubCTA} */}
+                    {project.pdfCTA}
                   </span>
                 </div>
               </a>
@@ -114,21 +112,14 @@ const ProjectDetails = () => {
             </a>
           </div>
         </div>
+        <h3 className='project-details-overview-title'>{titleOverview}</h3>
+        <p className='project-details-overview-paragraph'>{overview1}</p>
+        <p className='project-details-overview-paragraph'>{overview2}</p>
         {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
         {projectDetails.post && accordions && (
-          <Accordion
-            // titleOverview={titleOverview}
-            // overview={overview}
-            accordions={accordions}
-          />
+          <Accordion accordions={accordions} />
         )}
       </section>
-      {/* <Navigation
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-        slug={slug}
-      /> */}
       <NavigationLinks />
       <Footer />
     </div>

@@ -1,8 +1,13 @@
 @import '../base/settings';
 
+.hero-name,
+.hero-role {
+  font-size: clamp(20px, 8vw, 40px);
+}
+
 .hero {
-  padding: 3rem 1rem;
-  height: 80vh;
+  padding: 3rem 1rem 0 1rem;
+  // height: 80vh;
 
   &-intro-box {
     padding: 3rem 0 2rem 0;
@@ -40,6 +45,7 @@
   &-button {
     display: block;
     margin: 0 auto;
+    margin-top: 3rem;
 
     a {
       font-size: 1.3rem;
@@ -76,9 +82,11 @@
   }
 }
 
-@include mq(600) {
+// @include mq(600) {
+@include mq(767) {
   .hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
 
     &-img {
       margin-right: 3rem;
@@ -92,18 +100,20 @@
 
 @include mq(490) {
   .hero {
-    padding: 4rem;
+    padding: 4rem 4rem 7.5rem 4rem;
+    height: auto;
   }
 }
 
 @include mq(768) {
   .hero {
     padding-top: 10rem;
+    padding-bottom: 12rem;
   }
 }
 
 @include mq(900) {
   .hero {
-    max-width: 60rem;
+    // max-width: 60rem;
   }
 }

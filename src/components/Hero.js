@@ -1,11 +1,18 @@
 import { useTranslation } from 'react-i18next'
 import profilePic from '../assets/profile.png'
+import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const { t } = useTranslation()
+  const [showHero, setShowHero] = useState(false)
+
+  useEffect(() => {
+    setShowHero(true)
+  }, [])
 
   return (
-    <section className='hero'>
+    <section className={`hero ${showHero ? 'fade-up fade-up-active' : ''}`}>
+      {/* <section className='hero'> */}
       <img
         className='hero-img'
         src={profilePic}

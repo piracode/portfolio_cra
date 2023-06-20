@@ -35,12 +35,6 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
       className={`project project-article project-${project.id}`}
     >
       <h4 className='project-title'>{project.title}</h4>
-      {/* <img
-    className='project-img'
-    src={project.thumbnail}
-    alt={project.title}
-  /> */}
-
       <p className='project-excerpt'>{project.excerpt}</p>
       <div className='project-footer'>
         <div className='project-skills-box'>
@@ -70,6 +64,7 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
               </a>
             </div>
           ) : (
+            // If project true, render different icons in the proejct card
             <div className='project-icon-box design'>
               <a
                 className='project-icon-link'
@@ -79,9 +74,7 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
               >
                 <div className='project-icon-wrapper'>
                   <BsPlusCircleFill />
-                  <span className='project-icon-title'>
-                    {project.gitHubCTA}
-                  </span>
+                  <span className='project-icon-title'>{project.pdfCTA}</span>
                 </div>
               </a>
             </div>

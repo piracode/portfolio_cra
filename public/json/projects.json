@@ -14,7 +14,8 @@
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
-            "thumbnail": "/images/flix-mobile.png",
+            "thumbnail": "/images/flix3.png",
+            "alt": "Flixr Movie Screenshot",
             "skills": [
               "SCSS",
               "React",
@@ -27,7 +28,7 @@
             "excerpt": "A movie database built in React.js using themoviedb.org API that enables users to explore, search, and bookmark movies.",
             "gitHubLink": "https://github.com/piracode/flixr_react",
             "liveSiteLink": "https://martha.codes/flixr/",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "prototypeCinevoxMobileLink": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
@@ -35,45 +36,53 @@
             "prototypeFlix": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
             "post": {
               "titleOverview": "Overview",
-              "overview": "A movie database built in React.js, utilizing the themoviedb.org API. It incorporates a feature that allows users to add movies to their favorites, with persistent storage ensured through local storage. In addition, a mockup was created using Photoshop and a prototype was developed using Adobe XD to visualize the design and functionality of the application.",
+              "overview1": "A movie database built in React.js, utilizing the themoviedb.org API. It incorporates a feature that allows users to add movies to their favorites, with persistent storage ensured through local storage.",
+              "overview2": "In addition, a mockup was created using Photoshop and a prototype was developed using Adobe XD to visualize the design and functionality of the application.",
               "accordions": [
                 {
                   "title": "Project Requirements",
-                  "content": "The project involved building an app connected to the themoviedb.org API. The main requirement was to create a homepage that displays a grid of movies, sortable by popularity, top ratings, current releases, and upcoming releases. Each movie card on the grid should link to a detailed movie page, showcasing additional information like a summary and a backdrop image. Additionally, a favorites page was implemented to show the user's selected movies. The ability to add or remove favorites was implemented on the homepage, movie pages, and the favorites page using local storage.",
-                  "content1": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors."
+                  "content": "The project involved building an app connected to the themoviedb.org API. The main requirement was to create a homepage that displays a grid of movies, sortable by popularity, top ratings, current releases, and upcoming releases",
+                  "content1": "Each movie card on the grid should link to a detailed movie page, showcasing additional information like a summary and a backdrop image. Additionally, a favorites page was implemented to show the user's selected movies.",
+                  "content2": "The ability to add or remove favorites was implemented on the homepage, movie pages, and the favorites page using local storage."
                 },
                 {
                   "title": "UX / UI Design",
                   "intro": "intro for the UX/UI design section",
                   "tabs": [
                     {
-                      "subtitle": "Adobe Illustrator",
+                      "subtitle": "Illustrator",
                       "content": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
-                      "image": "/images/best-buy.png",
+                      "image": "/images/placeholder.png",
+                      "alt": "placeholder",
+                      "heading": "heading",
                       "CTALink1": " THIS IS link1",
                       "CTALink2": "Link2",
+                      "heading1": "heading 1",
                       "content1": "test content1",
                       "content2": "test content2"
                     },
                     {
-                      "subtitle": "Adobe Photoshop",
-                      "image": "/images/best-buy.png",
+                      "subtitle": "Photoshop",
+                      "image": "/images/flix3.png",
+                      "alt": "flix 3333",
                       "content1": "test content1",
                       "content2": "test content2",
                       "content": "The mockup of the application was designed using Adobe Photoshop, capturing the overall layout and aesthetic. You can view the mockup in Photoshop by following these two links: ",
                       "CTALink1": "Link2"
                     },
                     {
-                      "subtitle": "Adobe XD",
+                      "subtitle": "XD",
                       "content": "For the prototype, I used Adobe XD to create an interactive representation of the movie database.",
                       "CTALink2": "Link2",
-                      "image": "/images/best-buy.png"
+                      "image": "/images/best-buy.png",
+                      "alt": "BEst buy"
                     },
                     {
-                      "subtitle": "Final Design decision",
+                      "subtitle": "Final Design",
                       "content": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate. This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database. To view the design, please click on the following link:",
                       "CTALink2": "Link2",
-                      "image": "/images/best-buy.png"
+                      "image": "/images/portfolio.png",
+                      "alt": "portfolioo"
                     }
                   ]
                 },
@@ -81,12 +90,15 @@
                 {
                   "title": "Development Highlights",
                   "intro": "intro for the developement higlights design section",
+                  "content": "test content highlight",
+                  "content1": "test content antoheerrrrr highlight",
                   "tabs": [
                     {
                       "subtitle": "Event Bubbling",
                       "content": "Ask Randy for clarification what was done",
                       "CTALink2": "Link2",
                       "image": "/images/excalidrawEventBubbling.png",
+                      "alt": "event bubbling",
                       "content1": "test content1",
                       "CTALink1": "Link2"
                     },
@@ -100,7 +112,8 @@
                           "content2": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found",
                           "CTALink2": "Link2",
                           "CTALink1": "Link2",
-                          "image": "/images/best-buy.png"
+                          "image": "/images/game-mobile.png",
+                          "alt": "game mobile"
                         },
                         {
                           "tabTitle": "URLSearchParams API",
@@ -133,7 +146,7 @@
             "excerpt": "A matching game with added sound effects, implemented in JavaScript.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes/maching-game",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -175,7 +188,7 @@
             "excerpt": "Wordpress Website Capstone Project Coming Soon.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -196,7 +209,7 @@
             "excerpt": "TESSRTRTRTTTTT",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes/maching-game",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -223,7 +236,7 @@
             "liveSiteLink": "https://martha.codes/maching-game",
             "liveSiteCTA": "Prototype",
             "detailsCTA": "Details",
-            "gitHubCTA": "To delete",
+            "pdfCTA": "PDF",
             "post": {
               "overview": "This is the overview for Best Buy report",
               "accordions": [
@@ -279,7 +292,7 @@
             "excerpt": "Conducted a comprehensive case study during the Google UX Certificate program, focusing on designing a fictional French baking app using Adobe XD.",
             "liveSiteCTA": "Prototype",
             "detailsCTA": "Details",
-            "gitHubCTA": "Code",
+            "pdfCTA": "PDF",
             "wireframeFrenchBakingMobileLink": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Untitled?type=design&t=66lsG4rFv5IVsP7x-1",
             "prototypeFrenchBakingDesktopLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?type=design&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A141&node-id=5-37",
 
@@ -341,7 +354,7 @@
             "excerpt": "Developed a design brief for Craigslist, outlining user-centered design solutions to enhance the platform's usability and visual appeal.",
             "liveSiteCTA": "Prototype",
             "detailsCTA": "Details",
-            "gitHubCTA": "Code",
+            "pdfCTA": "PDF",
             "post": {
               "overview": "This is the overview for the Craigslist Design Brief",
               "accordions": [
@@ -400,7 +413,7 @@
               "AdobeXD"
             ],
             "excerpt": "Une base de données de films construite en React.js utilisant l'API themoviedb.org, qui permet aux utilisateurs d'explorer, rechercher et mettre en favoris des films.",
-            "liveSiteCTA": "Voir",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Détails",
             "post": {
@@ -417,7 +430,7 @@
             "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "Un jeu de correspondance avec des effets sonores ajoutés, implémenté en JavaScript.",
-            "liveSiteCTA": "Voir",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Détails",
             "post": {
@@ -434,7 +447,7 @@
             "thumbnail": "/images/portfolio.png",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "Mon portfolio est un site multilingue qui présente un projet React où je récupère des données à partir d'une API JSON. Il propose des animations captivantes et inclut une option de thème clair/sombre, un tri de projets et des projets futurs visant à ajouter une fonctionnalité de recherche par saisie. ",
-            "liveSiteCTA": "Voir",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -451,7 +464,7 @@
             "thumbnail": "/images/placeholder.png",
             "skills": ["Wordpress", "WooCommerce", "PHP"],
             "excerpt": "Wordpress Website Capstone Project Coming Soon.",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -486,7 +499,7 @@
               "AdobeXD"
             ],
             "excerpt": "Una base de datos de películas construida en React.js utilizando la API de themoviedb.org que permite a los usuarios explorar, buscar y marcar películas como favoritas.",
-            "liveSiteCTA": "Ver",
+            "liveSiteCTA": "Sitio",
             "gitHubCTA": "Code",
             "detailsCTA": "Detalles",
             "post": {
@@ -504,7 +517,7 @@
             "thumbnail": "/images/game-mobile.png",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "Un juego de emparejamiento con efectos de sonido añadidos, implementado en JavaScript.",
-            "liveSiteCTA": "Ver",
+            "liveSiteCTA": "Sitio",
             "gitHubCTA": "Code",
             "detailsCTA": "Detalles",
             "post": {
@@ -519,7 +532,7 @@
             "thumbnail": "/images/portfolio.png",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "Mi portafolio es un sitio multilingüe que muestra un proyecto de React donde obtengo datos de una API JSON. Presenta animaciones cautivadoras e incluye una opción de tema claro/oscuro, clasificación de proyectos y planes futuros para agregar una funcionalidad de búsqueda por entrada. ",
-            "liveSiteCTA": "Ver",
+            "liveSiteCTA": "Sitio",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
@@ -538,7 +551,7 @@
             "thumbnail": "/images/placeholder.png",
             "skills": ["Wordpress", "WooCommerce", "PHP"],
             "excerpt": "Wordpress Website Capstone Project Coming Soon.",
-            "liveSiteCTA": "View",
+            "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {

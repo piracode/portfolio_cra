@@ -1,32 +1,21 @@
 import { useTranslation } from 'react-i18next'
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiGithub,
-  SiGit,
-  SiPhp,
-  SiTailwindcss,
-  SiWordpress,
-  SiShopify,
-  SiFigma,
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiReact,
-  SiCanva,
-  // SiScrumalliance,
-} from 'react-icons/si'
-import { FaGit, FaSass } from 'react-icons/fa'
+import { useInView } from 'react-intersection-observer'
 
 const About = () => {
   const { t } = useTranslation()
 
+  const [ref, inView] = useInView()
+
   //retrieves the skills object from the translation file using the t function provided by the useTranslation hook.
   const skillsData = t('skills', { returnObjects: true })
-
+  console.log('about inView:', inView)
   return (
-    <section id='about' className='about'>
-      <article className='about-text-container'>
+    <section
+      ref={ref}
+      id='about'
+      className={`about ${inView ? 'fade-up fade-up-active' : ''}`}
+    >
+      <article className='about-container'>
         <h3 className='section-title'>
           <span className='parallax-link-number'> 01. </span>
           <span className='title-text'>{t('titleSectionAbout')}</span>
@@ -76,9 +65,9 @@ const About = () => {
       </article>
 
       {/* <article className='tech-stack-container'> */}
-      <article className='skills-container'>
+      <article className='skills-container' id='skills'>
         <h3 className='section-title'>
-          <span className='parallax-link-number'>02.</span>
+          <span className='parallax-link-number'>02. </span>
           <span className='title-text'>{t('titleSkills')}</span>
           <span className='title-line'>&nbsp;</span>
         </h3>
