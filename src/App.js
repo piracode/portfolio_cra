@@ -1,5 +1,7 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import React, { useEffect, useState, createContext } from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { FaSun, FaMoon } from 'react-icons/fa'
+
 import './scss/styles.scss'
 import Logo from './components/Logo'
 import Home from './pages/Home'
@@ -26,14 +28,28 @@ function App() {
     }
   }, [])
 
-  function toggleTheme() {
-    setIsDarkMode((d) => !d)
-    console.log(isDarkMode)
-  }
+  useEffect(() => {
+    // Retrieve the stored theme preference from local storage
+    const storedTheme = localStorage.getItem('theme')
+
+    // Set the initial theme based on the stored preference
+    setIsDarkMode(storedTheme === 'dark')
+  }, [])
 
   useEffect(() => {
-    document.body.classList = isDarkMode ? 'dark' : 'light'
-  }, [isDarkMode])
+    // Delay applying the theme until the animation is complete
+    if (animationComplete) {
+      // Update the theme preference in local storage whenever it changes
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light')
+
+      // Apply the theme to the body element
+      document.body.classList = isDarkMode ? 'dark' : 'light'
+    }
+  }, [isDarkMode, animationComplete])
+
+  function toggleTheme() {
+    setIsDarkMode((d) => !d)
+  }
 
   return (
     <div className='site-wrapper'>
@@ -41,7 +57,7 @@ function App() {
         <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
           <main>
             {!animationComplete ? (
-              <div className='introduction'>
+              <div className={`introduction ${isDarkMode ? 'dark' : 'light'}`}>
                 <Logo />
               </div>
             ) : (

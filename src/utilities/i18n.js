@@ -42,14 +42,15 @@ const loadTranslations = async () => {
   return translations
 }
 
-const resources = {}
+const initializeI18n = async () => {
+  const translations = await loadTranslations()
 
-// Load the translations and initialize the i18n library
-loadTranslations().then((translations) => {
+  const resources = {}
+
+  // Populate the resources object with the translation data
   for (const [language, translation] of Object.entries(translations)) {
     resources[language] = { translation: {} }
 
-    // Populate the resources object with the translation data
     for (const [file, data] of Object.entries(translation)) {
       resources[language].translation[file] = data
     }
@@ -63,6 +64,8 @@ loadTranslations().then((translations) => {
       escapeValue: false,
     },
   })
-})
+}
+
+initializeI18n()
 
 export default i18n
