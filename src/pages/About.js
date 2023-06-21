@@ -3,7 +3,6 @@ import { useInView } from 'react-intersection-observer'
 
 const About = () => {
   const { t } = useTranslation()
-
   const [ref, inView] = useInView()
 
   //retrieves the skills object from the translation file using the t function provided by the useTranslation hook.
@@ -71,18 +70,19 @@ const About = () => {
           <span className='title-text'>{t('titleSkills')}</span>
           <span className='title-line'>&nbsp;</span>
         </h3>
-        {skillsData.map((section, index) => (
-          <div key={index} className='skills-section-box'>
-            <h4 className='skills-section-subtitle'>{section.title}</h4>
-            <ul className='skills-section-list-items'>
-              {section.list.map((skill, skillIndex) => (
-                <li className='skills-section-list-item' key={skillIndex}>
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {skillsData &&
+          skillsData.map((section, index) => (
+            <div key={index} className='skills-section-box'>
+              <h4 className='skills-section-subtitle'>{section.title}</h4>
+              <ul className='skills-section-list-items'>
+                {section.list.map((skill, skillIndex) => (
+                  <li className='skills-section-list-item' key={skillIndex}>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
       </article>
     </section>
   )
