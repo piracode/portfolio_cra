@@ -15,6 +15,7 @@
             "title": "Flixr",
             "slug": "flixr",
             "thumbnail": "/images/flix3.png",
+            "thumbnailMobile": "/images/flix-mobile.png",
             "alt": "Flixr Movie Screenshot",
             "skills": [
               "SCSS",
@@ -31,9 +32,6 @@
             "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
-            "prototypeCinevoxMobileLink": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
-            "prototypeCinevoxDesktopLink": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
-            "prototypeFlix": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
             "post": {
               "titleOverview": "Overview",
               "overview1": "A movie database built in React.js, utilizing the themoviedb.org API. It incorporates a feature that allows users to add movies to their favorites, with persistent storage ensured through local storage.",
@@ -47,42 +45,47 @@
                 },
                 {
                   "title": "UX / UI Design",
-                  "intro": "intro for the UX/UI design section",
+                  "intro": "NOTE: The following steps do not reflect the design of 'Flixr'. This was a school project where each of us worked individually on our own design. For the development phase, we selected one design from the group. However, I still wanted to share the process I went through and the skills I acquired.",
+                  "content": "The design of the application underwent several stages. Firstly, I created a logo using Adobe Illustrator, followed by creating a mockup using Photoshop, and finally developing a prototype using Adobe XD. ",
                   "tabs": [
                     {
-                      "subtitle": "Illustrator",
+                      "subtitle": "Adobe Suite",
+                      "heading": "Illustrator",
                       "content": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
-                      "image": "/images/placeholder.png",
-                      "alt": "placeholder",
-                      "heading": "heading",
-                      "CTALink1": " THIS IS link1",
-                      "CTALink2": "Link2",
-                      "heading1": "heading 1",
-                      "content1": "test content1",
-                      "content2": "test content2"
-                    },
-                    {
-                      "subtitle": "Photoshop",
-                      "image": "/images/flix3.png",
-                      "alt": "flix 3333",
-                      "content1": "test content1",
-                      "content2": "test content2",
-                      "content": "The mockup of the application was designed using Adobe Photoshop, capturing the overall layout and aesthetic. You can view the mockup in Photoshop by following these two links: ",
-                      "CTALink1": "Link2"
-                    },
-                    {
-                      "subtitle": "XD",
-                      "content": "For the prototype, I used Adobe XD to create an interactive representation of the movie database.",
-                      "CTALink2": "Link2",
-                      "image": "/images/best-buy.png",
-                      "alt": "BEst buy"
+                      "image": {
+                        "src": "/images/cinevoxLogo.png",
+                        "alt": "Cinevox Logo"
+                      },
+                      "heading1": "Photoshop",
+                      "content1": "I utilized Photoshop's tools and features to create a professional and visually appealing mockup.",
+                      "image1": {
+                        "src": "/images/cinevox.png",
+                        "alt": "Cinevox Mockup"
+                      },
+                      "CTALink1": {
+                        "href": "https://assets.adobe.com/id/urn:aaid:sc:VA6C2:5aca45c3-aa62-4da0-a5ac-57504ff0246a?view=published",
+                        "text": "Photoshop Mockup"
+                      },
+                      "heading2": "Adobe XD",
+                      "content2": "I then created a prototype with Adobe XD. To view the prototype, click the links below.",
+                      "CTALink2": {
+                        "href": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
+                        "text": "Cinevox Mobile Prototype"
+                      },
+                      "CTALink3": {
+                        "href": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
+                        "text": "Cinevox Desktop Prototype"
+                      }
                     },
                     {
                       "subtitle": "Final Design",
-                      "content": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate. This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database. To view the design, please click on the following link:",
-                      "CTALink2": "Link2",
-                      "image": "/images/portfolio.png",
-                      "alt": "portfolioo"
+                      "content": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate.",
+                      "content1": "This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database.",
+                      "content2": "To view the design, please click on the following link:",
+                      "CTALink1": {
+                        "href": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
+                        "text": "Flixr Prototype"
+                      }
                     }
                   ]
                 },
@@ -109,7 +112,7 @@
                           "tabTitle": "UseLocation Hook",
                           "CTALink3": "Link3",
                           "content": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
-                          "content2": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found",
+                          "content2": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found.",
                           "CTALink2": "Link2",
                           "CTALink1": "Link2",
                           "image": "/images/game-mobile.png",
