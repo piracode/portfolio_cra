@@ -44,6 +44,10 @@
 @include mq(768) {
   .contact {
     margin-top: 12rem;
+
+    &-footer {
+      padding-bottom: 0;
+    }
     &-section {
       display: flex;
       justify-content: center;

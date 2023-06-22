@@ -5,7 +5,7 @@ import {
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md'
 
-export const Accordion = ({ accordions }) => {
+export const Accordion = ({ accordions, projectID }) => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(0)
   const [activeTabs, setActiveTabs] = useState({})
 
@@ -34,27 +34,73 @@ export const Accordion = ({ accordions }) => {
       case 'content':
       case 'content1':
       case 'content2':
-        // Render paragraph innside the tabs sinde the accordions
-        return <p className={`accordion-paragraph ${key}`}>{t(value)}</p>
+        // Render paragraph inside the tabs in the accordions
+        return (
+          <p key={key} className={`accordion-paragraph ${key}`}>
+            {t(value)}
+          </p>
+        )
       case 'heading':
       case 'heading1':
-        return <h5 className='heading'>{t(value)}</h5>
-
+      case 'heading2':
+      case 'heading3':
+        return (
+          <h5 key={key} className={`extra-heading ${key}`}>
+            {t(value)}
+          </h5>
+        )
       case 'image':
-        return <img src={value} alt={alt} />
+      case 'image1':
+        return <img key={key} src={value.src} alt={value.alt || alt} />
       case 'CTALink1':
+        return (
+          <div key={key} className='img-box'>
+            <a
+              className='img-link'
+              href={value.href}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {t(value.text)}
+            </a>
+          </div>
+        )
       case 'CTALink2':
         return (
-          <a href={value} target='_blank' rel='noopener noreferrer'>
-            {t(value)}
-          </a>
+          <div key={key} className='img-box'>
+            <a
+              className='img-link'
+              href={value.href}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {t(value.text)}
+            </a>
+          </div>
+        )
+      case 'CTALink3':
+        return (
+          <div key={key} className='img-box'>
+            <a
+              className='img-link'
+              href={value.href}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {t(value.text)}
+            </a>
+          </div>
         )
       default:
         if (
           key.startsWith('content') &&
           value.title === 'Project Requirements'
         ) {
-          return <p className={`accordion-paragraph ${key}`}>{t(value)}</p>
+          return (
+            <p key={key} className={`accordion-paragraph ${key}`}>
+              {t(value)}
+            </p>
+          )
         }
         return null
     }
@@ -78,7 +124,9 @@ export const Accordion = ({ accordions }) => {
       return (
         <div key={tabIndex} className='tab-content'>
           {tab.tabSections
-            ? tab.tabSections.map((section) => renderSection(section))
+            ? tab.tabSections.map((section, sectionIndex) =>
+                renderSection(section, sectionIndex)
+              )
             : Object.entries(tab).map(([key, value]) =>
                 renderElement(key, value, tab.alt)
               )}
@@ -90,7 +138,7 @@ export const Accordion = ({ accordions }) => {
   }
 
   return (
-    <div>
+    <div className={`accordion-container project-id-${projectID}`}>
       {accordions.map((accordion, index) => (
         <section key={index}>
           <div

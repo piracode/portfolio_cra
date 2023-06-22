@@ -45,19 +45,30 @@ const ProjectDetails = () => {
   // Extract titleOverview and overview from projectDetails.post
   const { titleOverview, overview1, overview2, accordions } =
     projectDetails.post
-  console.log(titleOverview)
+  // console.log(titleOverview)
   // console.log(overview)
-  console.log(accordions)
+  // console.log(accordions)
+  // console.log(project.id)
 
   return (
     <div className='parallax-container'>
-      <section className='project-details-box'>
+      <section className={`project-details-box project-id-${project.id}`}>
         <h1 className='project-details-title'>{project.title}</h1>
-        <img
-          className='project-details-img'
-          src={project.thumbnail}
-          alt={project.alt}
-        />
+        <div className='image-container'>
+          <picture>
+            <source
+              media='(max-width: 767px)'
+              srcSet={project.thumbnailMobile}
+            />
+            <source media='(min-width: 768px)' srcSet={project.thumbnail} />
+            <img
+              className='project-details-img'
+              src={project.thumbnail}
+              alt={project.alt}
+            />
+          </picture>
+        </div>
+
         <div className='project-details-cta-box'>
           {/* IF design is false , display the icons below the IMG in project details page for web dev porjects */}
           {!project.design ? (
@@ -117,11 +128,12 @@ const ProjectDetails = () => {
         <p className='project-details-overview-paragraph'>{overview2}</p>
         {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
         {projectDetails.post && accordions && (
-          <Accordion accordions={accordions} />
+          <Accordion accordions={accordions} projectID={project.id} />
         )}
+
+        <Footer />
       </section>
       <NavigationLinks />
-      <Footer />
     </div>
   )
 }

@@ -4,6 +4,10 @@
   &-title {
     font-size: 1.3rem;
   }
+
+  &-intro {
+    margin-bottom: 1rem;
+  }
   &-tab {
     display: flex;
     align-items: center;
@@ -23,25 +27,48 @@
 
   &-paragraph {
     padding-bottom: 1rem;
+
+    &.content:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.project-id-1 {
+  .tab-content img:first-of-type {
+    width: 6.25rem;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 3rem;
+  }
+
+  .tab-content {
+    img {
+      padding-bottom: 1rem;
+    }
+    .img-box {
+      padding-bottom: 2rem;
+      a,
+      a:visited {
+        text-align: center;
+        display: block;
+      }
+    }
   }
 }
 
 .sub-category-container {
-  padding: -0.9rem 0 0.1rem 0;
+  // padding: -0.9rem 0 1rem 0;
   display: flex;
   justify-content: center;
-  background-color: #13385c99;
   border-radius: 7rem;
   overflow: hidden;
   align-items: stretch;
+  margin: 2rem 0;
 }
 
-// .sub-category-button:not(:last-child) {
-//   border-right: 1px solid rgba(255, 255, 255, 0.2); // Add this line
-// }
-
 .sub-category-button {
-  color: white;
+  // color: #fff;
   border: none;
   padding: 0.9rem 0.1rem;
   background-color: transparent;
@@ -50,7 +77,6 @@
 }
 
 .sub-category-button.active {
-  background-color: #13385c;
   border-radius: 5rem;
 }
 
@@ -61,7 +87,7 @@
   &-title {
     text-align: center;
     padding: 2rem;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 5rem);
   }
 
   &-img {
@@ -87,7 +113,13 @@
   }
 }
 
-//Light theme
+h5 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 1.1rem;
+}
+
+/////////////////////////Light theme/////////////////////
 
 .light {
   .accordion {
@@ -98,6 +130,15 @@
     &-icon {
       fill: $light-text-main;
     }
+  }
+
+  .sub-category-container,
+  .sub-category-button.active {
+    background-color: #13385c99;
+  }
+
+  .sub-category-button {
+    color: #fff;
   }
 }
 
@@ -121,5 +162,48 @@
     &-title {
       color: $dark-bg-button;
     }
+  }
+
+  .sub-category-container,
+  .sub-category-button.active {
+    // background-color: #153a5f99;
+    background-color: #115da999;
+  }
+
+  .sub-category-button {
+    color: #fff;
+  }
+
+  .tab-content {
+    a {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: $purple-accent-color;
+    }
+  }
+}
+
+.image-container {
+  max-width: 325px;
+  margin: 0 auto;
+}
+@include mq(500) {
+  .image-container {
+    // padding: 2rem;
+    max-width: 500px;
+  }
+}
+
+@include mq(767) {
+  .image-container {
+    padding: 2rem;
+    max-width: 900px;
+  }
+}
+
+@include mq(1200) {
+  .image-container {
+    max-width: 1200px;
   }
 }
