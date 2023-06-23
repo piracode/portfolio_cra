@@ -92,69 +92,158 @@
 
                 {
                   "title": "Development Highlights",
-                  "intro": "intro for the developement higlights design section",
-                  "content": "test content highlight",
-                  "content1": "test content antoheerrrrr highlight",
+                  "intro": "During my work on the Movie Database, I gained valuable experience in team collaboration using GitHub.",
+                  "content": "I explored various React features that greatly influenced my experience and growth. Let's focus on two standout topics in this summary.",
                   "tabs": [
                     {
-                      "subtitle": "Event Bubbling",
-                      "content": "Ask Randy for clarification what was done",
-                      "CTALink2": "Link2",
-                      "image": "/images/excalidrawEventBubbling.png",
-                      "alt": "event bubbling",
-                      "content1": "test content1",
-                      "CTALink1": "Link2"
+                      "subtitle": "Search Feature",
+                      "heading": "UseLocation Hook",
+
+                      "content": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
+                      "content1": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found.",
+                      "heading1": "URLSearchParams API",
+                      "content2": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
+
+                      "content3": "'new URLSearchParams'(location.search) creates a new URLSearchParams object using the location.search property, which represents the query string part of the current URL. Then, .get('query') is called on that object to retrieve the value of the 'query' parameter from the URL. This extracts the search query entered by the user.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/pages/SearchResults.js",
+                        "text": "GitHub Link"
+                      }
                     },
                     {
-                      "subtitle": "Search Feature",
-                      "tabSections": [
-                        {
-                          "tabTitle": "UseLocation Hook",
-                          "CTALink3": "Link3",
-                          "content": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
-                          "content2": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found.",
-                          "CTALink2": "Link2",
-                          "CTALink1": "Link2",
-                          "image": "/images/game-mobile.png",
-                          "alt": "game mobile"
-                        },
-                        {
-                          "tabTitle": "URLSearchParams API",
-                          "content": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
-
-                          "content4": "In the code above, new URLSearchParams(location.search) creates a new URLSearchParams object using the location.search property, which represents the query string part of the current URL. Then, .get('query') is called on that object to retrieve the value of the 'query' parameter from the URL. This extracts the search query entered by the user.",
-                          "CTALink2": "Link2"
-                        }
-                      ]
+                      "subtitle": "REST API Fetching",
+                      "content": "We practiced and implemented both async/await and fetch methods for data fetching.",
+                      "heading": "Async/Await",
+                      "content2": "With async/await, we were able to write asynchronous code that looks and feels more like traditional synchronous code, making it easier to handle tasks that require time.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/api.js",
+                        "text": "GitHub Link"
+                      },
+                      "heading1": "Fetch/Then/Catch",
+                      "content1": "We also explored the fetch method, which allows us to send requests to retrieve data from external sources. By utilizing then and catch methods, we were able to handle the response and potential errors effectively.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/toolbelt.js",
+                        "text": "GitHub Link"
+                      }
                     }
                   ]
                 },
                 {
                   "title": "Retrospective",
-                  "content": "reflection flixr What I learned or Porject Takeawaym What i would improive, nesxt steps"
+                  "heading": "What did I learn?",
+                  "content": "Throughout this project, I acquired valuable skills in logo creation, mockup design, prototype development, and React.js. Encountering bugs reinforced the importance of thorough testing and debugging for a seamless user experience. This experience highlighted the significance of meticulous bug fixing and code refactoring to enhance the overall code quality.",
+                  "heading1": "What could be improved?",
+                  "content2": "We recognized the importance of meticulous testing to ensure a robust and reliable application. Additionally, we identified bugs in the favorite functionality post-deployment, which require refactoring to ensure smooth operation.",
+                  "content1": "Furthermore, there is an opportunity to enhance the design by incorporating additional movie details such as casting information and YouTube video links for trailers."
                 }
               ]
             },
             "design": false
           },
-
           {
             "workshop": false,
             "featured": true,
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
-            "thumbnail": "/images/game-mobile.png",
+            "thumbnail": "/images/matchingGameDesktop.png",
+            "thumbnailMobile": "/images/matchingGameMobile.png",
+            "alt": "Flixr Movie Screenshot",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "A matching game with added sound effects, implemented in JavaScript.",
-            "gitHubLink": "https://github.com/piracode",
-            "liveSiteLink": "https://martha.codes/maching-game",
+            "gitHubLink": "https://github.com/piracode/matching-game/tree/master",
+            "liveSiteLink": "https://martha.codes/matching-game/",
             "liveSiteCTA": "Site",
             "gitHubCTA": "Code",
             "detailsCTA": "Details",
             "post": {
-              "intro": "This is the intro",
-              "content": ["Content 1", "Content 2", "Content 3"]
+              "titleOverview": "Overview",
+              "overview1": "A memory matching game implemented in JavaScript, which consists of a grid of cards that the player needs to flip and match in pairs, keeping track of their matches, guesses, and remaining lives.",
+              "accordions": [
+                {
+                  "title": "Project Requirements",
+                  "content": "The game required creating a single-player experience where the user had to match pairs of hidden pictures on a grid.",
+                  "content1": "The player could reveal up to two pictures in a turn, and if the pictures matched, they remained revealed. If the pictures did not match, they returned to being hidden after a certain time.",
+                  "content2": "The game kept track of the player's turns, matches, and provided a start button and the option to end the game at any time."
+                },
+                {
+                  "title": "UX / UI Design",
+                  "intro": "NOTE: The following steps do not reflect the design of 'Flixr'. This was a school project where each of us worked individually on our own design. For the development phase, we selected one design from the group. However, I still wanted to share the process I went through and the skills I acquired.",
+                  "content": "The design of the application underwent several stages. Firstly, I created a logo using Adobe Illustrator, followed by creating a mockup using Photoshop, and finally developing a prototype using Adobe XD. ",
+                  "tabs": [
+                    {
+                      "subtitle": "Adobe Suite",
+                      "heading": "Illustrator",
+                      "content": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
+                      "image": {
+                        "src": "/images/cinevoxLogo.png",
+                        "alt": "Cinevox Logo"
+                      },
+                      "heading1": "Photoshop",
+                      "content1": "I utilized Photoshop's tools and features to create a professional and visually appealing mockup.",
+                      "image1": {
+                        "src": "/images/cinevox.png",
+                        "alt": "Cinevox Mockup"
+                      },
+                      "CTALink1": {
+                        "href": "https://assets.adobe.com/id/urn:aaid:sc:VA6C2:5aca45c3-aa62-4da0-a5ac-57504ff0246a?view=published",
+                        "text": "Photoshop Mockup"
+                      },
+                      "heading2": "Adobe XD",
+                      "content2": "I then created a prototype with Adobe XD. To view the prototype, click the links below.",
+                      "CTALink2": {
+                        "href": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
+                        "text": "Cinevox Mobile Prototype"
+                      },
+                      "CTALink3": {
+                        "href": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
+                        "text": "Cinevox Desktop Prototype"
+                      }
+                    },
+                    {
+                      "subtitle": "Final Design",
+                      "content": "During the development phase in React, our team of 3 collectively agreed to adopt the design crafted by my classmate.",
+                      "content1": "This decision led to the incorporation of design elements from both our original mockup and our classmate's design contributions in the final design of the movie database.",
+                      "content2": "To view the design, please click on the following link:",
+                      "CTALink1": {
+                        "href": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
+                        "text": "Flixr Prototype"
+                      }
+                    }
+                  ]
+                },
+
+                {
+                  "title": "Development Highlights",
+                  "intro": "During my work on the Movie Database, I gained valuable experience in team collaboration using GitHub.",
+                  "content": "I explored various React features that greatly influenced my experience and growth. Let's focus on two standout topics in this summary.",
+                  "tabs": [
+                    {
+                      "subtitle": "Search Feature",
+                      "heading": "UseLocation Hook",
+
+                      "content": "The useLocation hook returns an object that represents the current URL and provides various properties and methods to access different parts of the URL. In our app, useLocation is used to get the current location object",
+                      "content1": "By using the location.search property, which represents the query string portion of the URL, the code extracts the value of the 'query' parameter from the URL. This allows the code to retrieve the search query entered by the user, which can be used to fetch relevant movies or display an error message if no movies are found.",
+                      "heading1": "URLSearchParams API",
+                      "content2": "The URLSearchParams is a built-in JavaScript API that provides methods to work with the query string of a URL. It allows you to parse and manipulate the parameters in the URL's query string.",
+
+                      "content3": "'new URLSearchParams'(location.search) creates a new URLSearchParams object using the location.search property, which represents the query string part of the current URL. Then, .get('query') is called on that object to retrieve the value of the 'query' parameter from the URL. This extracts the search query entered by the user.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/pages/SearchResults.js",
+                        "text": "GitHub Link"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospective",
+                  "heading": "What did I learn?",
+                  "content": "Throughout this project, I acquired valuable skills in logo creation, mockup design, prototype development, and React.js. Encountering bugs reinforced the importance of thorough testing and debugging for a seamless user experience. This experience highlighted the significance of meticulous bug fixing and code refactoring to enhance the overall code quality.",
+                  "heading1": "What could be improved?",
+                  "content2": "We recognized the importance of meticulous testing to ensure a robust and reliable application. Additionally, we identified bugs in the favorite functionality post-deployment, which require refactoring to ensure smooth operation.",
+                  "content1": "Furthermore, there is an opportunity to enhance the design by incorporating additional movie details such as casting information and YouTube video links for trailers."
+                }
+              ]
             },
             "design": false
           },
@@ -201,26 +290,6 @@
             "design": false
           },
 
-          {
-            "workshop": true,
-            "featured": false,
-            "id": "8",
-            "title": "TESTTTTT",
-            "slug": "matching-game",
-            "thumbnail": "/images/game-mobile.png",
-            "skills": ["HTML", "CSS", "JavaScript"],
-            "excerpt": "TESSRTRTRTTTTT",
-            "gitHubLink": "https://github.com/piracode",
-            "liveSiteLink": "https://martha.codes/maching-game",
-            "liveSiteCTA": "Site",
-            "gitHubCTA": "Code",
-            "detailsCTA": "Details",
-            "post": {
-              "intro": "This is the intro",
-              "content": ["Content 1", "Content 2", "Content 3"]
-            },
-            "design": false
-          },
           {
             "workshop": false,
             "featured": true,
@@ -405,7 +474,9 @@
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
-            "thumbnail": "/images/flixr1.png",
+            "thumbnail": "/images/flix3.png",
+            "thumbnailMobile": "/images/flix-mobile.png",
+            "alt": "Capture d'écran de Flixr Movie",
             "skills": [
               "SCSS",
               "React",
@@ -415,14 +486,117 @@
               "GitHub",
               "AdobeXD"
             ],
-            "excerpt": "Une base de données de films construite en React.js utilisant l'API themoviedb.org, qui permet aux utilisateurs d'explorer, rechercher et mettre en favoris des films.",
-            "liveSiteCTA": "Site",
+            "excerpt": "Une base de données de films construite en React.js utilisant l'API themoviedb.org qui permet aux utilisateurs d'explorer, rechercher et marquer des films.",
+            "gitHubLink": "https://github.com/piracode/flixr_react",
+            "liveSiteLink": "https://martha.codes/flixr/",
+            "liveSiteCTA": "Site Web",
             "gitHubCTA": "Code",
             "detailsCTA": "Détails",
             "post": {
-              "intro": "C'est l'introduction",
-              "content": ["Contenu 1", "Contenu 2", "Contenu 3"]
-            }
+              "titleOverview": "Aperçu",
+              "overview1": "Une base de données de films construite en React.js, utilisant l'API themoviedb.org. Elle intègre une fonctionnalité permettant aux utilisateurs d'ajouter des films à leurs favoris, avec un stockage persistant assuré par le stockage local.",
+              "overview2": "De plus, une maquette a été créée à l'aide de Photoshop et un prototype a été développé avec Adobe XD pour visualiser le design et les fonctionnalités de l'application.",
+              "accordions": [
+                {
+                  "title": "Exigences du projet",
+                  "content": "Le projet consistait à construire une application connectée à l'API themoviedb.org. L'exigence principale était de créer une page d'accueil affichant une grille de films, triables par popularité, meilleurs classements, sorties actuelles et prochaines sorties.",
+                  "content1": "Chaque carte de film de la grille doit être liée à une page de film détaillée, présentant des informations supplémentaires telles qu'un résumé et une image de fond. De plus, une page de favoris a été mise en place pour afficher les films sélectionnés par l'utilisateur.",
+                  "content2": "La possibilité d'ajouter ou de supprimer des favoris a été implémentée sur la page d'accueil, les pages de film et la page de favoris à l'aide du stockage local."
+                },
+                {
+                  "title": "Design UX/UI",
+                  "intro": "REMARQUE : Les étapes suivantes ne reflètent pas la conception de 'Flixr'. Il s'agissait d'un projet scolaire où chacun de nous travaillait individuellement sur sa propre conception. Pour la phase de développement, nous avons sélectionné une conception parmi le groupe. Cependant, je voulais quand même partager le processus que j'ai suivi et les compétences que j'ai acquises.",
+                  "content": "La conception de l'application a traversé plusieurs étapes. Tout d'abord, j'ai créé un logo à l'aide d'Adobe Illustrator, puis j'ai créé une maquette avec Photoshop, et enfin j'ai développé un prototype avec Adobe XD.",
+                  "tabs": [
+                    {
+                      "subtitle": "Suite Adobe",
+                      "heading": "Illustrator",
+                      "content": "Dans la section de conception de la base de données de films, je me suis inspirée de Netflix. Les éléments visuels de l'application, tels que le logo, ont été créés avec Adobe Illustrator, et le schéma de couleurs choisi était basé sur les couleurs de Netflix.",
+                      "image": {
+                        "src": "/images/cinevoxLogo.png",
+                        "alt": "Logo de Cinevox"
+                      },
+                      "heading1": "Photoshop",
+                      "content1": "J'ai utilisé les outils et fonctionnalités de Photoshop pour créer une maquette professionnelle et esthétique.",
+                      "image1": {
+                        "src": "/images/cinevox.png",
+                        "alt": "Cinevox Mockup"
+                      },
+                      "CTALink1": {
+                        "href": "https://assets.adobe.com/id/urn:aaid:sc:VA6C2:5aca45c3-aa62-4da0-a5ac-57504ff0246a?view=published",
+                        "text": "Maquette Photoshop Cinevox"
+                      },
+                      "heading2": "Adobe XD",
+                      "content2": "J'ai ensuite créé un prototype avec Adobe XD. Pour visualiser le prototype, cliquez sur les liens ci-dessous.",
+                      "CTALink2": {
+                        "href": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
+                        "text": "Prototype mobile de Cinevox"
+                      },
+                      "CTALink3": {
+                        "href": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
+                        "text": "Prototype bureau de Cinevox"
+                      }
+                    },
+                    {
+                      "subtitle": "Conception finale",
+                      "content": "Pendant la phase de développement en React, notre équipe de 3 personnes a convenu d'adopter la conception élaborée par un de mes camarades de classe.",
+                      "content1": "Cette décision a conduit à l'intégration d'éléments de notre maquette d'origine ainsi que des contributions de notre camarade de classe dans la conception finale de la base de données de films.",
+                      "content2": "Pour visualiser la conception, veuillez cliquer sur le lien suivant :",
+                      "CTALink1": {
+                        "href": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
+                        "text": "Prototype Flixr"
+                      }
+                    }
+                  ]
+                },
+
+                {
+                  "title": "Points clés du développement",
+                  "intro": "Lors de mon travail sur la base de données de films, j'ai acquis une précieuse expérience de collaboration d'équipe en utilisant GitHub.",
+                  "content": "J'ai exploré diverses fonctionnalités de React qui ont grandement influencé mon expérience et ma croissance. Concentrons-nous sur deux sujets importants dans ce résumé.",
+                  "tabs": [
+                    {
+                      "subtitle": "Fonctionnalité de recherche",
+                      "heading": "Hook UseLocation",
+                      "content": "Le 'hook useLocation' renvoie un objet qui représente l'URL actuel et fournit diverses propriétés et méthodes pour accéder à différentes parties de l'URL. Dans notre application, useLocation est utilisé pour obtenir l'objet de localisation actuel.",
+                      "content1": "En utilisant la propriété 'location.search', qui représente la partie de la chaîne de requête de l'URL, le code extrait la valeur du paramètre 'query' de l'URL. Cela permet de récupérer la requête de recherche saisie par l'utilisateur, qui peut être utilisée pour récupérer les films pertinents ou afficher un message d'erreur si aucun film n'est trouvé.",
+                      "heading1": "API URLSearchParams",
+                      "content2": "URLSearchParams est une API JavaScript intégrée qui fournit des méthodes pour travailler avec la chaîne de requête d'une URL. Elle vous permet d'analyser et de manipuler les paramètres de la chaîne de requête de l'URL.",
+                      "content3": "'new URLSearchParam'(location.search) crée un nouvel objet URLSearchParams en utilisant la propriété location.search, qui représente la partie de la chaîne de requête de l'URL actuel. Ensuite, .get('query') est appelé sur cet objet pour récupérer la valeur du paramètre 'query' de l'URL. Cela extrait la requête de recherche saisie par l'utilisateur.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/pages/SearchResults.js",
+                        "text": "Lien GitHub"
+                      }
+                    },
+                    {
+                      "subtitle": "Récupération d'API REST",
+                      "content": "Nous avons pratiqué et mis en œuvre à la fois les méthodes async/await et fetch pour la récupération de données.",
+                      "heading": "Async/Await",
+                      "content2": "Avec async/await, nous avons pu écrire du code asynchrone qui ressemble davantage à du code synchrone traditionnel, ce qui facilite la gestion des tâches nécessitant du temps.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/api.js",
+                        "text": "Lien GitHub"
+                      },
+                      "heading1": "Fetch/Then/Catch",
+                      "content1": "Nous avons également exploré la méthode fetch, qui nous permet d'envoyer des requêtes pour récupérer des données depuis des sources externes. En utilisant les méthodes then et catch, nous avons pu gérer efficacement la réponse et les erreurs potentielles.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/toolbelt.js",
+                        "text": "Lien GitHub"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Rétrospective",
+                  "heading": "Qu'ai-je appris ?",
+                  "content": "Tout au long de ce projet, j'ai acquis des compétences précieuses dans la création de logos, la conception de maquettes, le développement de prototypes et React.js. Rencontrer des bogues a renforcé l'importance de tests et de débogage approfondis pour une expérience utilisateur fluide. Cette expérience a mis en évidence l'importance de la collaboration en équipe et de la communication efficace pour le succès du projet.",
+                  "heading1": "Qu'est-ce qui aurait pu être mieux ?",
+                  "content2": "Nous avons reconnu l'importance de tests minutieux pour garantir une application robuste et fiable. De plus, nous avons identifié des bogues dans la fonctionnalité favorite après le déploiement, ce qui nécessite une refonte pour assurer un fonctionnement fluide.",
+                  "content1": "De plus, il y a une opportunité d'améliorer la conception en incorporant des détails supplémentaires sur les films tels que des informations sur la distribution et des liens vidéo YouTube pour les bandes-annonces."
+                }
+              ]
+            },
+            "design": false
           },
           {
             "workshop": false,
@@ -491,7 +665,9 @@
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
-            "thumbnail": "/images/flixr1.png",
+            "thumbnail": "/images/flix3.png",
+            "thumbnailMobile": "/images/flix-mobile.png",
+            "alt": "Flixr Movie Screenshot",
             "skills": [
               "SCSS",
               "React",
@@ -501,14 +677,117 @@
               "GitHub",
               "AdobeXD"
             ],
-            "excerpt": "Una base de datos de películas construida en React.js utilizando la API de themoviedb.org que permite a los usuarios explorar, buscar y marcar películas como favoritas.",
-            "liveSiteCTA": "Sitio",
-            "gitHubCTA": "Code",
+            "excerpt": "Una base de datos de películas construida en React.js que utiliza la API de themoviedb.org y permite a los usuarios explorar, buscar y marcar películas.",
+            "gitHubLink": "https://github.com/piracode/flixr_react",
+            "liveSiteLink": "https://martha.codes/flixr/",
+            "liveSiteCTA": "Sitio web",
+            "gitHubCTA": "Código",
             "detailsCTA": "Detalles",
             "post": {
-              "intro": "Esta es la introducción",
-              "content": ["Contenido 1", "Contenido 2", "Contenido 3"]
-            }
+              "titleOverview": "Vista General",
+              "overview1": "Una base de datos de películas construida en React.js que utiliza la API de themoviedb.org. Incluye la capacidad de agregar películas a favoritos, con almacenamiento persistente a través del almacenamiento local.",
+              "overview2": "Además, se creó un diseño utilizando Photoshop y se desarrolló un prototipo con Adobe XD para visualizar el diseño y las funcionalidades de la aplicación.",
+              "accordions": [
+                {
+                  "title": "Requisitos del proyecto",
+                  "content": "El proyecto consistía en construir una aplicación conectada a la API de themoviedb.org. El requisito principal era crear una página de inicio que mostrara una cuadrícula de películas, ordenables por popularidad, mejores calificaciones, estrenos actuales y próximos estrenos.",
+                  "content1": "Cada tarjeta de película en la cuadrícula debería enlazar a una página detallada de la película, mostrando información adicional como un resumen y una imagen de fondo. Además, se implementó una página de favoritos para mostrar las películas seleccionadas por el usuario.",
+                  "content2": "Se implementó la capacidad de agregar o eliminar favoritos en la página de inicio, en las páginas de películas y en la página de favoritos utilizando el almacenamiento local."
+                },
+                {
+                  "title": "Diseño UX/UI",
+                  "intro": "NOTA: Los siguientes pasos no reflejan el diseño de 'Flixr'. Este fue un proyecto escolar en el que cada uno trabajó individualmente en su propio diseño. Para la fase de desarrollo, seleccionamos un diseño del grupo. Sin embargo, aún quería compartir el proceso que seguí y las habilidades que adquirí.",
+                  "content": "El diseño de la aplicación pasó por varias etapas. En primer lugar, creé un logotipo utilizando Adobe Illustrator, luego creé una maqueta utilizando Photoshop y finalmente desarrollé un prototipo utilizando Adobe XD.",
+                  "tabs": [
+                    {
+                      "subtitle": "Suite Adobe",
+                      "heading": "Illustrator",
+                      "content": "En la sección de diseño de la base de datos de películas, me inspiré en el diseño de Netflix. Los elementos visuales de la aplicación, como el logo, se crearon con Adobe Illustrator, y el esquema de colores elegido se basó en los colores de Netflix.",
+                      "image": {
+                        "src": "/images/cinevoxLogo.png",
+                        "alt": "Logo de Cinevox"
+                      },
+                      "heading1": "Photoshop",
+                      "content1": "Utilicé herramientas y funciones de Photoshop para crear una maqueta profesional y estética.",
+                      "image1": {
+                        "src": "/images/cinevox.png",
+                        "alt": "Maqueta de Cinevox"
+                      },
+                      "CTALink1": {
+                        "href": "https://assets.adobe.com/id/urn:aaid:sc:VA6C2:5aca45c3-aa62-4da0-a5ac-57504ff0246a?view=published",
+                        "text": "Maqueta de Photoshop"
+                      },
+                      "heading2": "Adobe XD",
+                      "content2": "Luego, creé un prototipo con Adobe XD. Para ver el prototipo, haz clic en los enlaces a continuación.",
+                      "CTALink2": {
+                        "href": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
+                        "text": "Prototipo móvil de Cinevox"
+                      },
+                      "CTALink3": {
+                        "href": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
+                        "text": "Prototipo de escritorio de Cinevox"
+                      }
+                    },
+                    {
+                      "subtitle": "Diseño final",
+                      "content": "Durante la fase de desarrollo en React, nuestro equipo de 3 personas acordó adoptar el diseño elaborado por uno de mis compañeros de clase.",
+                      "content1": "Esta decisión llevó a la incorporación de elementos de diseño tanto de nuestra maqueta original como de las contribuciones de diseño de nuestro compañero de clase en el diseño final de la base de datos de películas.",
+                      "content2": "Para ver el diseño, haz clic en el siguiente enlace:",
+                      "CTALink1": {
+                        "href": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
+                        "text": "Prototipo de diseño final de Flixr"
+                      }
+                    }
+                  ]
+                },
+
+                {
+                  "title": "Puntos Claves del desarollo",
+                  "intro": "Durante mi trabajo en la Base de Datos de Películas, adquirí una valiosa experiencia en la colaboración en equipo utilizando GitHub.",
+                  "content": "Exploré varias características de React que influyeron mucho en mi experiencia y crecimiento. Enfoquémonos en dos temas destacados en este resumen.",
+                  "tabs": [
+                    {
+                      "subtitle": "Funcionalidad de búsqueda",
+                      "heading": "Hook useLocation",
+                      "content": "El hook useLocation devuelve un objeto que representa la URL actual y proporciona varias propiedades y métodos para acceder a diferentes partes de la URL. En nuestra aplicación, useLocation se utiliza para obtener el objeto de ubicación actual.",
+                      "content1": "Utilizando la propiedad location.search, que representa la parte de la cadena de consulta de la URL, el código extrae el valor del parámetro 'query' de la URL. Esto permite que el código recupere la consulta de búsqueda ingresada por el usuario, que se puede utilizar para buscar películas relevantes o mostrar un mensaje de error si no se encuentran películas.",
+                      "heading1": "API URLSearchParams",
+                      "content2": "URLSearchParams es una API incorporada de JavaScript que proporciona métodos para trabajar con la cadena de consulta de una URL. Permite analizar y manipular los parámetros en la cadena de consulta de la URL.",
+                      "content3": "En el código anterior, new URLSearchParams(location.search) crea un nuevo objeto URLSearchParams utilizando la propiedad location.search, que representa la parte de la cadena de consulta de la URL actual. Luego, se llama a .get('query') en ese objeto para recuperar el valor del parámetro 'query' de la URL. Esto extrae la consulta de búsqueda ingresada por el usuario.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/pages/SearchResults.js",
+                        "text": "Enlace a GitHub"
+                      }
+                    },
+                    {
+                      "subtitle": "Obtención de API REST",
+                      "content": "Practicamos e implementamos tanto los métodos async/await como fetch para obtener datos.",
+                      "heading": "Async/Await",
+                      "content2": "Con async/await, pudimos escribir código asíncrono que se ve y se siente más como código síncrono tradicional, lo que facilita el manejo de tareas que requieren tiempo.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/api.js",
+                        "text": "Enlace a GitHub"
+                      },
+                      "heading1": "Fetch/Then/Catch",
+                      "content1": "También exploramos el método fetch, que nos permite enviar solicitudes para obtener datos de fuentes externas. Utilizando los métodos then y catch, pudimos manejar de manera efectiva la respuesta y los posibles errores.",
+                      "CTALink2": {
+                        "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/toolbelt.js",
+                        "text": "Enlace a GitHub"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospectiva",
+                  "heading": "¿Qué aprendí?",
+                  "content": "A lo largo de este proyecto, adquirí habilidades valiosas en creación de logotipos, diseño de maquetas, desarrollo de prototipos y React.js. Encontrar errores reforzó la importancia de realizar pruebas exhaustivas y depurar para lograr una experiencia de usuario fluida. Esta experiencia resaltó la importancia de corregir errores meticulosamente y refactorizar el código para mejorar la calidad general del mismo.",
+                  "heading1": "¿Qué se podría mejorar?",
+                  "content2": "Reconocimos la importancia de realizar pruebas meticulosas para asegurar una aplicación sólida y confiable. Además, identificamos errores en la funcionalidad de favoritos después de la implementación, los cuales requieren refactorización para garantizar un funcionamiento fluido.",
+                  "content1": "Además, existe la oportunidad de mejorar el diseño incorporando detalles adicionales de las películas, como información sobre el reparto y enlaces a videos de YouTube de los tráilers."
+                }
+              ]
+            },
+            "design": false
           },
 
           {

@@ -6,7 +6,7 @@ import {
 } from 'react-icons/md'
 
 export const Accordion = ({ accordions, projectID }) => {
-  const [openAccordionIndex, setOpenAccordionIndex] = useState(0)
+  const [openAccordionIndex, setOpenAccordionIndex] = useState(-1)
   const [activeTabs, setActiveTabs] = useState({})
 
   const { t } = useTranslation()
@@ -34,6 +34,7 @@ export const Accordion = ({ accordions, projectID }) => {
       case 'content':
       case 'content1':
       case 'content2':
+      case 'content3':
         // Render paragraph inside the tabs in the accordions
         return (
           <p key={key} className={`accordion-paragraph ${key}`}>
@@ -119,17 +120,31 @@ export const Accordion = ({ accordions, projectID }) => {
   }
 
   // Render the content of a tab based on its open/close state
+  // const renderTabContent = (tab, index, tabIndex) => {
+  //   if (activeTabs[index] === tabIndex) {
+  //     return (
+  //       <div key={tabIndex} className='tab-content'>
+  //         {tab.tabSections
+  //           ? tab.tabSections.map((section, sectionIndex) =>
+  //               renderSection(section, sectionIndex)
+  //             )
+  //           : Object.entries(tab).map(([key, value]) =>
+  //               renderElement(key, value, tab.alt)
+  //             )}
+  //       </div>
+  //     )
+  //   } else {
+  //     return null
+  //   }
+  // }
+
   const renderTabContent = (tab, index, tabIndex) => {
     if (activeTabs[index] === tabIndex) {
       return (
         <div key={tabIndex} className='tab-content'>
-          {tab.tabSections
-            ? tab.tabSections.map((section, sectionIndex) =>
-                renderSection(section, sectionIndex)
-              )
-            : Object.entries(tab).map(([key, value]) =>
-                renderElement(key, value, tab.alt)
-              )}
+          {Object.entries(tab).map(([key, value]) =>
+            renderElement(key, value, tab.alt)
+          )}
         </div>
       )
     } else {

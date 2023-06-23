@@ -31,7 +31,7 @@
 
   &-icons-box + p {
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem;
   }
 }
 
@@ -46,7 +46,10 @@
     margin-top: 12rem;
 
     &-footer {
-      padding-bottom: 0;
+      // padding-bottom: 1rem;
+      // p {
+      //   padding-bottom: 1rem;
+      // }
     }
     &-section {
       display: flex;

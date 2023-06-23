@@ -123,13 +123,16 @@ const ProjectDetails = () => {
             </a>
           </div>
         </div>
-        <h3 className='project-details-overview-title'>{titleOverview}</h3>
-        <p className='project-details-overview-paragraph'>{overview1}</p>
-        <p className='project-details-overview-paragraph'>{overview2}</p>
-        {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
-        {projectDetails.post && accordions && (
-          <Accordion accordions={accordions} projectID={project.id} />
-        )}
+
+        <div className='project-details-box'>
+          <h3 className='project-details-overview-title'>{titleOverview}</h3>
+          <p className='project-details-overview-paragraph'>{overview1}</p>
+          <p className='project-details-overview-paragraph'>{overview2}</p>
+          {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
+          {projectDetails.post && accordions && (
+            <Accordion accordions={accordions} projectID={project.id} />
+          )}
+        </div>
 
         <Footer />
       </section>

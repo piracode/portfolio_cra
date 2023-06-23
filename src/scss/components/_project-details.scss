@@ -28,9 +28,9 @@
   &-paragraph {
     padding-bottom: 1rem;
 
-    &.content:first-of-type {
-      margin-bottom: 1rem;
-    }
+    // &.content:first-of-type {
+    //   margin-bottom: 1rem;
+    // }
   }
 }
 
@@ -199,6 +199,11 @@ h5 {
   .image-container {
     padding: 2rem;
     max-width: 900px;
+  }
+
+  .project-details-box {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 

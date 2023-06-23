@@ -34,35 +34,17 @@ const NavigationLinks = () => {
   const [activeLink, setActiveLink] = useState('')
   const navigate = useNavigate()
 
+  // const handleLogoClick = () => {
+  //   window.location.href = '/'
+  // }
+
   const handleLogoClick = () => {
-    // Redirect to the home page
-    window.location.href = '/'
+    navigate('/')
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
-
-  // const handleLinkClick = (link) => {
-  //   setActiveLink(link)
-
-  //   // Check if the current URL contains the ProjectDetails page slug
-  //   const isProjectDetailsPage =
-  //     window.location.pathname.includes('projectdetails')
-
-  //   if (isProjectDetailsPage) {
-  //     // Navigate to the main page with the respective section hash
-  //     navigate(`/#${link}`)
-  //   } else {
-  //     // Update the URL
-  //     // navigate(`/#${link}`, { replace: true })
-  //     navigate(`/#${link}`)
-  //   }
-  // }
-
-  // const handleLinkClick = (link) => {
-  //   setActiveLink(link)
-
-  //   // Scroll to the section with the corresponding ID
-  //   document.getElementById(link).scrollIntoView({ behavior: 'smooth' })
-  // }
-
   return (
     <>
       <nav className='navigation-container sticky'>
@@ -88,15 +70,7 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <HashLink
-              smooth
-              to='/#projects'
-              // onClick={() => handleLinkClick('projects')}
-              className='navigation-link'
-              // onClick={() => setActiveLink('projects')}
-              // href='#projects'
-              // onClick={() => handleLinkClick('projects')}
-            >
+            <HashLink smooth to='/#projects' className='navigation-link'>
               <span className='navigation-link-icon'>
                 <BsFillBriefcaseFill />
               </span>
@@ -104,14 +78,7 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <HashLink
-              smooth
-              to='/#contact'
-              // onClick={() => handleLinkClick('contact')}
-              className='navigation-link'
-              // href='#contact'
-              // onClick={() => handleLinkClick('contact')}
-            >
+            <HashLink smooth to='/#contact' className='navigation-link'>
               <span className='navigation-link-icon'>
                 <RiContactsBookFill />
               </span>
@@ -119,31 +86,18 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <HashLink
-              className='navigation-link'
-              smooth
-              to='/#skills'
-              // onClick={() => handleLinkClick('skills')}
-            >
+            <HashLink className='navigation-link' smooth to='/#skills'>
               <span className='navigation-link-icon'>
                 <GiSkills />
               </span>
               <span className='navigation-link-text'>{t('titleSkills')}</span>
             </HashLink>
           </li>
-          {/* <li className='navigation-link'>
-          <SearchFeature className='search-link' />
-        </li> */}
           <li className='navigation-link hover'>
             <ThemeToggleButton className='theme-toggle-link' />
           </li>
           <li className=' navigation-contact-container contact-box-desktop'>
             <div className='navigation-contact-icons-box'>
-              {/* <FaGithub className='navigation-contact-icon contact-icon-github' />
-
-            <FaLinkedin className='navigation-contact-icon contact-icon-linkedin' />
-            <SiCodepen className='navigation-contact-icon contact-icon-codepen' /> */}
-
               <a href='https://github.com/piracode'>
                 <FaGithub className='navigation-contact-icon contact-icon-github' />
               </a>
