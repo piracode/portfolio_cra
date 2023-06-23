@@ -32,6 +32,11 @@
     //   margin-bottom: 1rem;
     // }
   }
+
+  &-question {
+    font-size: 1.5rem;
+    padding: 1.5rem 0 1rem 0;
+  }
 }
 
 .project-id-1 {
@@ -48,11 +53,30 @@
     }
     .img-box {
       padding-bottom: 2rem;
-      a,
-      a:visited {
-        text-align: center;
-        display: block;
-      }
+      // a,
+      // a:visited {
+      //   // text-align: center;
+      //   // display: block;
+      // }
+    }
+  }
+}
+
+.tab-content {
+  a,
+  a:visited {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+  }
+}
+
+.project-id-3 {
+  .tab-content {
+    padding-bottom: 2rem;
+    a,
+    a:visited {
+      padding: 0.5rem;
     }
   }
 }
@@ -93,6 +117,8 @@
   &-img {
     border-radius: 8px;
     padding: 0;
+    display: block;
+    margin: 0 auto;
   }
 
   &-cta-box {
@@ -180,6 +206,14 @@ h5 {
     }
     a:visited {
       color: $purple-accent-color;
+    }
+  }
+
+  .project-id-3 {
+    .project-details-img {
+      border: black 10px solid;
+      // border-top: 5px;
+      // border-bottom: 5px;
     }
   }
 }

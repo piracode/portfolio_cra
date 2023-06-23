@@ -9,9 +9,13 @@ export const Accordion = ({ accordions, projectID }) => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(-1)
   const [activeTabs, setActiveTabs] = useState({})
 
+  // Hook for translation
   const { t } = useTranslation()
 
-  // Handle tab click event
+  // console.log(accordions)
+  // console.log('testttt2', t(accordions[3].heading))
+
+  // Function to handle tab click and update active tabs state
   const handleTabClick = (accordionIndex, tabIndex) => {
     setActiveTabs((prev) => ({ ...prev, [accordionIndex]: tabIndex }))
   }
@@ -31,16 +35,17 @@ export const Accordion = ({ accordions, projectID }) => {
   // Render different elements based on the key
   const renderElement = (key, value, alt) => {
     switch (key) {
+      // Render paragraph inside the tabs in the accordions
       case 'content':
       case 'content1':
       case 'content2':
       case 'content3':
-        // Render paragraph inside the tabs in the accordions
         return (
           <p key={key} className={`accordion-paragraph ${key}`}>
             {t(value)}
           </p>
         )
+      // Render headings inside the accordions
       case 'heading':
       case 'heading1':
       case 'heading2':
@@ -50,38 +55,18 @@ export const Accordion = ({ accordions, projectID }) => {
             {t(value)}
           </h5>
         )
+      // Render images inside the accordions
       case 'image':
       case 'image1':
         return <img key={key} src={value.src} alt={value.alt || alt} />
+
+      // Render CTALinks inside the accordions
+
       case 'CTALink1':
-        return (
-          <div key={key} className='img-box'>
-            <a
-              className='img-link'
-              href={value.href}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              {t(value.text)}
-            </a>
-          </div>
-        )
       case 'CTALink2':
-        return (
-          <div key={key} className='img-box'>
-            <a
-              className='img-link'
-              href={value.href}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              {t(value.text)}
-            </a>
-          </div>
-        )
       case 'CTALink3':
         return (
-          <div key={key} className='img-box'>
+          <div key={key} className={`img-box ${key}`}>
             <a
               className='img-link'
               href={value.href}
@@ -92,6 +77,7 @@ export const Accordion = ({ accordions, projectID }) => {
             </a>
           </div>
         )
+
       default:
         if (
           key.startsWith('content') &&
@@ -118,25 +104,6 @@ export const Accordion = ({ accordions, projectID }) => {
       </div>
     )
   }
-
-  // Render the content of a tab based on its open/close state
-  // const renderTabContent = (tab, index, tabIndex) => {
-  //   if (activeTabs[index] === tabIndex) {
-  //     return (
-  //       <div key={tabIndex} className='tab-content'>
-  //         {tab.tabSections
-  //           ? tab.tabSections.map((section, sectionIndex) =>
-  //               renderSection(section, sectionIndex)
-  //             )
-  //           : Object.entries(tab).map(([key, value]) =>
-  //               renderElement(key, value, tab.alt)
-  //             )}
-  //       </div>
-  //     )
-  //   } else {
-  //     return null
-  //   }
-  // }
 
   const renderTabContent = (tab, index, tabIndex) => {
     if (activeTabs[index] === tabIndex) {
@@ -190,6 +157,13 @@ export const Accordion = ({ accordions, projectID }) => {
                     <p className={`accordion-paragraph ${key}`} key={key}>
                       {t(accordion[key])}
                     </p>
+                  )
+                }
+                if (key.startsWith('question')) {
+                  return (
+                    <h4 className={`accordion-question ${key}`} key={key}>
+                      {t(accordion[key])}
+                    </h4>
                   )
                 }
                 return null
