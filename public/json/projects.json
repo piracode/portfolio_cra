@@ -571,6 +571,62 @@
               ]
             },
             "design": false
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "13",
+            "title": "Vulvan",
+            "slug": "vulcan",
+            "thumbnail": "/images/vulcan-desktop.png",
+            "thumbnailMobile": "/images/vulcan-mobile.png",
+            "alt": "Website Vulvan Screenshot",
+            "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
+            "excerpt": "In a group of three, we developed a mockup website using HTML, SCSS, and JS.",
+            "gitHubLink": "https://github.com/piracode/vulcan",
+            "liveSiteLink": "https://martha.codes/vulcan/",
+            "liveSiteCTA": "Site",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Details",
+            "post": {
+              "titleOverview": "Overview",
+              "overview1": "Vulcan is a website created collaboratively by a team of three, using HTML, SCSS, and JS, with the purpose of replicating a mockup design. It serves as a demonstration of our abilities in developing functional and visually appealing web applications.",
+              "accordions": [
+                {
+                  "title": "Project Requirements",
+                  "content": "The primary objective of the project is to create a website called Vulcan that closely resembles the provided mockup design. ",
+                  "content1": "TThe website should demonstrate our proficiency in utilizing HTML5, SCSS, and JS to develop both functional and visually appealing web applications.",
+                  "content2": " Additionally, the project emphasizes teamwork and collaboration, requiring all team members to contribute collectively towards its successful completion. "
+                },
+                {
+                  "title": "Development Highlights",
+                  "tabs": [
+                    {
+                      "subtitle": "BEM Notation in SASS",
+                      "content": "I was responsible for developing the bottom half of the page and later took over the navigation section to assist a classmate. During the development process, I implemented the BEM (Block-Element-Modifier) notation in SASS wherever possible. BEM is a naming convention that promotes modular and reusable code structure. It helps in organizing CSS classes by breaking them down into independent blocks, elements, and modifiers, making it easier to manage and maintain the codebase.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_contact.scss",
+                        "text": "BEM Notation in SCSS Github Link"
+                      }
+                    },
+                    {
+                      "subtitle": "Responsiveness",
+                      "content": "We implemented responsiveness using SASS mixins and media queries. This allowed us to adapt the layout and styles based on different screen sizes, ensuring optimal display across devices.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_mixins.scss",
+                        "text": "Mixins.scss Github Link"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospective",
+                  "question": "What did I learn?",
+                  "content": "I learned the importance of teamwork and collaboration in a project. Working with a team allowed me to gain insights into different perspectives and leverage each team member's strengths. I also enhanced my skills in HTML, SCSS, and JS, especially in implementing the BEM notation and creating responsive designs using mixins and media queries."
+                }
+              ]
+            },
+            "design": false
           }
         ]
       },
@@ -1143,6 +1199,62 @@
               ]
             },
             "design": false
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "13",
+            "title": "Vulvan",
+            "slug": "vulcan",
+            "thumbnail": "/images/vulcan-desktop.png",
+            "thumbnailMobile": "/images/vulcan-mobile.png",
+            "alt": "Capture d'écran du website Vulvan",
+            "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
+            "excerpt": "En groupe de trois, nous avons développé un site web simulé en utilisant HTML, SCSS et JS.",
+            "gitHubLink": "https://github.com/piracode/vulcan",
+            "liveSiteLink": "https://martha.codes/vulcan/",
+            "liveSiteCTA": "Site",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Détails",
+            "post": {
+              "titleOverview": "Aperçu",
+              "overview1": "Vulcan est un site web développé en collaboration par une équipe de trois personnes en utilisant HTML, SCSS et JS, mettant en valeur nos compétences dans la création d'applications web fonctionnelles et esthétiquement attrayantes.",
+              "accordions": [
+                {
+                  "title": "Exigences du projet",
+                  "content": "L'objectif principal du projet est de créer un site web appelé Vulcan qui correspond étroitement à la maquette de conception fournie.",
+                  "content1": "Le site web devrait démontrer notre maîtrise de l'utilisation de HTML5, SCSS et JS pour développer des applications web à la fois fonctionnelles et esthétiquement attrayantes.",
+                  "content2": "De plus, le projet met l'accent sur le travail d'équipe et la collaboration, exigeant que tous les membres de l'équipe contribuent collectivement à sa réussite."
+                },
+                {
+                  "title": "Points clés du développement",
+                  "tabs": [
+                    {
+                      "subtitle": "Notation BEM en SASS",
+                      "content": "J'étais responsable du développement de la moitié inférieure de la page, puis j'ai pris en charge la section de navigation pour aider un camarade de classe. Au cours du processus de développement, j'ai mis en œuvre la notation BEM (Block-Element-Modifier) en SASS chaque fois que cela était possible. BEM est une convention de nommage qui favorise une structure de code modulaire et réutilisable. Elle aide à organiser les classes CSS en les divisant en blocs indépendants, éléments et modificateurs, ce qui facilite la gestion et la maintenance de la base de code.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_contact.scss",
+                        "text": "Lien Github de la notation BEM en SCSS"
+                      }
+                    },
+                    {
+                      "subtitle": "Adaptabilité",
+                      "content": "Nous avons implémenté l'adaptabilité à l'aide de mixins SASS et de requêtes média (media queries). Cela nous a permis d'adapter la mise en page et les styles en fonction des différentes tailles d'écran, garantissant un affichage optimal sur tous les appareils.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_mixins.scss",
+                        "text": "Lien Github vers mixins.scss"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Rétrospective",
+                  "question": "Qu'ai-je appris ?",
+                  "content": "J'ai appris l'importance du travail d'équipe et de la collaboration dans un projet. Travailler avec une équipe m'a permis de gagner en compréhension des différentes perspectives et de tirer parti des forces de chaque membre de l'équipe. J'ai également amélioré mes compétences en HTML, SCSS et JS, notamment en mettant en œuvre la notation BEM et en créant des designs adaptatifs à l'aide de mixins et de requêtes média."
+                }
+              ]
+            },
+            "design": false
           }
         ]
       },
@@ -1710,6 +1822,62 @@
                   "content3": "En primer lugar, el código podría simplificarse refactorizándolo y reduciendo la redundancia. Descomponer la lógica en funciones y componentes más pequeños podría hacerlo más manejable y más fácil de mantener. ",
                   "content4": "Además, agregar más comentarios y documentación para explicar el propósito y la funcionalidad del código lo haría más comprensible para otros y para futuras referencias.",
                   "content5": " Por último, explorar e implementar pruebas unitarias podría garantizar la confiabilidad y robustez de las funcionalidades de la aplicación de calculadora."
+                }
+              ]
+            },
+            "design": false
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "13",
+            "title": "Vulvan",
+            "slug": "vulcan",
+            "thumbnail": "/images/vulcan-desktop.png",
+            "thumbnailMobile": "/images/vulcan-mobile.png",
+            "alt": "Captura de pantalla del sitio web Vulvan",
+            "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
+            "excerpt": "En un grupo de tres, desarrollamos un sitio web simulado utilizando HTML, SCSS y JS.",
+            "gitHubLink": "https://github.com/piracode/vulcan",
+            "liveSiteLink": "https://martha.codes/vulcan/",
+            "liveSiteCTA": "Sitio",
+            "gitHubCTA": "Código",
+            "detailsCTA": "Detalles",
+            "post": {
+              "titleOverview": "Vista General",
+              "overview1": "Vulcan es un sitio web desarrollado en colaboración por un equipo de tres personas utilizando HTML, SCSS y JS, destacando nuestras habilidades en la creación de aplicaciones web funcionales y estéticamente atractivas.",
+              "accordions": [
+                {
+                  "title": "Requisitos del proyecto",
+                  "content": "El objetivo principal del proyecto es crear un sitio web llamado Vulcan que se ajuste estrechamente al diseño proporcionado.",
+                  "content1": "El sitio web debe demostrar nuestro dominio en el uso de HTML5, SCSS y JS para desarrollar aplicaciones web tanto funcionales como estéticamente atractivas.",
+                  "content2": "Además, el proyecto pone énfasis en el trabajo en equipo y la colaboración, requiriendo que todos los miembros del equipo contribuyan de manera colectiva a su éxito."
+                },
+                {
+                  "title": "Puntos clave del desarrollo",
+                  "tabs": [
+                    {
+                      "subtitle": "Notación BEM en SASS",
+                      "content": "Fui responsable del desarrollo de la mitad inferior de la página y luego me encargué de la sección de navegación para ayudar a un compañero de clase. Durante el proceso de desarrollo, implementé la notación BEM (Bloque-Elemento-Modificador) en SASS siempre que fue posible. BEM es una convención de nomenclatura que promueve una estructura de código modular y reutilizable. Ayuda a organizar las clases CSS dividiéndolas en bloques, elementos y modificadores independientes, lo que facilita la gestión y el mantenimiento del código base.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_contact.scss",
+                        "text": "Enlace de GitHub para la notación BEM en SCSS"
+                      }
+                    },
+                    {
+                      "subtitle": "Adaptabilidad",
+                      "content": "Implementamos la adaptabilidad utilizando mixins de SASS y consultas de medios (media queries). Esto nos permitió adaptar el diseño y los estilos según diferentes tamaños de pantalla, asegurando una visualización óptima en todos los dispositivos.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_mixins.scss",
+                        "text": "Enlace de GitHub a mixins.scss"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospectiva",
+                  "question": "¿Qué aprendí?",
+                  "content": "Aprendí la importancia del trabajo en equipo y la colaboración en un proyecto. Trabajar con un equipo me permitió comprender diferentes perspectivas y aprovechar las fortalezas de cada miembro del equipo. También mejoré mis habilidades en HTML, SCSS y JS, especialmente al implementar la notación BEM y crear diseños adaptables utilizando mixins y consultas de medios."
                 }
               ]
             },
