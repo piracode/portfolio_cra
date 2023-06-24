@@ -7,7 +7,7 @@ const About = () => {
 
   //retrieves the skills object from the translation file using the t function provided by the useTranslation hook.
   const skillsData = t('skills', { returnObjects: true })
-  console.log('about inView:', inView)
+  // console.log('about inView:', inView)
   return (
     <section
       ref={ref}

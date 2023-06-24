@@ -3,13 +3,14 @@ import { useEffect, useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Accordion from '../components/Accordion'
 import Footer from '../components/Footer'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
 import NavigationLinks from '../components/NavigationLinks'
 
 const ProjectDetails = () => {
   const { slug } = useParams() // Retrieve the project slug from the URL
   const { i18n } = useTranslation() // Access the i18n translation object
+  // const { t } = useTranslation()
 
   const [projectDetails, setProjectDetails] = useState(null)
   const [project, setProject] = useState(null)
@@ -70,7 +71,7 @@ const ProjectDetails = () => {
         </div>
 
         <div className='project-details-cta-box'>
-          {/* IF design is false , display the icons below the IMG in project details page for web dev porjects */}
+          {/* IF design is false  */}
           {!project.design ? (
             <div className='project-icon-box-details-page'>
               <a
@@ -88,17 +89,17 @@ const ProjectDetails = () => {
               </a>
             </div>
           ) : (
-            // If design is true, display the icons below the IMG in project details page for design proejcts
+            // If design is true
             <div className='project-icon-box-details design'>
               <a
                 className='project-icon-link'
-                href={project.gitHubLink}
+                href={project.pdfLink}
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <div className='project-icon-wrapper'>
                   {/* Render a different icon for design=true */}
-                  <BsPlusCircleFill />
+                  <FaFilePdf />
                   <span className='project-icon-title'>
                     {/* {project.gitHubCTA} */}
                     {project.pdfCTA}

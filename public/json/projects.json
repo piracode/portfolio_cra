@@ -257,7 +257,7 @@
             "slug": "ai-summit",
             "thumbnail": "/images/placeholder.png",
             "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
-            "excerpt": "Currently developing a woocommerce site in a team of 4. The site is to sell tickets for a oference about Artificial Intelligence.",
+            "excerpt": "We are currently developing a WooCommerce site as a team of four. The purpose of the site is to sell tickets for a conference focused on Artificial Intelligence.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
             "liveSiteCTA": "Site",
@@ -331,6 +331,111 @@
             },
             "design": false
           },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "8",
+            "title": "French Baking App - Case Study",
+            "slug": "french-baking-case-study",
+            "thumbnail": "/images/pic-frenchBaking.png",
+            "skills": [
+              "User Research",
+              "User Personas",
+              "Usability Testing",
+              "Interaction Design",
+              "Wireframing",
+              "Prototyping",
+              "Figma"
+            ],
+            "excerpt": "Conducted a comprehensive case study during the Google UX Certificate program, focusing on designing a fictional French baking app using Figma.",
+            "liveSiteCTA": "Prototype",
+            "liveSiteLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141&mode=design",
+            "detailsCTA": "Details",
+            "pdfCTA": "PDF",
+            "pdfLink": "/images/PDF/frenchBaking.pdf",
+            "post": {
+              "titleOverview": "Overview",
+              "overview1": "This case study delves into the development of a fictional French Baking App, completed as part of the UX Google Certificate program. While the quality of this work may not meet my highest standards, I aim to showcase it as a testament to the knowledge and skills gained throughout the process. The study encompasses various phases, including UX Analysis, UX Design and Prototyping, and concludes with a retrospective evaluation",
+              "accordions": [
+                {
+                  "title": "UX Analysis",
+                  "tabs": [
+                    {
+                      "subtitle": "Problem Understanding and Research",
+                      "heading": "Problem Definition/Goal",
+                      "content": "The problem definition/goal for this project is to create an app that addresses the challenge of long lineups for busy customers at French Baking, enabling them to pre-order for pick-up or delivery, saving time and providing convenience.",
+                      "heading1": "User Research",
+                      "content1": "User research was conducted to gain insights into the preferences and needs of the target customers at French Baking. This research aimed to understand their ordering behaviors and identify pain points, informing the development of the app."
+                    },
+                    {
+                      "subtitle": "User Analysis and Insights",
+                      "content": "One primary user group identified during the research process was busy adults who desired a convenient way to order from French Baking without waiting in long lineups. ",
+                      "heading": "Pain Points Identification",
+                      "content2": "Key pain points identified during user research include time constraints for working adults and busy students, disappointment caused by out of stock items, and the absence of an app for pre-ordering at the bakery.",
+                      "heading1": "Persona development",
+                      "content3": "A detailed persona named Nate was created during the development phase to represent the target user, providing valuable insights into their characteristics, needs, and goals. Nate's persona guided design decisions and feature prioritization for the French Baking app.",
+                      "heading2": "User Journey Mapping",
+                      "content4": "User journey mapping identified touchpoints, emotions, and pain points in the app's user experience, revealing insights for user-centered design and development.",
+                      "image1": {
+                        "src": "/images/journeyMap.png",
+                        "alt": "Journey Map French Baking"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "UX Design and Prototyping",
+                  "intro": "During the UX Design and Prototyping phase, several key activities were conducted to shape the app's design and create prototypes for testing and evaluation.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Wireframing",
+                      "heading": "Paper Wireframe",
+                      "content": "Initial sketches and basic layouts were created on paper to establish the visual structure and organization of the app.",
+                      "heading1": "Digital Wireframe",
+                      "content1": "The paper wireframes were translated into digital form, allowing for more detailed visualization and interaction design.",
+                      "CTALink1": {
+                        "href": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=0-1&mode=design&t=TeIG3EDCeZN8dDUH-0",
+                        "text": "Digital Wireframes Figma Link"
+                      },
+                      "heading2": "Low-fi Prototype",
+                      "content2": "A low-fidelity prototype was developed, providing a basic representation of the app's functionality and user interface. This prototype allowed for early user testing and feedback to refine the design.",
+                      "CTALink2": {
+                        "href": "https://www.figma.com/proto/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=12-107&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&mode=design",
+                        "text": "Figma Link Low-fi Prototype"
+                      }
+                    },
+                    {
+                      "subtitle": "Usability Findings",
+                      "content": "Usability testing was conducted to gather feedback and insights from users interacting with the low-fidelity prototype. The findings helped identify usability issues, refine the design, and enhance the overall user experience",
+                      "content1": "Usability findings indicated that users preferred a less cluttered homepage, wanted information about pick-up and delivery presented once, and favored a separate section for personalized options."
+                    },
+                    {
+                      "subtitle": "Mockup",
+                      "heading": "Mockup",
+                      "content": "A visual representation of the app's interface design was created to showcase the overall look and feel.",
+                      "heading1": "High Fidelity Prototype",
+                      "content1": "A fully interactive and visually polished prototype was developed, simulating the app's functionality and providing a realistic user experience",
+                      "content2": "NOTE: The prototype provided is not fully functional, as certain features like navigation have not been implemented. However, I have plans to continue working on it to improve its functionality.",
+                      "CTALink1": {
+                        "href": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141",
+                        "text": "High Fidelity Prototype Figma Link"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospective",
+                  "question": "What did I learn?",
+                  "content": "During this case study, I gained valuable insights and knowledge about various aspects of user experience design, including problem definition, user research, pain point identification, persona development, user journey mapping, wireframing, usability testing, and prototyping. I also learned the importance of allowing sufficient time for each phase of the design process to ensure higher quality outcomes.",
+                  "question1": "What could be improved?",
+                  "content2": "I rushed through this case study to complete the Google UX Certificate and avoid paying monthly fees for an extended period. I pursued this certificate as a personal learning experience. Regrettably, the rushed process resulted in a mediocre user interface and various issues with the PDF.",
+                  "content3": " Despite its shortcomings, I still want to share it because it provided valuable insights. The rushed timeline compromised the quality, but with my increased knowledge and experience, I recognize the potential for significant improvement with more time and effort."
+                }
+              ]
+            },
+            "design": true
+          },
 
           {
             "workshop": false,
@@ -338,7 +443,9 @@
             "id": "9",
             "title": "Best Buy Usability Report",
             "slug": "best-buy-usability-report",
-            "thumbnail": "/images/best-buy.png",
+            "thumbnail": "/images/best-buy-desktop.png",
+            "thumbnailMobile": "/images/best-buy-mobile.png",
+
             "skills": [
               "Usability Evaluation",
               "Research Methodology",
@@ -346,155 +453,60 @@
               "Report Writing"
             ],
             "excerpt": "In a collaborative effort with a team of five, we conducted a comprehensive usability report for Best Buy, assessing its user experience and documenting key findings.",
-            "gitHubLink": "https://github.com/piracode",
-            "liveSiteLink": "https://martha.codes/maching-game",
             "liveSiteCTA": "Prototype",
-            "detailsCTA": "Details",
+            "pdfLink": "/images/PDF/best_buy.pdf",
             "pdfCTA": "PDF",
+            "detailsCTA": "Details",
             "post": {
-              "overview": "This is the overview for Best Buy report",
+              "titleOverview": "Overview",
+              "overview1": "The Best Buy Usability Report aims to evaluate the user experience and provide actionable recommendations for improvement. The report consists of several sections, each focusing on a specific aspect of the evaluation process.",
               "accordions": [
-                {
-                  "title": "Introduction?",
-                  "content": "Intro best buy"
-                },
                 {
                   "title": "Methodology",
-                  "content": "research methodology used for conducting the usability evaluation. It includes details on the evaluation techniques, tools, and procedures employed during the assessment."
+                  "content": "Six participants were recruited for the usability evaluation, and the data collection process was conducted remotely using Zoom calls. The recruitment process aimed to identify participants who represented the ideal user type for Best Buy's target audience. By selecting diverse participants, we ensured a comprehensive evaluation of the user experience.",
+                  "tabs": [
+                    {
+                      "subtitle": "Persona",
+                      "content": "To further understand the target users, a persona was created based on the collected data and insights gained from the participants. The persona represents the characteristics, goals, and needs of the typical Best Buy user. This persona serves as a reference point throughout the evaluation process, guiding the assessment and helping to identify areas of improvement.",
+                      "image": {
+                        "src": "/images/best-buy-persona.png",
+                        "alt": "Best Buy Persona"
+                      }
+                    },
+                    {
+                      "subtitle": "Moderator Script",
+                      "content": "n order to ensure consistency and standardized testing procedures, a moderator script was developed for the usability evaluation. The moderator script served as a guide for the moderators conducting the tests, outlining the instructions, tasks, and questions to be asked during the evaluation sessions.",
+                      "content2": "To view it, please click on the following link and navigate to page 7:",
+                      "CTALink1": {
+                        "href": "/images/PDF/best_buy.pdf",
+                        "text": "PDF Link to Best Buy Usability Report"
+                      }
+                    }
+                  ]
                 },
                 {
-                  "title": "Data Collection",
-                  "content": "information about the participants,and the specific data collected during the evaluation, such as user feedback, observations, and task completion metrics",
-                  "subtitle1": "subtitle 1",
-                  "content1": "content 1",
-                  "subtitle2": "subtitle 2",
-                  "content2": "content 2"
-                },
-                {
-                  "title": "Data Analysis",
-                  "content": "process of analyzing the collected data. It covers the techniques used for qualitative and quantitative data analysis"
-                },
-                {
-                  "title": "Recommendations",
-                  "content": "actionable recommendations based on the findings of the usability evaluation"
-                },
-                {
-                  "title": "Conclusion",
-                  "content": "summarizes the overall findings and recommendations of the Best Buy Usability Report. It emphasizes the importance of usability evaluation and its potential impact on improving the user experience."
-                }
-              ]
-            },
-            "design": true
-          },
-          {
-            "workshop": false,
-            "featured": true,
-            "id": "10",
-            "title": "French Baking App - Case Study",
-            "slug": "french-baking-app-case-study",
-            "thumbnail": "/images/french-baking-app.png",
-            "skills": [
-              "User Research",
-              "User Personas",
-              "Usability Testing",
-              "Information Architecture",
-              "Interaction Design",
-              "Wireframing",
-              "Prototyping",
-              "Adobe XD"
-            ],
-            "excerpt": "Conducted a comprehensive case study during the Google UX Certificate program, focusing on designing a fictional French baking app using Adobe XD.",
-            "liveSiteCTA": "Prototype",
-            "detailsCTA": "Details",
-            "pdfCTA": "PDF",
-            "wireframeFrenchBakingMobileLink": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Untitled?type=design&t=66lsG4rFv5IVsP7x-1",
-            "prototypeFrenchBakingDesktopLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?type=design&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A141&node-id=5-37",
+                  "title": "Usability Test",
+                  "intro": "At the beginning of the test, we introduced the project to each participant, providing them with an overview of the objectives and expectations. Following the introduction, participants were asked to fill out a pre-test questionnaire. This questionnaire aimed to gather initial information about their background, preferences, and prior experience related to the project.",
 
-            "post": {
-              "overview": "This is the overview for the French Baking App case study",
-              "accordions": [
-                {
-                  "title": "Introduction",
-                  "content": "Intro to the French Baking App case study and its objectives"
+                  "tabs": [
+                    {
+                      "subtitle": "Usability Tasks",
+                      "content": "The usability tasks were designed to evaluate specific aspects of the project's functionality and user interaction. Two of the tasks included in the test were:",
+                      "heading": "First Click / Five Second / Preference Test",
+                      "content1": "Participants engaged in three tests: the First Click Test, where they clicked on their initial action to evaluate interface intuitiveness; the Five Second Test, gathering feedback on impressions and design effectiveness; and the Preference Test, revealing user preferences and guiding design decisions."
+                    },
+                    {
+                      "subtitle": "Think Aloud Tasks",
+                      "content": "In addition to the usability tasks, participants were given four tasks to complete while vocalizing their thoughts and actions. This approach, known as the 'think aloud' method, enabled us to gain insights into their decision-making processes, user flow, and any difficulties or areas of confusion they encountered.",
+                      "content1": "For example, one of the tasks involved using the search function to find a specific product. We closely observed the participants' process and analyzed their thinking patterns as they navigated the site, seeking to understand their search strategies, challenges faced, and overall satisfaction with the search functionality",
+                      "content2": "Throughout the usability test, we took careful notes, recorded observations, and collected feedback from the participants to further analyze and evaluate the user experience."
+                    }
+                  ]
                 },
                 {
-                  "title": "User Research",
-                  "content": "Details on the user research methodologies used to understand the target audience's needs and preferences"
-                },
-                {
-                  "title": "User Personas",
-                  "content": "Development of user personas to represent the app's target users"
-                },
-                {
-                  "title": "Usability Testing",
-                  "content": "Conducting usability testing to identify areas for improvement in the app's design and functionality"
-                },
-                {
-                  "title": "Information Architecture",
-                  "content": "Iteratively refining the app's information architecture to optimize user navigation and organization of content"
-                },
-                {
-                  "title": "Interaction Design",
-                  "content": "Designing the app's interaction elements and flows to enhance user experience"
-                },
-                {
-                  "title": "Wireframes and Prototypes",
-                  "content": "Creating wireframes and interactive prototypes using Adobe XD to demonstrate the proposed user interface and user flows"
-                },
-                {
-                  "title": "Conclusion",
-                  "content": "Summarizing the overall findings and outcomes of the French Baking App case study, highlighting the importance of user-centered design in creating successful digital products"
-                }
-              ]
-            },
-            "design": true
-          },
-          {
-            "workshop": false,
-            "featured": true,
-            "id": "11",
-            "title": "Craigslist Design Brief",
-            "slug": "craigslist-design-brief",
-            "thumbnail": "/images/craigslist-design-brief.png",
-            "skills": [
-              "Design Brief",
-              "User Research",
-              "User-centered Design",
-              "Usability Enhancement",
-              "Visual Design",
-              "Wireframing",
-              "Low-fidelity Prototyping"
-            ],
-            "excerpt": "Developed a design brief for Craigslist, outlining user-centered design solutions to enhance the platform's usability and visual appeal.",
-            "liveSiteCTA": "Prototype",
-            "detailsCTA": "Details",
-            "pdfCTA": "PDF",
-            "post": {
-              "overview": "This is the overview for the Craigslist Design Brief",
-              "accordions": [
-                {
-                  "title": "Introduction",
-                  "content": "Intro to the Craigslist Design Brief and its objectives"
-                },
-                {
-                  "title": "User Research",
-                  "content": "Conducting user research to identify pain points and opportunities for improvement in Craigslist's usability and visual appeal"
-                },
-                {
-                  "title": "Design Solutions",
-                  "content": "Development of user-centered design solutions to address the identified pain points and enhance the platform's overall user experience"
-                },
-                {
-                  "title": "Wireframes",
-                  "content": "Creating wireframes to visually represent the proposed design changes and improvements for Craigslist"
-                },
-                {
-                  "title": "Low-fidelity Prototypes",
-                  "content": "Developing low-fidelity prototypes to illustrate the proposed design changes and gather feedback on the updated interface and user flows"
-                },
-                {
-                  "title": "Conclusion",
-                  "content": "Summarizing the overall findings and outcomes of the Craigslist Design Brief, emphasizing the potential impact of user-centered design solutions on the platform's usability and visual appeal"
+                  "title": "Reporting Results",
+                  "content": "We analyzed the test results and utilized graphs for better visualization. Additionally, we implemented the System Usability Scale (SUS) to evaluate overall usability.",
+                  "content1": "The successful usability test sessions uncovered areas for improvement, including addressing overwhelming options, enhancing clarity between 'in stock' and 'out of stock' items, implementing an accessible FAQ page, integrating voice activation and AI search functionality, and considering interface enhancements to strike a balance between simplicity and advanced features."
                 }
               ]
             },
@@ -640,6 +652,7 @@
             },
             "design": false
           },
+
           {
             "workshop": false,
             "featured": true,
@@ -756,7 +769,7 @@
             "slug": "ai-summit",
             "thumbnail": "/images/placeholder.png",
             "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
-            "excerpt": "Actuellement, je développe un site WooCommerce au sein d'une équipe de 4 personnes. Le site est destiné à la vente de billets pour une conférence sur l'Intelligence Artificielle.",
+            "excerpt": "Nous développons actuellement un site WooCommerce au sein d'une équipe de 4 personnes. Le site a pour but de vendre des billets pour une conférence sur l'Intelligence Artificielle.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
             "liveSiteCTA": "Site",
@@ -830,6 +843,187 @@
               ]
             },
             "design": false
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "8",
+            "title": "French Baking - Étude de cas",
+            "slug": "french-baking-case-study",
+            "thumbnail": "/images/pic-frenchBaking.png",
+            "skills": [
+              "Recherche utilisateur",
+              "Personas utilisateur",
+              "Tests d'utilisabilité",
+              "Conception interactive",
+              "Création de maquettes",
+              "Prototypage",
+              "Figma"
+            ],
+
+            "excerpt": "J'ai conduit une étude de cas approfondie dans le cadre du programme Google UX Certificate, en me concentrant sur la conception d'une application fictive de pâtisserie française à l'aide de Figma",
+            "liveSiteCTA": "Prototype",
+            "liveSiteLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141&mode=design",
+            "detailsCTA": "Détails",
+            "pdfCTA": "PDF",
+            "pdfLink": "/images/PDF/frenchBaking.pdf",
+            "post": {
+              "titleOverview": "Aperçu",
+              "overview1": "Cette étude de cas explore le développement d'une application de pâtisserie française fictive, réalisée dans le cadre du programme Google UX Certificate. Bien que la qualité de ce travail puisse ne pas atteindre mes normes les plus élevées, mon objectif est de le présenter comme un témoignage des connaissances et compétences acquises tout au long du processus. L'étude englobe différentes phases, notamment l'analyse UX, la conception UX et le prototypage, et se conclut par une évaluation rétrospective.",
+              "accordions": [
+                {
+                  "title": "Analyse UX",
+                  "tabs": [
+                    {
+                      "subtitle": "Compréhension du problème et recherche",
+                      "heading": "Définition du problème/objectif",
+                      "content": "La définition du problème/objectif de ce projet est de créer une application qui répond au défi des longues files d'attente pour les clients pressés de French Baking, leur permettant de précommander pour une récupération ou une livraison, gagnant du temps et offrant plus de commodité.",
+                      "heading1": "Recherche utilisateur",
+                      "content1": "Une recherche utilisateur a été menée pour comprendre les préférences et les besoins des clients cibles de French Baking. Cette recherche visait à comprendre leurs comportements de commande et à identifier les points douloureux, afin de guider le développement de l'application."
+                    },
+                    {
+                      "subtitle": "Analyse des utilisateurs et informations",
+                      "content": "Un groupe d'utilisateurs principaux identifié lors du processus de recherche était constitué d'adultes occupés qui souhaitaient une manière pratique de commander à French Baking sans faire la queue.",
+                      "heading": "Identification des points de friction",
+                      "content2": "Les principaux points de friction identifiés lors de la recherche utilisateur comprennent les contraintes de temps pour les adultes qui travaillent et les étudiants occupés, la déception causée par les produits en rupture de stock et l'absence d'une application permettant de précommander à la boulangerie.",
+                      "heading1": "Développement de personas",
+                      "content3": "Un persona détaillé nommé Nate a été créé pendant la phase de développement pour représenter l'utilisateur cible, fournissant des informations précieuses sur ses caractéristiques, ses besoins et ses objectifs. Le persona de Nate a guidé les décisions de conception et la priorisation des fonctionnalités pour l'application de French Baking.",
+                      "heading2": "Carte d'expérience utilisateur",
+                      "content4": "La carte d'expérience utilisateur utilisateur a identifié les points de contact, les émotions et les points de friction dans l'expérience utilisateur de l'application, révélant des informations pour une conception et un développement centrés sur l'utilisateur.",
+                      "image1": {
+                        "src": "/images/journeyMap.png",
+                        "alt": "Carte du parcours utilisateur French Baking"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Conception UX et prototypage",
+                  "intro": "Pendant la phase de conception UX et de prototypage, plusieurs activités clés ont été réalisées pour façonner le design de l'application et créer des prototypes pour les tests et l'évaluation.",
+                  "tabs": [
+                    {
+                      "subtitle": "Création de maquettes",
+                      "heading": "Maquette papier",
+                      "content": "Des croquis initiaux et des mises en page de base ont été créés sur papier pour établir la structure visuelle et l'organisation de l'application.",
+                      "heading1": "Maquette numérique",
+                      "content1": "Les maquettes papier ont été traduites en format numérique, permettant une visualisation plus détaillée et une conception interactive.",
+                      "CTALink1": {
+                        "href": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=0-1&mode=design&t=TeIG3EDCeZN8dDUH-0",
+                        "text": "Lien Figma des maquettes numériques"
+                      },
+                      "heading2": "Prototype à basse fidélité",
+                      "content2": "Un prototype à basse fidélité a été développé, offrant une représentation basique de la fonctionnalité et de l'interface utilisateur de l'application. Ce prototype a permis des tests utilisateurs précoces et des retours pour affiner la conception.",
+                      "CTALink2": {
+                        "href": "https://www.figma.com/proto/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=12-107&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&mode=design",
+                        "text": "Lien Figma du prototype à basse fidélité"
+                      }
+                    },
+                    {
+                      "subtitle": "Résultats de l'utilisabilité",
+                      "content": "Des tests d'utilisabilité ont été réalisés pour recueillir les retours et les insights des utilisateurs interagissant avec le prototype à basse fidélité. Les résultats ont permis d'identifier des problèmes d'utilisabilité, de peaufiner la conception et d'améliorer l'expérience utilisateur globale.",
+                      "content1": "Les résultats de l'utilisabilité ont indiqué que les utilisateurs préféraient une page d'accueil moins encombrée, souhaitaient voir les informations sur la récupération et la livraison présentées une seule fois, et privilégiaient une section distincte pour les options personnalisées."
+                    },
+                    {
+                      "subtitle": "Maquette",
+                      "heading": "Maquette",
+                      "content": "Une représentation visuelle de la conception de l'interface de l'application a été créée pour présenter l'apparence générale.",
+                      "heading1": "Prototype haute fidélité",
+                      "content1": "Un prototype entièrement interactif et visuellement abouti a été développé, simulant la fonctionnalité de l'application et offrant une expérience utilisateur réaliste.",
+                      "content2": "NOTE : Le prototype fourni n'est pas entièrement fonctionnel, certaines fonctionnalités comme la navigation n'ont pas été implémentées. Cependant, j'ai prévu de continuer à travailler dessus pour améliorer sa fonctionnalité.",
+                      "CTALink1": {
+                        "href": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141",
+                        "text": "Lien Figma du prototype haute fidélité"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Rétrospective",
+                  "question": "Qu'ai-je appris ?",
+                  "content": "Au cours de cette étude de cas, j'ai acquis des connaissances précieuses sur différents aspects de la conception de l'expérience utilisateur, notamment la définition du problème, la recherche utilisateur, l'identification des points de friction, le développement de personas, la cartographie du parcours utilisateur, la création de maquettes, les tests d'utilisabilité et le prototypage. J'ai également appris l'importance de consacrer suffisamment de temps à chaque phase du processus de conception pour garantir des résultats de meilleure qualité.",
+                  "question1": "Qu'est-ce qui pourrait être amélioré ?",
+                  "content2": "J'ai précipité cette étude de cas pour obtenir le certificat UX de Google et éviter de payer des frais mensuels pendant une période prolongée. J'ai entrepris ce certificat en tant qu'expérience d'apprentissage personnelle. Malheureusement, le processus précipité a donné lieu à une interface utilisateur médiocre et à divers problèmes avec le PDF.",
+                  "content3": "Malgré ses lacunes, je souhaite quand même le partager car il a fourni des insights précieux. Le calendrier précipité a compromis la qualité, mais avec mes connaissances et mon expérience accrues, je reconnais le potentiel d'amélioration significative avec plus de temps et d'efforts."
+                }
+              ]
+            },
+            "design": true
+          },
+
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "9",
+            "title": "Rapport sur l'utilisabilité de Best Buy",
+            "slug": "best-buy-usability-report",
+            "thumbnail": "/images/best-buy-desktop.png",
+            "thumbnailMobile": "/images/best-buy-mobile.png",
+
+            "skills": [
+              "Évaluation de l'utilisabilité",
+              "Méthodologie de recherche",
+              "Analyse des données",
+              "Rédaction de rapports"
+            ],
+            "excerpt": "Dans le cadre d'un effort de collaboration avec une équipe de cinq personnes, nous avons réalisé un rapport complet sur l'utilisabilité pour Best Buy, évaluant son expérience utilisateur et documentant les principales conclusions.",
+            "liveSiteCTA": "Prototype",
+            "pdfLink": "/images/PDF/best_buy.pdf",
+            "pdfCTA": "PDF",
+            "detailsCTA": "Détails",
+            "post": {
+              "titleOverview": "Aperçu",
+              "overview1": "Le rapport sur l'utilisabilité de Best Buy vise à évaluer l'expérience utilisateur et à fournir des recommandations concrètes pour l'amélioration. Le rapport se compose de plusieurs sections, chacune se concentrant sur un aspect spécifique du processus d'évaluation.",
+              "accordions": [
+                {
+                  "title": "Méthodologie",
+                  "content": "Six participants ont été recrutés pour l'évaluation de l'utilisabilité, et le processus de collecte de données s'est déroulé à distance grâce à des appels Zoom. Le processus de recrutement visait à identifier des participants représentant le type d'utilisateur idéal pour le public cible de Best Buy. En sélectionnant des participants diversifiés, nous avons assuré une évaluation complète de l'expérience utilisateur.",
+                  "tabs": [
+                    {
+                      "subtitle": "Persona",
+                      "content": "Pour mieux comprendre les utilisateurs cibles, une persona a été créée à partir des données collectées et des informations obtenues auprès des participants. Cette persona représente les caractéristiques, les objectifs et les besoins de l'utilisateur typique de Best Buy. Cette persona sert de point de référence tout au long du processus d'évaluation, guidant l'évaluation et aidant à identifier les domaines d'amélioration.",
+                      "image": {
+                        "src": "/images/best-buy-persona.png",
+                        "alt": "Persona Best Buy"
+                      }
+                    },
+                    {
+                      "subtitle": "Script du modérateur",
+                      "content": "Afin de garantir la cohérence et les procédures de test normalisées, un script du modérateur a été élaboré pour l'évaluation de l'utilisabilité. Le script du modérateur a servi de guide pour les modérateurs qui ont réalisé les tests, en fournissant les instructions, les tâches et les questions à poser lors des sessions d'évaluation.",
+                      "content2": "Pour le consulter, veuillez cliquer sur le lien suivant et accéder à la page 7 :",
+                      "CTALink1": {
+                        "href": "/images/PDF/best_buy.pdf",
+                        "text": "Lien PDF vers le rapport d'utilisabilité de Best Buy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Test d'utilisabilité",
+                  "intro": "Au début du test, nous avons présenté le projet à chaque participant, en leur fournissant un aperçu des objectifs et des attentes. Après l'introduction, les participants ont été invités à remplir un questionnaire préalable au test. Ce questionnaire visait à recueillir des informations initiales sur leur parcours, leurs préférences et leur expérience préalable liée au projet.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Tâches d'utilisabilité",
+                      "content": "Les tâches d'utilisabilité ont été conçues pour évaluer des aspects spécifiques de la fonctionnalité du projet et de l'interaction utilisateur. Deux des tâches incluses dans le test étaient les suivantes :",
+                      "heading": "Test du premier clic / Test des cinq secondes / Test de préférence",
+                      "content1": "Les participants ont réalisé trois tests : le Test du premier clic, où ils devaient cliquer sur leur action initiale pour évaluer l'intuitivité de l'interface ; le Test des cinq secondes, qui recueillait des informations sur les impressions et l'efficacité de la conception ; et le Test de préférence, révélant les préférences des utilisateurs et guidant les décisions de conception."
+                    },
+                    {
+                      "subtitle": "Tâches de pensée à voix haute",
+                      "content": "En plus des tâches d'utilisabilité, les participants se sont vu confier quatre tâches à accomplir en exprimant à voix haute leurs pensées et actions. Cette approche, connue sous le nom de méthode de la « pensée à voix haute », nous a permis d'obtenir des informations sur leurs processus de prise de décision, leur flux d'utilisateur, ainsi que les difficultés ou les zones de confusion rencontrées.",
+                      "content1": "Par exemple, l'une des tâches consistait à utiliser la fonction de recherche pour trouver un produit spécifique. Nous avons observé attentivement le processus des participants et analysé leurs schémas de pensée alors qu'ils naviguaient sur le site, cherchant à comprendre leurs stratégies de recherche, les défis rencontrés et leur satisfaction globale de la fonctionnalité de recherche.",
+                      "content2": "Tout au long du test d'utilisabilité, nous avons pris des notes détaillées, enregistré les observations et recueilli les retours des participants afin de pouvoir les analyser et évaluer plus en détail l'expérience utilisateur."
+                    }
+                  ]
+                },
+                {
+                  "title": "Rapport des résultats",
+                  "content": "Nous avons analysé les résultats des tests et utilisé des graphiques pour une meilleure visualisation. De plus, nous avons mis en œuvre l'échelle de convivialité du système (SUS) pour évaluer la convivialité globale.",
+                  "content1": "Les sessions réussies de test d'utilisabilité ont révélé des domaines à améliorer, notamment la prise en compte des options accablantes, l'amélioration de la clarté entre les articles 'en stock' et 'épuisé', la mise en place d'une page de FAQ accessible, l'intégration de la fonctionnalité de recherche vocale et d'intelligence artificielle, et la prise en compte des améliorations de l'interface pour trouver un équilibre entre simplicité et fonctionnalités avancées."
+                }
+              ]
+            },
+            "design": true
           }
         ]
       },
@@ -1088,12 +1282,12 @@
             "slug": "ai-summit",
             "thumbnail": "/images/placeholder.png",
             "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
-            "excerpt": "Actuellement, je développe un site WooCommerce au sein d'une équipe de 4 personnes. Le site est destiné à la vente de billets pour une conférence sur l'Intelligence Artificielle.",
+            "excerpt": "Actualmente estamos desarrollando un sitio de WooCommerce en un equipo de 4 personas. El sitio tiene como objetivo vender boletos para una conferencia sobre Inteligencia Artificial.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
-            "liveSiteCTA": "Site",
-            "gitHubCTA": "Code",
-            "detailsCTA": "Détails",
+            "liveSiteCTA": "Sitio",
+            "gitHubCTA": "Código",
+            "detailsCTA": "Detalles",
             "post": {
               "intro": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia.",
               "content": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia."
@@ -1161,6 +1355,187 @@
               ]
             },
             "design": false
+          },
+
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "8",
+            "title": "French Baking - Estudio de caso",
+            "slug": "french-baking-case-study",
+            "thumbnail": "/images/pic-frenchBaking.png",
+            "skills": [
+              "Investigación de usuarios",
+              "Personas de usuarios",
+              "Pruebas de usabilidad",
+              "Diseño interactivo",
+              "Creación de maquetas",
+              "Prototipado",
+              "Figma"
+            ],
+
+            "excerpt": "Realicé un estudio de caso exhaustivo como parte del programa Google UX Certificate, centrándome en el diseño de una aplicación ficticia de repostería francesa utilizando Figma.",
+            "liveSiteCTA": "Prototipo",
+            "liveSiteLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141&mode=design",
+            "detailsCTA": "Detalles",
+            "pdfCTA": "PDF",
+            "pdfLink": "/images/PDF/frenchBaking.pdf",
+            "post": {
+              "titleOverview": "Visión general",
+              "overview1": "Este estudio de caso explora el desarrollo de una aplicación ficticia de repostería francesa, realizado como parte del programa Google UX Certificate. Aunque la calidad de este trabajo puede no alcanzar mis estándares más altos, mi objetivo es presentarlo como testimonio del conocimiento y las habilidades adquiridas a lo largo del proceso. El estudio abarca diferentes fases, incluyendo el análisis UX, el diseño UX y el prototipado, y concluye con una evaluación retrospectiva.",
+              "accordions": [
+                {
+                  "title": "Análisis UX",
+                  "tabs": [
+                    {
+                      "subtitle": "Comprensión del problema e investigación",
+                      "heading": "Definición del problema/objetivo",
+                      "content": "La definición del problema/objetivo de este proyecto es crear una aplicación que aborde el desafío de las largas filas de clientes apurados en French Baking, permitiéndoles realizar pedidos anticipados para recoger o entregar, ahorrando tiempo y brindando mayor comodidad.",
+                      "heading1": "Investigación de usuarios",
+                      "content1": "Se realizó una investigación de usuarios para comprender las preferencias y necesidades de los clientes objetivo de French Baking. Esta investigación tenía como objetivo comprender sus comportamientos de pedido e identificar puntos de fricción para guiar el desarrollo de la aplicación."
+                    },
+                    {
+                      "subtitle": "Análisis de usuarios e información",
+                      "content": "Un grupo de usuarios principales identificado durante el proceso de investigación estaba compuesto por adultos ocupados que deseaban una forma conveniente de hacer pedidos en French Baking sin hacer cola.",
+                      "heading": "Identificación de puntos de fricción",
+                      "content2": "Los principales puntos de fricción identificados durante la investigación de usuarios incluyen las restricciones de tiempo para adultos que trabajan y estudiantes ocupados, la frustración causada por productos agotados y la falta de una aplicación para realizar pedidos anticipados en la panadería.",
+                      "heading1": "Desarrollo de personas",
+                      "content3": "Se creó una persona detallada llamada Nate durante la fase de desarrollo para representar al usuario objetivo, brindando información valiosa sobre sus características, necesidades y objetivos. La persona de Nate guió las decisiones de diseño y la priorización de características para la aplicación de French Baking.",
+                      "heading2": "Mapa de experiencia del usuario",
+                      "content4": "El mapa de experiencia del usuario identificó los puntos de contacto, las emociones y los puntos de fricción en la experiencia del usuario de la aplicación, revelando información para un diseño y desarrollo centrados en el usuario.",
+                      "image1": {
+                        "src": "/images/journeyMap.png",
+                        "alt": "Mapa de experiencia del usuario French Baking"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Diseño UX y prototipado",
+                  "intro": "Durante la fase de diseño UX y prototipado, se llevaron a cabo varias actividades clave para dar forma al diseño de la aplicación y crear prototipos para pruebas y evaluación.",
+                  "tabs": [
+                    {
+                      "subtitle": "Creación de maquetas",
+                      "heading": "Maqueta en papel",
+                      "content": "Se crearon bocetos iniciales y diseños básicos en papel para establecer la estructura visual y la organización de la aplicación.",
+                      "heading1": "Maqueta digital",
+                      "content1": "Las maquetas en papel se trasladaron a formato digital, lo que permitió una visualización más detallada y un diseño interactivo.",
+                      "CTALink1": {
+                        "href": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=0-1&mode=design&t=TeIG3EDCeZN8dDUH-0",
+                        "text": "Enlace a las maquetas digitales en Figma"
+                      },
+                      "heading2": "Prototipo de baja fidelidad",
+                      "content2": "Se desarrolló un prototipo de baja fidelidad que brindaba una representación básica de la funcionalidad y la interfaz de usuario de la aplicación. Este prototipo permitió pruebas tempranas con usuarios y recibir comentarios para refinar el diseño.",
+                      "CTALink2": {
+                        "href": "https://www.figma.com/proto/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=12-107&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&mode=design",
+                        "text": "Enlace al prototipo de baja fidelidad en Figma"
+                      }
+                    },
+                    {
+                      "subtitle": "Resultados de usabilidad",
+                      "content": "Se llevaron a cabo pruebas de usabilidad para recopilar comentarios y conocimientos de los usuarios que interactuaron con el prototipo de baja fidelidad. Los resultados permitieron identificar problemas de usabilidad, refinar el diseño y mejorar la experiencia general del usuario.",
+                      "content1": "Los resultados de usabilidad indicaron que los usuarios preferían una página de inicio menos abarrotada, deseaban ver la información sobre recogida y entrega presentada una sola vez, y valoraban una sección separada para opciones personalizadas."
+                    },
+                    {
+                      "subtitle": "Maqueta",
+                      "heading": "Maqueta",
+                      "content": "Se creó una representación visual del diseño de la interfaz de la aplicación para mostrar su apariencia general.",
+                      "heading1": "Prototipo de alta fidelidad",
+                      "content1": "Se desarrolló un prototipo completamente interactivo y visualmente completo que simula la funcionalidad de la aplicación y ofrece una experiencia de usuario realista.",
+                      "content2": "NOTA: El prototipo proporcionado no es completamente funcional, algunas características como la navegación no se han implementado. Sin embargo, tengo previsto seguir trabajando en él para mejorar su funcionalidad.",
+                      "CTALink1": {
+                        "href": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141",
+                        "text": "Enlace al prototipo de alta fidelidad en Figma"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospectiva",
+                  "question": "¿Qué he aprendido?",
+                  "content": "Durante este estudio de caso, he adquirido conocimientos valiosos sobre diferentes aspectos del diseño de la experiencia del usuario, incluyendo la definición del problema, la investigación de usuarios, la identificación de puntos de fricción, el desarrollo de personas, el mapeo del recorrido del usuario, la creación de maquetas, las pruebas de usabilidad y el prototipado. También he aprendido la importancia de dedicar suficiente tiempo a cada fase del proceso de diseño para asegurar resultados de mayor calidad.",
+                  "question1": "¿Qué se podría mejorar?",
+                  "content2": "Me apresuré en este estudio de caso para obtener el certificado de UX de Google y evitar pagar tarifas mensuales durante un período prolongado. Realicé este certificado como una experiencia de aprendizaje personal. Desafortunadamente, el proceso apresurado resultó en una interfaz de usuario mediocre y varios problemas con el PDF.",
+                  "content3": "A pesar de sus limitaciones, aún quiero compartirlo porque proporciona información valiosa. El cronograma apresurado comprometió la calidad, pero con mis conocimientos y experiencia mejorados, reconozco el potencial de una mejora significativa con más tiempo y esfuerzo."
+                }
+              ]
+            },
+            "design": true
+          },
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "9",
+            "title": "Informe sobre la Usabilidad de Best Buy",
+            "slug": "best-buy-usability-report",
+            "thumbnail": "/images/best-buy-desktop.png",
+            "thumbnailMobile": "/images/best-buy-mobile.png",
+
+            "skills": [
+              "Evaluación de Usabilidad",
+              "Metodología de Investigación",
+              "Análisis de Datos",
+              "Redacción de Informes"
+            ],
+            "excerpt": "Como parte de un esfuerzo de colaboración con un equipo de cinco personas, hemos realizado un informe completo sobre la usabilidad para Best Buy, evaluando su experiencia de usuario y documentando las principales conclusiones.",
+            "liveSiteCTA": "Prototype",
+            "pdfLink": "/images/PDF/best_buy.pdf",
+            "pdfCTA": "PDF",
+            "detailsCTA": "Détails",
+            "post": {
+              "titleOverview": "Vista general",
+              "overview1": "El informe sobre la usabilidad de Best Buy tiene como objetivo evaluar la experiencia del usuario y proporcionar recomendaciones concretas para la mejora. El informe consta de varias secciones, cada una enfocada en un aspecto específico del proceso de evaluación.",
+              "accordions": [
+                {
+                  "title": "Metodología",
+                  "content": "Se reclutaron seis participantes para la evaluación de usabilidad, y el proceso de recopilación de datos se llevó a cabo de forma remota a través de llamadas de Zoom. El proceso de reclutamiento buscó identificar participantes que representaran el tipo de usuario ideal para el público objetivo de Best Buy. Al seleccionar participantes diversos, aseguramos una evaluación completa de la experiencia del usuario.",
+                  "tabs": [
+                    {
+                      "subtitle": "Persona",
+                      "content": "Para comprender mejor a los usuarios objetivo, se creó una persona basada en los datos recopilados y la información obtenida de los participantes. Esta persona representa las características, objetivos y necesidades del usuario típico de Best Buy. Esta persona sirve como punto de referencia durante todo el proceso de evaluación, guiando la evaluación y ayudando a identificar áreas de mejora.",
+                      "image": {
+                        "src": "/images/best-buy-persona.png",
+                        "alt": "Persona Best Buy"
+                      }
+                    },
+                    {
+                      "subtitle": "Guion del moderador",
+                      "content": "Con el fin de garantizar la coherencia y los procedimientos de prueba estandarizados, se elaboró un guion del moderador para la evaluación de usabilidad. El guion del moderador sirvió como guía para los moderadores que realizaron las pruebas, proporcionando instrucciones, tareas y preguntas para las sesiones de evaluación.",
+                      "content2": "Para consultarlo, por favor haz clic en el siguiente enlace y accede a la página 7:",
+                      "CTALink1": {
+                        "href": "/images/PDF/best_buy.pdf",
+                        "text": "Enlace PDF al informe de usabilidad de Best Buy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Prueba de usabilidad",
+                  "intro": "Al comienzo de la prueba, presentamos el proyecto a cada participante, brindándoles una visión general de los objetivos y expectativas. Después de la introducción, se les pidió a los participantes que completaran un cuestionario previo a la prueba. Este cuestionario tenía como objetivo recopilar información inicial sobre su experiencia, preferencias y experiencia previa relacionada con el proyecto.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Tareas de usabilidad",
+                      "content": "Las tareas de usabilidad fueron diseñadas para evaluar aspectos específicos de la funcionalidad del proyecto y la interacción del usuario. Dos de las tareas incluidas en la prueba fueron las siguientes:",
+                      "heading": "Prueba de primer clic / Prueba de cinco segundos / Prueba de preferencia",
+                      "content1": "Los participantes realizaron tres pruebas: la Prueba de primer clic, donde debían hacer clic en su acción inicial para evaluar la intuitividad de la interfaz; la Prueba de cinco segundos, que recopilaba información sobre las impresiones y la eficacia del diseño; y la Prueba de preferencia, que revelaba las preferencias de los usuarios y orientaba las decisiones de diseño."
+                    },
+                    {
+                      "subtitle": "Tareas de pensamiento en voz alta",
+                      "content": "Además de las tareas de usabilidad, se asignaron a los participantes cuatro tareas para realizar mientras expresaban en voz alta sus pensamientos y acciones. Este enfoque, conocido como el método de 'pensamiento en voz alta', nos permitió obtener información sobre sus procesos de toma de decisiones, flujo de usuario, así como las dificultades o áreas de confusión encontradas.",
+                      "content1": "Por ejemplo, una de las tareas consistía en utilizar la función de búsqueda para encontrar un producto específico. Observamos cuidadosamente el proceso de los participantes y analizamos sus patrones de pensamiento mientras navegaban por el sitio, tratando de comprender sus estrategias de búsqueda, los desafíos encontrados y su satisfacción general con la funcionalidad de búsqueda.",
+                      "content2": "A lo largo de la prueba de usabilidad, tomamos notas detalladas, registramos observaciones y recopilamos los comentarios de los participantes para poder analizarlos y evaluar en mayor detalle la experiencia del usuario."
+                    }
+                  ]
+                },
+                {
+                  "title": "Informe de resultados",
+                  "content": "Hemos analizado los resultados de las pruebas y los hemos visualizado mediante gráficos para una mejor comprensión. Además, hemos implementado la escala de usabilidad del sistema (SUS) para evaluar la usabilidad general.",
+                  "content1": "Las sesiones exitosas de prueba de usabilidad revelaron áreas de mejora, incluyendo la consideración de opciones abrumadoras, la mejora de la claridad entre los artículos 'en stock' y 'agotados', la implementación de una página de preguntas frecuentes accesible, la integración de la funcionalidad de búsqueda por voz e inteligencia artificial, y la consideración de mejoras en la interfaz para encontrar un equilibrio entre simplicidad y funcionalidades avanzadas."
+                }
+              ]
+            },
+            "design": true
           }
         ]
       }
