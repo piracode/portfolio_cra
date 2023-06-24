@@ -1,6 +1,6 @@
 // FilterProjects.js
 // import React from 'react'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
@@ -47,6 +47,7 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
         </div>
         <div className='project-cta-box'>
           {/* Render different icons based on design property */}
+          {/* If Project-design false */}
           {!project.design ? (
             <div className='project-icon-box github'>
               <a
@@ -64,16 +65,16 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
               </a>
             </div>
           ) : (
-            // If project true, render different icons in the proejct card
+            // If project design true
             <div className='project-icon-box design'>
               <a
                 className='project-icon-link'
-                href={project.gitHubLink}
+                href={project.pdfLink}
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <div className='project-icon-wrapper'>
-                  <BsPlusCircleFill />
+                  <FaFilePdf />
                   <span className='project-icon-title'>{project.pdfCTA}</span>
                 </div>
               </a>
