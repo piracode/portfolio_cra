@@ -1,10 +1,17 @@
 import { ReactComponent as Logo } from '../assets/mvm-logo.svg'
 import LanguageSwitcher from './LanguageSwitcher'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate()
   const handleLogoClick = () => {
-    // Redirect to the home page
-    window.location.href = '/'
+    // window.location.href = '/'
+    // Redirect to the top of home page
+    navigate('/')
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
   return (
