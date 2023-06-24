@@ -511,6 +511,66 @@
               ]
             },
             "design": true
+          },
+
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "12",
+            "title": "Reactulator",
+            "slug": "reactulator",
+            "thumbnail": "/images/reactulator.png",
+            "alt": "React Calculator screenshot",
+            "skills": ["React", "CSS"],
+            "excerpt": "A calculator made with React.",
+            "gitHubLink": "https://github.com/piracode/reactulator",
+            "liveSiteLink": "https://martha.codes/reactulator/",
+            "liveSiteCTA": "Site",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Details",
+            "post": {
+              "titleOverview": "Overview",
+              "overview1": "This app is a React-based calculator that allows users to perform arithmetic calculations and store values in memory.",
+              "accordions": [
+                {
+                  "title": "Project Requirements",
+                  "content": "Create a calculator with basic arithmetic operations, memory functionality, support for decimal numbers, and the ability to change the sign of a number."
+                },
+                {
+                  "title": "Development Highlights",
+                  "intro": "During the development of this project, I focused on implementing a modular component structure and familiarizing myself with React hooks.",
+                  "tabs": [
+                    {
+                      "subtitle": "Modular Structure",
+                      "content": "The code is organized into separate components (e.g., Header, Keypad, Display) to promote reusability and maintainability. This modular approach improves code organization and makes it easier to understand and manage.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/reactulator",
+                        "text": "Reactulator Repository on GitHub"
+                      }
+                    },
+                    {
+                      "subtitle": "React Hooks",
+                      "content": "I utilized the useState hook to manage and update state variables in functional components. This allowed me to track and modify values like currentValue, previousValue, and memoryValue in an intuitive and efficient manner.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/reactulator/blob/master/src/components/App.js",
+                        "text": "App.js Source Code on GitHub"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospective",
+                  "question": "What did I learn?",
+                  "content": "During the development of the calculator app, I gained hands-on experience in working with React components, managing state using hooks, and implementing calculator functionalities such as handling operator clicks, performing calculations, and managing memory. This project helped me deepen my understanding of React and enhance my skills in building interactive user interfaces.",
+                  "question1": "What could be improved?",
+                  "content2": "Reflecting back, there are several areas in the calculator app that could benefit from improvement.",
+                  "content3": "Firstly, the code could be simplified and made less redundant through refactoring. Breaking down the logic into smaller functions and components would enhance manageability and ease of maintenance.",
+                  "content4": "Moreover, adding more comments and documentation to clarify the code's purpose and functionality would enhance its understandability for others and future reference.",
+                  "content5": "Lastly, exploring and implementing unit tests would ensure the reliability and robustness of the calculator app's functionalities."
+                }
+              ]
+            },
+            "design": false
           }
         ]
       },
@@ -1024,6 +1084,65 @@
               ]
             },
             "design": true
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "12",
+            "title": "Reactulator",
+            "slug": "reactulator",
+            "thumbnail": "/images/reactulator.png",
+            "alt": "Capture d'écran de la calculatrice React",
+            "skills": ["React", "CSS"],
+            "excerpt": "Une calculatrice réalisée avec React.",
+            "gitHubLink": "https://github.com/piracode/reactulator",
+            "liveSiteLink": "https://martha.codes/reactulator/",
+            "liveSiteCTA": "Site",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Détails",
+            "post": {
+              "titleOverview": "Aperçu",
+              "overview1": "Cette application est une calculatrice basée sur React qui permet aux utilisateurs d'effectuer des calculs arithmétiques et de stocker des valeurs en mémoire.",
+              "accordions": [
+                {
+                  "title": "Exigences du projet",
+                  "content": "Créez une calculatrice avec des opérations arithmétiques de base, une fonctionnalité de mémoire, la prise en charge des nombres décimaux et la possibilité de changer le signe d'un nombre."
+                },
+                {
+                  "title": "Moments forts du développement",
+                  "intro": "Au cours du développement de ce projet, j'ai mis l'accent sur la mise en œuvre d'une structure de composants modulaires et sur la familiarisation avec les hooks React.",
+                  "tabs": [
+                    {
+                      "subtitle": "Structure modulaire",
+                      "content": "Le code est organisé en composants séparés (par exemple, Header, Keypad, Display) pour favoriser la réutilisabilité et la maintenabilité. Cette approche modulaire améliore l'organisation du code et facilite sa compréhension et sa gestion.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/reactulator",
+                        "text": "Répertoire Reactulator sur GitHub"
+                      }
+                    },
+                    {
+                      "subtitle": "Hooks React",
+                      "content": "J'ai utilisé le hook useState pour gérer et mettre à jour les variables d'état dans les composants fonctionnels. Cela m'a permis de suivre et de modifier les valeurs telles que currentValue, previousValue et memoryValue de manière intuitive et efficace.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/reactulator/blob/master/src/components/App.js",
+                        "text": "Code source App.js sur GitHub"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Rétrospective",
+                  "question": "Qu'ai-je appris ?",
+                  "content": "Pendant le développement de l'application de calculatrice, j'ai acquis une expérience pratique dans le travail avec les composants React, la gestion de l'état à l'aide de hooks et la mise en œuvre de fonctionnalités de calculatrice telles que la gestion des clics sur les opérateurs, l'exécution de calculs et la gestion de la mémoire. Ce projet m'a permis d'approfondir ma compréhension de React et d'améliorer mes compétences dans la création d'interfaces utilisateur interactives.",
+                  "question1": "Qu'est-ce qui pourrait être amélioré ?",
+                  "content2": "En rétrospective, plusieurs aspects de l'application de calculatrice pourraient bénéficier d'améliorations.",
+                  "content3": "Tout d'abord, le code pourrait être simplifié et rendu moins redondant grâce au refactoring. La décomposition de la logique en fonctions et en composants plus petits améliorerait la gestion et la facilité de maintenance.",
+                  "content4": "De plus, l'ajout de commentaires et de documentation pour clarifier le but et la fonctionnalité du code améliorerait sa compréhension pour les autres et les futures références.",
+                  "content5": "Enfin, explorer et mettre en œuvre des tests unitaires garantirait la fiabilité et la robustesse des fonctionnalités de l'application de calculatrice."
+                }
+              ]
+            },
+            "design": false
           }
         ]
       },
@@ -1536,6 +1655,65 @@
               ]
             },
             "design": true
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "12",
+            "title": "Reactulator",
+            "slug": "reactulator",
+            "thumbnail": "/images/reactulator.png",
+            "alt": "Captura de pantalla de Reactulator",
+            "skills": ["React", "CSS"],
+            "excerpt": "Una calculadora creada con React.",
+            "gitHubLink": "https://github.com/piracode/reactulator",
+            "liveSiteLink": "https://martha.codes/reactulator/",
+            "liveSiteCTA": "Sitio web",
+            "gitHubCTA": "Código",
+            "detailsCTA": "Detalles",
+            "post": {
+              "titleOverview": "Vista General",
+              "overview1": "Esta aplicación es una calculadora basada en React que permite a los usuarios realizar cálculos aritméticos y almacenar valores en la memoria.",
+              "accordions": [
+                {
+                  "title": "Requisitos del proyecto",
+                  "content": "Crear una calculadora con operaciones aritméticas básicas, funcionalidad de memoria, soporte para números decimales y la capacidad de cambiar el signo de un número."
+                },
+                {
+                  "title": "Aspectos destacados del desarrollo",
+                  "intro": "Durante el desarrollo de este proyecto, me enfoqué en implementar una estructura modular de componentes y familiarizarme con los React hooks.",
+                  "tabs": [
+                    {
+                      "subtitle": "Estructura modular",
+                      "content": "El código está organizado en componentes separados (por ejemplo, Header, Keypad, Display) para promover la reutilización y mantenibilidad. Este enfoque modular mejora la organización del código y facilita su comprensión y gestión.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/reactulator",
+                        "text": "Repositorio de Reactulator en GitHub"
+                      }
+                    },
+                    {
+                      "subtitle": "React Hooks",
+                      "content": "Utilicé el hook useState para gestionar y actualizar las variables de estado en los componentes funcionales. Esto me permitió realizar un seguimiento y modificar valores como currentValue, previousValue y memoryValue de manera intuitiva y eficiente.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/reactulator/blob/master/src/components/App.js",
+                        "text": "Código fuente de App.js en GitHub"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospectiva",
+                  "question": "¿Qué aprendí?",
+                  "content": "Durante el desarrollo de la aplicación de calculadora, adquirí experiencia práctica en trabajar con componentes de React, gestionar el estado utilizando hooks e implementar funcionalidades de calculadora como manejar clics de operadores, realizar cálculos y gestionar la memoria. Este proyecto me ayudó a profundizar mi comprensión de React y mejorar mis habilidades en la creación de interfaces de usuario interactivas.",
+                  "question1": "¿Qué se podría mejorar?",
+                  "content2": "Mirando hacia atrás, hay algunas áreas que podrían mejorarse en la aplicación de calculadora.",
+                  "content3": "En primer lugar, el código podría simplificarse refactorizándolo y reduciendo la redundancia. Descomponer la lógica en funciones y componentes más pequeños podría hacerlo más manejable y más fácil de mantener. ",
+                  "content4": "Además, agregar más comentarios y documentación para explicar el propósito y la funcionalidad del código lo haría más comprensible para otros y para futuras referencias.",
+                  "content5": " Por último, explorar e implementar pruebas unitarias podría garantizar la confiabilidad y robustez de las funcionalidades de la aplicación de calculadora."
+                }
+              ]
+            },
+            "design": false
           }
         ]
       }

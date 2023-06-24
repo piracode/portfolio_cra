@@ -1,20 +1,8 @@
 import { useTranslation } from 'react-i18next'
-import {
-  BsFillBriefcaseFill,
-  BsBriefcase,
-  BsFillPhoneFill,
-} from 'react-icons/bs'
+import { BsFillBriefcaseFill } from 'react-icons/bs'
 import { RiInformationFill } from 'react-icons/ri'
-import { IoIosPhonePortrait } from 'react-icons/io'
-import { FaPhoneSquareAlt, FaPhoneAlt } from 'react-icons/fa'
-import { GrContact } from 'react-icons/gr'
 import { GiSkills } from 'react-icons/gi'
-import {
-  RiContactsBook2Fill,
-  RiContactsBook2Line,
-  RiContactsBookFill,
-  RiContactsBookLine,
-} from 'react-icons/ri'
+import { RiContactsBookFill } from 'react-icons/ri'
 import SearchFeature from './SearchFeature'
 import ThemeToggleButton from './ThemeToggleButton'
 import { ReactComponent as Logo } from '../assets/mvm-logo.svg'
@@ -121,13 +109,3 @@ const NavigationLinks = () => {
 }
 
 export default NavigationLinks
-
-{
-  /* <GrContact /> maybe but color is wrong*/
-}
-{
-  /* <RiContactsBook2Fill /> maybe*/
-}
-{
-  /* <RiContactsBookLine /> */
-}
