@@ -726,6 +726,66 @@
               ]
             },
             "design": false
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "15",
+            "title": "Brainy",
+            "slug": "brainy",
+            "thumbnail": "/images/brainyDesktop.png",
+            "thumbnailMobile": "/images/brainy-mobile.png",
+            "alt": "Brainy Game screenshot",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "A game that showcases front-end development questions to challenge GPT. This game was developed during the Hack the Break 2023 event with my classmate Connor from the FWD program at BCIT.",
+            "gitHubLink": "https://github.com/Migtig/htb2023",
+            "liveSiteLink": "https://martha.codes/brainy/",
+            "liveSiteCTA": "Site",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Details",
+            "post": {
+              "titleOverview": "Overview",
+              "overview1": "This project is a game that quizzes players on HTML, CSS, and JavaScript knowledge while they battle an enemy, utilizing object-oriented programming concepts.",
+              "accordions": [
+                {
+                  "title": "Project Requirements",
+                  "content": "The project had a two-day deadline, starting on Saturday and finishing on Sunday, and required submitting a 3-minute video pitch on YouTube, publicly accessible, by the next day. The video pitch needed to include a project description, the problem it aims to solve, and a demonstration of the project. The theme of the project is job security, and we had the freedom to explore our own ideas and approaches."
+                },
+                {
+                  "title": "Development Highlights",
+                  "intro": "During the hackathon, our team had limited programming knowledge, but we made the most of it. We faced challenges while learning about GitHub, which caused some delays. Additionally, we were not familiar with component-based structures like SASS or React components, which would have made teamwork easier.",
+                  "tabs": [
+                    {
+                      "subtitle": "GitHub",
+                      "content": "We encountered some challenges while dealing with conflicts in the GitHub interface and faced issues. Due to the time constraint with the deadline, we made the decision to abandon a branch and create a new one as we were unsure of a better approach.  ",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/matching-game",
+                        "text": "Matching Game GitHub Link"
+                      }
+                    },
+                    {
+                      "subtitle": "@keyframes animations",
+                      "content": "To create animations for the 'monster' and 'player' images, we utilized keyframes in our project. We incorporated sprites from the website craftpix.net. ",
+                      "CTALink1": {
+                        "href": "https://github.com/Migtig/htb2023/blob/main/styles/styles.css",
+                        "text": "Styles.css Github Link"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospective",
+                  "question": "What did I learn?",
+                  "content": "My first online hackathon taught me the importance of participating and taking on challenges, even with limited knowledge. If we were to do the same hackathon again, we would aim for a more advanced project. I also discovered that effective teamwork requires collaborating on different files, which was a challenge in this project.",
+                  "question1": "What could be improved?",
+                  "content2": "The game needs to be completed, and the user interface (UI) needs polishing. We abandoned the game as soon as the hackathon finished and returned to our busy BCIT schedule.",
+                  "question2": "What's next?",
+                  "content3": "Our next step should be to rebuild the site using modular programming languages such as React or another framework, along with SCSS or Tailwind CSS. This would allow us to work more efficiently and faster.",
+                  "content4": "Originally, we wanted to fetch the Chat GPT API to retrieve the questions dynamically instead of hard-coding them in our JS file. We didn't know how to do that during the hackathon, but now we have the knowledge to refactor it."
+                }
+              ]
+            },
+            "design": false
           }
         ]
       },
@@ -1240,6 +1300,106 @@
             },
             "design": true
           },
+
+          {
+            "workshop": false,
+            "featured": true,
+            "id": "14",
+            "title": "Brief de conception pour Craigslist",
+            "slug": "craigslist-design-brief",
+            "thumbnail": "/images/craisglist-wireframes.png",
+            "thumbnailMobile": "/images/craisglist-wireframes-mobile.png",
+            "skills": [
+              "Brief de conception",
+              "Recherche utilisateur",
+              "Personas d'utilisateur",
+              "Statistiques de référence",
+              "Design visuel",
+              "Création de maquettes"
+            ],
+
+            "excerpt": "Développé un brief de conception pour Craigslist, décrivant des solutions de conception centrées sur l'utilisateur pour améliorer la convivialité et l'attrait visuel de la plateforme.",
+            "liveSiteCTA": "Prototype",
+            "pdfLink": "/images/PDF/design-brief_combined.pdf",
+            "pdfCTA": "PDF",
+            "detailsCTA": "Détails",
+            "post": {
+              "titleOverview": "Aperçu",
+              "overview1": "Le brief de conception comprenait l'analyse des statistiques de référence, la réalisation d'une analyse concurrentielle, la définition des tâches et des archétypes d'utilisateurs, la création de scénarios et de personas, la cartographie des parcours utilisateur, le développement de cartes mentales et de plans de site, l'identification des facettes et des flux d'utilisateurs, l'optimisation des métadonnées SEO et la création de maquettes pour la refonte de Craigslist.",
+              "accordions": [
+                {
+                  "title": "Optimisation de l'UX",
+                  "tabs": [
+                    {
+                      "subtitle": "Recherche et analyse",
+                      "heading": "Objectifs et missions",
+                      "content": "Craigslist vise à être une plateforme conviviale, sécurisée et inclusive pour les transactions locales, en connectant les personnes et en favorisant la confiance. Ses objectifs incluent l'amélioration de la fonctionnalité, l'expansion à l'échelle mondiale, la formation de partenariats et la mise en œuvre d'initiatives écologiques.",
+                      "heading2": "Analyse concurrentielle",
+                      "content2": "L'analyse concurrentielle, réalisée avec l'aide de Website Grader et Nibbler, a évalué des plateformes telles que Facebook Marketplace, OfferUp et Kijiji, en se concentrant sur leur design, leur navigation, la visibilité des profils, le système de messagerie, la fonctionnalité de recherche et la base d'utilisateurs."
+                    },
+                    {
+                      "subtitle": "Définition des utilisateurs",
+                      "content": "Les utilisateurs de Craigslist effectuent des tâches telles que parcourir les catégories, contacter les vendeurs, négocier les prix et se rencontrer en personne. Ils peuvent être classés en archétypes tels que les chercheurs de bonnes affaires, les artisans, les chercheurs d'emploi, les chercheurs de logement, les freelancers, les entrepreneurs, les propriétaires d'animaux, les artistes et les étudiants. Les défis incluent l'identification de vendeurs fiables, la communication sécurisée, les arrangements de rencontre, les paiements sécurisés et la résolution des problèmes après l'achat.",
+                      "heading2": "Persona",
+                      "content2": "Image du persona",
+                      "image1": {
+                        "src": "/images/craigslist-persona.png",
+                        "alt": "Persona pour le site Craigslist"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Organisation de l'information",
+                  "intro": "Au cœur d'une organisation efficace de l'information sur Craigslist se trouvent des techniques de visualisation telles que les cartes mentales et les plans de site qui aident à structurer et à naviguer dans le site web.",
+                  "tabs": [
+                    {
+                      "subtitle": "Visualisation",
+                      "content": "Les cartes mentales offrent une représentation visuelle de l'architecture de l'information du site web, mettant en évidence les relations entre les différentes catégories et sous-catégories.",
+                      "heading": "Carte mentale",
+                      "content1": "Les plans de site fournissent une vue hiérarchique des pages et du contenu du site web, permettant aux utilisateurs de comprendre facilement sa structure et de naviguer vers les sections souhaitées.",
+                      "image1": {
+                        "src": "/images/mind-map.png",
+                        "alt": "Carte mentale pour le site Craigslist"
+                      },
+                      "heading1": "Plan de site",
+                      "content2": "En utilisant ces outils de visualisation, Craigslist améliore la compréhension et l'exploration des utilisateurs parmi ses nombreuses annonces et services."
+                    },
+                    {
+                      "subtitle": "Parcours utilisateur",
+                      "content": "Le parcours utilisateur sur Craigslist comprend différentes étapes, de la recherche et du contact avec les vendeurs à la rencontre en personne et à la finalisation de la transaction.",
+                      "content1": "Tout au long de ce parcours, les utilisateurs peuvent rencontrer des défis tels que l'identification de vendeurs honnêtes, la négociation des prix, la garantie de la sécurité lors des rencontres et la résolution des problèmes après l'achat.",
+                      "content2": "Pour améliorer l'expérience utilisateur, Craigslist peut mettre en place des fonctionnalités telles que les évaluations des utilisateurs, des canaux de communication sécurisés, des options de planification, des systèmes de paiement sécurisés et des ressources permettant d'identifier les problèmes courants liés aux articles d'occasion."
+                    }
+                  ]
+                },
+                {
+                  "title": "Design et optimisation",
+                  "content": "Lorsqu'il s'agit de design et d'optimisation sur Craigslist, l'accent est mis sur la création d'une interface conviviale et intuitive qui permet des interactions fluides et une navigation sans effort.",
+                  "content1": "Le flux utilisateur est soigneusement conçu pour guider les utilisateurs à travers le processus de navigation des annonces, de contact avec les vendeurs et de réalisation des transactions, garantissant une expérience fluide.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Interaction",
+                      "heading": "Flux utilisateur",
+                      "content1": "Le flux utilisateur sur Craigslist pour des tâches telles que l'achat d'une voiture implique des étapes telles que la recherche, la prise de contact avec les vendeurs, la rencontre en personne et la finalisation de l'achat, offrant un chemin clair à suivre pour les utilisateurs.",
+                      "heading2": "Wireframes",
+                      "content3": "Les wireframes sont utilisés dans le processus de conception pour créer des représentations visuelles à faible fidélité de la mise en page et des fonctionnalités du site web, permettant des tests précoces et l'amélioration de l'interface utilisateur."
+                    },
+                    {
+                      "subtitle": "Optimisation",
+                      "heading": "Facettes",
+                      "content1": "La recherche par facettes est mise en œuvre sur Craigslist, permettant aux utilisateurs de restreindre les résultats de recherche en appliquant des filtres basés sur les catégories, les conditions, les gammes de prix, les dates de publication et les emplacements.",
+                      "heading1": "Métadonnées SEO",
+                      "content": "Pour améliorer la recherche du site web, des métadonnées SEO sont utilisées, notamment des balises de titre et des balises de description, fournissant des informations concises et pertinentes qui aident les moteurs de recherche à comprendre le contenu de chaque page."
+                    }
+                  ]
+                }
+              ]
+            },
+            "design": true
+          },
+
           {
             "workshop": true,
             "featured": false,
@@ -1350,6 +1510,67 @@
                   "title": "Rétrospective",
                   "question": "Qu'ai-je appris ?",
                   "content": "J'ai appris l'importance du travail d'équipe et de la collaboration dans un projet. Travailler avec une équipe m'a permis de gagner en compréhension des différentes perspectives et de tirer parti des forces de chaque membre de l'équipe. J'ai également amélioré mes compétences en HTML, SCSS et JS, notamment en mettant en œuvre la notation BEM et en créant des designs adaptatifs à l'aide de mixins et de requêtes média."
+                }
+              ]
+            },
+            "design": false
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "15",
+            "title": "Brainy",
+            "slug": "brainy",
+            "thumbnail": "/images/brainyDesktop.png",
+            "thumbnailMobile": "/images/brainy-mobile.png",
+            "alt": "Capture d'écran du jeu Brainy",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Un jeu qui met en avant des questions de développement front-end pour défier GPT. Ce jeu a été développé lors de l'événement Hack the Break 2023 avec mon camarade de classe Connor du programme FWD à BCIT.",
+            "gitHubLink": "https://github.com/Migtig/htb2023",
+            "liveSiteLink": "https://martha.codes/brainy/",
+            "liveSiteCTA": "Site",
+            "gitHubCTA": "Code",
+            "detailsCTA": "Détails",
+            "post": {
+              "titleOverview": "Aperçu",
+              "overview1": "Ce projet est un jeu qui met les joueurs au défi de tester leurs connaissances en HTML, CSS et JavaScript tout en affrontant un ennemi, en utilisant des concepts de programmation orientée objet.",
+              "accordions": [
+                {
+                  "title": "Exigences du projet",
+                  "content": "Le projet avait une échéance de deux jours, commençant le samedi et se terminant le dimanche, et nécessitait de soumettre une vidéo de présentation de 3 minutes sur YouTube, accessible publiquement, dès le lendemain. La vidéo de présentation devait inclure une description du projet, le problème qu'il vise à résoudre et une démonstration du projet. Le thème du projet est la sécurité de l'emploi, et nous avions la liberté d'explorer nos propres idées et approches."
+                },
+                {
+                  "title": "Points clés du développement",
+                  "intro": "Pendant le hackathon, notre équipe avait des connaissances limitées en programmation, mais nous en avons tiré le meilleur parti. Nous avons été confrontés à des défis lors de l'apprentissage de GitHub, ce qui a entraîné quelques retards. De plus, nous n'étions pas familiers avec des structures basées sur des composants comme SASS ou les composants React, ce qui aurait facilité le travail d'équipe.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "GitHub",
+                      "content": "Nous avons rencontré quelques défis lors de la gestion des conflits dans l'interface GitHub et avons rencontré des problèmes. En raison de la contrainte de temps liée à l'échéance, nous avons pris la décision d'abandonner une branche et d'en créer une nouvelle car nous n'étions pas certains d'une meilleure approche.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/matching-game",
+                        "text": "Lien GitHub du jeu de correspondance"
+                      }
+                    },
+                    {
+                      "subtitle": "Animations @keyframes",
+                      "content": "Pour créer des animations pour les images du 'monstre' et du 'joueur', nous avons utilisé des keyframes dans notre projet. Nous avons incorporé des sprites provenant du site web craftpix.net.",
+                      "CTALink1": {
+                        "href": "https://github.com/Migtig/htb2023/blob/main/styles/styles.css",
+                        "text": "Lien Github du fichier styles.css"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Rétrospective",
+                  "question": "Qu'ai-je appris ?",
+                  "content": "Mon premier hackathon en ligne m'a appris l'importance de participer et de relever des défis, même avec des connaissances limitées. Si nous devions refaire le même hackathon, nous viserions un projet plus avancé. J'ai également découvert que le travail d'équipe efficace nécessite une collaboration sur différents fichiers, ce qui a été un défi dans ce projet.",
+                  "question1": "Que pourrait-on améliorer ?",
+                  "content2": "Le jeu doit être terminé et l'interface utilisateur (UI) doit être peaufinée. Nous avons abandonné le jeu dès la fin du hackathon et sommes retournés à notre emploi du temps chargé à BCIT.",
+                  "question2": "Quelle est la suite ?",
+                  "content3": "Notre prochaine étape devrait consister à reconstruire le site en utilisant des langages de programmation modulaires tels que React ou un autre framework, ainsi que SCSS ou Tailwind CSS. Cela nous permettrait de travailler de manière plus efficace et rapide.",
+                  "content4": "À l'origine, nous voulions utiliser l'API Chat GPT pour récupérer les questions de manière dynamique au lieu de les coder en dur dans notre fichier JS. Nous ne savions pas comment faire cela pendant le hackathon, mais maintenant nous avons les connaissances pour le refactoriser."
                 }
               ]
             },
@@ -1868,6 +2089,103 @@
             "design": true
           },
           {
+            "workshop": false,
+            "featured": true,
+            "id": "14",
+            "title": "Brief de diseño para Craigslist",
+            "slug": "craigslist-design-brief",
+            "thumbnail": "/images/craisglist-wireframes.png",
+            "thumbnailMobile": "/images/craisglist-wireframes-mobile.png",
+            "skills": [
+              "Brief de diseño",
+              "Investigación de usuarios",
+              "Personas de usuario",
+              "Estadísticas de referencia",
+              "Diseño visual",
+              "Creación de maquetas"
+            ],
+            "excerpt": "He desarrollado un brief de diseño para Craigslist, describiendo soluciones de diseño centradas en el usuario para mejorar la usabilidad y el atractivo visual de la plataforma.",
+            "liveSiteCTA": "Prototipo",
+            "pdfLink": "/images/PDF/design-brief_combined.pdf",
+            "pdfCTA": "PDF",
+            "detailsCTA": "Detalles",
+            "post": {
+              "titleOverview": "Vista General",
+              "overview1": "El brief de diseño incluyó el análisis de estadísticas de referencia, la realización de un análisis competitivo, la definición de tareas y arquetipos de usuarios, la creación de escenarios y personas, la creación de mapas de recorrido de usuarios, el desarrollo de mapas mentales y planes de sitio, la identificación de facetas y flujos de usuarios, la optimización de metadatos SEO y la creación de maquetas para la remodelación de Craigslist.",
+              "accordions": [
+                {
+                  "title": "Optimización de la UX",
+                  "tabs": [
+                    {
+                      "subtitle": "Investigación y análisis",
+                      "heading": "Objetivos y misiones",
+                      "content": "Craigslist tiene como objetivo ser una plataforma amigable, segura e inclusiva para transacciones locales, conectando a las personas y fomentando la confianza. Sus objetivos incluyen mejorar la funcionalidad, expandirse a nivel mundial, formar asociaciones e implementar iniciativas ecológicas.",
+                      "heading2": "Análisis competitivo",
+                      "content2": "El análisis competitivo, realizado con la ayuda de Website Grader y Nibbler, evaluó plataformas como Facebook Marketplace, OfferUp y Kijiji, centrándose en su diseño, navegación, visibilidad de perfiles, sistema de mensajería, funcionalidad de búsqueda y base de usuarios."
+                    },
+                    {
+                      "subtitle": "Definición de usuarios",
+                      "content": "Los usuarios de Craigslist realizan tareas como explorar categorías, contactar vendedores, negociar precios y encontrarse en persona. Pueden clasificarse en arquetipos como buscadores de ofertas, artesanos, buscadores de empleo, buscadores de vivienda, freelancers, emprendedores, dueños de mascotas, artistas y estudiantes. Los desafíos incluyen identificar vendedores confiables, comunicación segura, arreglos de encuentro, pagos seguros y resolución de problemas posteriores a la compra.",
+                      "heading2": "Persona",
+                      "content2": "Imagen de la persona",
+                      "image1": {
+                        "src": "/images/craigslist-persona.png",
+                        "alt": "Persona para el sitio de Craigslist"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Organización de la información",
+                  "intro": "En el centro de una organización efectiva de la información en Craigslist se encuentran técnicas de visualización como mapas mentales y planos del sitio que ayudan a estructurar y navegar por el sitio web.",
+                  "tabs": [
+                    {
+                      "subtitle": "Visualización",
+                      "content": "Los mapas mentales ofrecen una representación visual de la arquitectura de la información del sitio web, destacando las relaciones entre las diferentes categorías y subcategorías.",
+                      "heading": "Mapa mental",
+                      "content1": "Los planos del sitio proporcionan una vista jerárquica de las páginas y contenido del sitio web, permitiendo a los usuarios comprender fácilmente su estructura y navegar hacia las secciones deseadas.",
+                      "image1": {
+                        "src": "/images/mind-map.png",
+                        "alt": "Mapa mental para el sitio de Craigslist"
+                      },
+                      "heading1": "Plan del sitio",
+                      "content2": "Utilizando estas herramientas de visualización, Craigslist mejora la comprensión y exploración de los usuarios entre sus numerosos anuncios y servicios."
+                    },
+                    {
+                      "subtitle": "Recorrido del usuario",
+                      "content": "El recorrido del usuario en Craigslist incluye diferentes etapas, desde la búsqueda y contacto con los vendedores hasta el encuentro en persona y la finalización de la transacción.",
+                      "content1": "A lo largo de este recorrido, los usuarios pueden enfrentar desafíos como identificar vendedores honestos, negociar precios, garantizar la seguridad en los encuentros y resolver problemas posteriores a la compra.",
+                      "content2": "Para mejorar la experiencia del usuario, Craigslist puede implementar características como evaluaciones de usuarios, canales de comunicación seguros, opciones de programación, sistemas de pago seguros y recursos para identificar problemas comunes relacionados con artículos de segunda mano."
+                    }
+                  ]
+                },
+                {
+                  "title": "Diseño y optimización",
+                  "content": "Cuando se trata de diseño y optimización en Craigslist, el enfoque se centra en crear una interfaz amigable e intuitiva que permita interacciones fluidas y una navegación sin esfuerzo.",
+                  "content1": "El flujo del usuario se diseña cuidadosamente para guiar a los usuarios a través del proceso de navegación de anuncios, contacto con vendedores y realización de transacciones, asegurando una experiencia fluida.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Interacción",
+                      "heading": "Flujo del usuario",
+                      "content1": "El flujo del usuario en Craigslist para tareas como la compra de un automóvil implica pasos como la búsqueda, el contacto con los vendedores, el encuentro en persona y la finalización de la compra, ofreciendo un camino claro para que los usuarios sigan.",
+                      "heading2": "Wireframes",
+                      "content3": "Los wireframes se utilizan en el proceso de diseño para crear representaciones visuales de baja fidelidad de la estructura y características del sitio web, permitiendo pruebas tempranas y mejorando la interfaz de usuario."
+                    },
+                    {
+                      "subtitle": "Optimización",
+                      "heading": "Facetas",
+                      "content1": "Se implementa la búsqueda por facetas en Craigslist, lo que permite a los usuarios restringir los resultados de búsqueda aplicando filtros basados en categorías, condiciones, rangos de precios, fechas de publicación y ubicaciones.",
+                      "heading1": "Metadatos SEO",
+                      "content": "Para mejorar la búsqueda del sitio web, se utilizan metadatos SEO, incluyendo etiquetas de título y descripción, proporcionando información concisa y relevante que ayuda a los motores de búsqueda a entender el contenido de cada página."
+                    }
+                  ]
+                }
+              ]
+            },
+            "design": true
+          },
+          {
             "workshop": true,
             "featured": false,
             "id": "12",
@@ -1977,6 +2295,66 @@
                   "title": "Retrospectiva",
                   "question": "¿Qué aprendí?",
                   "content": "Aprendí la importancia del trabajo en equipo y la colaboración en un proyecto. Trabajar con un equipo me permitió comprender diferentes perspectivas y aprovechar las fortalezas de cada miembro del equipo. También mejoré mis habilidades en HTML, SCSS y JS, especialmente al implementar la notación BEM y crear diseños adaptables utilizando mixins y consultas de medios."
+                }
+              ]
+            },
+            "design": false
+          },
+          {
+            "workshop": true,
+            "featured": false,
+            "id": "15",
+            "title": "Brainy",
+            "slug": "brainy",
+            "thumbnail": "/images/brainyDesktop.png",
+            "thumbnailMobile": "/images/brainy-mobile.png",
+            "alt": "Captura de pantalla del juego Brainy",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "excerpt": "Un juego que pone a prueba preguntas sobre desarrollo front-end para desafiar a GPT. Este juego fue desarrollado durante el evento Hack the Break 2023 con mi compañero de clase Connor del programa FWD en BCIT.",
+            "gitHubLink": "https://github.com/Migtig/htb2023",
+            "liveSiteLink": "https://martha.codes/brainy/",
+            "liveSiteCTA": "Sitio",
+            "gitHubCTA": "Código",
+            "detailsCTA": "Detalles",
+            "post": {
+              "titleOverview": "Vista General",
+              "overview1": "Este proyecto es un juego que desafía a los jugadores a poner a prueba sus conocimientos de HTML, CSS y JavaScript mientras se enfrentan a un enemigo, utilizando conceptos de programación orientada a objetos.",
+              "accordions": [
+                {
+                  "Exigencias del proyecto": "El proyecto tenía un plazo de dos días, comenzando el sábado y terminando el domingo, y requería la entrega de un video de presentación de 3 minutos en YouTube, accesible públicamente, al día siguiente. El video de presentación debía incluir una descripción del proyecto, el problema que busca resolver y una demostración del proyecto. El tema del proyecto es la seguridad laboral, y teníamos la libertad de explorar nuestras propias ideas y enfoques."
+                },
+                {
+                  "title": "Puntos clave del desarrollo",
+                  "intro": "Durante el hackathon, nuestro equipo tenía conocimientos limitados de programación, pero hicimos nuestro mejor esfuerzo. Nos enfrentamos a desafíos al aprender GitHub, lo que provocó algunos retrasos. Además, no estábamos familiarizados con estructuras basadas en componentes como SASS o componentes de React, lo cual habría facilitado el trabajo en equipo.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "GitHub",
+                      "content": "Enfrentamos algunos desafíos al manejar conflictos en la interfaz de GitHub y encontramos problemas. Debido a la limitación de tiempo asociada al plazo, tomamos la decisión de abandonar una rama y crear una nueva, ya que no estábamos seguros de un enfoque mejor.",
+                      "CTALink1": {
+                        "href": "https://github.com/piracode/matching-game",
+                        "text": "Enlace de GitHub para el juego de correspondencia"
+                      }
+                    },
+                    {
+                      "subtitle": "Animaciones @keyframes",
+                      "content": "Para crear animaciones para las imágenes del 'monstruo' y del 'jugador', utilizamos keyframes en nuestro proyecto. Incorporamos sprites del sitio web craftpix.net.",
+                      "CTALink1": {
+                        "href": "https://github.com/Migtig/htb2023/blob/main/styles/styles.css",
+                        "text": "Enlace de GitHub al archivo styles.css"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Retrospectiva",
+                  "question": "¿Qué aprendí?",
+                  "content": "Mi primer hackathon en línea me enseñó la importancia de participar y enfrentar desafíos, incluso con conocimientos limitados. Si tuviéramos que hacer el mismo hackathon nuevamente, apuntaríamos a un proyecto más avanzado. También descubrí que el trabajo en equipo efectivo requiere colaboración en diferentes archivos, lo cual fue un desafío en este proyecto.",
+                  "question1": "¿Qué se podría mejorar?",
+                  "content2": "El juego debe completarse y la interfaz de usuario (UI) debe ser pulida. Abandonamos el juego justo al final del hackathon y volvimos a nuestros apretados horarios en BCIT.",
+                  "question2": "¿Cuál es el siguiente paso?",
+                  "content3": "Nuestro próximo paso debería ser reconstruir el sitio utilizando lenguajes de programación modulares como React u otro framework, así como SCSS o Tailwind CSS. Esto nos permitiría trabajar de manera más eficiente y rápida.",
+                  "content4": "Originalmente, queríamos utilizar la API Chat GPT para obtener las preguntas de manera dinámica en lugar de codificarlas directamente en nuestro archivo JS. No sabíamos cómo hacerlo durante el hackathon, pero ahora tenemos el conocimiento para refactorizarlo."
                 }
               ]
             },
