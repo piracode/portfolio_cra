@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const { t } = useTranslation()
@@ -57,9 +58,9 @@ const About = () => {
           </a>
         </div>
         <button className='primary-button about-button'>
-          <a className='button-link' href='#'>
+          <Link to='/gallery' className='button-link'>
             {t('seePhotosCTA')}
-          </a>
+          </Link>
         </button>
       </article>
 

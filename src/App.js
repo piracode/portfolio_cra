@@ -11,6 +11,7 @@ import Contact from './pages/Contact'
 import Lab from './pages/Lab'
 import Header from './components/Header'
 import ProjectDetails from './pages/ProjectDetails'
+import Gallery from './pages/Gallery'
 
 export const ThemeContext = createContext()
 
@@ -70,6 +71,7 @@ function App() {
                   <Route path='/projects/:slug' element={<ProjectDetails />} />
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/lab' element={<Lab />} />
+                  <Route path='/gallery' element={<Gallery />} />
                 </Routes>
               </>
             )}
