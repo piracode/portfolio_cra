@@ -26,7 +26,10 @@ const Contact = () => {
           <p className='contact-text'> {t('contactParagraph-1')}</p>
           <p className='contact-text'> {t('contactParagraph-2')}</p>
           <button className='primary-button'>
-            <a className='button-link' href='#projects'>
+            <a
+              className='button-link'
+              href='mailto:martha.villamartin@gmail.com'
+            >
               {t('sendEmailCTA')}
             </a>
           </button>
