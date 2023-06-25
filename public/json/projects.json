@@ -514,6 +514,105 @@
           },
 
           {
+            "workshop": false,
+            "featured": true,
+            "id": "14",
+            "title": "Craigslist Design Brief",
+            "slug": "craigslist-design-brief",
+            "thumbnail": "/images/craisglist-wireframes.png",
+            "thumbnailMobile": "/images/craisglist-wireframes-mobile.png",
+            "skills": [
+              "Design Brief",
+              "User Research",
+              "User Personas",
+              "Baseline Statistics",
+              "Visual Design",
+              "Wireframing"
+            ],
+            "excerpt": "Developed a design brief for Craigslist, outlining user-centered design solutions to enhance the platform's usability and visual appeal.",
+            "liveSiteCTA": "Prototype",
+            "pdfLink": "/images/PDF/design-brief_combined.pdf",
+            "pdfCTA": "PDF",
+            "detailsCTA": "Details",
+            "post": {
+              "titleOverview": "Overview",
+              "overview1": "The design brief encompassed analyzing baseline statistics, conducting competitive analysis, defining user tasks and archetypes, creating scenarios and personas, mapping user journeys, developing mind maps and site maps, identifying facets and user flows, optimizing SEO metadata, and creating wireframes for the Craigslist redesign.",
+              "accordions": [
+                {
+                  "title": "UX Enhancement",
+                  "tabs": [
+                    {
+                      "subtitle": "Research and Analysis",
+                      "heading": "Purpose and Mission Goals",
+                      "content": "Craigslist aims to be a user-friendly, secure, and inclusive platform for local transactions, connecting people and fostering trust. Its goals include improving functionality, expanding globally, forming partnerships, and implementing green initiatives.",
+                      "heading2": "Competitive Analysis",
+                      "content2": "The competitive analysis, conducted with the help of Website Grader and Nibbler, evaluated platforms like Facebook Marketplace, OfferUp, and Kijiji, focusing on their design, navigation, profile visibility, messaging system, search functionality, and user base."
+                    },
+                    {
+                      "subtitle": "User Insights and Definition",
+                      "content": "Craigslist users perform tasks like browsing categories, contacting sellers, negotiating prices, and meeting in person. They can be classified into archetypes such as deal-seekers, crafters, job seekers, home-seekers, freelancers, entrepreneurs, pet owners, performers, and students. Challenges include identifying reliable sellers, secure communication, meeting arrangements, secure payments, and addressing post-purchase issues.",
+                      "heading2": "Persona",
+                      "content2": "IMG for persoma",
+                      "image1": {
+                        "src": "/images/craigslist-persona.png",
+                        "alt": "Persona for Craigslist site"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Information Organization",
+                  "intro": "At the core of effective information organization on Craigslist are visualization techniques such as mind maps and site maps that help structure and navigate the website.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Visualization",
+                      "content": "Mind maps offer a visual representation of the website's information architecture, showcasing the relationships between different categories and subcategories.",
+                      "heading": "Mind Map",
+                      "content1": "Site maps provide a hierarchical overview of the website's pages and content, allowing users to easily understand its structure and navigate to their desired sections.",
+                      "image1": {
+                        "src": "/images/mind-map.png",
+                        "alt": "Mind Map for Craigslist site"
+                      },
+                      "heading1": "Site Map",
+                      "content2": "By utilizing these visualization tools, Craigslist enhances user understanding and exploration of its extensive listings and services."
+                    },
+                    {
+                      "subtitle": "User Journey",
+                      "content": "The user journey on Craigslist involves various steps, from conducting research and contacting sellers to meeting in person and completing the transaction.",
+                      "content1": "Throughout this journey, users may encounter challenges such as identifying honest sellers, negotiating prices, ensuring safety during meetings, and addressing post-purchase issues.",
+                      "content2": "To enhance the user experience, Craigslist can implement features like user ratings, secure communication channels, scheduling options, secure payment systems, and resources for identifying common issues with used items."
+                    }
+                  ]
+                },
+                {
+                  "title": "Design & Optimization",
+                  "content": "When it comes to design and optimization on Craigslist, a focus is placed on creating a user-friendly and intuitive interface that allows for smooth interactions and seamless navigation.",
+                  "content1": "The user flow is carefully designed to guide users through the process of browsing listings, contacting sellers, and making transactions, ensuring a streamlined experience.",
+
+                  "tabs": [
+                    {
+                      "subtitle": "Interaction",
+                      "heading": "User Flow",
+                      "content1": "The user flow on Craigslist for tasks like buying a car involves steps such as researching, contacting sellers, meeting in person, and completing the purchase, providing a clear path for users to follow.",
+                      "heading2": "Wireframes",
+                      "content3": "Wireframes are used in the design process to create low-fidelity visual representations of the website's layout and functionality, allowing for early testing and refinement of the user interface."
+                    },
+                    {
+                      "subtitle": "Optimization",
+                      "heading": "Facets",
+                      "content1": "Faceted search is implemented on Craigslist, enabling users to narrow down search results by applying filters based on categories, conditions, price ranges, dates posted, and locations.",
+                      "heading1": "SEO Metadata",
+                      "content": "To improve the searchability of the website, SEO metadata is utilized, including title tags and description tags, providing concise and relevant information that helps search engines understand the content of each page."
+                    }
+                  ]
+                }
+              ]
+            },
+            "design": true
+          },
+
+          {
             "workshop": true,
             "featured": false,
             "id": "12",
