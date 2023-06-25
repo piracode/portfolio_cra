@@ -1,0 +1,148 @@
+{
+  "en": {
+    "titleSectionGallery": "A glimpse of my other passions",
+    "images": [
+      {
+        "src": "/images/aboutMePics/flamenco-jericho.jpeg",
+        "alt": "Flamenco dancing at Jericho Beach",
+        "caption": "Flamenco dancing at Jericho Beach"
+      },
+      {
+        "src": "/images/aboutMePics/hikingSeymour.jpeg",
+        "alt": "Epic Hike at Seymour Mountain",
+        "caption": "Epic Hike at Seymour Mountain"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria2.jpeg",
+        "alt": "Flamenco Festival performance in Victoria, BC",
+        "caption": "Flamenco Festival performance in Victoria, BC"
+      },
+      {
+        "src": "/images/aboutMePics/cyrius.jpeg",
+        "alt": "Portrait of Cyrius in paper art",
+        "caption": "Cyrius Portrait made with paper strips"
+      },
+      {
+        "src": "/images/aboutMePics/hike-buntzen.jpg",
+        "alt": "Hike in BC",
+        "caption": "Hike in BC"
+      },
+
+      {
+        "src": "/images/aboutMePics/fabio-portrait.jpeg",
+        "alt": "Portrait of my dog with paper strips",
+        "caption": "Fabio Portrait made with paper strips"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria1.jpeg",
+        "alt": "Flamenco Festival performance in Victoria, BC",
+        "caption": "Flamenco Festival performance in Victoria, BC"
+      },
+      {
+        "src": "/images/aboutMePics/hike-spain.jpg",
+        "alt": "Hike in Spain",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-victoria.jpeg",
+        "alt": "Flamenco Festival performance in Victoria, BC",
+        "caption": "Flamenco Festival performance in Victoria, BC"
+      },
+      {
+        "src": "/images/aboutMePics/hike-spain.jpg",
+        "alt": "Hike in Spain1",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-cuadro.jpeg",
+        "alt": "Flamenco performance in Vancouver, BC",
+        "caption": "Flamenco performance in Vancouver, BC"
+      },
+
+      {
+        "src": "/images/aboutMePics/blue-flowers-quilling.jpeg",
+        "alt": "Me and my artwork made with quilling flowers",
+        "caption": "Quilling Artwork"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-whiteDress&K.jpeg",
+        "alt": "Flamenco performance in Vancouver, BC",
+        "caption": "Flamenco performance in Vancouver, BC"
+      },
+
+      {
+        "src": "/images/aboutMePics/keiva.jpeg",
+        "alt": "Keiva Portrait with paper strips",
+        "caption": "Keiva Portrait made with paper strips"
+      },
+      {
+        "src": "/images/aboutMePics/kino-cafe-castanets.jpeg",
+        "alt": "Flamenco performance at the Kino Cafe in Vancouver, BC",
+        "caption": "Flamenco performance at the Kino Cafe in Vancouver, BC"
+      },
+      {
+        "src": "/images/aboutMePics/quilling-xmas-market.jpeg",
+        "alt": "Christmas market display",
+        "caption": "Christmas market display"
+      },
+      {
+        "src": "/images/aboutMePics/hike-spain.jpg",
+        "alt": "Hike in Spain2",
+        "caption": "Hike in Spain"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-portmoody.jpeg",
+        "alt": "Flamenco performance in Port Moody, BC",
+        "caption": "Flamenco performance in Port Moody, BC"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-chai-lounge.jpeg",
+        "alt": "Flamenco performance at Chai Lounge in Vancouver, BC",
+        "caption": "Flamenco performance at Chai Lounge in Vancouver, BC"
+      },
+      {
+        "src": "/images/aboutMePics/hike-eagle.jpg",
+        "alt": "Hike in BC",
+        "caption": "Hike in BC"
+      },
+      {
+        "src": "/images/aboutMePics/sun-quilling.jpeg",
+        "alt": "Portrait of my dog with paper strips",
+        "caption": "Fabio Portrait"
+      }
+    ]
+  },
+  "fr": {
+    "titleSectionGallery": "Un aperçu de mes autres passions",
+    "images": [
+      {
+        "src": "/images/aboutMePics/french-image-1.jpg",
+        "alt": "French Image 1",
+        "caption": "French Image 1 Title"
+      },
+      {
+        "src": "/images/aboutMePics/french-image-2.jpg",
+        "alt": "French Image 2",
+        "caption": "French Image 2 Title"
+      }
+    ]
+  },
+  "es": {
+    "titleSectionGallery": "Un vistazo a mis otras pasiones",
+    "images": [
+      {
+        "src": "/images/aboutMePics/spanish-image-1.jpg",
+        "alt": "Spanish Image 1",
+        "caption": "Spanish Image 1 Title"
+      },
+      {
+        "src": "/images/aboutMePics/spanish-image-2.jpg",
+        "alt": "Spanish Image 2",
+        "caption": "Spanish Image 2 Title"
+      }
+    ]
+  }
+}

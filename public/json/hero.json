@@ -1,6 +1,6 @@
 {
   "en": {
-    "greeting": "Bonjour, my name is",
+    "greeting": "Hello, my name is",
     "name": "Martha Villa Martin.",
     "role": "Scrum Certified Front-End Developer / UX Designer.",
     "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I am currently enrolled in the ",
@@ -16,7 +16,7 @@
     "SeeProjectsCTA": "Voir mes projets"
   },
   "es": {
-    "greeting": "Bonjour, mi nombre es",
+    "greeting": "Hola, mi nombre es",
     "name": "Martha Villa Martin.",
     "role": "Desarrolladora front-end / diseñadora de UX.",
     "descriptionPart1": "Trilingüe en francés, inglés y español con experiencia en hostelería y educación. Actualmente estoy inscrita en el ",
