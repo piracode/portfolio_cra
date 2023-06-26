@@ -224,14 +224,6 @@ nav .language-box-desktop,
   }
 }
 
-// @include mq(420) {
-//   .navigation {
-//     &-link {
-//       padding: 0.8rem;
-//     }
-//   }
-// }
-
 @include mq(1050) {
   .navigation-contact-icons-box {
     gap: 1rem;
