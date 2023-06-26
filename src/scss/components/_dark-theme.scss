@@ -28,16 +28,15 @@
       background-color: $dark-bg-main;
     }
   }
+}
 
+.dark {
   a:link,
   a:visited {
-    // color: $dark-heading-primary;
+    color: $dark-heading-primary;
   }
 
   a:hover {
     color: $teal-accent-color;
-  }
-  a:active {
-    // color:
   }
 }
