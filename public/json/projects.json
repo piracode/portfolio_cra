@@ -14,8 +14,8 @@
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
-            "thumbnail": "/images/flix3.png",
-            "thumbnailMobile": "/images/flix-mobile.png",
+            "thumbnail": "/images/flix3.webp",
+            "thumbnailMobile": "/images/flix-mobile.webp",
             "alt": "Flixr Movie Screenshot",
             "skills": [
               "SCSS",
@@ -53,13 +53,13 @@
                       "heading": "Illustrator",
                       "content": "In the design section of the movie database, I took inspiration from the design of Netflix. The application's visual elements, such as the logo, were created using Adobe Illustrator, and the chosen color scheme was based on Netflix's colors.",
                       "image": {
-                        "src": "/images/cinevoxLogo.png",
+                        "src": "/images/cinevoxLogo.webp",
                         "alt": "Cinevox Logo"
                       },
                       "heading1": "Photoshop",
                       "content1": "I utilized Photoshop's tools and features to create a professional and visually appealing mockup.",
                       "image1": {
-                        "src": "/images/cinevox.png",
+                        "src": "/images/cinevox.webp",
                         "alt": "Cinevox Mockup"
                       },
                       "CTALink1": {
@@ -147,8 +147,8 @@
             "id": "3",
             "title": "www.martha.codes",
             "slug": "martha-portfolio",
-            "thumbnail": "/images/portfolio-desktop.png",
-            "thumbnailMobile": "/images/portfolio-mobile.png",
+            "thumbnail": "/images/portfolio-desktop.webp",
+            "thumbnailMobile": "/images/portfolio-mobile.webp",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "My portfolio is a multilingual site that showcases a React project where I fetch data from a JSON API. It features captivating animations and includes a dark/light theme option, project sorting, and upcoming plans to add an input search functionality.",
             "gitHubLink": "https://github.com/piracode/portfolio_CRA",
@@ -255,7 +255,7 @@
             "id": "4",
             "title": "Ai Summit(Coming soon)",
             "slug": "ai-summit",
-            "thumbnail": "/images/placeholder.png",
+            "thumbnail": "/images/placeholder.webp",
             "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
             "excerpt": "We are currently developing a WooCommerce site as a team of four. The purpose of the site is to sell tickets for a conference focused on Artificial Intelligence.",
             "gitHubLink": "https://github.com/piracode",
@@ -275,8 +275,8 @@
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
-            "thumbnail": "/images/matchingGameDesktop.png",
-            "thumbnailMobile": "/images/matchingGameMobile.png",
+            "thumbnail": "/images/matchingGameDesktop.webp",
+            "thumbnailMobile": "/images/matchingGameMobile.webp",
             "alt": "Matching Game Lord of the Rings Screenshot",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "A matching game with added sound effects, implemented in JavaScript and CSS.",
@@ -337,7 +337,7 @@
             "id": "8",
             "title": "French Baking App - Case Study",
             "slug": "french-baking-case-study",
-            "thumbnail": "/images/pic-frenchBaking.png",
+            "thumbnail": "/images/pic-frenchBaking.webp",
             "skills": [
               "User Research",
               "User Personas",
@@ -377,7 +377,7 @@
                       "heading2": "User Journey Mapping",
                       "content4": "User journey mapping identified touchpoints, emotions, and pain points in the app's user experience, revealing insights for user-centered design and development.",
                       "image1": {
-                        "src": "/images/journeyMap.png",
+                        "src": "/images/journeyMap.webp",
                         "alt": "Journey Map French Baking"
                       }
                     }
@@ -443,8 +443,8 @@
             "id": "9",
             "title": "Best Buy Usability Report",
             "slug": "best-buy-usability-report",
-            "thumbnail": "/images/best-buy-desktop.png",
-            "thumbnailMobile": "/images/best-buy-mobile.png",
+            "thumbnail": "/images/best-buy-desktop.webp",
+            "thumbnailMobile": "/images/best-buy-mobile.webp",
 
             "skills": [
               "Usability Evaluation",
@@ -469,7 +469,7 @@
                       "subtitle": "Persona",
                       "content": "To further understand the target users, a persona was created based on the collected data and insights gained from the participants. The persona represents the characteristics, goals, and needs of the typical Best Buy user. This persona serves as a reference point throughout the evaluation process, guiding the assessment and helping to identify areas of improvement.",
                       "image": {
-                        "src": "/images/best-buy-persona.png",
+                        "src": "/images/best-buy-persona.webp",
                         "alt": "Best Buy Persona"
                       }
                     },
@@ -519,8 +519,8 @@
             "id": "14",
             "title": "Craigslist Design Brief",
             "slug": "craigslist-design-brief",
-            "thumbnail": "/images/craisglist-wireframes.png",
-            "thumbnailMobile": "/images/craisglist-wireframes-mobile.png",
+            "thumbnail": "/images/craisglist-wireframes.webp",
+            "thumbnailMobile": "/images/craisglist-wireframes-mobile.webp",
             "skills": [
               "Design Brief",
               "User Research",
@@ -554,7 +554,7 @@
                       "heading2": "Persona",
                       "content2": "IMG for persoma",
                       "image1": {
-                        "src": "/images/craigslist-persona.png",
+                        "src": "/images/craigslist-persona.webp",
                         "alt": "Persona for Craigslist site"
                       }
                     }
@@ -571,7 +571,7 @@
                       "heading": "Mind Map",
                       "content1": "Site maps provide a hierarchical overview of the website's pages and content, allowing users to easily understand its structure and navigate to their desired sections.",
                       "image1": {
-                        "src": "/images/mind-map.png",
+                        "src": "/images/mind-map.webp",
                         "alt": "Mind Map for Craigslist site"
                       },
                       "heading1": "Site Map",
@@ -618,7 +618,7 @@
             "id": "12",
             "title": "Reactulator",
             "slug": "reactulator",
-            "thumbnail": "/images/reactulator.png",
+            "thumbnail": "/images/reactulator.webp",
             "alt": "React Calculator screenshot",
             "skills": ["React", "CSS"],
             "excerpt": "A calculator made with React.",
@@ -677,8 +677,8 @@
             "id": "13",
             "title": "Vulcan",
             "slug": "vulcan",
-            "thumbnail": "/images/vulcan-desktop.png",
-            "thumbnailMobile": "/images/vulcan-mobile.png",
+            "thumbnail": "/images/vulcan-desktop.webp",
+            "thumbnailMobile": "/images/vulcan-mobile.webp",
             "alt": "Website Vulcan Screenshot",
             "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
             "excerpt": "In a group of three, we developed a mockup website using HTML, SCSS, and JS.",
@@ -733,8 +733,8 @@
             "id": "15",
             "title": "Brainy",
             "slug": "brainy",
-            "thumbnail": "/images/brainyDesktop.png",
-            "thumbnailMobile": "/images/brainy-mobile.png",
+            "thumbnail": "/images/brainyDesktop.webp",
+            "thumbnailMobile": "/images/brainy-mobile.webp",
             "alt": "Brainy Game screenshot",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "A game that showcases front-end development questions to challenge GPT. This game was developed during the Hack the Break 2023 event with my classmate Connor from the FWD program at BCIT.",
@@ -803,8 +803,8 @@
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
-            "thumbnail": "/images/flix3.png",
-            "thumbnailMobile": "/images/flix-mobile.png",
+            "thumbnail": "/images/flix3.webp",
+            "thumbnailMobile": "/images/flix-mobile.webp",
             "alt": "Capture d'écran de Flixr Movie",
             "skills": [
               "SCSS",
@@ -842,13 +842,13 @@
                       "heading": "Illustrator",
                       "content": "Dans la section de conception de la base de données de films, je me suis inspirée de Netflix. Les éléments visuels de l'application, tels que le logo, ont été créés avec Adobe Illustrator, et le schéma de couleurs choisi était basé sur les couleurs de Netflix.",
                       "image": {
-                        "src": "/images/cinevoxLogo.png",
+                        "src": "/images/cinevoxLogo.webp",
                         "alt": "Logo de Cinevox"
                       },
                       "heading1": "Photoshop",
                       "content1": "J'ai utilisé les outils et fonctionnalités de Photoshop pour créer une maquette professionnelle et esthétique.",
                       "image1": {
-                        "src": "/images/cinevox.png",
+                        "src": "/images/cinevox.webp",
                         "alt": "Cinevox Mockup"
                       },
                       "CTALink1": {
@@ -934,8 +934,8 @@
             "id": "3",
             "title": "www.martha.codes",
             "slug": "martha-portfolio",
-            "thumbnail": "/images/portfolio-desktop.png",
-            "thumbnailMobile": "/images/portfolio-mobile.png",
+            "thumbnail": "/images/portfolio-desktop.webp",
+            "thumbnailMobile": "/images/portfolio-mobile.webp",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "Mon portfolio est un site multilingue qui présente un projet React où je récupère des données à partir d'une API JSON. Il propose des animations captivantes et inclut une option de thème clair/sombre, un tri de projets et des plans futurs pour ajouter une fonctionnalité de recherche par saisie.",
             "gitHubLink": "https://github.com/piracode/portfolio_CRA",
@@ -1042,7 +1042,7 @@
             "id": "4",
             "title": "AI Summit (Prochainement)",
             "slug": "ai-summit",
-            "thumbnail": "/images/placeholder.png",
+            "thumbnail": "/images/placeholder.webp",
             "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
             "excerpt": "Nous développons actuellement un site WooCommerce au sein d'une équipe de 4 personnes. Le site a pour but de vendre des billets pour une conférence sur l'Intelligence Artificielle.",
             "gitHubLink": "https://github.com/piracode",
@@ -1062,8 +1062,8 @@
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
-            "thumbnail": "/images/matchingGameDesktop.png",
-            "thumbnailMobile": "/images/matchingGameMobile.png",
+            "thumbnail": "/images/matchingGameDesktop.webp",
+            "thumbnailMobile": "/images/matchingGameMobile.webp",
             "alt": "Capture d'écran du jeu Lord of The Rings",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "Un jeu de mémoire avec des effets sonores, réalisé avec JavaScript et CSS.",
@@ -1125,7 +1125,7 @@
             "id": "8",
             "title": "French Baking - Étude de cas",
             "slug": "french-baking-case-study",
-            "thumbnail": "/images/pic-frenchBaking.png",
+            "thumbnail": "/images/pic-frenchBaking.webp",
             "skills": [
               "Recherche utilisateur",
               "Personas utilisateur",
@@ -1166,7 +1166,7 @@
                       "heading2": "Carte d'expérience utilisateur",
                       "content4": "La carte d'expérience utilisateur utilisateur a identifié les points de contact, les émotions et les points de friction dans l'expérience utilisateur de l'application, révélant des informations pour une conception et un développement centrés sur l'utilisateur.",
                       "image1": {
-                        "src": "/images/journeyMap.png",
+                        "src": "/images/journeyMap.webp",
                         "alt": "Carte du parcours utilisateur French Baking"
                       }
                     }
@@ -1231,8 +1231,8 @@
             "id": "9",
             "title": "Rapport sur l'utilisabilité de Best Buy",
             "slug": "best-buy-usability-report",
-            "thumbnail": "/images/best-buy-desktop.png",
-            "thumbnailMobile": "/images/best-buy-mobile.png",
+            "thumbnail": "/images/best-buy-desktop.webp",
+            "thumbnailMobile": "/images/best-buy-mobile.webp",
 
             "skills": [
               "Évaluation de l'utilisabilité",
@@ -1257,7 +1257,7 @@
                       "subtitle": "Persona",
                       "content": "Pour mieux comprendre les utilisateurs cibles, une persona a été créée à partir des données collectées et des informations obtenues auprès des participants. Cette persona représente les caractéristiques, les objectifs et les besoins de l'utilisateur typique de Best Buy. Cette persona sert de point de référence tout au long du processus d'évaluation, guidant l'évaluation et aidant à identifier les domaines d'amélioration.",
                       "image": {
-                        "src": "/images/best-buy-persona.png",
+                        "src": "/images/best-buy-persona.webp",
                         "alt": "Persona Best Buy"
                       }
                     },
@@ -1307,8 +1307,8 @@
             "id": "14",
             "title": "Brief de conception pour Craigslist",
             "slug": "craigslist-design-brief",
-            "thumbnail": "/images/craisglist-wireframes.png",
-            "thumbnailMobile": "/images/craisglist-wireframes-mobile.png",
+            "thumbnail": "/images/craisglist-wireframes.webp",
+            "thumbnailMobile": "/images/craisglist-wireframes-mobile.webp",
             "skills": [
               "Brief de conception",
               "Recherche utilisateur",
@@ -1343,7 +1343,7 @@
                       "heading2": "Persona",
                       "content2": "Image du persona",
                       "image1": {
-                        "src": "/images/craigslist-persona.png",
+                        "src": "/images/craigslist-persona.webp",
                         "alt": "Persona pour le site Craigslist"
                       }
                     }
@@ -1359,7 +1359,7 @@
                       "heading": "Carte mentale",
                       "content1": "Les plans de site fournissent une vue hiérarchique des pages et du contenu du site web, permettant aux utilisateurs de comprendre facilement sa structure et de naviguer vers les sections souhaitées.",
                       "image1": {
-                        "src": "/images/mind-map.png",
+                        "src": "/images/mind-map.webp",
                         "alt": "Carte mentale pour le site Craigslist"
                       },
                       "heading1": "Plan de site",
@@ -1406,7 +1406,7 @@
             "id": "12",
             "title": "Reactulator",
             "slug": "reactulator",
-            "thumbnail": "/images/reactulator.png",
+            "thumbnail": "/images/reactulator.webp",
             "alt": "Capture d'écran de la calculatrice React",
             "skills": ["React", "CSS"],
             "excerpt": "Une calculatrice réalisée avec React.",
@@ -1465,8 +1465,8 @@
             "id": "13",
             "title": "Vulcan",
             "slug": "vulcan",
-            "thumbnail": "/images/vulcan-desktop.png",
-            "thumbnailMobile": "/images/vulcan-mobile.png",
+            "thumbnail": "/images/vulcan-desktop.webp",
+            "thumbnailMobile": "/images/vulcan-mobile.webp",
             "alt": "Capture d'écran du website Vulcan",
             "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
             "excerpt": "En groupe de trois, nous avons développé un site web simulé en utilisant HTML, SCSS et JS.",
@@ -1521,8 +1521,8 @@
             "id": "15",
             "title": "Brainy",
             "slug": "brainy",
-            "thumbnail": "/images/brainyDesktop.png",
-            "thumbnailMobile": "/images/brainy-mobile.png",
+            "thumbnail": "/images/brainyDesktop.webp",
+            "thumbnailMobile": "/images/brainy-mobile.webp",
             "alt": "Capture d'écran du jeu Brainy",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "Un jeu qui met en avant des questions de développement front-end pour défier GPT. Ce jeu a été développé lors de l'événement Hack the Break 2023 avec mon camarade de classe Connor du programme FWD à BCIT.",
@@ -1592,8 +1592,8 @@
             "id": "1",
             "title": "Flixr",
             "slug": "flixr",
-            "thumbnail": "/images/flix3.png",
-            "thumbnailMobile": "/images/flix-mobile.png",
+            "thumbnail": "/images/flix3.webp",
+            "thumbnailMobile": "/images/flix-mobile.webp",
             "alt": "Flixr Movie Screenshot",
             "skills": [
               "SCSS",
@@ -1631,13 +1631,13 @@
                       "heading": "Illustrator",
                       "content": "En la sección de diseño de la base de datos de películas, me inspiré en el diseño de Netflix. Los elementos visuales de la aplicación, como el logo, se crearon con Adobe Illustrator, y el esquema de colores elegido se basó en los colores de Netflix.",
                       "image": {
-                        "src": "/images/cinevoxLogo.png",
+                        "src": "/images/cinevoxLogo.webp",
                         "alt": "Logo de Cinevox"
                       },
                       "heading1": "Photoshop",
                       "content1": "Utilicé herramientas y funciones de Photoshop para crear una maqueta profesional y estética.",
                       "image1": {
-                        "src": "/images/cinevox.png",
+                        "src": "/images/cinevox.webp",
                         "alt": "Maqueta de Cinevox"
                       },
                       "CTALink1": {
@@ -1723,8 +1723,8 @@
             "id": "3",
             "title": "www.martha.codes",
             "slug": "martha-portfolio",
-            "thumbnail": "/images/portfolio-desktop.png",
-            "thumbnailMobile": "/images/portfolio-mobile.png",
+            "thumbnail": "/images/portfolio-desktop.webp",
+            "thumbnailMobile": "/images/portfolio-mobile.webp",
             "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
             "excerpt": "Mi portafolio es un sitio multilingüe que presenta un proyecto de React donde obtengo datos de una API JSON. Ofrece animaciones cautivadoras e incluye una opción de tema claro/oscuro, ordenación de proyectos y planes futuros para agregar una función de búsqueda por entrada.",
             "gitHubLink": "https://github.com/piracode/portfolio_CRA",
@@ -1831,7 +1831,7 @@
             "id": "4",
             "title": "Ai Summit (Próximamente)",
             "slug": "ai-summit",
-            "thumbnail": "/images/placeholder.png",
+            "thumbnail": "/images/placeholder.webp",
             "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
             "excerpt": "Actualmente estamos desarrollando un sitio de WooCommerce en un equipo de 4 personas. El sitio tiene como objetivo vender boletos para una conferencia sobre Inteligencia Artificial.",
             "gitHubLink": "https://github.com/piracode",
@@ -1851,8 +1851,8 @@
             "id": "2",
             "title": "Lord of the Rings",
             "slug": "matching-game",
-            "thumbnail": "/images/matchingGameDesktop.png",
-            "thumbnailMobile": "/images/matchingGameMobile.png",
+            "thumbnail": "/images/matchingGameDesktop.webp",
+            "thumbnailMobile": "/images/matchingGameMobile.webp",
             "alt": "Captura de pantalla del juego El Señor de los Anillos",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "Un juego de memoria con efectos de sonido, realizado con JavaScript y CSS.",
@@ -1914,7 +1914,7 @@
             "id": "8",
             "title": "French Baking - Estudio de caso",
             "slug": "french-baking-case-study",
-            "thumbnail": "/images/pic-frenchBaking.png",
+            "thumbnail": "/images/pic-frenchBaking.webp",
             "skills": [
               "Investigación de usuarios",
               "Personas de usuarios",
@@ -1955,7 +1955,7 @@
                       "heading2": "Mapa de experiencia del usuario",
                       "content4": "El mapa de experiencia del usuario identificó los puntos de contacto, las emociones y los puntos de fricción en la experiencia del usuario de la aplicación, revelando información para un diseño y desarrollo centrados en el usuario.",
                       "image1": {
-                        "src": "/images/journeyMap.png",
+                        "src": "/images/journeyMap.webp",
                         "alt": "Mapa de experiencia del usuario French Baking"
                       }
                     }
@@ -2019,8 +2019,8 @@
             "id": "9",
             "title": "Informe sobre la Usabilidad de Best Buy",
             "slug": "best-buy-usability-report",
-            "thumbnail": "/images/best-buy-desktop.png",
-            "thumbnailMobile": "/images/best-buy-mobile.png",
+            "thumbnail": "/images/best-buy-desktop.webp",
+            "thumbnailMobile": "/images/best-buy-mobile.webp",
 
             "skills": [
               "Evaluación de Usabilidad",
@@ -2045,7 +2045,7 @@
                       "subtitle": "Persona",
                       "content": "Para comprender mejor a los usuarios objetivo, se creó una persona basada en los datos recopilados y la información obtenida de los participantes. Esta persona representa las características, objetivos y necesidades del usuario típico de Best Buy. Esta persona sirve como punto de referencia durante todo el proceso de evaluación, guiando la evaluación y ayudando a identificar áreas de mejora.",
                       "image": {
-                        "src": "/images/best-buy-persona.png",
+                        "src": "/images/best-buy-persona.webp",
                         "alt": "Persona Best Buy"
                       }
                     },
@@ -2094,8 +2094,8 @@
             "id": "14",
             "title": "Brief de diseño para Craigslist",
             "slug": "craigslist-design-brief",
-            "thumbnail": "/images/craisglist-wireframes.png",
-            "thumbnailMobile": "/images/craisglist-wireframes-mobile.png",
+            "thumbnail": "/images/craisglist-wireframes.webp",
+            "thumbnailMobile": "/images/craisglist-wireframes-mobile.webp",
             "skills": [
               "Brief de diseño",
               "Investigación de usuarios",
@@ -2129,7 +2129,7 @@
                       "heading2": "Persona",
                       "content2": "Imagen de la persona",
                       "image1": {
-                        "src": "/images/craigslist-persona.png",
+                        "src": "/images/craigslist-persona.webp",
                         "alt": "Persona para el sitio de Craigslist"
                       }
                     }
@@ -2145,7 +2145,7 @@
                       "heading": "Mapa mental",
                       "content1": "Los planos del sitio proporcionan una vista jerárquica de las páginas y contenido del sitio web, permitiendo a los usuarios comprender fácilmente su estructura y navegar hacia las secciones deseadas.",
                       "image1": {
-                        "src": "/images/mind-map.png",
+                        "src": "/images/mind-map.webp",
                         "alt": "Mapa mental para el sitio de Craigslist"
                       },
                       "heading1": "Plan del sitio",
@@ -2191,7 +2191,7 @@
             "id": "12",
             "title": "Reactulator",
             "slug": "reactulator",
-            "thumbnail": "/images/reactulator.png",
+            "thumbnail": "/images/reactulator.webp",
             "alt": "Captura de pantalla de Reactulator",
             "skills": ["React", "CSS"],
             "excerpt": "Una calculadora creada con React.",
@@ -2250,8 +2250,8 @@
             "id": "13",
             "title": "Vulcan",
             "slug": "vulcan",
-            "thumbnail": "/images/vulcan-desktop.png",
-            "thumbnailMobile": "/images/vulcan-mobile.png",
+            "thumbnail": "/images/vulcan-desktop.webp",
+            "thumbnailMobile": "/images/vulcan-mobile.webp",
             "alt": "Captura de pantalla del sitio web Vulcan",
             "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
             "excerpt": "En un grupo de tres, desarrollamos un sitio web simulado utilizando HTML, SCSS y JS.",
@@ -2306,8 +2306,8 @@
             "id": "15",
             "title": "Brainy",
             "slug": "brainy",
-            "thumbnail": "/images/brainyDesktop.png",
-            "thumbnailMobile": "/images/brainy-mobile.png",
+            "thumbnail": "/images/brainyDesktop.webp",
+            "thumbnailMobile": "/images/brainy-mobile.webp",
             "alt": "Captura de pantalla del juego Brainy",
             "skills": ["HTML", "CSS", "JavaScript"],
             "excerpt": "Un juego que pone a prueba preguntas sobre desarrollo front-end para desafiar a GPT. Este juego fue desarrollado durante el evento Hack the Break 2023 con mi compañero de clase Connor del programa FWD en BCIT.",

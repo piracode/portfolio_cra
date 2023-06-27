@@ -18,6 +18,7 @@
     margin-bottom: 1rem;
     border-radius: 8px;
     background-color: $light-bg-button;
+    cursor: pointer;
   }
 
   &-icon {
@@ -27,10 +28,6 @@
 
   &-paragraph {
     padding-bottom: 1rem;
-
-    // &.content:first-of-type {
-    //   margin-bottom: 1rem;
-    // }
   }
 
   &-question {
@@ -53,11 +50,6 @@
     }
     .img-box {
       padding-bottom: 2rem;
-      // a,
-      // a:visited {
-      //   // text-align: center;
-      //   // display: block;
-      // }
     }
   }
 }
@@ -162,7 +154,8 @@ h5 {
 .light {
   .accordion {
     &-tab {
-      background-color: $light-bg-button;
+      // background-color: $light-bg-button;
+      background-color: #d5dbf2;
     }
 
     &-icon {
@@ -173,14 +166,29 @@ h5 {
   .sub-category-container,
   .sub-category-button.active {
     background-color: #13385c99;
+    background-color: #00326399;
   }
 
   .sub-category-button {
     color: #fff;
   }
+
+  .tab-content {
+    a {
+      text-decoration: underline;
+    }
+    a,
+    a:visited {
+      color: $dark-bg-main;
+    }
+
+    a:hover {
+      color: teal;
+    }
+  }
 }
 
-//Dark theme
+//Dark themex
 
 .dark {
   .project-icon-wrapper,
@@ -204,7 +212,6 @@ h5 {
 
   .sub-category-container,
   .sub-category-button.active {
-    // background-color: #153a5f99;
     background-color: #115da999;
   }
 
@@ -216,16 +223,19 @@ h5 {
     a {
       text-decoration: underline;
     }
+    a,
     a:visited {
-      color: $purple-accent-color;
+      color: $teal-accent-color;
+    }
+
+    a:hover {
+      color: $dark-text-main;
     }
   }
 
   .project-id-3 {
     .project-details-img {
       border: black 10px solid;
-      // border-top: 5px;
-      // border-bottom: 5px;
     }
   }
 }
@@ -236,7 +246,6 @@ h5 {
 }
 @include mq(500) {
   .image-container {
-    // padding: 2rem;
     max-width: 500px;
   }
 }

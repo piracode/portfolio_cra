@@ -3,8 +3,17 @@
     "titleSkills": "Skills",
     "skills": [
       {
-        "title": "Front-End Development",
-        "list": ["JavaScript", "React.js", "SASS", "PHP", "Wordpress"]
+        "title": "Programming",
+        "list": [
+          "HTML5",
+          "CSS3",
+          "Bootstrap",
+          "JavaScript",
+          "React.js",
+          "SASS",
+          "PHP",
+          "Wordpress"
+        ]
       },
       {
         "title": "UX and Web Design",
@@ -31,8 +40,17 @@
     "titleSkills": "Compétences",
     "skills": [
       {
-        "title": "Développement Front-End",
-        "list": ["JavaScript", "React.js", "SASS", "PHP", "Wordpress"]
+        "title": "Programmation",
+        "list": [
+          "HTML5",
+          "CSS3",
+          "Bootstrap",
+          "JavaScript",
+          "React.js",
+          "SASS",
+          "PHP",
+          "Wordpress"
+        ]
       },
       {
         "title": "UX et Design Web",
@@ -59,8 +77,17 @@
     "titleSkills": "Habilidades",
     "skills": [
       {
-        "title": "Desarrollo Front-End",
-        "list": ["JavaScript", "React.js", "SASS", "PHP", "Wordpress"]
+        "title": "Programación",
+        "list": [
+          "HTML5",
+          "CSS3",
+          "Bootstrap",
+          "JavaScript",
+          "React.js",
+          "SASS",
+          "PHP",
+          "Wordpress"
+        ]
       },
       {
         "title": "Diseño UX y Web",

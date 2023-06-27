@@ -53,7 +53,7 @@
   }
 
   .primary-button {
-    border: $purple-accent-color 1px solid;
+    border: none;
     color: $light-text-main;
     @include primary-btn;
   }
@@ -69,9 +69,14 @@
   .primary-button:hover {
     background-color: $light-heading-secondary;
 
-    a:hover {
-      color: $dark-blue-color-2;
+    a:hover,
+    a.button-link:visited {
+      color: $light-bg-nav;
     }
+  }
+
+  .project-button:hover {
+    background-color: $light-bg-button;
   }
 }
 
@@ -79,9 +84,11 @@
 
 .light {
   .primary-button {
-    border: $teal-accent-color 1px solid;
+    border: none;
     background-color: $light-bg-button;
-    color: $dark-blue-accent-color;
+    a.button-link {
+      color: $dark-bg-main;
+    }
     @include primary-btn;
   }
 
@@ -105,8 +112,7 @@
   }
 
   .project-button:hover {
-    background-color: initial;
-    border-color: initial;
+    background-color: #d5dbf2;
   }
 }
 .primary-button a.button-link {

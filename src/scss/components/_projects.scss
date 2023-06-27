@@ -111,6 +111,15 @@
       color: $dark-bg-main;
     }
 
+    &-icon-wrapper:hover {
+      svg {
+        fill: $purple-accent-color;
+      }
+      .project-icon-title {
+        color: $purple-accent-color;
+      }
+    }
+
     &-button.active {
       background-color: $teal-accent-color;
       color: $dark-bg-main;
@@ -191,6 +200,15 @@
       background-color: $purple-accent-color;
       // border-color: $teal-accent-color;
       color: #dde6fc;
+    }
+
+    &-icon-wrapper:hover {
+      svg {
+        fill: $teal-accent-color;
+      }
+      .project-icon-title {
+        color: $teal-accent-color;
+      }
     }
 
     &-article {

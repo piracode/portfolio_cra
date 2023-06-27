@@ -3,98 +3,98 @@
     "titleSectionGallery": "A glimpse of my other passions",
     "images": [
       {
-        "src": "/images/aboutMePics/flamenco-jericho.jpeg",
+        "src": "/images/aboutMePics/flamenco-jericho.webp",
         "alt": "Flamenco dancing at Jericho Beach",
         "caption": "Flamenco moves, Jericho"
       },
       {
-        "src": "/images/aboutMePics/hikingSeymour.jpeg",
+        "src": "/images/aboutMePics/hikingSeymour.webp",
         "alt": "Epic Hike at Seymour Mountain",
         "caption": "Epic Hike at Seymour Mountain"
       },
       {
-        "src": "/images/aboutMePics/flamenco-victoria2.jpeg",
+        "src": "/images/aboutMePics/flamenco-victoria2.webp",
         "alt": "Flamenco Festival show in Victoria, BC",
         "caption": "Flamenco Festival, Victoria"
       },
       {
-        "src": "/images/aboutMePics/cyrius.jpeg",
+        "src": "/images/aboutMePics/cyrius.webp",
         "alt": "Portrait of Cyrius in paper art",
         "caption": "Cyrius Portrait"
       },
       {
-        "src": "/images/aboutMePics/hike-buntzen.jpg",
+        "src": "/images/aboutMePics/hike-buntzen.webp",
         "alt": "Hike in BC",
         "caption": "Hike in BC"
       },
 
       {
-        "src": "/images/aboutMePics/fabio-portrait.jpeg",
+        "src": "/images/aboutMePics/fabio-portrait.webp",
         "alt": "Portrait of my dog with paper strips",
         "caption": "Fabio Portrait"
       },
       {
-        "src": "/images/aboutMePics/flamenco-victoria1.jpeg",
+        "src": "/images/aboutMePics/flamenco-victoria1.webp",
         "alt": "Flamenco Festival show in Victoria, BC",
         "caption": "Flamenco Festival, Victoria"
       },
       {
-        "src": "/images/aboutMePics/hiking-spain2.jpg",
+        "src": "/images/aboutMePics/hiking-spain2.webp",
         "alt": "Hike in Spain",
         "caption": "Hike in Spain"
       },
 
       {
-        "src": "/images/aboutMePics/flamenco-victoria.jpeg",
+        "src": "/images/aboutMePics/flamenco-victoria.webp",
         "alt": "Flamenco Festival show in Victoria, BC",
         "caption": "Flamenco Festival show in Victoria, BC"
       },
       {
-        "src": "/images/aboutMePics/hiking-spain.jpg",
+        "src": "/images/aboutMePics/hiking-spain.webp",
         "alt": "Hike in Spain1",
         "caption": "Hike in Spain"
       },
 
       {
-        "src": "/images/aboutMePics/flamenco-cuadro.jpeg",
+        "src": "/images/aboutMePics/flamenco-cuadro.webp",
         "alt": "Flamenco show in Vancouver, BC",
         "caption": "Flamenco show, Vancouver"
       },
 
       {
-        "src": "/images/aboutMePics/blue-flowers-quilling.jpeg",
+        "src": "/images/aboutMePics/blue-flowers-quilling.webp",
         "alt": "Me and my artwork made with quilling flowers",
         "caption": "Quilling Artwork"
       },
 
       {
-        "src": "/images/aboutMePics/flamenco-whiteDress&K.jpeg",
+        "src": "/images/aboutMePics/flamenco-whiteDress&K.webp",
         "alt": "Flamenco show in Vancouver, BC",
         "caption": "Flamenco show, Vancouver"
       },
 
       {
-        "src": "/images/aboutMePics/keiva.jpeg",
+        "src": "/images/aboutMePics/keiva.webp",
         "alt": "Keiva Portrait with paper strips",
         "caption": "Keiva Portrait"
       },
       {
-        "src": "/images/aboutMePics/kino-cafe-castanets.jpeg",
+        "src": "/images/aboutMePics/kino-cafe-castanets.webp",
         "alt": "Flamenco show at the Kino Cafe in Vancouver, BC",
         "caption": "Flamenco show, Vancouver"
       },
       {
-        "src": "/images/aboutMePics/quilling-xmas-market.jpeg",
+        "src": "/images/aboutMePics/quilling-xmas-market.webp",
         "alt": "Christmas market display",
         "caption": "Christmas market"
       },
       {
-        "src": "/images/aboutMePics/flamenco-portmoody.jpeg",
+        "src": "/images/aboutMePics/flamenco-portmoody.webp",
         "alt": "Flamenco show in Port Moody, BC",
         "caption": "Flamenco show, Port Moody"
       },
       {
-        "src": "/images/aboutMePics/flamenco-chai-lounge.jpeg",
+        "src": "/images/aboutMePics/flamenco-chai-lounge.webp",
         "alt": "Flamenco show at Chai Lounge in Vancouver, BC",
         "caption": "Flamenco show, Vancouver"
       }
@@ -104,14 +104,100 @@
     "titleSectionGallery": "Un aperçu de mes autres passions",
     "images": [
       {
-        "src": "/images/aboutMePics/french-image-1.jpg",
-        "alt": "French Image 1",
-        "caption": "French Image 1 Title"
+        "src": "/images/aboutMePics/flamenco-jericho.webp",
+        "alt": "Flamenco dancing at Jericho Beach",
+        "caption": "Flamenco moves, Jericho"
       },
       {
-        "src": "/images/aboutMePics/french-image-2.jpg",
-        "alt": "French Image 2",
-        "caption": "French Image 2 Title"
+        "src": "/images/aboutMePics/hikingSeymour.webp",
+        "alt": "Epic Hike at Seymour Mountain",
+        "caption": "Epic Hike at Seymour Mountain"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria2.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival, Victoria"
+      },
+      {
+        "src": "/images/aboutMePics/cyrius.webp",
+        "alt": "Portrait of Cyrius in paper art",
+        "caption": "Cyrius Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/hike-buntzen.webp",
+        "alt": "Hike in BC",
+        "caption": "Hike in BC"
+      },
+
+      {
+        "src": "/images/aboutMePics/fabio-portrait.webp",
+        "alt": "Portrait of my dog with paper strips",
+        "caption": "Fabio Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria1.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival, Victoria"
+      },
+      {
+        "src": "/images/aboutMePics/hiking-spain2.webp",
+        "alt": "Hike in Spain",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-victoria.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival show in Victoria, BC"
+      },
+      {
+        "src": "/images/aboutMePics/hiking-spain.webp",
+        "alt": "Hike in Spain1",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-cuadro.webp",
+        "alt": "Flamenco show in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+
+      {
+        "src": "/images/aboutMePics/blue-flowers-quilling.webp",
+        "alt": "Me and my artwork made with quilling flowers",
+        "caption": "Quilling Artwork"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-whiteDress&K.webp",
+        "alt": "Flamenco show in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+
+      {
+        "src": "/images/aboutMePics/keiva.webp",
+        "alt": "Keiva Portrait with paper strips",
+        "caption": "Keiva Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/kino-cafe-castanets.webp",
+        "alt": "Flamenco show at the Kino Cafe in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+      {
+        "src": "/images/aboutMePics/quilling-xmas-market.webp",
+        "alt": "Christmas market display",
+        "caption": "Christmas market"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-portmoody.webp",
+        "alt": "Flamenco show in Port Moody, BC",
+        "caption": "Flamenco show, Port Moody"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-chai-lounge.webp",
+        "alt": "Flamenco show at Chai Lounge in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
       }
     ]
   },
@@ -119,14 +205,100 @@
     "titleSectionGallery": "Un vistazo a mis otras pasiones",
     "images": [
       {
-        "src": "/images/aboutMePics/spanish-image-1.jpg",
-        "alt": "Spanish Image 1",
-        "caption": "Spanish Image 1 Title"
+        "src": "/images/aboutMePics/flamenco-jericho.webp",
+        "alt": "Flamenco dancing at Jericho Beach",
+        "caption": "Flamenco moves, Jericho"
       },
       {
-        "src": "/images/aboutMePics/spanish-image-2.jpg",
-        "alt": "Spanish Image 2",
-        "caption": "Spanish Image 2 Title"
+        "src": "/images/aboutMePics/hikingSeymour.webp",
+        "alt": "Epic Hike at Seymour Mountain",
+        "caption": "Epic Hike at Seymour Mountain"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria2.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival, Victoria"
+      },
+      {
+        "src": "/images/aboutMePics/cyrius.webp",
+        "alt": "Portrait of Cyrius in paper art",
+        "caption": "Cyrius Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/hike-buntzen.webp",
+        "alt": "Hike in BC",
+        "caption": "Hike in BC"
+      },
+
+      {
+        "src": "/images/aboutMePics/fabio-portrait.webp",
+        "alt": "Portrait of my dog with paper strips",
+        "caption": "Fabio Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria1.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival, Victoria"
+      },
+      {
+        "src": "/images/aboutMePics/hiking-spain2.webp",
+        "alt": "Hike in Spain",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-victoria.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival show in Victoria, BC"
+      },
+      {
+        "src": "/images/aboutMePics/hiking-spain.webp",
+        "alt": "Hike in Spain1",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-cuadro.webp",
+        "alt": "Flamenco show in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+
+      {
+        "src": "/images/aboutMePics/blue-flowers-quilling.webp",
+        "alt": "Me and my artwork made with quilling flowers",
+        "caption": "Quilling Artwork"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-whiteDress&K.webp",
+        "alt": "Flamenco show in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+
+      {
+        "src": "/images/aboutMePics/keiva.webp",
+        "alt": "Keiva Portrait with paper strips",
+        "caption": "Keiva Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/kino-cafe-castanets.webp",
+        "alt": "Flamenco show at the Kino Cafe in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+      {
+        "src": "/images/aboutMePics/quilling-xmas-market.webp",
+        "alt": "Christmas market display",
+        "caption": "Christmas market"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-portmoody.webp",
+        "alt": "Flamenco show in Port Moody, BC",
+        "caption": "Flamenco show, Port Moody"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-chai-lounge.webp",
+        "alt": "Flamenco show at Chai Lounge in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
       }
     ]
   }
