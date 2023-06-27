@@ -33,6 +33,16 @@ const NavigationLinks = () => {
       behavior: 'smooth',
     })
   }
+
+  const scrollWithOffset = (el, offset) => {
+    const elementPosition = el.offsetTop - offset
+    window.scroll({
+      top: elementPosition,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <>
       <nav className='navigation-container sticky'>
@@ -50,6 +60,7 @@ const NavigationLinks = () => {
               to='/#about'
               className='navigation-link'
               onClick={() => setActiveLink('about')}
+              scroll={(el) => scrollWithOffset(el, 50)}
             >
               <span className='navigation-link-icon'>
                 <RiInformationFill />
@@ -58,7 +69,12 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <HashLink smooth to='/#projects' className='navigation-link'>
+            <HashLink
+              smooth
+              to='/#projects'
+              className='navigation-link'
+              scroll={(el) => scrollWithOffset(el, 50)}
+            >
               <span className='navigation-link-icon'>
                 <BsFillBriefcaseFill />
               </span>
@@ -66,7 +82,12 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <HashLink smooth to='/#contact' className='navigation-link'>
+            <HashLink
+              smooth
+              to='/#contact'
+              className='navigation-link'
+              scroll={(el) => scrollWithOffset(el, 50)}
+            >
               <span className='navigation-link-icon'>
                 <RiContactsBookFill />
               </span>
@@ -74,7 +95,12 @@ const NavigationLinks = () => {
             </HashLink>
           </li>
           <li className='navigation-link hover'>
-            <HashLink className='navigation-link' smooth to='/#skills'>
+            <HashLink
+              className='navigation-link'
+              smooth
+              to='/#skills'
+              scroll={(el) => scrollWithOffset(el, 50)}
+            >
               <span className='navigation-link-icon'>
                 <GiSkills />
               </span>

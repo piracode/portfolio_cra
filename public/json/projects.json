@@ -256,7 +256,7 @@
             "title": "Ai Summit(Coming soon)",
             "slug": "ai-summit",
             "thumbnail": "/images/placeholder.webp",
-            "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
+            "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
             "excerpt": "We are currently developing a WooCommerce site as a team of four. The purpose of the site is to sell tickets for a conference focused on Artificial Intelligence.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
@@ -552,7 +552,6 @@
                       "subtitle": "User Insights and Definition",
                       "content": "Craigslist users perform tasks like browsing categories, contacting sellers, negotiating prices, and meeting in person. They can be classified into archetypes such as deal-seekers, crafters, job seekers, home-seekers, freelancers, entrepreneurs, pet owners, performers, and students. Challenges include identifying reliable sellers, secure communication, meeting arrangements, secure payments, and addressing post-purchase issues.",
                       "heading2": "Persona",
-                      "content2": "IMG for persoma",
                       "image1": {
                         "src": "/images/craigslist-persona.webp",
                         "alt": "Persona for Craigslist site"
@@ -1043,7 +1042,7 @@
             "title": "AI Summit (Prochainement)",
             "slug": "ai-summit",
             "thumbnail": "/images/placeholder.webp",
-            "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
+            "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
             "excerpt": "Nous développons actuellement un site WooCommerce au sein d'une équipe de 4 personnes. Le site a pour but de vendre des billets pour une conférence sur l'Intelligence Artificielle.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
@@ -1341,7 +1340,6 @@
                       "subtitle": "Définition des utilisateurs",
                       "content": "Les utilisateurs de Craigslist effectuent des tâches telles que parcourir les catégories, contacter les vendeurs, négocier les prix et se rencontrer en personne. Ils peuvent être classés en archétypes tels que les chercheurs de bonnes affaires, les artisans, les chercheurs d'emploi, les chercheurs de logement, les freelancers, les entrepreneurs, les propriétaires d'animaux, les artistes et les étudiants. Les défis incluent l'identification de vendeurs fiables, la communication sécurisée, les arrangements de rencontre, les paiements sécurisés et la résolution des problèmes après l'achat.",
                       "heading2": "Persona",
-                      "content2": "Image du persona",
                       "image1": {
                         "src": "/images/craigslist-persona.webp",
                         "alt": "Persona pour le site Craigslist"
@@ -1832,7 +1830,7 @@
             "title": "Ai Summit (Próximamente)",
             "slug": "ai-summit",
             "thumbnail": "/images/placeholder.webp",
-            "skills": ["Wordpress", "WooCommerce", "PHP", "SASS", "GitHub"],
+            "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
             "excerpt": "Actualmente estamos desarrollando un sitio de WooCommerce en un equipo de 4 personas. El sitio tiene como objetivo vender boletos para una conferencia sobre Inteligencia Artificial.",
             "gitHubLink": "https://github.com/piracode",
             "liveSiteLink": "https://martha.codes",
@@ -2127,7 +2125,6 @@
                       "subtitle": "Definición de usuarios",
                       "content": "Los usuarios de Craigslist realizan tareas como explorar categorías, contactar vendedores, negociar precios y encontrarse en persona. Pueden clasificarse en arquetipos como buscadores de ofertas, artesanos, buscadores de empleo, buscadores de vivienda, freelancers, emprendedores, dueños de mascotas, artistas y estudiantes. Los desafíos incluyen identificar vendedores confiables, comunicación segura, arreglos de encuentro, pagos seguros y resolución de problemas posteriores a la compra.",
                       "heading2": "Persona",
-                      "content2": "Imagen de la persona",
                       "image1": {
                         "src": "/images/craigslist-persona.webp",
                         "alt": "Persona para el sitio de Craigslist"

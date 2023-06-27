@@ -55,7 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 
   &-skill {
@@ -73,7 +73,7 @@
   .project-cta-box {
     display: flex;
     gap: 0.5rem;
-    padding-bottom: 1.3rem;
+    padding: 1.5rem 0;
     justify-content: center;
   }
 
@@ -213,7 +213,6 @@
 
     &-article {
       .project-icon-box {
-        // background-color: $dark-blue-accent-color;
         padding: 0.2rem;
         border-radius: 5px;
       }
@@ -238,7 +237,6 @@
       .project {
         &-title {
           color: $dark-bg-main;
-          // color: $purple-accent-color;
         }
         &-excerpt,
         &-icon-title {
@@ -289,7 +287,6 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      // padding: 0 0.5rem;
     }
 
     &-article {
