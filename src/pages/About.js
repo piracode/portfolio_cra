@@ -66,7 +66,11 @@ const About = () => {
         </article>
       </section>
       {/* <article className='tech-stack-container'> */}
-      <section className='skills-container' id='skills'>
+      <section
+        ref={ref}
+        id='skills'
+        className={`skills-container ${inView ? 'fade-up fade-up-active' : ''}`}
+      >
         <h3 className='section-title'>
           <span className='parallax-link-number'>02. </span>
           <span className='title-text'>{t('titleSkills')}</span>
