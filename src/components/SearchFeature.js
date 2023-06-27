@@ -1,3 +1,5 @@
+//This page is under construction
+
 import { useTranslation } from 'react-i18next'
 import { ImSearch } from 'react-icons/im'
 import SearchBar from './SearchBar'

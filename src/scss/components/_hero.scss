@@ -6,7 +6,7 @@
 }
 
 .hero {
-  padding: 3rem 1rem 0 1rem;
+  padding: 3rem 1rem 8.5rem 1rem;
   // height: 80vh;
 
   &-intro-box {
@@ -93,7 +93,8 @@
     }
 
     &-text-container {
-      max-width: 23.5rem;
+      max-width: 27rem;
+      padding-left: 2rem;
     }
   }
 }
@@ -107,13 +108,22 @@
 
 @include mq(768) {
   .hero {
-    padding-top: 10rem;
-    padding-bottom: 12rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    &-description-box {
+      padding-bottom: 2rem;
+    }
   }
 }
 
 @include mq(900) {
   .hero {
-    // max-width: 60rem;
+    &-role {
+      padding-bottom: 2rem;
+    }
+    &-description-box {
+      padding-bottom: 4rem;
+    }
   }
 }

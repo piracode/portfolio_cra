@@ -1,3 +1,5 @@
+////////////////////////// This page is under construction ////////////////////////////////
+
 import React, { useState, useEffect, useRef } from 'react'
 
 const SearchBar = ({ onSearchTermChange }) => {

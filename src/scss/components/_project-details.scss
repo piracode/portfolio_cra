@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: black solid 1px;
     width: 100%;
     padding: 1.2rem;
     margin-bottom: 1rem;
@@ -83,6 +82,20 @@
       max-width: 650px;
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+.project-id-14,
+.project-id-8 {
+  .tab-content {
+    .content1 ~ img,
+    .content2 ~ img,
+    .content3 ~ img {
+      width: 35rem;
+      margin: 0 auto;
+      display: block;
+      padding: 3rem 0 3rem 0;
     }
   }
 }

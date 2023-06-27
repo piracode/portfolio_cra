@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import { BsPlusCircleFill } from 'react-icons/bs'
 import FilteredProjects from '../components/FilteredProjects'
-import { InView, useInView } from 'react-intersection-observer'
-
-// import {
-//   TbArrowBigRightLinesFilled,
-//   TbArrowBigRightLineFilled,
-// } from 'react-icons/tb'
+import { useInView } from 'react-intersection-observer'
 
 const Projects = () => {
   const { i18n } = useTranslation()

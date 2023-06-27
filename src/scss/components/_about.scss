@@ -1,12 +1,14 @@
 @import '../base/settings';
 
-.about {
-  // margin-bottom: 3rem;
-  padding: 0 0.2rem 7.5rem 0.2rem;
+.aboutAndSkills-box {
   max-width: 34.5rem;
+}
+.about {
+  padding: 0 0.2rem 7.5rem 0.2rem;
 
   &-container {
-    padding: 8.5rem 0 4.5rem 0;
+    // padding: 8.5rem 0 4.5rem 0;
+    padding-bottom: 4.5rem;
   }
 
   &-text-container {
@@ -54,6 +56,10 @@ a.about-link {
 }
 
 //Skills
+
+.skills-container {
+  padding-bottom: 8.5rem;
+}
 
 .skills-section {
   &-subtitle {
@@ -131,12 +137,12 @@ a.about-link {
 
 @include mq(490) {
   .about {
-    padding-left: 1.5rem;
+    // padding-left: 1.5rem;
   }
 }
 
 @include mq(600) {
-  .about {
+  .aboutAndSkills-box {
     padding-left: 2.5rem;
     padding-right: 1rem;
   }
@@ -173,7 +179,7 @@ a.about-link {
 
 @include mq(768) {
   .about-container {
-    padding-bottom: 9rem;
+    // padding-bottom: 9rem;
   }
 
   .about {
