@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import profilePic from '../assets/profile.png'
+import profilePic from '../assets/profile.webp'
 import { useEffect, useState } from 'react'
 
 const Hero = () => {

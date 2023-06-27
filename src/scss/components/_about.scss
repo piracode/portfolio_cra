@@ -119,11 +119,7 @@ a.about-link {
   .skills-section {
     &-list-item {
       color: $dark-blue-color-2;
-      background-color: #8892af;
-      // &:hover {
-      //   background-color: $dark-blue-color-2;
-      //   color: #76b2bc;
-      // }
+      background-color: $light-theme-project-bg;
     }
 
     &-subtitle {

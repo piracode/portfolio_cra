@@ -16,6 +16,13 @@ const Header = () => {
 
   return (
     <header className='header'>
+      <a
+        href='#main-content'
+        className='skip-link visually-hidden'
+        aria-label='Skip to main content'
+      >
+        Skip to content
+      </a>
       <Logo
         alt='Martha Villa Martin Logo'
         className='logo-header logo-mobile'

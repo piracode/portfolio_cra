@@ -8,7 +8,7 @@ import Projects from './Projects'
 const Home = () => {
   return (
     <div className='parallax-container'>
-      <div className='section-container'>
+      <div className='section-container' id='main-content'>
         <Hero />
         <About />
 

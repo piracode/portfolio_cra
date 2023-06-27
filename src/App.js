@@ -8,7 +8,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
-import Lab from './pages/Lab'
 import Header from './components/Header'
 import ProjectDetails from './pages/ProjectDetails'
 import Gallery from './pages/Gallery'
@@ -70,7 +69,6 @@ function App() {
                   <Route path='/projects' element={<Projects />} />
                   <Route path='/projects/:slug' element={<ProjectDetails />} />
                   <Route path='/contact' element={<Contact />} />
-                  <Route path='/lab' element={<Lab />} />
                   <Route path='/gallery' element={<Gallery />} />
                 </Routes>
               </>
