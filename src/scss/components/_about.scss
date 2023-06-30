@@ -149,11 +149,12 @@ a.about-link {
 }
 
 @include mq(950) {
-  .about {
+  .aboutAndSkills-box {
     max-width: 100%;
     display: grid;
     grid-template-columns: 3fr 2.5fr;
-
+  }
+  .about {
     &-container {
       padding-top: 0;
     }

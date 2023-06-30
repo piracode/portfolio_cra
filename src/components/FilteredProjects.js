@@ -6,7 +6,10 @@ import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const FilteredProjects = ({ selectedProjects, filterType }) => {
+const FilteredProjects = ({ selectedProjects = [], filterType }) => {
+  const { t, ready } = useTranslation()
+  console.log('t name' + t.name)
+
   // Switch statement to filter the projects based on the filter type
   const filterProjects = (projects) => {
     switch (filterType) {
@@ -108,19 +111,6 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
             </Link>
           </div>
         </div>
-        {/* <button className='project-icon-box liveSite primary-button project-button'>
-      <a
-      className='project-icon-link'
-      href={project.liveSiteLink}
-      target='_blank'
-      rel='noopener noreferrer'
-      >
-      <BsPlusCircleFill />
-      <span className='project-icon-title'>
-      {project.detailsCTA}
-      </span>
-      </a>
-    </button> */}
       </div>
     </article>
   )
@@ -128,7 +118,14 @@ const FilteredProjects = ({ selectedProjects, filterType }) => {
   {
     /* Map over the filtered projects and render each project */
   }
-  return <>{filteredProjects.map((project, index) => renderProject(project))}</>
+  return (
+    <>
+      {/* {t.name == 'fixedT' && */}
+      {ready &&
+        filteredProjects &&
+        filteredProjects.map((project, index) => renderProject(project))}
+    </>
+  )
 }
 
 export default FilteredProjects

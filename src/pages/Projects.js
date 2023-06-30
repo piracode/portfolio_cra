@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import FilteredProjects from '../components/FilteredProjects'
 import { useInView } from 'react-intersection-observer'
+import Loading from '../components/Loading'
 
 const Projects = () => {
-  const { i18n } = useTranslation()
+  const { t, i18n, ready } = useTranslation()
   const [data, setData] = useState(null)
   const [filterType, setFilterType] = useState('Featured') //to display the featured projcts on page load
-
   const [ref, inView] = useInView()
 
   const handleFilterButtonClick = (type) => {
@@ -28,11 +28,12 @@ const Projects = () => {
   const currentLanguage = i18n.language
 
   // Retrieve the language-specific data from the 'data' object based on the current language
-  const selectedLanguageData = data?.projects.selected[currentLanguage]
+  const selectedLanguageData = data?.projects?.selected[currentLanguage]
 
   // Extract relevant properties from the language-specific data
   const titleSectionProjects = selectedLanguageData?.titleSectionProjects
   const selectedProjects = selectedLanguageData?.projects
+  // const selectedProjects = t('projects.projects', {returnObjects: true})
   const introSelectedProjects = selectedLanguageData?.introSelectedProjects
   const btnSelected = selectedLanguageData?.buttonProjectTitleFeatured
   const btnAll = selectedLanguageData?.buttonProjectTitleAll
@@ -41,8 +42,10 @@ const Projects = () => {
   console.log('projects inView:', inView)
 
   return (
+    // <>
+    //   { data ? (
     <>
-      {data ? (
+      {ready && data ? (
         <section
           ref={ref}
           id='projects'
@@ -92,7 +95,7 @@ const Projects = () => {
           </div>
         </section>
       ) : (
-        <p>Loading...</p>
+        <Loading />
       )}
     </>
   )

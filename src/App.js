@@ -12,6 +12,8 @@ import Header from './components/Header'
 import ProjectDetails from './pages/ProjectDetails'
 import Gallery from './pages/Gallery'
 
+import i18n from './utilities/i18n'
+
 export const ThemeContext = createContext()
 
 function App() {

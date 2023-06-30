@@ -2,7 +2,6 @@ import Hero from '../components/Hero'
 import NavigationLinks from '../components/NavigationLinks'
 import About from './About'
 import Contact from './Contact'
-// import Lab from './Lab'
 import Projects from './Projects'
 
 const Home = () => {
@@ -14,7 +13,6 @@ const Home = () => {
 
         <Projects />
         <Contact />
-        {/* <Lab /> */}
       </div>
       <NavigationLinks />
     </div>
