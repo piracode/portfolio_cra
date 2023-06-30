@@ -23,16 +23,18 @@ const loadTranslations = async () => {
 
   const languages = ['en', 'fr', 'es']
 
-  const translations = {}
+  const translations = {
+    en: [],
+    fr: [],
+    es: [],
+  }
 
-  // Iterate over each language
-  for (const language of languages) {
-    translations[language] = {}
-
-    // Iterate over each file and load the JSON data
-    for (const [filename] of Object.entries(files)) {
-      const jsonData = await loadJSON(filename)
-      // Merge the translation data into the corresponding language object
+  // Iterate over each file and load the JSON data
+  for (const [filename] of Object.entries(files)) {
+    const jsonData = await loadJSON(filename)
+    debugger
+    // Merge the translation data into the corresponding language object
+    for (const language in jsonData) {
       translations[language] = {
         ...translations[language],
         ...jsonData[language],
@@ -65,6 +67,7 @@ const initializeI18n = async () => {
       escapeValue: false,
     },
   })
+  console.log('------------------------Translations:', translations)
 }
 
 initializeI18n()

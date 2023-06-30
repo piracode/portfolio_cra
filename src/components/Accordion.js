@@ -4,13 +4,14 @@ import {
   MdKeyboardDoubleArrowDown,
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md'
+import Loading from './Loading'
 
 export const Accordion = ({ accordions, projectID }) => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(-1)
   const [activeTabs, setActiveTabs] = useState({})
 
   // Hook for translation
-  const { t } = useTranslation()
+  const { t, ready } = useTranslation()
 
   // console.log(accordions)
   // console.log('testttt2', t(accordions[3].heading))
@@ -120,80 +121,86 @@ export const Accordion = ({ accordions, projectID }) => {
   }
 
   return (
-    <div className={`accordion-container project-id-${projectID}`}>
-      {accordions.map((accordion, index) => (
-        <section key={index}>
-          <div
-            className='accordion-tab'
-            onClick={() => toggleAccordion(index)}
-            aria-expanded={openAccordionIndex === index ? 'true' : 'false'}
-            aria-controls={`accordion-content-${index}`}
-          >
-            <h2
-              className={`accordion-title`}
-              onClick={() => setOpenAccordionIndex(index)}
-            >
-              {t(accordion.title)}
-            </h2>
-            {/* Render the arrow component based on the open/close state */}
-            {openAccordionIndex === index ? (
-              <MdKeyboardDoubleArrowRight className='accordion-icon' />
-            ) : (
-              <MdKeyboardDoubleArrowDown className='accordion-icon' />
-            )}
-          </div>
+    <>
+      {ready ? (
+        <div className={`accordion-container project-id-${projectID}`}>
+          {accordions.map((accordion, index) => (
+            <section key={index}>
+              <div
+                className='accordion-tab'
+                onClick={() => toggleAccordion(index)}
+                aria-expanded={openAccordionIndex === index ? 'true' : 'false'}
+                aria-controls={`accordion-content-${index}`}
+              >
+                <h2
+                  className={`accordion-title`}
+                  onClick={() => setOpenAccordionIndex(index)}
+                >
+                  {t(accordion.title)}
+                </h2>
+                {/* Render the arrow component based on the open/close state */}
+                {openAccordionIndex === index ? (
+                  <MdKeyboardDoubleArrowRight className='accordion-icon' />
+                ) : (
+                  <MdKeyboardDoubleArrowDown className='accordion-icon' />
+                )}
+              </div>
 
-          {/* Render the accordion content if it is open */}
-          {openAccordionIndex === index && (
-            <div>
-              {/* Render the intro content if it exists */}
-              {accordion.intro && (
-                <p className={`accordion-intro`}>{t(accordion.intro)}</p>
-              )}
-              {/* Render the content keys */}
-              {Object.keys(accordion).map((key) => {
-                if (key.startsWith('content')) {
-                  return (
-                    <p className={`accordion-paragraph ${key}`} key={key}>
-                      {t(accordion[key])}
-                    </p>
-                  )
-                }
-                if (key.startsWith('question')) {
-                  return (
-                    <h4 className={`accordion-question ${key}`} key={key}>
-                      {t(accordion[key])}
-                    </h4>
-                  )
-                }
-                return null
-              })}
-              {/* Render tabs */}
+              {/* Render the accordion content if it is open */}
+              {openAccordionIndex === index && (
+                <div>
+                  {/* Render the intro content if it exists */}
+                  {accordion.intro && (
+                    <p className={`accordion-intro`}>{t(accordion.intro)}</p>
+                  )}
+                  {/* Render the content keys */}
+                  {Object.keys(accordion).map((key) => {
+                    if (key.startsWith('content')) {
+                      return (
+                        <p className={`accordion-paragraph ${key}`} key={key}>
+                          {t(accordion[key])}
+                        </p>
+                      )
+                    }
+                    if (key.startsWith('question')) {
+                      return (
+                        <h4 className={`accordion-question ${key}`} key={key}>
+                          {t(accordion[key])}
+                        </h4>
+                      )
+                    }
+                    return null
+                  })}
+                  {/* Render tabs */}
 
-              {accordion.tabs && accordion.tabs.length > 0 && (
-                <div className='sub-category-container'>
-                  {accordion.tabs.map((tab, tabIndex) => (
-                    <button
-                      key={tabIndex}
-                      onClick={() => handleTabClick(index, tabIndex)}
-                      className={`sub-category-button ${
-                        activeTabs[index] === tabIndex ? 'active' : ''
-                      }`}
-                    >
-                      {t(tab.subtitle)}
-                    </button>
-                  ))}
+                  {accordion.tabs && accordion.tabs.length > 0 && (
+                    <div className='sub-category-container'>
+                      {accordion.tabs.map((tab, tabIndex) => (
+                        <button
+                          key={tabIndex}
+                          onClick={() => handleTabClick(index, tabIndex)}
+                          className={`sub-category-button ${
+                            activeTabs[index] === tabIndex ? 'active' : ''
+                          }`}
+                        >
+                          {t(tab.subtitle)}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                  {/* Render tab content */}
+                  {accordion.tabs?.map((tab, tabIndex) =>
+                    renderTabContent(tab, index, tabIndex)
+                  )}
                 </div>
               )}
-              {/* Render tab content */}
-              {accordion.tabs?.map((tab, tabIndex) =>
-                renderTabContent(tab, index, tabIndex)
-              )}
-            </div>
-          )}
-        </section>
-      ))}
-    </div>
+            </section>
+          ))}
+        </div>
+      ) : (
+        <Loading />
+      )}
+    </>
   )
 }
 

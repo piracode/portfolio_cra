@@ -6,10 +6,11 @@ import Footer from '../components/Footer'
 import { FaGithub, FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
 import NavigationLinks from '../components/NavigationLinks'
+import Loading from '../components/Loading'
 
 const ProjectDetails = () => {
   const { slug } = useParams() // Retrieve the project slug from the URL
-  const { i18n } = useTranslation() // Access the i18n translation object
+  const { i18n, ready } = useTranslation() // Access the i18n translation object
   // const { t } = useTranslation()
 
   const [projectDetails, setProjectDetails] = useState(null)
@@ -52,93 +53,101 @@ const ProjectDetails = () => {
   // console.log(project.id)
 
   return (
-    <div className='parallax-container'>
-      <section className={`project-details-box project-id-${project.id}`}>
-        <h1 className='project-details-title'>{project.title}</h1>
-        <div className='image-container'>
-          <picture>
-            <source
-              media='(max-width: 767px)'
-              srcSet={project.thumbnailMobile}
-            />
-            <source media='(min-width: 768px)' srcSet={project.thumbnail} />
-            <img
-              className='project-details-img'
-              src={project.thumbnail}
-              alt={project.alt}
-            />
-          </picture>
-        </div>
+    <>
+      {ready ? (
+        <div className='parallax-container'>
+          <section className={`project-details-box project-id-${project.id}`}>
+            <h1 className='project-details-title'>{project.title}</h1>
+            <div className='image-container'>
+              <picture>
+                <source
+                  media='(max-width: 767px)'
+                  srcSet={project.thumbnailMobile}
+                />
+                <source media='(min-width: 768px)' srcSet={project.thumbnail} />
+                <img
+                  className='project-details-img'
+                  src={project.thumbnail}
+                  alt={project.alt}
+                />
+              </picture>
+            </div>
 
-        <div className='project-details-cta-box'>
-          {/* IF design is false  */}
-          {!project.design ? (
-            <div className='project-icon-box-details-page'>
-              <a
-                className='project-icon-link'
-                href={project.gitHubLink}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div className='project-icon-wrapper'>
-                  <FaGithub className='project-icon-svg' />
-                  <span className='project-icon-title'>
-                    {project.gitHubCTA}
-                  </span>
+            <div className='project-details-cta-box'>
+              {/* IF design is false  */}
+              {!project.design ? (
+                <div className='project-icon-box-details-page'>
+                  <a
+                    className='project-icon-link'
+                    href={project.gitHubLink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <div className='project-icon-wrapper'>
+                      <FaGithub className='project-icon-svg' />
+                      <span className='project-icon-title'>
+                        {project.gitHubCTA}
+                      </span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          ) : (
-            // If design is true
-            <div className='project-icon-box-details design'>
-              <a
-                className='project-icon-link'
-                href={project.pdfLink}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <div className='project-icon-wrapper'>
-                  {/* Render a different icon for design=true */}
-                  <FaFilePdf />
-                  <span className='project-icon-title'>
-                    {/* {project.gitHubCTA} */}
-                    {project.pdfCTA}
-                  </span>
+              ) : (
+                // If design is true
+                <div className='project-icon-box-details design'>
+                  <a
+                    className='project-icon-link'
+                    href={project.pdfLink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <div className='project-icon-wrapper'>
+                      {/* Render a different icon for design=true */}
+                      <FaFilePdf />
+                      <span className='project-icon-title'>
+                        {/* {project.gitHubCTA} */}
+                        {project.pdfCTA}
+                      </span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          )}
-          <div className='liveSite'>
-            <a
-              className='project-icon-link'
-              href={project.liveSiteLink}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <div className='project-icon-wrapper'>
-                <FaExternalLinkAlt />
-                <span className='project-icon-title'>
-                  {project.liveSiteCTA}
-                </span>
+              )}
+              <div className='liveSite'>
+                <a
+                  className='project-icon-link'
+                  href={project.liveSiteLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <div className='project-icon-wrapper'>
+                    <FaExternalLinkAlt />
+                    <span className='project-icon-title'>
+                      {project.liveSiteCTA}
+                    </span>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        </div>
+            </div>
 
-        <div className='project-details-box'>
-          <h3 className='project-details-overview-title'>{titleOverview}</h3>
-          <p className='project-details-overview-paragraph'>{overview1}</p>
-          <p className='project-details-overview-paragraph'>{overview2}</p>
-          {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
-          {projectDetails.post && accordions && (
-            <Accordion accordions={accordions} projectID={project.id} />
-          )}
-        </div>
+            <div className='project-details-box'>
+              <h3 className='project-details-overview-title'>
+                {titleOverview}
+              </h3>
+              <p className='project-details-overview-paragraph'>{overview1}</p>
+              <p className='project-details-overview-paragraph'>{overview2}</p>
+              {/* If data exists, render the Accordion component with accordions, titleOverview, and overview data */}
+              {projectDetails.post && accordions && (
+                <Accordion accordions={accordions} projectID={project.id} />
+              )}
+            </div>
 
-        <Footer />
-      </section>
-      <NavigationLinks />
-    </div>
+            <Footer />
+          </section>
+          <NavigationLinks />
+        </div>
+      ) : (
+        <Loading />
+      )}
+    </>
   )
 }
 

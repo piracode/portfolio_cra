@@ -1,9 +1,11 @@
 import React from 'react'
-import i18n from '../utilities/i18n'
+
 import frFlag from '../assets/flags/france-flag.png'
 import enFlag from '../assets/flags/uk-flag.png'
 import esFlag from '../assets/flags/spain-flag.png'
+import { useTranslation } from 'react-i18next'
 const LanguageSwitcher = () => {
+  const { i18n } = useTranslation()
   const switchLanguage = (language) => {
     i18n.changeLanguage(language)
   }
