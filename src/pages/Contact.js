@@ -9,9 +9,9 @@ const Contact = () => {
 
   const [ref, inView] = useInView()
 
-  console.log('contact inView:', inView)
-  console.log('title section proejct', t('titleSectionContact'))
-  console.log('READY ------------', ready)
+  // console.log('contact inView:', inView)
+  // console.log('title section proejct', t('titleSectionContact'))
+  // console.log('READY ------------', ready)
 
   // if (!ready) {
   //   return <p>Loading...</p>
@@ -29,17 +29,18 @@ const Contact = () => {
             <div className='contact-connect-section'>
               <h3 className='section-title'>
                 <span className='parallax-link-number'> 04. </span>
-                <span className='title-text'>{t('titleSectionContact')}</span>
-                <span className='title-line'>&nbsp;</span>
+                <span className='title-text'>
+                  {t('contact.titleSectionContact')}
+                </span>
               </h3>
-              <p className='contact-text'> {t('contactParagraph-1')}</p>
-              <p className='contact-text'> {t('contactParagraph-2')}</p>
+              <p className='contact-text'> {t('contact.contactParagraph-1')}</p>
+              <p className='contact-text'> {t('contact.contactParagraph-2')}</p>
               <button className='primary-button'>
                 <a
                   className='button-link'
                   href='mailto:martha.villamartin@gmail.com'
                 >
-                  {t('sendEmailCTA')}
+                  {t('contact.sendEmailCTA')}
                 </a>
               </button>
             </div>

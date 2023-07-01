@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const FilteredProjects = ({ selectedProjects = [], filterType }) => {
   const { t, ready } = useTranslation()
-  console.log('t name' + t.name)
+  // console.log('t name' + t.name)
 
   // Switch statement to filter the projects based on the filter type
   const filterProjects = (projects) => {
@@ -29,8 +29,6 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
 
   // Filter the selected projects based on the filter type
   const filteredProjects = filterProjects(selectedProjects)
-  console.log('selected Projects:', selectedProjects)
-  console.log('Workshop Projects:', filteredProjects)
 
   const renderProject = (project) => (
     <article
@@ -58,9 +56,11 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
                 href={project.gitHubLink}
                 target='_blank'
                 rel='noopener noreferrer'
+                role='button'
+                aria-label={t('project.gitHubCTAAriaLabel')}
               >
                 <div className='project-icon-wrapper'>
-                  <FaGithub />
+                  <FaGithub title='Open GitHub' />
                   <span className='project-icon-title'>
                     {project.gitHubCTA}
                   </span>
@@ -75,9 +75,11 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
                 href={project.pdfLink}
                 target='_blank'
                 rel='noopener noreferrer'
+                role='button'
+                aria-label={t('project.pdfCTAAriaLabel')}
               >
                 <div className='project-icon-wrapper'>
-                  <FaFilePdf />
+                  <FaFilePdf title='Open PDF' />
                   <span className='project-icon-title'>{project.pdfCTA}</span>
                 </div>
               </a>
@@ -90,9 +92,11 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
               href={project.liveSiteLink}
               target='_blank'
               rel='noopener noreferrer'
+              role='button'
+              aria-label={t('project.liveSiteCTAAriaLabel')}
             >
               <div className='project-icon-wrapper'>
-                <FaExternalLinkAlt />
+                <FaExternalLinkAlt title='Open Live Website' />
                 <span className='project-icon-title'>
                   {project.liveSiteCTA}
                 </span>
@@ -103,9 +107,11 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
             <Link
               className='project-icon-link'
               to={`/projects/${project.slug}`}
+              role='button'
+              aria-label={t('project.detailsCTAAriaLabel')}
             >
               <div className='project-icon-wrapper'>
-                <BsPlusCircleFill />
+                <BsPlusCircleFill title='Project Details' />
                 <span className='project-icon-title'>{project.detailsCTA}</span>
               </div>
             </Link>
@@ -120,7 +126,6 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
   }
   return (
     <>
-      {/* {t.name == 'fixedT' && */}
       {ready &&
         filteredProjects &&
         filteredProjects.map((project, index) => renderProject(project))}

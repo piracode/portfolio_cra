@@ -54,6 +54,8 @@ const NavigationLinks = () => {
                 alt='Martha Villa Martin Logo'
                 className='logo-header logo-desktop'
                 onClick={handleLogoClick}
+                role='button'
+                tabIndex='0'
               />
             </div>
             <li className='navigation-link second-link hover'>
@@ -63,11 +65,17 @@ const NavigationLinks = () => {
                 className='navigation-link'
                 onClick={() => setActiveLink('about')}
                 scroll={(el) => scrollWithOffset(el, 50)}
+                tabIndex='0'
               >
                 <span className='navigation-link-icon'>
-                  <RiInformationFill />
+                  <RiInformationFill
+                    aria-label={t('navigation.about')}
+                    title='About Section Link'
+                  />
                 </span>
-                <span className='navigation-link-text'>{t('about')}</span>
+                <span className='navigation-link-text'>
+                  {t('navigation.about')}
+                </span>
               </HashLink>
             </li>
             <li className='navigation-link hover'>
@@ -76,11 +84,17 @@ const NavigationLinks = () => {
                 to='/#projects'
                 className='navigation-link'
                 scroll={(el) => scrollWithOffset(el, 50)}
+                tabIndex='0'
               >
                 <span className='navigation-link-icon'>
-                  <BsFillBriefcaseFill />
+                  <BsFillBriefcaseFill
+                    aria-label={t('navigation.projects')}
+                    title='Project Section link'
+                  />
                 </span>
-                <span className='navigation-link-text'>{t('projects')}</span>
+                <span className='navigation-link-text'>
+                  {t('navigation.projects')}
+                </span>
               </HashLink>
             </li>
             <li className='navigation-link hover'>
@@ -89,11 +103,17 @@ const NavigationLinks = () => {
                 to='/#contact'
                 className='navigation-link'
                 scroll={(el) => scrollWithOffset(el, 50)}
+                tabIndex='0'
               >
                 <span className='navigation-link-icon'>
-                  <RiContactsBookFill />
+                  <RiContactsBookFill
+                    aria-label={t('navigation.contact')}
+                    title='Contact Section Link'
+                  />
                 </span>
-                <span className='navigation-link-text'>{t('contact')}</span>
+                <span className='navigation-link-text'>
+                  {t('navigation.contact')}
+                </span>
               </HashLink>
             </li>
             <li className='navigation-link hover'>
@@ -102,33 +122,54 @@ const NavigationLinks = () => {
                 smooth
                 to='/#skills'
                 scroll={(el) => scrollWithOffset(el, 50)}
+                tabIndex='0'
               >
                 <span className='navigation-link-icon'>
-                  <GiSkills />
+                  <GiSkills
+                    aria-label={t('navigation.skills')}
+                    title='Skills Section Link'
+                  />
                 </span>
-                <span className='navigation-link-text'>{t('titleSkills')}</span>
+                <span className='navigation-link-text'>
+                  {t('navigation.skills')}
+                </span>
               </HashLink>
             </li>
             <li className='navigation-link hover'>
-              <ThemeToggleButton className='theme-toggle-link' />
+              <ThemeToggleButton className='theme-toggle-link' tabIndex='0' />
             </li>
             <li className=' navigation-contact-container contact-box-desktop'>
               <div className='navigation-contact-icons-box'>
-                <a href='https://github.com/piracode'>
-                  <FaGithub className='navigation-contact-icon contact-icon-github' />
+                <a href='https://github.com/piracode' tabIndex='0'>
+                  <FaGithub
+                    className='navigation-contact-icon contact-icon-github'
+                    aria-label='GitHub'
+                    title='Open GitHub'
+                  />
                 </a>
 
-                <a href='https://www.linkedin.com/in/marthavillamartin/'>
-                  <FaLinkedin className='navigation-contact-icon contact-icon-linkedin' />
+                <a
+                  href='https://www.linkedin.com/in/marthavillamartin/'
+                  tabIndex='0'
+                >
+                  <FaLinkedin
+                    className='navigation-contact-icon contact-icon-linkedin'
+                    aria-label='LinkedIn'
+                    title='Open Linkedin'
+                  />
                 </a>
 
-                <a href='https://codepen.io/piracode'>
-                  <SiCodepen className='navigation-contact-icon contact-icon-codepen' />
+                <a href='https://codepen.io/piracode' tabIndex='0'>
+                  <SiCodepen
+                    className='navigation-contact-icon contact-icon-codepen'
+                    aria-label='CodePen'
+                    title='Open CodePen'
+                  />
                 </a>
               </div>
             </li>
             <li className=' navigation-language-container language-box-desktop'>
-              <LanguageSwitcher />
+              <LanguageSwitcher tabIndex='0' />
             </li>
           </ul>
         </nav>

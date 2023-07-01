@@ -1,6 +1,5 @@
 import React, { useEffect, useState, createContext } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import { FaSun, FaMoon } from 'react-icons/fa'
 
 import './scss/styles.scss'
 import Logo from './components/Logo'

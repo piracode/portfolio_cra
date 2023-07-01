@@ -6,32 +6,15 @@ import Loading from '../components/Loading'
 
 const Gallery = () => {
   const { t, i18n, ready } = useTranslation()
-  const [images, setImages] = useState([])
-
-  useEffect(() => {
-    const loadGalleryData = async () => {
-      try {
-        const currentLanguage = i18n.language
-        const response = await fetch(`/json/gallery.json`)
-        const data = await response.json()
-        const galleryImages = data[currentLanguage]?.images || []
-        setImages(galleryImages)
-        console.log('data', data)
-      } catch (error) {
-        console.error('Error loading gallery data:', error)
-      }
-    }
-
-    loadGalleryData()
-  }, [i18n.language])
+  const images = t('gallery.images', { returnObjects: true }) // Access images
 
   return (
     <>
       {ready ? (
         <div className='parallax-container'>
           <section className='section-container gallery'>
-            <h1>Gallery</h1>
-            <h2>{t('titleSectionGallery')}</h2>
+            <h1>{t('gallery.bigTitle')}</h1>
+            <h2>{t('gallery.titleSectionGallery')}</h2>
             <div className='image-gallery__container'>
               {images.map((image, index) => (
                 <figure
