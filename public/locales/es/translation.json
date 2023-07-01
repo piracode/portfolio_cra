@@ -1,0 +1,966 @@
+{
+  "about": {
+    "titleSectionAbout": "Sobre mí",
+    "paragraph1": "¡Bienvenido(a)s! Soy Martha. Crecí entre Francia y España y ahora vivo en Vancouver, Columbia Británica.",
+    "paragraph2": "Mi interés por el desarrollo web comenzó a florecer en 2018 cuando quise ayudar a mis padres a construir un sitio web para su pizzería en España.",
+    "paragraph3": "Finalmente di el paso para dedicarme seriamente a la programación al inscribirme en el programa de Desarrollo Front-End en BCIT. Además, soy una Desarrolladora Certificada Scrum, habiendo obtenido mi certificación de Scrum Alliance en junio de 2023.",
+    "paragraph4": "Cuando no estoy perfeccionando mis habilidades en la computadora, me encontrarás haciendo senderismo con mi perro, cantando, tocando ",
+    "youtubeLink": "instrumentos musicales",
+    "paragraph4-continued1": ",  creando ",
+    "QuillerinaLink": "arte con papel",
+    "paragraph4-continued2": " (próximamente un sitio web) y participando activamente en la ",
+    "flamencoCBCLink": "comunidad de flamenco.",
+    "seePhotosCTA": "Ver mis fotos",
+    "techStack": "Mi stack tecnológico:"
+  },
+  "contact": {
+    "titleSectionContact": "Contacto",
+    "contactParagraph": "¡Estoy ansiosa por conversar con usted! No dude en contactarme si desea hablar sobre proyectos de Desarrollo Front-End Junior o explorar oportunidades potenciales.",
+    "contactParagraph-2": "Además, si comparte un interés en el senderismo, la danza o el arte, también estoy entusiasmado en entablar conversaciones sobre estos temas. ¡Conectemos y comencemos una conversación!",
+    "sendEmailCTA": "¡Envíame un email!"
+  },
+  "gallery": {
+    "bigTitle": "Galleria",
+    "titleSectionGallery": "Un vistazo a mis otras pasiones",
+    "images": [
+      {
+        "src": "/images/aboutMePics/flamenco-jericho.webp",
+        "alt": "Flamenco dancing at Jericho Beach",
+        "caption": "Flamenco moves, Jericho"
+      },
+      {
+        "src": "/images/aboutMePics/hikingSeymour.webp",
+        "alt": "Epic Hike at Seymour Mountain",
+        "caption": "Epic Hike at Seymour Mountain"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria2.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival, Victoria"
+      },
+      {
+        "src": "/images/aboutMePics/cyrius.webp",
+        "alt": "Portrait of Cyrius in paper art",
+        "caption": "Cyrius Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/hike-buntzen.webp",
+        "alt": "Hike in BC",
+        "caption": "Hike in BC"
+      },
+
+      {
+        "src": "/images/aboutMePics/fabio-portrait.webp",
+        "alt": "Portrait of my dog with paper strips",
+        "caption": "Fabio Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-victoria1.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival, Victoria"
+      },
+      {
+        "src": "/images/aboutMePics/hiking-spain2.webp",
+        "alt": "Hike in Spain",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-victoria.webp",
+        "alt": "Flamenco Festival show in Victoria, BC",
+        "caption": "Flamenco Festival show in Victoria, BC"
+      },
+      {
+        "src": "/images/aboutMePics/hiking-spain.webp",
+        "alt": "Hike in Spain1",
+        "caption": "Hike in Spain"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-cuadro.webp",
+        "alt": "Flamenco show in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+
+      {
+        "src": "/images/aboutMePics/blue-flowers-quilling.webp",
+        "alt": "Me and my artwork made with quilling flowers",
+        "caption": "Quilling Artwork"
+      },
+
+      {
+        "src": "/images/aboutMePics/flamenco-whiteDress&K.webp",
+        "alt": "Flamenco show in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+
+      {
+        "src": "/images/aboutMePics/keiva.webp",
+        "alt": "Keiva Portrait with paper strips",
+        "caption": "Keiva Portrait"
+      },
+      {
+        "src": "/images/aboutMePics/kino-cafe-castanets.webp",
+        "alt": "Flamenco show at the Kino Cafe in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      },
+      {
+        "src": "/images/aboutMePics/quilling-xmas-market.webp",
+        "alt": "Christmas market display",
+        "caption": "Christmas market"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-portmoody.webp",
+        "alt": "Flamenco show in Port Moody, BC",
+        "caption": "Flamenco show, Port Moody"
+      },
+      {
+        "src": "/images/aboutMePics/flamenco-chai-lounge.webp",
+        "alt": "Flamenco show at Chai Lounge in Vancouver, BC",
+        "caption": "Flamenco show, Vancouver"
+      }
+    ]
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Martha Villa Martin.",
+    "role": "Desarrolladora front-end / diseñadora de UX.",
+    "descriptionPart1": "Trilingüe en francés, inglés y español con experiencia en hostelería y educación. Actualmente estoy inscrita en el ",
+    "descriptionPart2": "programa de Desarrollo Front-End en BCIT.",
+    "SeeProjectsCTA": "Ver mis proyectos"
+  },
+  "navigation": {
+    "about": "Sobre mí ",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "lab": "Taller",
+    "skills": "Habilidades",
+    "resume": "Currículum",
+    "toggleTheme": {
+      "dark": "Tema claro",
+      "light": "Tema oscuro"
+    },
+    "search": "Buscar Stack",
+    "searchTooltip": "Buscar lenguaje de programación"
+  },
+  "projects": {
+    "titleSectionProjects": "Proyectos seleccionados",
+    "introSelectedProjects": "Descubra una amplia variedad de proyectos, desde proyectos destacados hasta experiencias de aprendizaje, en la sección de Talleres. ¡Manténgase atento/a para más actualizaciones!",
+    "buttonProjectTitleFeatured": "Destacados",
+    "buttonProjectTitleAll": "Todos",
+    "buttonProjectTitleWorkshop": "Taller",
+    "projects": [
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "1",
+        "title": "Flixr",
+        "slug": "flixr",
+        "thumbnail": "/images/flix3.webp",
+        "thumbnailMobile": "/images/flix-mobile.webp",
+        "alt": "Flixr Movie Screenshot",
+        "skills": [
+          "SCSS",
+          "React",
+          "RestAPI",
+          "JSX",
+          "PhotoShop",
+          "GitHub",
+          "AdobeXD"
+        ],
+        "excerpt": "Una base de datos de películas construida en React.js que utiliza la API de themoviedb.org y permite a los usuarios explorar, buscar y marcar películas.",
+        "gitHubLink": "https://github.com/piracode/flixr_react",
+        "liveSiteLink": "https://martha.codes/flixr/",
+        "liveSiteCTA": "Sitio",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "Una base de datos de películas construida en React.js que utiliza la API de themoviedb.org. Incluye la capacidad de agregar películas a favoritos, con almacenamiento persistente a través del almacenamiento local.",
+          "overview2": "Además, se creó un diseño utilizando Photoshop y se desarrolló un prototipo con Adobe XD para visualizar el diseño y las funcionalidades de la aplicación.",
+          "accordions": [
+            {
+              "title": "Requisitos del proyecto",
+              "content": "El proyecto consistía en construir una aplicación conectada a la API de themoviedb.org. El requisito principal era crear una página de inicio que mostrara una cuadrícula de películas, ordenables por popularidad, mejores calificaciones, estrenos actuales y próximos estrenos.",
+              "content1": "Cada tarjeta de película en la cuadrícula debería enlazar a una página detallada de la película, mostrando información adicional como un resumen y una imagen de fondo. Además, se implementó una página de favoritos para mostrar las películas seleccionadas por el usuario.",
+              "content2": "Se implementó la capacidad de agregar o eliminar favoritos en la página de inicio, en las páginas de películas y en la página de favoritos utilizando el almacenamiento local."
+            },
+            {
+              "title": "Diseño UX/UI",
+              "intro": "NOTA: Los siguientes pasos no reflejan el diseño de 'Flixr'. Este fue un proyecto escolar en el que cada uno trabajó individualmente en su propio diseño. Para la fase de desarrollo, seleccionamos un diseño del grupo. Sin embargo, aún quería compartir el proceso que seguí y las habilidades que adquirí.",
+              "content": "El diseño de la aplicación pasó por varias etapas. En primer lugar, creé un logotipo utilizando Adobe Illustrator, luego creé una maqueta utilizando Photoshop y finalmente desarrollé un prototipo utilizando Adobe XD.",
+              "tabs": [
+                {
+                  "subtitle": "Suite Adobe",
+                  "heading": "Illustrator",
+                  "content": "En la sección de diseño de la base de datos de películas, me inspiré en el diseño de Netflix. Los elementos visuales de la aplicación, como el logo, se crearon con Adobe Illustrator, y el esquema de colores elegido se basó en los colores de Netflix.",
+                  "image": {
+                    "src": "/images/cinevoxLogo.webp",
+                    "alt": "Logo de Cinevox"
+                  },
+                  "heading1": "Photoshop",
+                  "content1": "Utilicé herramientas y funciones de Photoshop para crear una maqueta profesional y estética.",
+                  "image1": {
+                    "src": "/images/cinevox.webp",
+                    "alt": "Maqueta de Cinevox"
+                  },
+                  "CTALink1": {
+                    "href": "https://assets.adobe.com/id/urn:aaid:sc:VA6C2:5aca45c3-aa62-4da0-a5ac-57504ff0246a?view=published",
+                    "text": "Maqueta de Photoshop"
+                  },
+                  "heading2": "Adobe XD",
+                  "content2": "Luego, creé un prototipo con Adobe XD. Para ver el prototipo, haz clic en los enlaces a continuación.",
+                  "CTALink2": {
+                    "href": "https://xd.adobe.com/view/2d9451e4-022e-49a6-832a-e6ae6c015e3f-78c7/",
+                    "text": "Prototipo móvil de Cinevox"
+                  },
+                  "CTALink3": {
+                    "href": "https://xd.adobe.com/view/434de7ae-72b2-493c-9718-02b378d22115-161e/",
+                    "text": "Prototipo de escritorio de Cinevox"
+                  }
+                },
+                {
+                  "subtitle": "Diseño final",
+                  "content": "Durante la fase de desarrollo en React, nuestro equipo de 3 personas acordó adoptar el diseño elaborado por uno de mis compañeros de clase.",
+                  "content1": "Esta decisión llevó a la incorporación de elementos de diseño tanto de nuestra maqueta original como de las contribuciones de diseño de nuestro compañero de clase en el diseño final de la base de datos de películas.",
+                  "content2": "Para ver el diseño, haz clic en el siguiente enlace:",
+                  "CTALink1": {
+                    "href": "https://xd.adobe.com/view/d9bc98ca-40b8-426c-b14c-f3ffee1e3a5a-8cef/",
+                    "text": "Prototipo de diseño final de Flixr"
+                  }
+                }
+              ]
+            },
+
+            {
+              "title": "Puntos Claves del desarollo",
+              "intro": "Durante mi trabajo en la Base de Datos de Películas, adquirí una valiosa experiencia en la colaboración en equipo utilizando GitHub.",
+              "content": "Exploré varias características de React que influyeron mucho en mi experiencia y crecimiento. Enfoquémonos en dos temas destacados en este resumen.",
+              "tabs": [
+                {
+                  "subtitle": "Funcionalidad de búsqueda",
+                  "heading": "Hook useLocation",
+                  "content": "El hook useLocation devuelve un objeto que representa la URL actual y proporciona varias propiedades y métodos para acceder a diferentes partes de la URL. En nuestra aplicación, useLocation se utiliza para obtener el objeto de ubicación actual.",
+                  "content1": "Utilizando la propiedad location.search, que representa la parte de la cadena de consulta de la URL, el código extrae el valor del parámetro 'query' de la URL. Esto permite que el código recupere la consulta de búsqueda ingresada por el usuario, que se puede utilizar para buscar películas relevantes o mostrar un mensaje de error si no se encuentran películas.",
+                  "heading1": "API URLSearchParams",
+                  "content2": "URLSearchParams es una API incorporada de JavaScript que proporciona métodos para trabajar con la cadena de consulta de una URL. Permite analizar y manipular los parámetros en la cadena de consulta de la URL.",
+                  "content3": "En el código anterior, new URLSearchParams(location.search) crea un nuevo objeto URLSearchParams utilizando la propiedad location.search, que representa la parte de la cadena de consulta de la URL actual. Luego, se llama a .get('query') en ese objeto para recuperar el valor del parámetro 'query' de la URL. Esto extrae la consulta de búsqueda ingresada por el usuario.",
+                  "CTALink2": {
+                    "href": "https://github.com/piracode/flixr_react/blob/master/src/pages/SearchResults.js",
+                    "text": "Enlace a GitHub"
+                  }
+                },
+                {
+                  "subtitle": "Obtención de API REST",
+                  "content": "Practicamos e implementamos tanto los métodos async/await como fetch para obtener datos.",
+                  "heading": "Async/Await",
+                  "content2": "Con async/await, pudimos escribir código asíncrono que se ve y se siente más como código síncrono tradicional, lo que facilita el manejo de tareas que requieren tiempo.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/api.js",
+                    "text": "Enlace a GitHub"
+                  },
+                  "heading1": "Fetch/Then/Catch",
+                  "content1": "También exploramos el método fetch, que nos permite enviar solicitudes para obtener datos de fuentes externas. Utilizando los métodos then y catch, pudimos manejar de manera efectiva la respuesta y los posibles errores.",
+                  "CTALink2": {
+                    "href": "https://github.com/piracode/flixr_react/blob/master/src/utilities/toolbelt.js",
+                    "text": "Enlace a GitHub"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "A lo largo de este proyecto, adquirí habilidades valiosas en creación de logotipos, diseño de maquetas, desarrollo de prototipos y React.js. Encontrar errores reforzó la importancia de realizar pruebas exhaustivas y depurar para lograr una experiencia de usuario fluida. Esta experiencia resaltó la importancia de corregir errores meticulosamente y refactorizar el código para mejorar la calidad general del mismo.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "Reconocimos la importancia de realizar pruebas meticulosas para asegurar una aplicación sólida y confiable. Además, identificamos errores en la funcionalidad de favoritos después de la implementación, los cuales requieren refactorización para garantizar un funcionamiento fluido.",
+              "content1": "Además, existe la oportunidad de mejorar el diseño incorporando detalles adicionales de las películas, como información sobre el reparto y enlaces a videos de YouTube de los tráilers."
+            }
+          ]
+        },
+        "design": false
+      },
+
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "3",
+        "title": "www.martha.codes",
+        "slug": "martha-portfolio",
+        "thumbnail": "/images/portfolio-desktop.webp",
+        "thumbnailMobile": "/images/portfolio-mobile.webp",
+        "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
+        "excerpt": "Mi portafolio es un sitio multilingüe que presenta un proyecto de React donde obtengo datos de una API JSON. Ofrece animaciones cautivadoras e incluye una opción de tema claro/oscuro, ordenación de proyectos y planes futuros para agregar una función de búsqueda por entrada.",
+        "gitHubLink": "https://github.com/piracode/portfolio_CRA",
+        "liveSiteLink": "https://martha.codes",
+        "liveSiteCTA": "Sitio",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "Mi proyecto de portafolio tiene como objetivo resaltar mis habilidades como desarrolladora front-end y diseñador UX a través de una cuidadosa selección de mis mejores trabajos, reflejando mi atención al detalle y enfoque centrado en el usuario.",
+          "accordions": [
+            {
+              "title": "Requisitos del proyecto",
+              "content": "- Crear un portafolio profesional y coherente que presente proyectos seleccionados, refleje mi marca personal y ofrezca opciones de contacto sencillas para posibles empleadores.",
+              "content1": "- Desarrollar una experiencia de usuario cautivadora que comunique de manera efectiva mis habilidades, experiencia y pasión por el desarrollo front-end y el diseño UX.",
+              "content2": "- Presentar una variedad de proyectos, incluyendo trabajos seleccionados y proyectos de entrenamiento, para resaltar mis habilidades de resolución de problemas, enfoque centrado en el usuario y el impacto de mi trabajo. Además, incorporar aspectos de mis intereses personales y hobbies para proporcionar una visión completa de quién soy como profesional."
+            },
+            {
+              "title": "Diseño UX/UI",
+              "intro": "",
+              "tabs": [
+                {
+                  "subtitle": "Adobe XD",
+                  "heading1": "Plan del sitio",
+                  "content1": "He desarrollado un plan del sitio para organizar y visualizar la estructura de mi portafolio. Esto me permitió planificar las páginas, secciones y rutas de navegación de manera eficiente, brindando una vista clara de la arquitectura del sitio web. El plan del sitio fue una referencia valiosa para asegurar un sitio web bien organizado.",
+                  "CTALink3": {
+                    "href": "/images/PDF/portfolio-site-map.pdf",
+                    "text": "Plan del sitio en PDF del portafolio"
+                  },
+                  "heading": "Prototipo",
+                  "content": "A continuación, desarrollé un prototipo del sitio para practicar la creación de prototipos y explorar diferentes estilos visuales. Inspirado en el diseño de Brittany Chiang, incorporé elementos que se alineaban con mi visión. Además, agregué funcionalidades adicionales, como un tema claro/oscuro, para mejorar la experiencia del usuario.",
+                  "CTALink1": {
+                    "href": "https://xd.adobe.com/view/51d86c46-805d-4afe-bbd7-e86bc174db39-048b/",
+                    "text": "Prototipo móvil del portafolio"
+                  },
+                  "CTALink2": {
+                    "href": "https://xd.adobe.com/view/d783c70e-7df2-47e1-af60-b05c435aa56a-82d0/",
+                    "text": "Prototipo de escritorio del portafolio"
+                  }
+                },
+                {
+                  "subtitle": "Diseño final",
+                  "heading": "Navegación mejorada",
+                  "content": "Después de recibir valiosos comentarios de un profesor, trabajé en la navegación de mi sitio web. Reemplacé el menú hamburguesa por un enfoque más amigable, asegurándome de que la navegación sea fácilmente accesible en la parte inferior en dispositivos móviles y en el lado derecho en escritorio. Este cambio mejoró considerablemente la experiencia del usuario.",
+                  "heading1": "Sitio multilingüe",
+                  "content1": "Para resaltar mis habilidades multilingües, implementé una función de traducción en mi sitio web. Esto permite a los usuarios cambiar entre idiomas, mejorando su experiencia de navegación y facilitando una comunicación efectiva.",
+                  "heading2": "Acordeones/ pestañas",
+                  "content2": "Para asegurar una presentación concisa pero informativa de mis proyectos, utilicé acordeones y pestañas. Esto me permitió incluir suficientes detalles sin abrumar al usuario con un contenido excesivo, lo que se traduce en una experiencia de navegación más organizada."
+                }
+              ]
+            },
+            {
+              "title": "Puntos clave del desarrollo",
+              "intro": "Quiero destacar dos aspectos clave de mi proceso de desarrollo: la biblioteca i18n y la implementación de un tema Oscuro/Claro. Estas características mejoran la experiencia del usuario y la accesibilidad.",
+
+              "tabs": [
+                {
+                  "subtitle": "Biblioteca i18n",
+                  "heading": "Archivo de internacionalización",
+                  "content": "Importé los módulos necesarios para la internacionalización (i18n) y creé este archivo.",
+                  "content1": "Carga los datos de traducción desde archivos JSON para diferentes secciones de la aplicación, los fusiona en objetos específicos para cada idioma e inicializa la biblioteca i18n con los recursos cargados.",
+                  "content2": "Las traducciones luego se pueden acceder utilizando el objeto 't' en otros archivos, lo que proporciona soporte multilingüe para la aplicación.",
+                  "heading1": "Archivos JSON",
+                  "content3": "Los archivos JSON contienen objetos específicos para cada idioma con pares clave-valor que representan diferentes traducciones. Cada objeto de idioma (en, fr, es) incluye traducciones para diferentes frases utilizadas en la aplicación.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/portfolio_cra/blob/master/src/utilities/i18n.js",
+                    "text": "Enlace al archivo i18n en GitHub"
+                  }
+                },
+                {
+                  "subtitle": "Tema Oscuro/Claro",
+                  "heading": "Hook useContext",
+                  "content2": "Utilizando el hook useContext, implementé una funcionalidad de tema oscuro/claro en mi aplicación. Al agregar la clase 'light' o 'dark' al componente de nivel superior, cambié dinámicamente el tema según las preferencias del usuario. El componente ThemeToggleButton permite a los usuarios alternar entre los temas, y el ThemeContext proporciona acceso al estado actual del tema en toda la aplicación.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/portfolio_cra/blob/master/src/App.js",
+                    "text": "Enlace de GitHub de App.js"
+                  },
+                  "CTALink2": {
+                    "href": "https://github.com/piracode/portfolio_cra/blob/master/src/components/ThemeToggleButton.js",
+                    "text": "Enlace de GitHub de ThemeToggleButton.js"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "Durante este proyecto, profundicé mis conocimientos en React y exploré varios hooks que no había utilizado antes. La implementación de la biblioteca i18n fue un objetivo que había estado esperando durante mucho tiempo, y lograrlo en este proyecto es un hito importante para mí.",
+              "content1": "Descubrí que aunque las bibliotecas pueden ahorrarnos tiempo, es esencial invertir tiempo en comprender cómo utilizarlas. A veces, aprender a utilizar una biblioteca de manera efectiva puede llevar tanto tiempo como desarrollar la funcionalidad nosotros mismos.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "Varios aspectos podrían mejorarse. Apresuré el desarrollo sin planificar adecuadamente la estructura del archivo JSON. Debería haber mantenido las traducciones para cada idioma por separado en lugar de combinarlas en un solo archivo. Este enfoque funciona bien para la mayoría de los archivos, pero hace que el archivo projects.json sea excesivamente largo y difícil de mantener. Reorganizar esta estructura es una prioridad.",
+              "content3": "Debo corregir cómo accedo a las traducciones en algunos archivos. En lugar de utilizar el objeto 't', accidentalmente utilicé el objeto 'i18n', lo cual complicó innecesariamente las cosas.",
+              "content5": "Planeo mejorar el archivo Accordion.js asegurándome de utilizar nombres coherentes para los elementos, agregando comentarios descriptivos y organizando el código en funciones o componentes más pequeños y modulares. Estos cambios mejorarán la legibilidad, mantenibilidad y reutilización del código.",
+              "question2": "¿Cuál es el siguiente paso?",
+              "content4": "En el futuro, planeo agregar una funcionalidad de búsqueda adicional que permita a los usuarios buscar proyectos según sus habilidades. Además, tengo previsto integrar Google Analytics en el futuro."
+            }
+          ]
+        },
+        "design": false
+      },
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "4",
+        "title": "Ai Summit (Próximamente)",
+        "slug": "ai-summit",
+        "thumbnail": "/images/placeholder.webp",
+        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
+        "excerpt": "Actualmente estamos desarrollando un sitio de WooCommerce en un equipo de 4 personas. El sitio tiene como objetivo vender boletos para una conferencia sobre Inteligencia Artificial.",
+        "gitHubLink": "https://github.com/piracode",
+        "liveSiteLink": "https://martha.codes",
+        "liveSiteCTA": "Sitio",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "intro": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia.",
+          "content": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia."
+        },
+        "design": false
+      },
+      {
+        "workshop": true,
+        "featured": false,
+        "id": "2",
+        "title": "Lord of the Rings",
+        "slug": "matching-game",
+        "thumbnail": "/images/matchingGameDesktop.webp",
+        "thumbnailMobile": "/images/matchingGameMobile.webp",
+        "alt": "Captura de pantalla del juego El Señor de los Anillos",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "excerpt": "Un juego de memoria con efectos de sonido, realizado con JavaScript y CSS.",
+        "gitHubLink": "https://github.com/piracode/matching-game/tree/master",
+        "liveSiteLink": "https://martha.codes/matching-game/",
+        "liveSiteCTA": "Sitio",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "Un juego de memoria realizado con JavaScript, que consta de una cuadrícula de cartas que el jugador debe voltear y emparejar en pares, llevando un registro de sus coincidencias, intentos y vidas restantes.",
+          "accordions": [
+            {
+              "title": "Requisitos del proyecto",
+              "content": "El juego requiere crear una experiencia para un solo jugador donde el usuario debe emparejar pares de imágenes ocultas en una cuadrícula.",
+              "content1": "El jugador puede revelar hasta dos imágenes en cada turno, y si las imágenes coinciden, se mantienen reveladas. Si las imágenes no coinciden, vuelven a ocultarse después de cierto tiempo.",
+              "content2": "El juego debe hacer un seguimiento de los turnos del jugador, las coincidencias y proporcionar un botón de inicio y la opción de finalizar el juego en cualquier momento."
+            },
+            {
+              "title": "Puntos clases del desarollo",
+              "intro": "Adquirí experiencia en el uso de varios elementos y clases HTML, la manipulación del DOM, la implementación de 'Event Listeners' y la gestión de las variables de estado del juego.",
+              "tabs": [
+                {
+                  "subtitle": "Manipulación del DOM",
+                  "content": "A lo largo del desarrollo del juego, trabajé en estrecha colaboración con elementos HTML como divs, botones, encabezados e imágenes para estructurar y presentar la interfaz de usuario.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/matching-game",
+                    "text": "Enlace de GitHub del Juego de Memoria"
+                  }
+                },
+                {
+                  "subtitle": "Gestión del estado del juego",
+                  "content": "Para permitir la interacción del usuario, implementé 'Event Listeners' que responden a acciones como clics o pulsaciones de teclas. Al adjuntar estos 'Event Listeners' a elementos HTML específicos, puedo activar acciones y funciones adecuadas según la entrada del usuario.",
+                  "content1": "Además, gestioné las variables de estado del juego, incluyendo lockCards, flippedCards, matches, guesses y livesLeft. Estas variables desempeñan un papel crucial en el seguimiento del progreso del juego, la implementación de reglas y mecánicas, el control del flujo del juego y la actualización de la visualización en consecuencia.",
+                  "content2": "Este enfoque integral de la gestión de eventos y el estado del juego resultó en una experiencia de juego envolvente e interactiva para los jugadores.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/matching-game",
+                    "text": "Enlace de GitHub del Juego de Memoria"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "Además de gestionar las variables de estado del juego y manipular el DOM, también adquirí habilidades fundamentales en CSS, incluyendo flexbox y CSS grid. Además, obtuve conocimientos y competencia en la implementación de efectos de sonido dentro del juego.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "Deseo mejorar mi código cambiando mi enfoque actual. Actualmente, dependo principalmente de las funciones, pero planeo utilizar más extensivamente los objetos. Al utilizar objetos como componentes principales de mi código, puedo organizarlo, estructurarlo y hacerlo más fácil de reutilizar en diferentes partes del juego. Este cambio traerá varios beneficios y me ayudará a crear una base de código más eficiente y fácil de mantener.",
+              "content1": "Me gustaría mejorar la interfaz de usuario (UI) y crear una experiencia más cautivadora."
+            }
+          ]
+        },
+        "design": false
+      },
+
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "8",
+        "title": "French Baking - Estudio de caso",
+        "slug": "french-baking-case-study",
+        "thumbnail": "/images/pic-frenchBaking.webp",
+        "skills": [
+          "Investigación de usuarios",
+          "Personas de usuarios",
+          "Pruebas de usabilidad",
+          "Diseño interactivo",
+          "Creación de maquetas",
+          "Prototipado",
+          "Figma"
+        ],
+
+        "excerpt": "Realicé un estudio de caso exhaustivo como parte del programa Google UX Certificate, centrándome en el diseño de una aplicación ficticia de repostería francesa utilizando Figma.",
+        "liveSiteCTA": "Prototipo",
+        "liveSiteLink": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141&mode=design",
+        "detailsCTA": "Detalles",
+        "pdfCTA": "PDF",
+        "pdfLink": "/images/PDF/frenchBaking.pdf",
+        "post": {
+          "titleOverview": "Visión general",
+          "overview1": "Este estudio de caso explora el desarrollo de una aplicación ficticia de repostería francesa, realizado como parte del programa Google UX Certificate. Aunque la calidad de este trabajo puede no alcanzar mis estándares más altos, mi objetivo es presentarlo como testimonio del conocimiento y las habilidades adquiridas a lo largo del proceso. El estudio abarca diferentes fases, incluyendo el análisis UX, el diseño UX y el prototipado, y concluye con una evaluación retrospectiva.",
+          "accordions": [
+            {
+              "title": "Análisis UX",
+              "tabs": [
+                {
+                  "subtitle": "Comprensión del problema e investigación",
+                  "heading": "Definición del problema/objetivo",
+                  "content": "La definición del problema/objetivo de este proyecto es crear una aplicación que aborde el desafío de las largas filas de clientes apurados en French Baking, permitiéndoles realizar pedidos anticipados para recoger o entregar, ahorrando tiempo y brindando mayor comodidad.",
+                  "heading1": "Investigación de usuarios",
+                  "content1": "Se realizó una investigación de usuarios para comprender las preferencias y necesidades de los clientes objetivo de French Baking. Esta investigación tenía como objetivo comprender sus comportamientos de pedido e identificar puntos de fricción para guiar el desarrollo de la aplicación."
+                },
+                {
+                  "subtitle": "Análisis de usuarios e información",
+                  "content": "Un grupo de usuarios principales identificado durante el proceso de investigación estaba compuesto por adultos ocupados que deseaban una forma conveniente de hacer pedidos en French Baking sin hacer cola.",
+                  "heading": "Identificación de puntos de fricción",
+                  "content2": "Los principales puntos de fricción identificados durante la investigación de usuarios incluyen las restricciones de tiempo para adultos que trabajan y estudiantes ocupados, la frustración causada por productos agotados y la falta de una aplicación para realizar pedidos anticipados en la panadería.",
+                  "heading1": "Desarrollo de personas",
+                  "content3": "Se creó una persona detallada llamada Nate durante la fase de desarrollo para representar al usuario objetivo, brindando información valiosa sobre sus características, necesidades y objetivos. La persona de Nate guió las decisiones de diseño y la priorización de características para la aplicación de French Baking.",
+                  "heading2": "Mapa de experiencia del usuario",
+                  "content4": "El mapa de experiencia del usuario identificó los puntos de contacto, las emociones y los puntos de fricción en la experiencia del usuario de la aplicación, revelando información para un diseño y desarrollo centrados en el usuario.",
+                  "image1": {
+                    "src": "/images/journeyMap.webp",
+                    "alt": "Mapa de experiencia del usuario French Baking"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Diseño UX y prototipado",
+              "intro": "Durante la fase de diseño UX y prototipado, se llevaron a cabo varias actividades clave para dar forma al diseño de la aplicación y crear prototipos para pruebas y evaluación.",
+              "tabs": [
+                {
+                  "subtitle": "Creación de maquetas",
+                  "heading": "Maqueta en papel",
+                  "content": "Se crearon bocetos iniciales y diseños básicos en papel para establecer la estructura visual y la organización de la aplicación.",
+                  "heading1": "Maqueta digital",
+                  "content1": "Las maquetas en papel se trasladaron a formato digital, lo que permitió una visualización más detallada y un diseño interactivo.",
+                  "CTALink1": {
+                    "href": "https://www.figma.com/file/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=0-1&mode=design&t=TeIG3EDCeZN8dDUH-0",
+                    "text": "Enlace a las maquetas digitales en Figma"
+                  },
+                  "heading2": "Prototipo de baja fidelidad",
+                  "content2": "Se desarrolló un prototipo de baja fidelidad que brindaba una representación básica de la funcionalidad y la interfaz de usuario de la aplicación. Este prototipo permitió pruebas tempranas con usuarios y recibir comentarios para refinar el diseño.",
+                  "CTALink2": {
+                    "href": "https://www.figma.com/proto/zoEExGPgKX4i9798B9yAr8/Wireframes---French-Corner?type=design&node-id=12-107&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&mode=design",
+                    "text": "Enlace al prototipo de baja fidelidad en Figma"
+                  }
+                },
+                {
+                  "subtitle": "Resultados de usabilidad",
+                  "content": "Se llevaron a cabo pruebas de usabilidad para recopilar comentarios y conocimientos de los usuarios que interactuaron con el prototipo de baja fidelidad. Los resultados permitieron identificar problemas de usabilidad, refinar el diseño y mejorar la experiencia general del usuario.",
+                  "content1": "Los resultados de usabilidad indicaron que los usuarios preferían una página de inicio menos abarrotada, deseaban ver la información sobre recogida y entrega presentada una sola vez, y valoraban una sección separada para opciones personalizadas."
+                },
+                {
+                  "subtitle": "Maqueta",
+                  "heading": "Maqueta",
+                  "content": "Se creó una representación visual del diseño de la interfaz de la aplicación para mostrar su apariencia general.",
+                  "heading1": "Prototipo de alta fidelidad",
+                  "content1": "Se desarrolló un prototipo completamente interactivo y visualmente completo que simula la funcionalidad de la aplicación y ofrece una experiencia de usuario realista.",
+                  "content2": "NOTA: El prototipo proporcionado no es completamente funcional, algunas características como la navegación no se han implementado. Sin embargo, tengo previsto seguir trabajando en él para mejorar su funcionalidad.",
+                  "CTALink1": {
+                    "href": "https://www.figma.com/proto/6qM02VU9IMCsynvRiIZGGH/Untitled?node-id=5-37&starting-point-node-id=5%3A141",
+                    "text": "Enlace al prototipo de alta fidelidad en Figma"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué he aprendido?",
+              "content": "Durante este estudio de caso, he adquirido conocimientos valiosos sobre diferentes aspectos del diseño de la experiencia del usuario, incluyendo la definición del problema, la investigación de usuarios, la identificación de puntos de fricción, el desarrollo de personas, el mapeo del recorrido del usuario, la creación de maquetas, las pruebas de usabilidad y el prototipado. También he aprendido la importancia de dedicar suficiente tiempo a cada fase del proceso de diseño para asegurar resultados de mayor calidad.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "Me apresuré en este estudio de caso para obtener el certificado de UX de Google y evitar pagar tarifas mensuales durante un período prolongado. Realicé este certificado como una experiencia de aprendizaje personal. Desafortunadamente, el proceso apresurado resultó en una interfaz de usuario mediocre y varios problemas con el PDF.",
+              "content3": "A pesar de sus limitaciones, aún quiero compartirlo porque proporciona información valiosa. El cronograma apresurado comprometió la calidad, pero con mis conocimientos y experiencia mejorados, reconozco el potencial de una mejora significativa con más tiempo y esfuerzo."
+            }
+          ]
+        },
+        "design": true
+      },
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "9",
+        "title": "Informe sobre la Usabilidad de Best Buy",
+        "slug": "best-buy-usability-report",
+        "thumbnail": "/images/best-buy-desktop.webp",
+        "thumbnailMobile": "/images/best-buy-mobile.webp",
+
+        "skills": [
+          "Evaluación de Usabilidad",
+          "Metodología de Investigación",
+          "Análisis de Datos",
+          "Redacción de Informes"
+        ],
+        "excerpt": "Como parte de un esfuerzo de colaboración con un equipo de cinco personas, hemos realizado un informe completo sobre la usabilidad para Best Buy, evaluando su experiencia de usuario y documentando las principales conclusiones.",
+        "liveSiteCTA": "Prototype",
+        "pdfLink": "/images/PDF/best_buy.pdf",
+        "pdfCTA": "PDF",
+        "detailsCTA": "Détails",
+        "post": {
+          "titleOverview": "Vista general",
+          "overview1": "El informe sobre la usabilidad de Best Buy tiene como objetivo evaluar la experiencia del usuario y proporcionar recomendaciones concretas para la mejora. El informe consta de varias secciones, cada una enfocada en un aspecto específico del proceso de evaluación.",
+          "accordions": [
+            {
+              "title": "Metodología",
+              "content": "Se reclutaron seis participantes para la evaluación de usabilidad, y el proceso de recopilación de datos se llevó a cabo de forma remota a través de llamadas de Zoom. El proceso de reclutamiento buscó identificar participantes que representaran el tipo de usuario ideal para el público objetivo de Best Buy. Al seleccionar participantes diversos, aseguramos una evaluación completa de la experiencia del usuario.",
+              "tabs": [
+                {
+                  "subtitle": "Persona",
+                  "content": "Para comprender mejor a los usuarios objetivo, se creó una persona basada en los datos recopilados y la información obtenida de los participantes. Esta persona representa las características, objetivos y necesidades del usuario típico de Best Buy. Esta persona sirve como punto de referencia durante todo el proceso de evaluación, guiando la evaluación y ayudando a identificar áreas de mejora.",
+                  "image": {
+                    "src": "/images/best-buy-persona.webp",
+                    "alt": "Persona Best Buy"
+                  }
+                },
+                {
+                  "subtitle": "Guion del moderador",
+                  "content": "Con el fin de garantizar la coherencia y los procedimientos de prueba estandarizados, se elaboró un guion del moderador para la evaluación de usabilidad. El guion del moderador sirvió como guía para los moderadores que realizaron las pruebas, proporcionando instrucciones, tareas y preguntas para las sesiones de evaluación.",
+                  "content2": "Para consultarlo, por favor haz clic en el siguiente enlace y accede a la página 7:",
+                  "CTALink1": {
+                    "href": "/images/PDF/best_buy.pdf",
+                    "text": "Enlace PDF al informe de usabilidad de Best Buy"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Prueba de usabilidad",
+              "intro": "Al comienzo de la prueba, presentamos el proyecto a cada participante, brindándoles una visión general de los objetivos y expectativas. Después de la introducción, se les pidió a los participantes que completaran un cuestionario previo a la prueba. Este cuestionario tenía como objetivo recopilar información inicial sobre su experiencia, preferencias y experiencia previa relacionada con el proyecto.",
+
+              "tabs": [
+                {
+                  "subtitle": "Tareas de usabilidad",
+                  "content": "Las tareas de usabilidad fueron diseñadas para evaluar aspectos específicos de la funcionalidad del proyecto y la interacción del usuario. Dos de las tareas incluidas en la prueba fueron las siguientes:",
+                  "heading": "Prueba de primer clic / Prueba de cinco segundos / Prueba de preferencia",
+                  "content1": "Los participantes realizaron tres pruebas: la Prueba de primer clic, donde debían hacer clic en su acción inicial para evaluar la intuitividad de la interfaz; la Prueba de cinco segundos, que recopilaba información sobre las impresiones y la eficacia del diseño; y la Prueba de preferencia, que revelaba las preferencias de los usuarios y orientaba las decisiones de diseño."
+                },
+                {
+                  "subtitle": "Tareas de pensamiento en voz alta",
+                  "content": "Además de las tareas de usabilidad, se asignaron a los participantes cuatro tareas para realizar mientras expresaban en voz alta sus pensamientos y acciones. Este enfoque, conocido como el método de 'pensamiento en voz alta', nos permitió obtener información sobre sus procesos de toma de decisiones, flujo de usuario, así como las dificultades o áreas de confusión encontradas.",
+                  "content1": "Por ejemplo, una de las tareas consistía en utilizar la función de búsqueda para encontrar un producto específico. Observamos cuidadosamente el proceso de los participantes y analizamos sus patrones de pensamiento mientras navegaban por el sitio, tratando de comprender sus estrategias de búsqueda, los desafíos encontrados y su satisfacción general con la funcionalidad de búsqueda.",
+                  "content2": "A lo largo de la prueba de usabilidad, tomamos notas detalladas, registramos observaciones y recopilamos los comentarios de los participantes para poder analizarlos y evaluar en mayor detalle la experiencia del usuario."
+                }
+              ]
+            },
+            {
+              "title": "Informe de resultados",
+              "content": "Hemos analizado los resultados de las pruebas y los hemos visualizado mediante gráficos para una mejor comprensión. Además, hemos implementado la escala de usabilidad del sistema (SUS) para evaluar la usabilidad general.",
+              "content1": "Las sesiones exitosas de prueba de usabilidad revelaron áreas de mejora, incluyendo la consideración de opciones abrumadoras, la mejora de la claridad entre los artículos 'en stock' y 'agotados', la implementación de una página de preguntas frecuentes accesible, la integración de la funcionalidad de búsqueda por voz e inteligencia artificial, y la consideración de mejoras en la interfaz para encontrar un equilibrio entre simplicidad y funcionalidades avanzadas."
+            }
+          ]
+        },
+        "design": true
+      },
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "14",
+        "title": "Brief de diseño para Craigslist",
+        "slug": "craigslist-design-brief",
+        "thumbnail": "/images/craisglist-wireframes.webp",
+        "thumbnailMobile": "/images/craisglist-wireframes-mobile.webp",
+        "skills": [
+          "Brief de diseño",
+          "Investigación de usuarios",
+          "Personas de usuario",
+          "Estadísticas de referencia",
+          "Diseño visual",
+          "Creación de maquetas"
+        ],
+        "excerpt": "He desarrollado un brief de diseño para Craigslist, describiendo soluciones de diseño centradas en el usuario para mejorar la usabilidad y el atractivo visual de la plataforma.",
+        "liveSiteCTA": "Prototipo",
+        "pdfLink": "/images/PDF/design-brief_combined.pdf",
+        "pdfCTA": "PDF",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "El brief de diseño incluyó el análisis de estadísticas de referencia, la realización de un análisis competitivo, la definición de tareas y arquetipos de usuarios, la creación de escenarios y personas, la creación de mapas de recorrido de usuarios, el desarrollo de mapas mentales y planes de sitio, la identificación de facetas y flujos de usuarios, la optimización de metadatos SEO y la creación de maquetas para la remodelación de Craigslist.",
+          "accordions": [
+            {
+              "title": "Optimización de la UX",
+              "tabs": [
+                {
+                  "subtitle": "Investigación y análisis",
+                  "heading": "Objetivos y misiones",
+                  "content": "Craigslist tiene como objetivo ser una plataforma amigable, segura e inclusiva para transacciones locales, conectando a las personas y fomentando la confianza. Sus objetivos incluyen mejorar la funcionalidad, expandirse a nivel mundial, formar asociaciones e implementar iniciativas ecológicas.",
+                  "heading2": "Análisis competitivo",
+                  "content2": "El análisis competitivo, realizado con la ayuda de Website Grader y Nibbler, evaluó plataformas como Facebook Marketplace, OfferUp y Kijiji, centrándose en su diseño, navegación, visibilidad de perfiles, sistema de mensajería, funcionalidad de búsqueda y base de usuarios."
+                },
+                {
+                  "subtitle": "Definición de usuarios",
+                  "content": "Los usuarios de Craigslist realizan tareas como explorar categorías, contactar vendedores, negociar precios y encontrarse en persona. Pueden clasificarse en arquetipos como buscadores de ofertas, artesanos, buscadores de empleo, buscadores de vivienda, freelancers, emprendedores, dueños de mascotas, artistas y estudiantes. Los desafíos incluyen identificar vendedores confiables, comunicación segura, arreglos de encuentro, pagos seguros y resolución de problemas posteriores a la compra.",
+                  "heading2": "Persona",
+                  "image1": {
+                    "src": "/images/craigslist-persona.webp",
+                    "alt": "Persona para el sitio de Craigslist"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Organización de la información",
+              "intro": "En el centro de una organización efectiva de la información en Craigslist se encuentran técnicas de visualización como mapas mentales y planos del sitio que ayudan a estructurar y navegar por el sitio web.",
+              "tabs": [
+                {
+                  "subtitle": "Visualización",
+                  "content": "Los mapas mentales ofrecen una representación visual de la arquitectura de la información del sitio web, destacando las relaciones entre las diferentes categorías y subcategorías.",
+                  "heading": "Mapa mental",
+                  "content1": "Los planos del sitio proporcionan una vista jerárquica de las páginas y contenido del sitio web, permitiendo a los usuarios comprender fácilmente su estructura y navegar hacia las secciones deseadas.",
+                  "image1": {
+                    "src": "/images/mind-map.webp",
+                    "alt": "Mapa mental para el sitio de Craigslist"
+                  },
+                  "heading1": "Plan del sitio",
+                  "content2": "Utilizando estas herramientas de visualización, Craigslist mejora la comprensión y exploración de los usuarios entre sus numerosos anuncios y servicios."
+                },
+                {
+                  "subtitle": "Recorrido del usuario",
+                  "content": "El recorrido del usuario en Craigslist incluye diferentes etapas, desde la búsqueda y contacto con los vendedores hasta el encuentro en persona y la finalización de la transacción.",
+                  "content1": "A lo largo de este recorrido, los usuarios pueden enfrentar desafíos como identificar vendedores honestos, negociar precios, garantizar la seguridad en los encuentros y resolver problemas posteriores a la compra.",
+                  "content2": "Para mejorar la experiencia del usuario, Craigslist puede implementar características como evaluaciones de usuarios, canales de comunicación seguros, opciones de programación, sistemas de pago seguros y recursos para identificar problemas comunes relacionados con artículos de segunda mano."
+                }
+              ]
+            },
+            {
+              "title": "Diseño y optimización",
+              "content": "Cuando se trata de diseño y optimización en Craigslist, el enfoque se centra en crear una interfaz amigable e intuitiva que permita interacciones fluidas y una navegación sin esfuerzo.",
+              "content1": "El flujo del usuario se diseña cuidadosamente para guiar a los usuarios a través del proceso de navegación de anuncios, contacto con vendedores y realización de transacciones, asegurando una experiencia fluida.",
+
+              "tabs": [
+                {
+                  "subtitle": "Interacción",
+                  "heading": "Flujo del usuario",
+                  "content1": "El flujo del usuario en Craigslist para tareas como la compra de un automóvil implica pasos como la búsqueda, el contacto con los vendedores, el encuentro en persona y la finalización de la compra, ofreciendo un camino claro para que los usuarios sigan.",
+                  "heading2": "Wireframes",
+                  "content3": "Los wireframes se utilizan en el proceso de diseño para crear representaciones visuales de baja fidelidad de la estructura y características del sitio web, permitiendo pruebas tempranas y mejorando la interfaz de usuario."
+                },
+                {
+                  "subtitle": "Optimización",
+                  "heading": "Facetas",
+                  "content1": "Se implementa la búsqueda por facetas en Craigslist, lo que permite a los usuarios restringir los resultados de búsqueda aplicando filtros basados en categorías, condiciones, rangos de precios, fechas de publicación y ubicaciones.",
+                  "heading1": "Metadatos SEO",
+                  "content": "Para mejorar la búsqueda del sitio web, se utilizan metadatos SEO, incluyendo etiquetas de título y descripción, proporcionando información concisa y relevante que ayuda a los motores de búsqueda a entender el contenido de cada página."
+                }
+              ]
+            }
+          ]
+        },
+        "design": true
+      },
+      {
+        "workshop": true,
+        "featured": false,
+        "id": "12",
+        "title": "Reactulator",
+        "slug": "reactulator",
+        "thumbnail": "/images/reactulator.webp",
+        "alt": "Captura de pantalla de Reactulator",
+        "skills": ["React", "CSS"],
+        "excerpt": "Una calculadora creada con React.",
+        "gitHubLink": "https://github.com/piracode/reactulator",
+        "liveSiteLink": "https://martha.codes/reactulator/",
+        "liveSiteCTA": "Sitio web",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "Esta aplicación es una calculadora basada en React que permite a los usuarios realizar cálculos aritméticos y almacenar valores en la memoria.",
+          "accordions": [
+            {
+              "title": "Requisitos del proyecto",
+              "content": "Crear una calculadora con operaciones aritméticas básicas, funcionalidad de memoria, soporte para números decimales y la capacidad de cambiar el signo de un número."
+            },
+            {
+              "title": "Aspectos destacados del desarrollo",
+              "intro": "Durante el desarrollo de este proyecto, me enfoqué en implementar una estructura modular de componentes y familiarizarme con los React hooks.",
+              "tabs": [
+                {
+                  "subtitle": "Estructura modular",
+                  "content": "El código está organizado en componentes separados (por ejemplo, Header, Keypad, Display) para promover la reutilización y mantenibilidad. Este enfoque modular mejora la organización del código y facilita su comprensión y gestión.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/reactulator",
+                    "text": "Repositorio de Reactulator en GitHub"
+                  }
+                },
+                {
+                  "subtitle": "React Hooks",
+                  "content": "Utilicé el hook useState para gestionar y actualizar las variables de estado en los componentes funcionales. Esto me permitió realizar un seguimiento y modificar valores como currentValue, previousValue y memoryValue de manera intuitiva y eficiente.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/reactulator/blob/master/src/components/App.js",
+                    "text": "Código fuente de App.js en GitHub"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "Durante el desarrollo de la aplicación de calculadora, adquirí experiencia práctica en trabajar con componentes de React, gestionar el estado utilizando hooks e implementar funcionalidades de calculadora como manejar clics de operadores, realizar cálculos y gestionar la memoria. Este proyecto me ayudó a profundizar mi comprensión de React y mejorar mis habilidades en la creación de interfaces de usuario interactivas.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "Mirando hacia atrás, hay algunas áreas que podrían mejorarse en la aplicación de calculadora.",
+              "content3": "En primer lugar, el código podría simplificarse refactorizándolo y reduciendo la redundancia. Descomponer la lógica en funciones y componentes más pequeños podría hacerlo más manejable y más fácil de mantener. ",
+              "content4": "Además, agregar más comentarios y documentación para explicar el propósito y la funcionalidad del código lo haría más comprensible para otros y para futuras referencias.",
+              "content5": " Por último, explorar e implementar pruebas unitarias podría garantizar la confiabilidad y robustez de las funcionalidades de la aplicación de calculadora."
+            }
+          ]
+        },
+        "design": false
+      },
+      {
+        "workshop": true,
+        "featured": false,
+        "id": "13",
+        "title": "Vulcan",
+        "slug": "vulcan",
+        "thumbnail": "/images/vulcan-desktop.webp",
+        "thumbnailMobile": "/images/vulcan-mobile.webp",
+        "alt": "Captura de pantalla del sitio web Vulcan",
+        "skills": ["HTML", "SCSS", "JavaScript", "GitHub"],
+        "excerpt": "En un grupo de tres, desarrollamos un sitio web simulado utilizando HTML, SCSS y JS.",
+        "gitHubLink": "https://github.com/piracode/vulcan",
+        "liveSiteLink": "https://martha.codes/vulcan/",
+        "liveSiteCTA": "Sitio",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "Vulcan es un sitio web desarrollado en colaboración por un equipo de tres personas utilizando HTML, SCSS y JS, destacando nuestras habilidades en la creación de aplicaciones web funcionales y estéticamente atractivas.",
+          "accordions": [
+            {
+              "title": "Requisitos del proyecto",
+              "content": "El objetivo principal del proyecto es crear un sitio web llamado Vulcan que se ajuste estrechamente al diseño proporcionado.",
+              "content1": "El sitio web debe demostrar nuestro dominio en el uso de HTML5, SCSS y JS para desarrollar aplicaciones web tanto funcionales como estéticamente atractivas.",
+              "content2": "Además, el proyecto pone énfasis en el trabajo en equipo y la colaboración, requiriendo que todos los miembros del equipo contribuyan de manera colectiva a su éxito."
+            },
+            {
+              "title": "Puntos clave del desarrollo",
+              "tabs": [
+                {
+                  "subtitle": "Notación BEM en SASS",
+                  "content": "Fui responsable del desarrollo de la mitad inferior de la página y luego me encargué de la sección de navegación para ayudar a un compañero de clase. Durante el proceso de desarrollo, implementé la notación BEM (Bloque-Elemento-Modificador) en SASS siempre que fue posible. BEM es una convención de nomenclatura que promueve una estructura de código modular y reutilizable. Ayuda a organizar las clases CSS dividiéndolas en bloques, elementos y modificadores independientes, lo que facilita la gestión y el mantenimiento del código base.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_contact.scss",
+                    "text": "Enlace de GitHub para la notación BEM en SCSS"
+                  }
+                },
+                {
+                  "subtitle": "Adaptabilidad",
+                  "content": "Implementamos la adaptabilidad utilizando mixins de SASS y consultas de medios (media queries). Esto nos permitió adaptar el diseño y los estilos según diferentes tamaños de pantalla, asegurando una visualización óptima en todos los dispositivos.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/vulcan/blob/main/dev/scss/_mixins.scss",
+                    "text": "Enlace de GitHub a mixins.scss"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "Aprendí la importancia del trabajo en equipo y la colaboración en un proyecto. Trabajar con un equipo me permitió comprender diferentes perspectivas y aprovechar las fortalezas de cada miembro del equipo. También mejoré mis habilidades en HTML, SCSS y JS, especialmente al implementar la notación BEM y crear diseños adaptables utilizando mixins y consultas de medios."
+            }
+          ]
+        },
+        "design": false
+      },
+      {
+        "workshop": true,
+        "featured": false,
+        "id": "15",
+        "title": "Brainy",
+        "slug": "brainy",
+        "thumbnail": "/images/brainyDesktop.webp",
+        "thumbnailMobile": "/images/brainy-mobile.webp",
+        "alt": "Captura de pantalla del juego Brainy",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "excerpt": "Un juego que pone a prueba preguntas sobre desarrollo front-end para desafiar a GPT. Este juego fue desarrollado durante el evento Hack the Break 2023 con mi compañero de clase Connor del programa FWD en BCIT.",
+        "gitHubLink": "https://github.com/Migtig/htb2023",
+        "liveSiteLink": "https://martha.codes/brainy/",
+        "liveSiteCTA": "Sitio",
+        "gitHubCTA": "Código",
+        "detailsCTA": "Detalles",
+        "post": {
+          "titleOverview": "Vista General",
+          "overview1": "Este proyecto es un juego que desafía a los jugadores a poner a prueba sus conocimientos de HTML, CSS y JavaScript mientras se enfrentan a un enemigo, utilizando conceptos de programación orientada a objetos.",
+          "accordions": [
+            {
+              "Exigencias del proyecto": "El proyecto tenía un plazo de dos días, comenzando el sábado y terminando el domingo, y requería la entrega de un video de presentación de 3 minutos en YouTube, accesible públicamente, al día siguiente. El video de presentación debía incluir una descripción del proyecto, el problema que busca resolver y una demostración del proyecto. El tema del proyecto es la seguridad laboral, y teníamos la libertad de explorar nuestras propias ideas y enfoques."
+            },
+            {
+              "title": "Puntos clave del desarrollo",
+              "intro": "Durante el hackathon, nuestro equipo tenía conocimientos limitados de programación, pero hicimos nuestro mejor esfuerzo. Nos enfrentamos a desafíos al aprender GitHub, lo que provocó algunos retrasos. Además, no estábamos familiarizados con estructuras basadas en componentes como SASS o componentes de React, lo cual habría facilitado el trabajo en equipo.",
+
+              "tabs": [
+                {
+                  "subtitle": "GitHub",
+                  "content": "Enfrentamos algunos desafíos al manejar conflictos en la interfaz de GitHub y encontramos problemas. Debido a la limitación de tiempo asociada al plazo, tomamos la decisión de abandonar una rama y crear una nueva, ya que no estábamos seguros de un enfoque mejor.",
+                  "CTALink1": {
+                    "href": "https://github.com/piracode/matching-game",
+                    "text": "Enlace de GitHub para el juego de correspondencia"
+                  }
+                },
+                {
+                  "subtitle": "Animaciones @keyframes",
+                  "content": "Para crear animaciones para las imágenes del 'monstruo' y del 'jugador', utilizamos keyframes en nuestro proyecto. Incorporamos sprites del sitio web craftpix.net.",
+                  "CTALink1": {
+                    "href": "https://github.com/Migtig/htb2023/blob/main/styles/styles.css",
+                    "text": "Enlace de GitHub al archivo styles.css"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "Mi primer hackathon en línea me enseñó la importancia de participar y enfrentar desafíos, incluso con conocimientos limitados. Si tuviéramos que hacer el mismo hackathon nuevamente, apuntaríamos a un proyecto más avanzado. También descubrí que el trabajo en equipo efectivo requiere colaboración en diferentes archivos, lo cual fue un desafío en este proyecto.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "El juego debe completarse y la interfaz de usuario (UI) debe ser pulida. Abandonamos el juego justo al final del hackathon y volvimos a nuestros apretados horarios en BCIT.",
+              "question2": "¿Cuál es el siguiente paso?",
+              "content3": "Nuestro próximo paso debería ser reconstruir el sitio utilizando lenguajes de programación modulares como React u otro framework, así como SCSS o Tailwind CSS. Esto nos permitiría trabajar de manera más eficiente y rápida.",
+              "content4": "Originalmente, queríamos utilizar la API Chat GPT para obtener las preguntas de manera dinámica en lugar de codificarlas directamente en nuestro archivo JS. No sabíamos cómo hacerlo durante el hackathon, pero ahora tenemos el conocimiento para refactorizarlo."
+            }
+          ]
+        },
+        "design": false
+      }
+    ]
+  },
+  "skills": {
+    "titleSkills": "Habilidades",
+    "skills": [
+      {
+        "title": "Programación",
+        "list": [
+          "HTML5",
+          "CSS3",
+          "Bootstrap",
+          "JavaScript",
+          "React.js",
+          "SASS",
+          "PHP",
+          "WordPress"
+        ]
+      },
+      {
+        "title": "Diseño UX y Web",
+        "list": ["Diseño gráfico", "Diseño web", "Diseño UI/UX"]
+      },
+      {
+        "title": "Fluidez en idiomas",
+        "list": ["Francés", "Español", "Inglés"]
+      },
+      {
+        "title": "Habilidades Clave",
+        "list": [
+          "Colaboración",
+          "Resolución de problemas",
+          "Comunicación",
+          "Adaptabilidad",
+          "Flexibilidad",
+          "Atención al detalle",
+          "Empatía"
+        ]
+      }
+    ]
+  }
+}

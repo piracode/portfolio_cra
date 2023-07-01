@@ -14,7 +14,6 @@ export const Accordion = ({ accordions, projectID }) => {
   const { t, ready } = useTranslation()
 
   // console.log(accordions)
-  // console.log('testttt2', t(accordions[3].heading))
 
   // Function to handle tab click and update active tabs state
   const handleTabClick = (accordionIndex, tabIndex) => {
@@ -135,14 +134,21 @@ export const Accordion = ({ accordions, projectID }) => {
                 <h2
                   className={`accordion-title`}
                   onClick={() => setOpenAccordionIndex(index)}
+                  aria-labelledby={`accordion-title-${index}`}
                 >
                   {t(accordion.title)}
                 </h2>
                 {/* Render the arrow component based on the open/close state */}
                 {openAccordionIndex === index ? (
-                  <MdKeyboardDoubleArrowRight className='accordion-icon' />
+                  <MdKeyboardDoubleArrowRight
+                    className='accordion-icon'
+                    role='presentation'
+                  />
                 ) : (
-                  <MdKeyboardDoubleArrowDown className='accordion-icon' />
+                  <MdKeyboardDoubleArrowDown
+                    className='accordion-icon'
+                    role='presentation'
+                  />
                 )}
               </div>
 

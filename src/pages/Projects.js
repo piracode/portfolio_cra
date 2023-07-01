@@ -6,6 +6,8 @@ import Loading from '../components/Loading'
 
 const Projects = () => {
   const { t, i18n, ready } = useTranslation()
+  const projects = t('projects', { returnObjects: true })
+
   const [data, setData] = useState(null)
   const [filterType, setFilterType] = useState('Featured') //to display the featured projcts on page load
   const [ref, inView] = useInView()
@@ -13,52 +15,19 @@ const Projects = () => {
   const handleFilterButtonClick = (type) => {
     setFilterType(type)
   }
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('/json/projects.json')
-      const jsonData = await response.json()
-      setData(jsonData)
-    }
-
-    fetchData()
-  }, [])
-
-  // Retrieve the currently selected language
-  const currentLanguage = i18n.language
-
-  // Retrieve the language-specific data from the 'data' object based on the current language
-  const selectedLanguageData = data?.projects?.selected[currentLanguage]
-
-  // Extract relevant properties from the language-specific data
-  const titleSectionProjects = selectedLanguageData?.titleSectionProjects
-  const selectedProjects = selectedLanguageData?.projects
-  // const selectedProjects = t('projects.projects', {returnObjects: true})
-  const introSelectedProjects = selectedLanguageData?.introSelectedProjects
-  const btnSelected = selectedLanguageData?.buttonProjectTitleFeatured
-  const btnAll = selectedLanguageData?.buttonProjectTitleAll
-  const btnWorkshop = selectedLanguageData?.buttonProjectTitleWorkshop
-
-  console.log('projects inView:', inView)
-
   return (
-    // <>
-    //   { data ? (
-    <>
-      {ready && data ? (
-        <section
-          ref={ref}
-          id='projects'
-          className={`project-section ${
-            inView ? 'fade-up fade-up-active' : ''
-          }`}
-        >
+    <section
+      ref={ref}
+      id='projects'
+      className={`project-section ${inView ? 'fade-up fade-up-active' : ''}`}
+    >
+      {ready ? (
+        <>
           <h3 className='section-title'>
             <span className='parallax-link-number'> 03. </span>
-            <span className='title-text'>{titleSectionProjects}</span>
-            <span className='title-line'>&nbsp;</span>
+            <span className='title-text'>{projects.titleSectionProjects}</span>
           </h3>
-          <p className='project-intro-text'>{introSelectedProjects}</p>
+          <p className='project-intro-text'>{projects.introSelectedProjects}</p>
           <div className='project-filter-buttons'>
             <button
               onClick={() => handleFilterButtonClick('All')}
@@ -66,7 +35,7 @@ const Projects = () => {
                 filterType === 'All' ? 'active' : ''
               }`}
             >
-              <span>{btnAll}</span>
+              <span>{projects.buttonProjectTitleAll}</span>
             </button>
             <button
               onClick={() => handleFilterButtonClick('Featured')}
@@ -74,8 +43,7 @@ const Projects = () => {
                 filterType === 'Featured' ? 'active' : ''
               }`}
             >
-              {/* > */}
-              <span>{btnSelected}</span>
+              <span>{projects.buttonProjectTitleFeatured}</span>
             </button>
             <button
               onClick={() => handleFilterButtonClick('Workshop')}
@@ -83,21 +51,21 @@ const Projects = () => {
                 filterType === 'Workshop' ? 'active' : ''
               }`}
             >
-              <span>{btnWorkshop}</span>
+              <span>{projects.buttonProjectTitleWorkshop}</span>
             </button>
           </div>
 
           <div className='project-cards-box'>
             <FilteredProjects
-              selectedProjects={selectedProjects}
+              selectedProjects={projects.projects}
               filterType={filterType}
             />
           </div>
-        </section>
+        </>
       ) : (
         <Loading />
       )}
-    </>
+    </section>
   )
 }
 

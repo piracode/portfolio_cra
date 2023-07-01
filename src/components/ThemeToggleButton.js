@@ -22,23 +22,24 @@ const ThemeToggleButton = ({ className, isMobile }) => {
         <div
           className={`nav-button-container ${className}`}
           onClick={handleToggle}
+          role='button'
         >
           <div className='navigation-link'>
             <div className='nav-button secondary-button'>
               {/* Conditional rendering of icon based on the current theme */}
               {isDarkMode ? (
                 <span className='navigation-link-icon'>
-                  <FaSun />
+                  <FaSun title='Light Mode' />
                 </span>
               ) : (
                 <span className='navigation-link-icon'>
-                  <FaMoon />
+                  <FaMoon title='Dark Mode' />
                 </span>
               )}
             </div>
             {/* Displaying translated text based on the current theme */}
             <span className='navigation-link-text'>
-              {t(`toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
+              {t(`navigation.toggleTheme.${isDarkMode ? 'dark' : 'light'}`)}
             </span>
           </div>
         </div>

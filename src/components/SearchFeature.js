@@ -12,7 +12,7 @@ const SearchFeature = () => {
   return (
     <>
       <span className='navigation-link-icon'>
-        <ImSearch />
+        <ImSearch title='Search Icon' />
       </span>
       <span className='navigation-link-text'>{t('search')}</span>
       <SearchBar projects={projects} onSearchTermChange={setSearchTerm} />

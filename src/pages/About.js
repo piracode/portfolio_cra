@@ -2,15 +2,26 @@ import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import Loading from '../components/Loading'
+import { useEffect, useState } from 'react'
 
 const About = () => {
   const { t, ready } = useTranslation()
   const [ref, inView] = useInView()
 
   //retrieves the skills object from the translation file using the t function provided by the useTranslation hook.
-  const skillsData = t('skills', { returnObjects: true })
-  console.log('about inView:', inView)
-  console.log('t.name status' + t.name)
+  const skillsData = t('skills.skills', { returnObjects: true })
+
+  // console.log('about inView:', inView)
+  // console.log('t.name status' + t.name)
+
+  const [hasBeenInView, setHasBeenInView] = useState(false)
+
+  useEffect(() => {
+    if (inView) {
+      setHasBeenInView(true)
+    }
+  }, [inView])
+
   return (
     <>
       {ready ? (
@@ -18,58 +29,61 @@ const About = () => {
           <section
             ref={ref}
             id='about'
-            className={`about ${inView ? 'fade-up fade-up-active' : ''}`}
+            className={`about ${hasBeenInView ? 'fade-up fade-up-active' : ''}`}
           >
             <article className='about-container'>
               <h3 className='section-title'>
                 <span className='parallax-link-number'> 01. </span>
-                <span className='title-text'>{t('titleSectionAbout')}</span>
-                <span className='title-line'>&nbsp;</span>
+                <span className='title-text'>
+                  {t('about.titleSectionAbout')}
+                </span>
               </h3>
               <div className='about-text-container'>
-                <p className='about-paragraph-1'>{t('paragraph1')}</p>
-                <p className='about-paragraph-2'>{t('paragraph2')}</p>
-                <p className='about-paragraph-3'>{t('paragraph3')}</p>
-                <p className='about-paragraph-4'>{t('paragraph4')}</p>
+                <p className='about-paragraph-1'>{t('about.paragraph1')}</p>
+                <p className='about-paragraph-2'>{t('about.paragraph2')}</p>
+                <p className='about-paragraph-3'>{t('about.paragraph3')}</p>
+                <p className='about-paragraph-4'>{t('about.paragraph4')}</p>
                 <a
                   className='about-link'
                   href='https://www.youtube.com/watch?v=aMr2pchOeBA'
                   target='_blank'
                   rel='noopener noreferrer'
+                  aria-label={t('about.youtubeLinkAriaLabel')}
                 >
-                  {t('youtubeLink')}
+                  {t('about.youtubeLink')}
                 </a>
                 <p className='about-paragraph-4-continued'>
-                  {t('paragraph4-continued1')}
+                  {t('about.paragraph4-continued1')}
                 </p>
                 <a
                   className='about-link'
                   href='https://www.facebook.com/quillerina.paperart'
                   target='_blank'
                   rel='noopener noreferrer'
+                  aria-label={t('about.QuillerinaLinkAriaLabel')}
                 >
-                  {t('QuillerinaLink')}
+                  {t('about.QuillerinaLink')}
                 </a>
                 <p className='about-paragraph-4-continued'>
-                  {t('paragraph4-continued2')}
+                  {t('about.paragraph4-continued2')}
                 </p>
                 <a
                   className='about-link'
                   href='https://newsinteractives.cbc.ca/longform/25-years-of-flamenco-at-the-kino/'
                   target='_blank'
                   rel='noopener noreferrer'
+                  aria-label={t('about.flamencoCBCLinkAriaLabel')}
                 >
-                  {t('flamencoCBCLink')}
+                  {t('about.flamencoCBCLink')}
                 </a>
               </div>
               <button className='primary-button about-button'>
                 <Link to='/gallery' className='button-link'>
-                  {t('seePhotosCTA')}
+                  {t('about.seePhotosCTA')}
                 </Link>
               </button>
             </article>
           </section>
-          {/* <article className='tech-stack-container'> */}
           <section
             ref={ref}
             id='skills'
@@ -79,13 +93,9 @@ const About = () => {
           >
             <h3 className='section-title'>
               <span className='parallax-link-number'>02. </span>
-              <span className='title-text'>{t('titleSkills')}</span>
-              <span className='title-line'>&nbsp;</span>
+              <span className='title-text'>{t('skills.titleSkills')}</span>
             </h3>
-
-            {/* {t.name == 'fixedT' && */}
-            {ready &&
-              skillsData &&
+            {Array.isArray(skillsData) &&
               skillsData.map((section, index) => (
                 <div key={index} className='skills-section-box'>
                   <h4 className='skills-section-subtitle'>{section.title}</h4>

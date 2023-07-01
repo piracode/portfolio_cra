@@ -1,75 +1,35 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-// load JSON data from a file
-const loadJSON = async (filename) => {
-  const response = await fetch(`/json/${filename}.json`)
-  const data = await response.json()
-  console.log(`filename: ${filename}`, data)
-  return data
-}
+import Backend from 'i18next-http-backend'
+import LanguageDetector from 'i18next-browser-languagedetector'
+// don't want to use this?
+// have a look at the Quick start guide
+// for passing in lng and translations on init
+i18n
+  // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
+  // learn more: https://github.com/i18next/i18next-http-backend
+  // want your translations to be loaded from a professional CDN? => https://github.com/locize/react-tutorial#step-2---use-the-locize-cdn
+  .use(Backend)
+  // detect user language
+  // learn more: https://github.com/i18next/i18next-browser-languageDetector
+  .use(LanguageDetector)
+  // pass the i18n instance to react-i18next.
+  .use(initReactI18next)
+  // init i18next
+  // for all options read: https://www.i18next.com/overview/configuration-options
 
-// load translations for different languages
-const loadTranslations = async () => {
-  const files = {
-    hero: 'hero',
-    navigation: 'navigation',
-    about: 'about',
-    skills: 'skills',
-    projects: 'projects',
-    contact: 'contact',
-    gallery: 'gallery',
-  }
-
-  const languages = ['en', 'fr', 'es']
-
-  const translations = {
-    en: [],
-    fr: [],
-    es: [],
-  }
-
-  // Iterate over each file and load the JSON data
-  for (const [filename] of Object.entries(files)) {
-    const jsonData = await loadJSON(filename)
-    debugger
-    // Merge the translation data into the corresponding language object
-    for (const language in jsonData) {
-      translations[language] = {
-        ...translations[language],
-        ...jsonData[language],
-      }
-    }
-  }
-
-  return translations
-}
-
-const initializeI18n = async () => {
-  const translations = await loadTranslations()
-
-  const resources = {}
-
-  // Populate the resources object with the translation data
-  for (const [language, translation] of Object.entries(translations)) {
-    resources[language] = { translation: {} }
-
-    for (const [file, data] of Object.entries(translation)) {
-      resources[language].translation[file] = data
-    }
-  }
-
-  // Initialize the i18n library with the loaded resources
-  i18n.use(initReactI18next).init({
-    resources,
-    lng: 'en', // Set the default language to English
+  .init({
+    fallbackLng: 'en',
+    debug: true,
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false,
     },
   })
-  console.log('------------------------Translations:', translations)
-}
 
-initializeI18n()
+// debugger
+
+// console.log('++++++++++++++++++++++++++' + i18n)
 
 export default i18n
