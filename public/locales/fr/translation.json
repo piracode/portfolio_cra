@@ -171,7 +171,7 @@
         "excerpt": "Une base de données de films construite en React.js utilisant l'API themoviedb.org qui permet aux utilisateurs d'explorer, rechercher et marquer des films.",
         "gitHubLink": "https://github.com/piracode/flixr_react",
         "liveSiteLink": "https://martha.codes/flixr/",
-        "liveSiteCTA": "Site Web",
+        "liveSiteCTA": "Site",
         "gitHubCTA": "Code",
         "detailsCTA": "Détails",
         "post": {

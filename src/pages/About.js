@@ -48,7 +48,7 @@ const About = () => {
                   href='https://www.youtube.com/watch?v=aMr2pchOeBA'
                   target='_blank'
                   rel='noopener noreferrer'
-                  aria-label={t('about.youtubeLinkAriaLabel')}
+                  aria-label='Link to Youtube'
                 >
                   {t('about.youtubeLink')}
                 </a>
@@ -60,7 +60,7 @@ const About = () => {
                   href='https://www.facebook.com/quillerina.paperart'
                   target='_blank'
                   rel='noopener noreferrer'
-                  aria-label={t('about.QuillerinaLinkAriaLabel')}
+                  aria-label='Link to Quillerina Paper Art Site'
                 >
                   {t('about.QuillerinaLink')}
                 </a>
@@ -72,7 +72,7 @@ const About = () => {
                   href='https://newsinteractives.cbc.ca/longform/25-years-of-flamenco-at-the-kino/'
                   target='_blank'
                   rel='noopener noreferrer'
-                  aria-label={t('about.flamencoCBCLinkAriaLabel')}
+                  aria-label='Link to CBC article'
                 >
                   {t('about.flamencoCBCLink')}
                 </a>

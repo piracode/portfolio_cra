@@ -42,7 +42,7 @@ export const Accordion = ({ accordions, projectID }) => {
       case 'content3':
         return (
           <p key={key} className={`accordion-paragraph ${key}`}>
-            {t(value)}
+            {value}
           </p>
         )
       // Render headings inside the accordions
@@ -52,7 +52,7 @@ export const Accordion = ({ accordions, projectID }) => {
       case 'heading3':
         return (
           <h5 key={key} className={`extra-heading ${key}`}>
-            {t(value)}
+            {value}
           </h5>
         )
       // Render images inside the accordions
@@ -73,7 +73,8 @@ export const Accordion = ({ accordions, projectID }) => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              {t(value.text)}
+              {/* {value.text} */}
+              {value.text}
             </a>
           </div>
         )
@@ -85,7 +86,7 @@ export const Accordion = ({ accordions, projectID }) => {
         ) {
           return (
             <p key={key} className={`accordion-paragraph ${key}`}>
-              {t(value)}
+              {value}
             </p>
           )
         }
@@ -97,7 +98,7 @@ export const Accordion = ({ accordions, projectID }) => {
   const renderSection = (section) => {
     return (
       <div key={section.tabTitle}>
-        <h3 className={`accordion-tabTitle`}>{t(section.tabTitle)}</h3>
+        <h3 className={`accordion-tabTitle`}>{section.tabTitle}</h3>
         {Object.entries(section).map(([key, value]) =>
           renderElement(key, value)
         )}
@@ -136,7 +137,7 @@ export const Accordion = ({ accordions, projectID }) => {
                   onClick={() => setOpenAccordionIndex(index)}
                   aria-labelledby={`accordion-title-${index}`}
                 >
-                  {t(accordion.title)}
+                  {accordion.title}
                 </h2>
                 {/* Render the arrow component based on the open/close state */}
                 {openAccordionIndex === index ? (
@@ -157,21 +158,21 @@ export const Accordion = ({ accordions, projectID }) => {
                 <div>
                   {/* Render the intro content if it exists */}
                   {accordion.intro && (
-                    <p className={`accordion-intro`}>{t(accordion.intro)}</p>
+                    <p className={`accordion-intro`}>{accordion.intro}</p>
                   )}
                   {/* Render the content keys */}
                   {Object.keys(accordion).map((key) => {
                     if (key.startsWith('content')) {
                       return (
                         <p className={`accordion-paragraph ${key}`} key={key}>
-                          {t(accordion[key])}
+                          {accordion[key]}
                         </p>
                       )
                     }
                     if (key.startsWith('question')) {
                       return (
                         <h4 className={`accordion-question ${key}`} key={key}>
-                          {t(accordion[key])}
+                          {accordion[key]}
                         </h4>
                       )
                     }
@@ -189,7 +190,7 @@ export const Accordion = ({ accordions, projectID }) => {
                             activeTabs[index] === tabIndex ? 'active' : ''
                           }`}
                         >
-                          {t(tab.subtitle)}
+                          {tab.subtitle}
                         </button>
                       ))}
                     </div>

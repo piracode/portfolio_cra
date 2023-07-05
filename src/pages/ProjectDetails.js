@@ -12,7 +12,7 @@ const ProjectDetails = () => {
   const { slug } = useParams() // Retrieve the project slug from the URL
   // console.log('Slug:', slug)
 
-  const { i18n, ready, t } = useTranslation() // Access the i18n translation object
+  const { ready, t, i18n } = useTranslation()
 
   const projects = t('projects', { returnObjects: true })
   // console.log(projects)
@@ -24,13 +24,10 @@ const ProjectDetails = () => {
       (project) => project.slug === slug
     )
 
-    if (
-      matchedProject &&
-      (!sortedProject || matchedProject.slug !== sortedProject.slug)
-    ) {
+    if (matchedProject) {
       setSortedProject(matchedProject)
     }
-  }, [projects, slug, sortedProject])
+  }, [slug, i18n.language])
 
   if (!sortedProject) {
     return <Loading /> // Render a loading state while waiting for the data
@@ -77,7 +74,7 @@ const ProjectDetails = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     role='button'
-                    aria-label={t('project.gitHubCTAAriaLabel')}
+                    aria-label='Link to GitHub'
                   >
                     <div className='project-icon-wrapper'>
                       <FaGithub
@@ -99,7 +96,7 @@ const ProjectDetails = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     role='button'
-                    aria-label={t('project.pdfCTAAriaLabel')}
+                    aria-label='Link to PDF'
                   >
                     <div className='project-icon-wrapper'>
                       {/* Render a different icon for design=true */}
@@ -119,7 +116,7 @@ const ProjectDetails = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   role='button'
-                  aria-label={t('project.liveSiteCTAAriaLabel')}
+                  aria-label='Link to Live Site'
                 >
                   <div className='project-icon-wrapper'>
                     <FaExternalLinkAlt title='Open Live Site' />
