@@ -89,12 +89,8 @@ a.about-link {
 
   .skills-section {
     &-list-item {
-      background-color: $dark-blue-color-2;
-      color: #76b2bc;
-      // &:hover {
-      //   color: $dark-blue-color-2;
-      //   background-color: #76b2bc;
-      // }
+      color: $dark-blue-color-2;
+      background-color: $light-theme-project-bg;
     }
 
     &-subtitle {
@@ -143,8 +139,7 @@ a.about-link {
 
 @include mq(600) {
   .aboutAndSkills-box {
-    padding-left: 2.5rem;
-    padding-right: 1rem;
+    padding: 0 2.5rem;
   }
 }
 

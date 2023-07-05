@@ -57,7 +57,7 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
                 target='_blank'
                 rel='noopener noreferrer'
                 role='button'
-                aria-label={t('project.gitHubCTAAriaLabel')}
+                aria-label='Link to GitHub'
               >
                 <div className='project-icon-wrapper'>
                   <FaGithub title='Open GitHub' />
@@ -76,7 +76,7 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
                 target='_blank'
                 rel='noopener noreferrer'
                 role='button'
-                aria-label={t('project.pdfCTAAriaLabel')}
+                aria-label='Link to PDF'
               >
                 <div className='project-icon-wrapper'>
                   <FaFilePdf title='Open PDF' />
@@ -93,7 +93,7 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
               target='_blank'
               rel='noopener noreferrer'
               role='button'
-              aria-label={t('project.liveSiteCTAAriaLabel')}
+              aria-label='Link to live site'
             >
               <div className='project-icon-wrapper'>
                 <FaExternalLinkAlt title='Open Live Website' />
@@ -108,7 +108,7 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
               className='project-icon-link'
               to={`/projects/${project.slug}`}
               role='button'
-              aria-label={t('project.detailsCTAAriaLabel')}
+              aria-label='Link to project details'
             >
               <div className='project-icon-wrapper'>
                 <BsPlusCircleFill title='Project Details' />
