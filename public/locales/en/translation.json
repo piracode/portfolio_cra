@@ -2,7 +2,7 @@
   "about": {
     "titleSectionAbout": "About Me",
     "paragraph1": "Welcome! I'm Martha. I grew up between France and Spain and I am now based in Vancouver, BC.",
-    "paragraph2": "My interest in web development started to flourish in 2018 when I wanted to help my parents build a website for their pizzeria in Spain.",
+    "paragraph2": "My interest in web development started to flourish in 2018 when I wanted to help my parents build a website for their restaurant in Spain.",
     "paragraph3": "I finally took the leap to pursue programming seriously by enrolling in the Front-End Development program at BCIT. Additionally, I am a Scrum Certified Developer, having obtained my certification from Scrum Alliance in June 2023.",
     "paragraph4": "When I'm not refining my skills on the laptop, you can find me hiking with my dog, singing, playing ",
     "youtubeLink": "musical instruments",
@@ -16,7 +16,6 @@
   "contact": {
     "titleSectionContact": "Connect",
     "contactParagraph-1": "I am eager to hear from you! Don't hesitate to reach out if you'd like to discuss any Junior Front-End Development projects or explore potential opportunities.",
-    "contactParagraph-2": "Additionally, if you share an interest in hiking, dance, or art, I'm equally enthusiastic to engage in conversations about these topics. Let's connect and start a conversation!",
     "sendEmailCTA": "Send me an email!"
   },
   "gallery": {
@@ -124,7 +123,7 @@
   "hero": {
     "greeting": "Hello, my name is",
     "name": "Martha Villa Martin.",
-    "role": "Scrum Certified Front-End Developer / UX Designer.",
+    "role": "Scrum Certified Web Developer / Designer.",
     "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I am currently enrolled in the ",
     "descriptionPart2": "Front-End Development program at BCIT.",
     "SeeProjectsCTA": "See my projects"
@@ -137,8 +136,8 @@
     "skills": "Skills",
     "resume": "Resume",
     "toggleTheme": {
-      "dark": "Light theme",
-      "light": "Dark theme"
+      "dark": "Light",
+      "light": "Dark"
     },
     "search": "Search Stack",
     "searchTooltip": "Search for programming language"
@@ -292,7 +291,7 @@
         "thumbnail": "/images/portfolio-desktop.webp",
         "thumbnailMobile": "/images/portfolio-mobile.webp",
         "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
-        "excerpt": "My portfolio is a multilingual site that showcases a React project where I fetch data from a JSON API. It features captivating animations and includes a dark/light theme option, project sorting, and upcoming plans to add an input search functionality.",
+        "excerpt": "My portfolio is a multilingual site that showcases a React project where I utilize the i18n library to seamlessly switch between languages. Additionally, it offers a dark/light theme option and project sorting functionality.",
         "gitHubLink": "https://github.com/piracode/portfolio_CRA",
         "liveSiteLink": "https://martha.codes",
         "liveSiteCTA": "Site",
@@ -304,9 +303,9 @@
           "accordions": [
             {
               "title": "Project Requirements",
-              "content": "- Create a professional and consistent portfolio that showcases selected projects, reflects my personal branding, and provides easy contact options for potential employers.",
-              "content1": "- Develop a captivating user experience that effectively communicates my skills, expertise, and passion for front-end development and UX design.",
-              "content2": "- Demonstrate a range of projects, including both selected works and practice projects, to showcase problem-solving abilities, user-centered design approach, and the impact of my work.Additionally, incorporate aspects of my personal interests and hobbies to provide a well-rounded view of who I am as a professional."
+              "content": "Create a professional and consistent portfolio that showcases selected projects, reflects my personal branding, and provides easy contact options for potential employers.",
+              "content1": "Develop a captivating user experience that effectively communicates my skills, expertise, and passion for front-end development and UX design.",
+              "content2": "Demonstrate a range of projects, including both selected works and practice projects, to showcase problem-solving abilities, user-centered design approach, and the impact of my work.Additionally, incorporate aspects of my personal interests and hobbies to provide a well-rounded view of who I am as a professional."
             },
             {
               "title": "UX / UI Design",
@@ -392,10 +391,10 @@
         "design": false
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "4",
-        "title": "Ai Summit(Coming soon)",
+        "title": "Ai Summit (Coming soon)",
         "slug": "ai-summit",
         "thumbnail": "/images/placeholder.webp",
         "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
@@ -474,10 +473,10 @@
         "design": false
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "8",
-        "title": "French Baking App - Case Study",
+        "title": "Case Study",
         "slug": "french-baking-case-study",
         "thumbnail": "/images/pic-frenchBaking.webp",
         "skills": [
@@ -592,7 +591,7 @@
           "Usability Evaluation",
           "Research Methodology",
           "Data Analysis",
-          "Report Writing"
+          "Report Writing "
         ],
         "excerpt": "In a collaborative effort with a team of five, we conducted a comprehensive usability report for Best Buy, assessing its user experience and documenting key findings.",
         "liveSiteCTA": "Prototype",
