@@ -37,6 +37,14 @@
   }
 }
 
+.section-container {
+  padding: 0 0.2rem 3rem 0.2rem;
+}
+
+.contact-section {
+  padding-bottom: 4rem;
+}
+
 @media (min-width: 48em) {
   .parallax-container {
     display: grid;
@@ -58,7 +66,16 @@
 
 @include mq(600) {
   .parallax-container {
-    padding: 1rem;
+    // padding: 1rem;
+  }
+}
+
+@include mq(768) {
+  .section-container {
+    // padding: 4rem 4rem 7.5rem 4rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
 }
 

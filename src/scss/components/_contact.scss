@@ -26,7 +26,7 @@
   }
 
   &-footer {
-    padding-bottom: 9rem;
+    // padding-bottom: 9rem;
   }
 
   &-icons-box + p {
@@ -43,7 +43,7 @@
 
 @include mq(768) {
   .contact {
-    margin-top: 12rem;
+    margin: 10rem 0;
 
     &-footer {
       // padding-bottom: 1rem;
@@ -52,8 +52,8 @@
       // }
     }
     &-section {
-      display: flex;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
     }
 
     &-icons-box {
