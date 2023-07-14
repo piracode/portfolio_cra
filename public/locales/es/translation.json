@@ -2,7 +2,7 @@
   "about": {
     "titleSectionAbout": "Sobre mí",
     "paragraph1": "¡Bienvenido(a)s! Soy Martha. Crecí entre Francia y España y ahora vivo en Vancouver, Columbia Británica.",
-    "paragraph2": "Mi interés por el desarrollo web comenzó a florecer en 2018 cuando quise ayudar a mis padres a construir un sitio web para su pizzería en España.",
+    "paragraph2": "Mi interés por el desarrollo web comenzó a florecer en 2018 cuando quise ayudar a mis padres a construir un sitio web para su restaurante en España.",
     "paragraph3": "Finalmente di el paso para dedicarme seriamente a la programación al inscribirme en el programa de Desarrollo Front-End en BCIT. Además, soy una Desarrolladora Certificada Scrum, habiendo obtenido mi certificación de Scrum Alliance en junio de 2023.",
     "paragraph4": "Cuando no estoy perfeccionando mis habilidades en la computadora, me encontrarás haciendo senderismo con mi perro, cantando, tocando ",
     "youtubeLink": "instrumentos musicales",
@@ -16,7 +16,6 @@
   "contact": {
     "titleSectionContact": "Contacto",
     "contactParagraph": "¡Estoy ansiosa por conversar con usted! No dude en contactarme si desea hablar sobre proyectos de Desarrollo Front-End Junior o explorar oportunidades potenciales.",
-    "contactParagraph-2": "Además, si comparte un interés en el senderismo, la danza o el arte, también estoy entusiasmado en entablar conversaciones sobre estos temas. ¡Conectemos y comencemos una conversación!",
     "sendEmailCTA": "¡Envíame un email!"
   },
   "gallery": {
@@ -124,7 +123,7 @@
   "hero": {
     "greeting": "Hola, mi nombre es",
     "name": "Martha Villa Martin.",
-    "role": "Desarrolladora front-end / diseñadora de UX.",
+    "role": "Desarrolladora web / diseñadora",
     "descriptionPart1": "Trilingüe en francés, inglés y español con experiencia en hostelería y educación. Actualmente estoy inscrita en el ",
     "descriptionPart2": "programa de Desarrollo Front-End en BCIT.",
     "SeeProjectsCTA": "Ver mis proyectos"
@@ -137,8 +136,8 @@
     "skills": "Habilidades",
     "resume": "Currículum",
     "toggleTheme": {
-      "dark": "Tema claro",
-      "light": "Tema oscuro"
+      "dark": "Claro",
+      "light": "Oscuro"
     },
     "search": "Buscar Stack",
     "searchTooltip": "Buscar lenguaje de programación"
@@ -290,7 +289,7 @@
         "thumbnail": "/images/portfolio-desktop.webp",
         "thumbnailMobile": "/images/portfolio-mobile.webp",
         "skills": ["React", "JSX", "CSS", "SCSS", "JSON", "AdobeXD"],
-        "excerpt": "Mi portafolio es un sitio multilingüe que presenta un proyecto de React donde obtengo datos de una API JSON. Ofrece animaciones cautivadoras e incluye una opción de tema claro/oscuro, ordenación de proyectos y planes futuros para agregar una función de búsqueda por entrada.",
+        "excerpt": "Mi portafolio es un sitio multilingüe que muestra un proyecto de React en el que utilizo la biblioteca i18n para cambiar sin problemas entre idiomas. Además, ofrece una opción de tema oscuro/claro y funcionalidad de clasificación de proyectos.",
         "gitHubLink": "https://github.com/piracode/portfolio_CRA",
         "liveSiteLink": "https://martha.codes",
         "liveSiteCTA": "Sitio",
@@ -302,9 +301,9 @@
           "accordions": [
             {
               "title": "Requisitos del proyecto",
-              "content": "- Crear un portafolio profesional y coherente que presente proyectos seleccionados, refleje mi marca personal y ofrezca opciones de contacto sencillas para posibles empleadores.",
-              "content1": "- Desarrollar una experiencia de usuario cautivadora que comunique de manera efectiva mis habilidades, experiencia y pasión por el desarrollo front-end y el diseño UX.",
-              "content2": "- Presentar una variedad de proyectos, incluyendo trabajos seleccionados y proyectos de entrenamiento, para resaltar mis habilidades de resolución de problemas, enfoque centrado en el usuario y el impacto de mi trabajo. Además, incorporar aspectos de mis intereses personales y hobbies para proporcionar una visión completa de quién soy como profesional."
+              "content": "Crear un portafolio profesional y coherente que presente proyectos seleccionados, refleje mi marca personal y ofrezca opciones de contacto sencillas para posibles empleadores.",
+              "content1": "Desarrollar una experiencia de usuario cautivadora que comunique de manera efectiva mis habilidades, experiencia y pasión por el desarrollo front-end y el diseño UX.",
+              "content2": "Presentar una variedad de proyectos, incluyendo trabajos seleccionados y proyectos de entrenamiento, para resaltar mis habilidades de resolución de problemas, enfoque centrado en el usuario y el impacto de mi trabajo. Además, incorporar aspectos de mis intereses personales y hobbies para proporcionar una visión completa de quién soy como profesional."
             },
             {
               "title": "Diseño UX/UI",
@@ -390,8 +389,8 @@
         "design": false
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "4",
         "title": "Ai Summit (Próximamente)",
         "slug": "ai-summit",
@@ -473,10 +472,10 @@
       },
 
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "8",
-        "title": "French Baking - Estudio de caso",
+        "title": "Estudio de caso",
         "slug": "french-baking-case-study",
         "thumbnail": "/images/pic-frenchBaking.webp",
         "skills": [
@@ -581,7 +580,7 @@
         "workshop": false,
         "featured": true,
         "id": "9",
-        "title": "Informe sobre la Usabilidad de Best Buy",
+        "title": "Informe de usabilidad",
         "slug": "best-buy-usability-report",
         "thumbnail": "/images/best-buy-desktop.webp",
         "thumbnailMobile": "/images/best-buy-mobile.webp",
@@ -656,7 +655,7 @@
         "workshop": false,
         "featured": true,
         "id": "14",
-        "title": "Brief de diseño para Craigslist",
+        "title": "Brief de diseño",
         "slug": "craigslist-design-brief",
         "thumbnail": "/images/craisglist-wireframes.webp",
         "thumbnailMobile": "/images/craisglist-wireframes-mobile.webp",
