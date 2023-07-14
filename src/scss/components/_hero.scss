@@ -6,11 +6,15 @@
 }
 
 .hero {
-  padding: 3rem 1rem 8.5rem 1rem;
+  padding: 3rem 0 8.5rem 0;
   // height: 80vh;
 
   &-intro-box {
-    padding: 3rem 0 2rem 0;
+    // padding: 3rem 0 2rem 0;
+  }
+
+  &-text-container {
+    padding-top: 3rem;
   }
 
   &-description-box {
@@ -93,23 +97,23 @@
     }
 
     &-text-container {
-      max-width: 27rem;
+      // max-width: 27rem;
       padding-left: 2rem;
+      padding-top: initial;
     }
   }
 }
 
 @include mq(490) {
   .hero {
-    padding: 4rem 4rem 7.5rem 4rem;
+    // padding: 4rem 4rem 7.5rem 4rem;
     height: auto;
   }
 }
 
 @include mq(768) {
   .hero {
-    padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding: 10rem 0;
 
     &-description-box {
       padding-bottom: 2rem;

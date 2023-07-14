@@ -34,7 +34,7 @@ const Contact = () => {
                 </span>
               </h3>
               <p className='contact-text'> {t('contact.contactParagraph-1')}</p>
-              <p className='contact-text'> {t('contact.contactParagraph-2')}</p>
+              {/* <p className='contact-text'> {t('contact.contactParagraph-2')}</p> */}
               <button className='primary-button'>
                 <a
                   className='button-link'

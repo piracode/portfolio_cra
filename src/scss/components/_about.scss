@@ -1,14 +1,14 @@
 @import '../base/settings';
 
 .aboutAndSkills-box {
-  max-width: 34.5rem;
+  // max-width: 34.5rem;
 }
 .about {
-  padding: 0 0.2rem 7.5rem 0.2rem;
+  padding: 0 0.2rem 7.5rem 0;
 
   &-container {
     // padding: 8.5rem 0 4.5rem 0;
-    padding-bottom: 4.5rem;
+    // padding-bottom: 4.5rem;
   }
 
   &-text-container {
@@ -58,7 +58,7 @@ a.about-link {
 //Skills
 
 .skills-container {
-  padding-bottom: 8.5rem;
+  padding-bottom: 10rem;
 }
 
 .skills-section {
@@ -139,15 +139,15 @@ a.about-link {
 
 @include mq(600) {
   .aboutAndSkills-box {
-    padding: 0 2.5rem;
+    // padding: 0 2.5rem;
   }
 }
 
 @include mq(950) {
   .aboutAndSkills-box {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 2.5fr;
+    // max-width: 100%;
+    // display: grid;
+    // grid-template-columns: 3fr 2.5fr;
   }
   .about {
     &-container {
@@ -159,8 +159,8 @@ a.about-link {
     }
 
     &-text-container {
-      max-width: 32rem;
-      padding-right: 2rem;
+      // max-width: 33rem;
+      // padding-right: 2rem;
       margin-bottom: 4rem;
     }
 
@@ -179,7 +179,7 @@ a.about-link {
   }
 
   .about {
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
   }
 
   // .skills-container {

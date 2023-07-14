@@ -37,87 +37,83 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
     >
       <h4 className='project-title'>{project.title}</h4>
       <p className='project-excerpt'>{project.excerpt}</p>
-      <div className='project-footer'>
-        <div className='project-skills-box'>
-          {/* <span className='skill-label'>Skills: </span> */}
-          {project.skills.map((skill, skillIndex) => (
-            <span key={skillIndex} className='project-skill'>
-              {skill}
-            </span>
-          ))}
-        </div>
-        <div className='project-cta-box'>
-          {/* Render different icons based on design property */}
-          {/* If Project-design false */}
-          {!project.design ? (
-            <div className='project-icon-box github'>
-              <a
-                className='project-icon-link'
-                href={project.gitHubLink}
-                target='_blank'
-                rel='noopener noreferrer'
-                role='button'
-                aria-label='Link to GitHub'
-              >
-                <div className='project-icon-wrapper'>
-                  <FaGithub title='Open GitHub' />
-                  <span className='project-icon-title'>
-                    {project.gitHubCTA}
-                  </span>
-                </div>
-              </a>
-            </div>
-          ) : (
-            // If project design true
-            <div className='project-icon-box design'>
-              <a
-                className='project-icon-link'
-                href={project.pdfLink}
-                target='_blank'
-                rel='noopener noreferrer'
-                role='button'
-                aria-label='Link to PDF'
-              >
-                <div className='project-icon-wrapper'>
-                  <FaFilePdf title='Open PDF' />
-                  <span className='project-icon-title'>{project.pdfCTA}</span>
-                </div>
-              </a>
-            </div>
-          )}
-
-          <div className='project-icon-box liveSite'>
+      {/* <div className='project-footer'> */}
+      <div className='project-skills-box'>
+        {/* <span className='skill-label'>Skills: </span> */}
+        {project.skills.map((skill, skillIndex) => (
+          <span key={skillIndex} className='project-skill'>
+            {skill}
+          </span>
+        ))}
+      </div>
+      <div className='project-cta-box'>
+        {/* Render different icons based on design property */}
+        {/* If Project-design false */}
+        {!project.design ? (
+          <div className='project-icon-box github'>
             <a
               className='project-icon-link'
-              href={project.liveSiteLink}
+              href={project.gitHubLink}
               target='_blank'
               rel='noopener noreferrer'
               role='button'
-              aria-label='Link to live site'
+              aria-label='Link to GitHub'
             >
               <div className='project-icon-wrapper'>
-                <FaExternalLinkAlt title='Open Live Website' />
-                <span className='project-icon-title'>
-                  {project.liveSiteCTA}
-                </span>
+                <FaGithub title='Open GitHub' />
+                <span className='project-icon-title'>{project.gitHubCTA}</span>
               </div>
             </a>
           </div>
-          <div className='project-icon-box details'>
-            <Link
+        ) : (
+          // If project design true
+          <div className='project-icon-box design'>
+            <a
               className='project-icon-link'
-              to={`/projects/${project.slug}`}
+              href={project.pdfLink}
+              target='_blank'
+              rel='noopener noreferrer'
               role='button'
-              aria-label='Link to project details'
+              aria-label='Link to PDF'
             >
               <div className='project-icon-wrapper'>
-                <BsPlusCircleFill title='Project Details' />
-                <span className='project-icon-title'>{project.detailsCTA}</span>
+                <FaFilePdf title='Open PDF' />
+                <span className='project-icon-title'>{project.pdfCTA}</span>
               </div>
-            </Link>
+            </a>
           </div>
+        )}
+
+        <div className='project-icon-box liveSite'>
+          <a
+            className='project-icon-link'
+            href={project.liveSiteLink}
+            target='_blank'
+            rel='noopener noreferrer'
+            role='button'
+            aria-label='Link to live site'
+          >
+            <div className='project-icon-wrapper'>
+              <FaExternalLinkAlt title='Open Live Website' />
+              <span className='project-icon-title'>{project.liveSiteCTA}</span>
+            </div>
+          </a>
+        </div>
+        <div className='project-icon-box details'>
+          <Link
+            className='project-icon-link'
+            to={`/projects/${project.slug}`}
+            role='button'
+            aria-label='Link to project details'
+          >
+            <div className='project-icon-wrapper'>
+              <BsPlusCircleFill title='Project Details' />
+              <span className='project-icon-title'>{project.detailsCTA}</span>
+            </div>
+          </Link>
         </div>
       </div>
+      {/* </div> */}
     </article>
   )
 
