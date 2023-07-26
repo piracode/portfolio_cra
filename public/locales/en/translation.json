@@ -124,7 +124,7 @@
     "greeting": "Hello, my name is",
     "name": "Martha Villa Martin.",
     "role": "Scrum Certified Web Developer / Designer.",
-    "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I am currently enrolled in the ",
+    "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I recently graduated from the ",
     "descriptionPart2": "Front-End Development program at BCIT.",
     "SeeProjectsCTA": "See my projects"
   },
@@ -391,22 +391,57 @@
         "design": false
       },
       {
-        "workshop": true,
-        "featured": false,
+        "workshop": false,
+        "featured": true,
         "id": "4",
-        "title": "Ai Summit (Coming soon)",
+        "title": "Ai Summit",
         "slug": "ai-summit",
-        "thumbnail": "/images/placeholder.webp",
-        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
-        "excerpt": "We are currently developing a WooCommerce site as a team of four. The purpose of the site is to sell tickets for a conference focused on Artificial Intelligence.",
-        "gitHubLink": "https://github.com/piracode",
-        "liveSiteLink": "https://martha.codes",
+        "thumbnail": "/images/ai-summit-desktop.webp",
+        "thumbnailMobile": "/images/ai-summit-mobile.webp",
+        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub", "Git"],
+        "excerpt": "A WooCommerce website as a team of 4. The purpose of the site is to sell tickets for a conference focused on Artificial Intelligence.",
+        "gitHubLink": "https://github.com/htpwebdesign/ai-summit",
+        "liveSiteLink": "https://aisummit.bcitwebdeveloper.ca/",
         "liveSiteCTA": "Site",
         "gitHubCTA": "Code",
         "detailsCTA": "Details",
         "post": {
-          "intro": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia.",
-          "content": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia."
+          "titleOverview": "Overview",
+          "overview1": "Ai-Summit is a WordPress and Woocomerce website integrating various plugins to enable users to purchase tickets seamlessly and sign up for our newsletter.",
+          "overview2": "Throughout the development process, we efficiently managed tasks using Asana for project management.",
+          "accordions": [
+            {
+              "title": "Project Requirements",
+              "content": "The AI Summit website showcases ticket sales for the conference, offering options for both normal and 'VIP' tickets, with lunch included for the latter.",
+              "content1": "During ticket purchase, attendees provide their first name, last name, email address, and optionally their company name. The conference spans two days, featuring an opening keynote speaker and multiple sessions/workshops with showcased speakers on the schedule.",
+              "content2": "Sponsors, grouped into four tiers, are displayed with logos and descriptions. The site also includes general info about the conference, a news feed for updates, and the ability to subscribe for email notifications."
+            },
+            {
+              "title": "Development Highlights",
+              "intro": "We had the opportunity to build a website using WordPress and a variety of essential plugins. However, it wasn't just about improving our PHP and WordPress skills; it was also a valuable learning experience in Project Management. Throughout the development process, we honed our ability to adhere to timelines, set priorities, and successfully meet project goals and deliverables. ",
+              "content": "Apart from the technical aspects, we went the extra mile to ensure that the website was optimized for search engines, providing a strong foundation for Search Engine Optimization. By implementing SEO best practices, we aimed to improve the website's visibility and search engine rankings, ultimately driving more organic traffic to the site.",
+              "tabs": [
+                {
+                  "subtitle": "Eventin Plugin",
+                  "content": "We used the Eventin plugin in the WordPress admin dashboard to create conference passes, schedules, and manage a list of attending speakers. Additionally, the plugin provided a convenient registration form for attendees.",
+                  "content1": "While the Eventin plugin simplified our event management, there were minor design limitations and potential compatibility issues to address. However, its benefits outweighed the drawbacks, and we successfully delivered a remarkable conference experience."
+                },
+                {
+                  "subtitle": "Asana software",
+                  "content": "To effectively manage our tasks and ensure a smooth workflow, we relied on the powerful Asana software. Asana provided us with a comprehensive and user-friendly platform, allowing us to organize our work efficiently and keep track of pending tasks. Its intuitive interface and feature-rich environment made it a standout tool for our project needs. ",
+                  "content2": "We found Asana to be an indispensable companion throughout the project, enhancing our productivity and contributing to the successful completion of our tasks."
+                }
+              ]
+            },
+            {
+              "title": "Retrospective",
+              "question": "What did I learn?",
+              "content": "During this project, I gained valuable insights into the importance of effectively delivering a product to a client. I learned the significance of using non-technical language when communicating with clients, ensuring that they can easily understand the project's progress and outcomes. Additionally, this experience taught me the significance of thinking beyond the developer's perspective. Considering aspects such as the client's needs, business goals, and user experience was vital in creating a successful product.",
+              "question1": "What could be improved?",
+              "content2": "In retrospect, while Asana proved to be a great tool for task management, we didn't fully leverage its potential. We relied heavily on Slack for communication, resulting in some time wasted due to scattered discussions. In the future, we could improve our efficiency by maximizing the use of Asana, centralizing communication, and keeping all project-related discussions and updates in one place. This would undoubtedly enhance collaboration and streamline our workflow, leading to even better project outcomes.",
+              "content1": ""
+            }
+          ]
         },
         "design": false
       },

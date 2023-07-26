@@ -123,9 +123,9 @@
   "hero": {
     "greeting": "Hola, mi nombre es",
     "name": "Martha Villa Martin.",
-    "role": "Desarrolladora web / diseñadora",
-    "descriptionPart1": "Trilingüe en francés, inglés y español con experiencia en hostelería y educación. Actualmente estoy inscrita en el ",
-    "descriptionPart2": "programa de Desarrollo Front-End en BCIT.",
+    "role": "Desarrolladora y Diseñadora certificada Scrum.",
+    "descriptionPart1": "Trilingüe en francés, inglés y español, con experiencia en hostelería y educación. Recientemente me gradué del programa de ",
+    "descriptionPart2": "Desarrollo Front-End en BCIT.",
     "SeeProjectsCTA": "Ver mis proyectos"
   },
   "navigation": {
@@ -389,22 +389,56 @@
         "design": false
       },
       {
-        "workshop": true,
-        "featured": false,
+        "workshop": false,
+        "featured": true,
         "id": "4",
-        "title": "Ai Summit (Próximamente)",
+        "title": "Ai Summit",
         "slug": "ai-summit",
-        "thumbnail": "/images/placeholder.webp",
-        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
-        "excerpt": "Actualmente estamos desarrollando un sitio de WooCommerce en un equipo de 4 personas. El sitio tiene como objetivo vender boletos para una conferencia sobre Inteligencia Artificial.",
-        "gitHubLink": "https://github.com/piracode",
-        "liveSiteLink": "https://martha.codes",
+        "thumbnail": "/images/ai-summit-desktop.webp",
+        "thumbnailMobile": "/images/ai-summit-mobile.webp",
+        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub", "Git"],
+        "excerpt": "Un sitio web de WooCommerce desarrollado por un equipo de 4 personas. El propósito del sitio es vender entradas para una conferencia centrada en la Inteligencia Artificial.",
+        "gitHubLink": "https://github.com/htpwebdesign/ai-summit",
+        "liveSiteLink": "https://aisummit.bcitwebdeveloper.ca/",
         "liveSiteCTA": "Sitio",
         "gitHubCTA": "Código",
         "detailsCTA": "Detalles",
         "post": {
-          "intro": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia.",
-          "content": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia."
+          "titleOverview": "Vista General",
+          "overview1": "AI-Summit es un sitio web de WordPress y WooCommerce que integra varios complementos para permitir a los usuarios comprar entradas de manera sencilla y registrarse en nuestro boletín.",
+          "overview2": "A lo largo del proceso de desarrollo, gestionamos eficientemente las tareas utilizando Asana para la gestión del proyecto.",
+          "accordions": [
+            {
+              "title": "Requisitos del Proyecto",
+              "content": "El sitio web AI Summit muestra la venta de entradas para la conferencia, ofreciendo opciones tanto para entradas normales como 'VIP', con almuerzo incluido para estas últimas.",
+              "content1": "Durante la compra de entradas, los clientes proporcionan su nombre, apellido, dirección de correo electrónico y, opcionalmente, el nombre de su empresa. La conferencia abarca dos días e incluye un orador principal de apertura y múltiples sesiones/talleres con destacados ponentes en el programa.",
+              "content2": "Los patrocinadores, agrupados en cuatro niveles, se muestran con logotipos y descripciones. El sitio también incluye información general sobre la conferencia, un feed de noticias para actualizaciones y la posibilidad de suscribirse para recibir notificaciones por correo electrónico."
+            },
+            {
+              "title": "Puntos clases del desarollo",
+              "intro": "Tuvimos la oportunidad de construir un sitio web utilizando WordPress y una variedad de complementos esenciales. Sin embargo, no se trataba solo de mejorar nuestras habilidades en PHP y WordPress; también fue una valiosa experiencia de aprendizaje en Gestión de Proyectos. A lo largo del proceso de desarrollo, perfeccionamos nuestra capacidad para cumplir con los plazos, establecer prioridades y alcanzar con éxito los objetivos y entregables del proyecto.",
+              "content": "Además de los aspectos técnicos, nos esforzamos por optimizar el sitio web para los motores de búsqueda, proporcionando una base sólida para la Optimización de Motores de Búsqueda (SEO). Al implementar las mejores prácticas de SEO, buscamos mejorar la visibilidad del sitio web y su clasificación en los motores de búsqueda, lo que en última instancia aumentaría el tráfico orgánico hacia el sitio.",
+              "tabs": [
+                {
+                  "subtitle": "Eventin Plugin",
+                  "content": "Utilizamos el plugin Eventin en el panel de administración de WordPress para crear pases de conferencia, horarios y gestionar la lista de ponentes asistentes. Además, el complemento proporcionó un formulario de registro conveniente para los asistentes.",
+                  "content1": "Si bien el plugin Eventin simplificó nuestra gestión de eventos, hubo algunas limitaciones de diseño y posibles problemas de compatibilidad que abordar. Sin embargo, sus beneficios superaron las desventajas, y entregamos con éxito una notable experiencia de conferencia."
+                },
+                {
+                  "subtitle": "Asana software",
+                  "content": "Para gestionar eficazmente nuestras tareas y garantizar un flujo de trabajo sin problemas, confiamos en el poderoso software Asana. Asana nos proporcionó una plataforma completa y fácil de usar, lo que nos permitió organizar nuestro trabajo de manera eficiente y realizar un seguimiento de las tareas pendientes. Su interfaz intuitiva y entorno rico en funciones lo convirtieron en una herramienta destacada para nuestras necesidades de proyecto.",
+                  "content2": "Encontramos que Asana fue un compañero indispensable durante el proyecto, mejorando nuestra productividad y contribuyendo a la finalización exitosa de nuestras tareas."
+                }
+              ]
+            },
+            {
+              "title": "Retrospectiva",
+              "question": "¿Qué aprendí?",
+              "content": "Durante este proyecto, adquirí conocimientos valiosos sobre la importancia de entregar efectivamente un producto a un cliente. Aprendí la significancia de utilizar un lenguaje no técnico al comunicarse con los clientes, asegurándome de que puedan comprender fácilmente el progreso y los resultados del proyecto. Además, esta experiencia me enseñó la importancia de pensar más allá de la perspectiva del desarrollador. Considerar aspectos como las necesidades del cliente, los objetivos comerciales y la experiencia del usuario fue fundamental para crear un producto exitoso.",
+              "question1": "¿Qué se podría mejorar?",
+              "content2": "En retrospectiva, aunque Asana resultó ser una excelente herramienta para la gestión de tareas, no aprovechamos todo su potencial. Dependimos en gran medida de Slack para la comunicación, lo que resultó en tiempo desperdiciado debido a discusiones dispersas. En el futuro, podríamos mejorar nuestra eficiencia maximizando el uso de Asana, centralizando la comunicación y manteniendo todas las discusiones y actualizaciones relacionadas con el proyecto en un solo lugar. Esto sin duda mejoraría la colaboración y optimizaría nuestro flujo de trabajo, lo que conduciría a resultados aún mejores del proyecto."
+            }
+          ]
         },
         "design": false
       },

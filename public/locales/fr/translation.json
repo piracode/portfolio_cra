@@ -123,9 +123,9 @@
   "hero": {
     "greeting": "Bonjour, je m'appelle",
     "name": "Martha Villa Martin.",
-    "role": "Développeuse web / designer.",
-    "descriptionPart1": "Trilingue en français, anglais et espagnol, dotée d'une expérience dans les secteurs de l'hôtellerie et de l'éducation. Je suis actuellement inscrite au ",
-    "descriptionPart2": "programme de développement front-end à BCIT.",
+    "role": "Développeuse et Designer certifiée Scrum.",
+    "descriptionPart1": "Trilingue en français, anglais et espagnol, dotée d'une expérience dans les secteurs de l'hôtellerie et de l'éducation. J'ai récemment obtenu mon diplôme du programme ",
+    "descriptionPart2": "de Développement Front-End à BCIT.",
     "SeeProjectsCTA": "Voir mes projets"
   },
   "navigation": {
@@ -389,22 +389,55 @@
         "design": false
       },
       {
-        "workshop": true,
-        "featured": false,
+        "workshop": false,
+        "featured": true,
         "id": "4",
-        "title": "AI Summit (Prochainement)",
+        "title": "Ai Summit",
         "slug": "ai-summit",
-        "thumbnail": "/images/placeholder.webp",
-        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub"],
-        "excerpt": "Nous développons actuellement un site WooCommerce au sein d'une équipe de 4 personnes. Le site a pour but de vendre des billets pour une conférence sur l'Intelligence Artificielle.",
-        "gitHubLink": "https://github.com/piracode",
-        "liveSiteLink": "https://martha.codes",
+        "thumbnail": "/images/ai-summit-desktop.webp",
+        "thumbnailMobile": "/images/ai-summit-mobile.webp",
+        "skills": ["WordPress", "WooCommerce", "PHP", "SASS", "GitHub", "Git"],
+        "excerpt": "Un site Web WooCommerce développé par une équipe de 4 personnes. Le but du site est de vendre des billets pour une conférence axée sur l'Intelligence Artificielle.",
+        "gitHubLink": "https://github.com/htpwebdesign/ai-summit",
+        "liveSiteLink": "https://aisummit.bcitwebdeveloper.ca/",
         "liveSiteCTA": "Site",
         "gitHubCTA": "Code",
         "detailsCTA": "Détails",
         "post": {
-          "intro": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia.",
-          "content": "Lorem ipsum dolor sit amet. Est eligendi similique ut suscipit nemo ut cumque adipisci aut quibusdam iure cum consequatur exercitationem id molestiae similique aut dolores pariatur. Est facere dolorem et iure libero quo tenetur consequatur hic vitae optio aut error rerum eum nisi voluptas et repellat officia."
+          "titleOverview": "Vue d'ensemble",
+          "overview1": "AI-Summit est un site Web WordPress et WooCommerce intégrant plusieurs plugins pour permettre aux utilisateurs d'acheter des billets facilement et de s'inscrire à notre bulletin d'information.",
+          "overview2": "Tout au long du processus de développement, nous avons géré efficacement les tâches en utilisant Asana pour la gestion de projet.",
+          "accordions": [
+            {
+              "title": "Exigences du Projet",
+              "intro": "Nous avons eu l'opportunité de construire un site Web en utilisant WordPress et divers plugins essentiels. Cependant, il ne s'agissait pas seulement d'améliorer nos compétences en PHP et WordPress ; cela a également été une précieuse expérience d'apprentissage en gestion de projet. Tout au long du processus de développement, nous avons perfectionné notre capacité à respecter les délais, à établir des priorités et à atteindre avec succès les objectifs et les livrables du projet.",
+              "content": "En plus des aspects techniques, nous avons veillé à optimiser le site Web pour les moteurs de recherche, en fournissant une base solide pour l'optimisation des moteurs de recherche (SEO). En mettant en œuvre les meilleures pratiques de SEO, nous avons cherché à améliorer la visibilité du site Web et son classement dans les moteurs de recherche, ce qui augmenterait finalement le trafic organique vers le site."
+            },
+            {
+              "title": "Points clés du développement",
+              "intro": "Nous avons eu l'opportunité de construire un site Web en utilisant WordPress et divers plugins essentiels. Cependant, il ne s'agissait pas seulement d'améliorer nos compétences en PHP et WordPress ; cela a également été une précieuse expérience d'apprentissage en gestion de projet. Tout au long du processus de développement, nous avons perfectionné notre capacité à respecter les délais, à établir des priorités et à atteindre avec succès les objectifs et les livrables du projet.",
+              "content": "En plus des aspects techniques, nous avons veillé à optimiser le site Web pour les moteurs de recherche, en fournissant une base solide pour l'optimisation des moteurs de recherche (SEO). En mettant en œuvre les meilleures pratiques de SEO, nous avons cherché à améliorer la visibilité du site Web et son classement dans les moteurs de recherche, ce qui augmenterait finalement le trafic organique vers le site.",
+              "tabs": [
+                {
+                  "subtitle": "Plugin Eventin",
+                  "content": "Nous avons utilisé le plugin Eventin dans le tableau de bord d'administration WordPress pour créer des passes de conférence, des horaires et gérer la liste des conférenciers présents. De plus, le plugin fournissait un formulaire d'inscription pratique pour les participants.",
+                  "content1": "Bien que le plugin Eventin ait simplifié notre gestion des événements, il y avait quelques limitations de conception et des problèmes de compatibilité potentiels à résoudre. Cependant, ses avantages l'emportaient sur les inconvénients, et nous avons offert une expérience de conférence remarquable avec succès."
+                },
+                {
+                  "subtitle": "Logiciel Asana",
+                  "content": "Pour gérer efficacement nos tâches et garantir un flux de travail fluide, nous avons fait confiance au puissant logiciel Asana. Asana nous a fourni une plateforme complète et conviviale, nous permettant d'organiser notre travail efficacement et de suivre les tâches en attente. Son interface intuitive et son environnement riche en fonctionnalités en ont fait un outil remarquable pour nos besoins de projet.",
+                  "content2": "Nous avons constaté qu'Asana était un compagnon indispensable pendant le projet, améliorant notre productivité et contribuant à la réussite de nos tâches."
+                }
+              ]
+            },
+            {
+              "title": "Rétrospective",
+              "question": "Qu'est-ce que j'ai appris ?",
+              "content": "Au cours de ce projet, j'ai acquis des connaissances précieuses sur l'importance de livrer efficacement un produit à un client. J'ai appris l'importance d'utiliser un langage non technique lors de la communication avec les clients, en m'assurant qu'ils peuvent facilement comprendre l'avancement et les résultats du projet. De plus, cette expérience m'a enseigné l'importance de penser au-delà de la perspective du développeur. Prendre en compte des aspects tels que les besoins du client, les objectifs commerciaux et l'expérience utilisateur était essentiel pour créer un produit réussi.",
+              "question1": "Qu'est-ce qui pourrait être amélioré ?",
+              "content2": "En rétrospective, bien qu'Asana se soit avéré être un excellent outil pour la gestion des tâches, nous n'avons pas pleinement exploité son potentiel. Nous avons beaucoup compté sur Slack pour la communication, ce qui a entraîné une perte de temps en raison de discussions dispersées. À l'avenir, nous pourrions améliorer notre efficacité en maximisant l'utilisation d'Asana, en centralisant la communication et en regroupant toutes les discussions et mises à jour liées au projet en un seul endroit. Cela améliorerait sans aucun doute la collaboration et rationaliserait notre flux de travail, ce qui conduirait à des résultats encore meilleurs du projet."
+            }
+          ]
         },
         "design": false
       },
