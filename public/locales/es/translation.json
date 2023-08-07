@@ -611,8 +611,8 @@
         "design": true
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "9",
         "title": "Informe de usabilidad",
         "slug": "best-buy-usability-report",
@@ -686,8 +686,8 @@
         "design": true
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "14",
         "title": "Brief de diseño",
         "slug": "craigslist-design-brief",
@@ -964,11 +964,12 @@
       {
         "title": "Programación",
         "list": [
-          "HTML5",
-          "CSS3",
-          "Bootstrap",
           "JavaScript",
           "React.js",
+          "Vue.js",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3",
           "SASS",
           "PHP",
           "WordPress"
