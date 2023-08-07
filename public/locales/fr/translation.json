@@ -687,8 +687,8 @@
       },
 
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "14",
         "title": "Brief de conception",
         "slug": "craigslist-design-brief",
@@ -968,11 +968,12 @@
       {
         "title": "Programmation",
         "list": [
-          "HTML5",
-          "CSS3",
-          "Bootstrap",
           "JavaScript",
           "React.js",
+          "Vue.js",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3",
           "SASS",
           "PHP",
           "WordPress"

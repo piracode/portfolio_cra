@@ -614,8 +614,8 @@
       },
 
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "9",
         "title": "Best Buy Usability Report",
         "slug": "best-buy-usability-report",
@@ -690,8 +690,8 @@
       },
 
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "14",
         "title": "Craigslist Design Brief",
         "slug": "craigslist-design-brief",
@@ -961,6 +961,60 @@
           ]
         },
         "design": false
+      },
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "16",
+        "title": "Pizzeria l'Arena (WIP)",
+        "slug": "pizzeria",
+        "thumbnail": "/images/pizzeriaDesktop.webp",
+        "thumbnailMobile": "/images/pizzeria-mobile.webp",
+        "alt": "Pizzeria website screenshot",
+        "skills": ["Vue.js", "Tailwind", "Headless CMS"],
+        "excerpt": "This is a pizzeria website built using a headless CMS approach. The front-end is developed using Vue.js and Tailwind CSS, while Wordpress serves as the backend.",
+        "gitHubLink": "https://github.com/piracode/pizzeria-vue-tailwind",
+        "liveSiteLink": "https://martha.codes/pizzeria-arena/",
+        "liveSiteCTA": "Site",
+        "gitHubCTA": "Code",
+        "detailsCTA": "Details",
+        "post": {
+          "titleOverview": "Overview",
+          "overview1": "This is a pizzeria website built using a headless CMS approach for a business in Spain. The front-end is developed using Vue.js and Tailwind CSS, while Wordpress serves as the backend.",
+          "accordions": [
+            {
+              "title": "Project Requirements",
+              "content": "The website must have the following sections: a promotion section, a pizzas section with different prices for take-out or eat-in, a crepes section and a desserts section."
+            },
+            {
+              "title": "Development Highlights",
+              "intro": "",
+              "tabs": [
+                {
+                  "subtitle": "Vue.js",
+                  "content": "Exploring Vue.js for the first time was an exciting step in my development journey. Despite my familiarity with React, I discovered that Vue brings its own unique perspective to web development. This pizzeria website provided me with the opportunity to delve into Vue's library and create a functional site. While I made significant progress, I recognize that there's still much more to learn and master in Vue's ecosystem."
+                },
+                {
+                  "subtitle": "Tailwind CSS",
+                  "content": "Taking my familiarity with Tailwind CSS to the next level, I decided to apply it to this pizzeria website. While I had dabbled with Tailwind in the past, this project marked my first comprehensive experience with it. The beauty of Tailwind lies in its utility classes, which allowed me to streamline styling without the need to craft extensive custom class names. As a result, I spent less time dealing with intricate CSS and more time focusing on functionality and design. Tailwind's efficiency truly resonated with me, making it a valuable addition to my skill set. "
+                }
+              ]
+            },
+            {
+              "title": "Retrospective",
+              "question": "What did I learn?",
+              "content": "I'm currently in the process of adding the Wordpress backend, enabling pizzeria owners to manage content and prices themselves. This project has shown me the value of a CMS in simplifying content management and collaboration. ",
+              "content2": "I've experienced Tailwind CSS's efficiency, using utility classes to streamline styling and allocate more time to functionality and design.",
+              "content3": "Through building this pizzeria website, I've gained insights into Vue.js's unique capabilities for dynamic interfaces and look forward to exploring them further.",
+              "question2": "What's next?",
+              "content4": "I'm currently working on adding hover effects and refining additional styles to enhance the site's visual appeal.",
+              "content5": "I'm exploring ways to incorporate multilingual support into the CMS for a more inclusive user experience.",
+              "content6": "I'm focused on improving the site's SEO to ensure better visibility and reach on search engines.",
+              "content7": "I'm also evaluating the possibility of refactoring the site using Next.js to optimize its performance and user experience."
+            }
+          ]
+        },
+        "design": false
       }
     ]
   },
@@ -970,11 +1024,12 @@
       {
         "title": "Programming",
         "list": [
-          "HTML5",
-          "CSS3",
-          "Bootstrap",
           "JavaScript",
           "React.js",
+          "Vue.js",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3",
           "SASS",
           "PHP",
           "WordPress"
