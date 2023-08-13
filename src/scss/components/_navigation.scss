@@ -35,12 +35,11 @@ header {
 
 .dark {
   .navigation-container {
-    // background-color: $light-bg-button;
     background-color: $dark-bg-nav;
   }
 
   .navigation-link {
-    color: $dark-text-main;
+    color: #f2ecec;
   }
 
   .navigation-link:hover,
