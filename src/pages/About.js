@@ -3,6 +3,8 @@ import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import Loading from '../components/Loading'
 import { useEffect, useState } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
   const { t, ready } = useTranslation()
@@ -22,11 +24,17 @@ const About = () => {
     }
   }, [inView])
 
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+
   return (
     <>
       {ready ? (
         <div className='aboutAndSkills-box'>
           <section
+            data-aos='fade-up'
             ref={ref}
             id='about'
             className={`about ${hasBeenInView ? 'fade-up fade-up-active' : ''}`}
@@ -85,6 +93,7 @@ const About = () => {
             </article>
           </section>
           <section
+            data-aos='fade-up'
             ref={ref}
             id='skills'
             className={`skills-container ${

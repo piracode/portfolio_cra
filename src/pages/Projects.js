@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import FilteredProjects from '../components/FilteredProjects'
 import { useInView } from 'react-intersection-observer'
 import Loading from '../components/Loading'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Projects = () => {
   const { t, i18n, ready } = useTranslation()
@@ -15,8 +17,15 @@ const Projects = () => {
   const handleFilterButtonClick = (type) => {
     setFilterType(type)
   }
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+
   return (
     <section
+      data-aos='fade-up'
       ref={ref}
       id='projects'
       className={`project-section ${inView ? 'fade-up fade-up-active' : ''}`}

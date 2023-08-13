@@ -37,9 +37,7 @@ const FilteredProjects = ({ selectedProjects = [], filterType }) => {
     >
       <h4 className='project-title'>{project.title}</h4>
       <p className='project-excerpt'>{project.excerpt}</p>
-      {/* <div className='project-footer'> */}
       <div className='project-skills-box'>
-        {/* <span className='skill-label'>Skills: </span> */}
         {project.skills.map((skill, skillIndex) => (
           <span key={skillIndex} className='project-skill'>
             {skill}

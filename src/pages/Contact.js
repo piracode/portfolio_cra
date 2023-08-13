@@ -3,11 +3,18 @@ import { useTranslation } from 'react-i18next'
 import Footer from '../components/Footer'
 import { useInView } from 'react-intersection-observer'
 import Loading from '../components/Loading'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Contact = () => {
   const { t, ready } = useTranslation()
 
   const [ref, inView] = useInView()
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
 
   // console.log('contact inView:', inView)
   // console.log('title section proejct', t('titleSectionContact'))
@@ -22,6 +29,7 @@ const Contact = () => {
       {ready ? (
         <div className='contact-section'>
           <section
+            data-aos='fade-up'
             ref={ref}
             id='contact'
             className={`contact ${inView ? 'fade-up fade-up-active' : ''}`}
