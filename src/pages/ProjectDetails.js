@@ -7,6 +7,8 @@ import { FaGithub, FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa'
 import { BsPlusCircleFill } from 'react-icons/bs'
 import NavigationLinks from '../components/NavigationLinks'
 import Loading from '../components/Loading'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const ProjectDetails = () => {
   const { slug } = useParams() // Retrieve the project slug from the URL
@@ -18,6 +20,11 @@ const ProjectDetails = () => {
   // console.log(projects)
 
   const [sortedProject, setSortedProject] = useState(null)
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
 
   useEffect(() => {
     const matchedProject = projects.projects.find(
@@ -32,12 +39,17 @@ const ProjectDetails = () => {
   if (!sortedProject) {
     return <Loading /> // Render a loading state while waiting for the data
   }
+
+  //Destructure post from the sortedProject Data
   const { post } = sortedProject
+  // console.log(sortedProject)
+
   return (
     <>
       {ready ? (
         <div className='parallax-container'>
           <section
+            data-aos='fade-up'
             className={`project-details-box project-id-${
               sortedProject ? sortedProject.id : ''
             }`}

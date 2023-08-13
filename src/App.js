@@ -1,6 +1,7 @@
 import React, { useEffect, useState, createContext } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import './scss/styles.scss'
 import Logo from './components/Logo'
 import Home from './pages/Home'
@@ -14,11 +15,17 @@ import Gallery from './pages/Gallery'
 import i18n from './utilities/i18n'
 
 export const ThemeContext = createContext()
+export const AOSContext = createContext()
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [animationComplete, setAnimationComplete] = useState(false)
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+  // Set animation completion state after 1.7 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimationComplete(true)
@@ -56,25 +63,32 @@ function App() {
     <div className='site-wrapper'>
       <BrowserRouter>
         <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
-          <main>
-            {!animationComplete ? (
-              <div className={`introduction ${isDarkMode ? 'dark' : 'light'}`}>
-                <Logo />
-              </div>
-            ) : (
-              <>
-                <Header />
-                <Routes>
-                  <Route path='/' element={<Home />} />
-                  <Route path='/about' element={<About />} />
-                  <Route path='/projects' element={<Projects />} />
-                  <Route path='/projects/:slug' element={<ProjectDetails />} />
-                  <Route path='/contact' element={<Contact />} />
-                  <Route path='/gallery' element={<Gallery />} />
-                </Routes>
-              </>
-            )}
-          </main>
+          <AOSContext.Provider value={AOS}>
+            <main>
+              {!animationComplete ? (
+                <div
+                  className={`introduction ${isDarkMode ? 'dark' : 'light'}`}
+                >
+                  <Logo />
+                </div>
+              ) : (
+                <>
+                  <Header />
+                  <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/projects' element={<Projects />} />
+                    <Route
+                      path='/projects/:slug'
+                      element={<ProjectDetails />}
+                    />
+                    <Route path='/contact' element={<Contact />} />
+                    <Route path='/gallery' element={<Gallery />} />
+                  </Routes>
+                </>
+              )}
+            </main>
+          </AOSContext.Provider>
         </ThemeContext.Provider>
       </BrowserRouter>
     </div>

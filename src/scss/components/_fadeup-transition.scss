@@ -1,18 +1,18 @@
-.hero,
-.about,
-.project-section,
-.contact,
-.skills-container {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
+// .hero,
+// .about,
+// .project-section,
+// .contact,
+// .skills-container {
+//   opacity: 0;
+//   transform: translateY(20px);
+//   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+// }
 
-.hero.fade-up-active,
-.about.fade-up-active,
-.project-section.fade-up-active,
-.contact.fade-up-active,
-.skills-container.fade-up-active {
-  opacity: 1;
-  transform: translateY(0);
-}
+// .hero.fade-up-active,
+// .about.fade-up-active,
+// .project-section.fade-up-active,
+// .contact.fade-up-active,
+// .skills-container.fade-up-active {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
