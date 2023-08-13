@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next'
 import profilePic from '../assets/profile.webp'
 import { useEffect, useState } from 'react'
 import Loading from './Loading'
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
 
 const Hero = () => {
   const { t, ready } = useTranslation()
@@ -11,10 +13,18 @@ const Hero = () => {
     setShowHero(true)
   }, [])
 
+  // useEffect(() => {
+  //   AOS.init()
+  //   AOS.refresh()
+  // }, [])
+
   return (
     <>
       {ready ? (
-        <section className={`hero ${showHero ? 'fade-up fade-up-active' : ''}`}>
+        <section
+          // data-aos='fade-up'
+          className={`hero ${showHero ? 'fade-up fade-up-active' : ''}`}
+        >
           {/* <section className='hero'> */}
           <img
             className='hero-img'
