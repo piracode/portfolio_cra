@@ -680,6 +680,59 @@
           ]
         },
         "design": false
+      },
+      {
+        "workshop": false,
+        "featured": true,
+        "id": "16",
+        "title": "Pizzeria l'Arena (en cours)",
+        "slug": "pizzeria",
+        "thumbnail": "/images/pizzeriaDesktop.webp",
+        "thumbnailMobile": "/images/pizzeria-mobile.webp",
+        "alt": "Capture d'écran du site de la pizzeria",
+        "skills": ["Vue.js", "Tailwind", "Headless CMS"],
+        "excerpt": "Il s'agit d'un site web de pizzeria construit en utilisant une approche 'headless CMS'. Le front-end est développé avec Vue.js et Tailwind CSS, tandis que WordPress est utilisé en tant que CMS.",
+        "gitHubLink": "https://github.com/piracode/pizzeria-vue-tailwind",
+        "liveSiteLink": "https://martha.codes/pizzeria-arena/",
+        "liveSiteCTA": "Site",
+        "gitHubCTA": "Code",
+        "detailsCTA": "Détails",
+        "post": {
+          "titleOverview": "Aperçu",
+          "overview1": "Il s'agit d'un site web de pizzeria construit en utilisant une approche 'headless CMS' pour une pizzeria en Espagne. Le front-end est développé en utilisant Vue.js et Tailwind CSS, tandis que Wordpress sert de backend.",
+          "accordions": [
+            {
+              "title": "Exigences du projet",
+              "content": "Le site web doit avoir les sections suivantes : une section promotion, une section pizzas avec différents prix pour emporter ou manger sur place, une section crêpes et une section desserts."
+            },
+            {
+              "title": "Points forts du développement",
+              "intro": "",
+              "tabs": [
+                {
+                  "subtitle": "Vue.js",
+                  "content": "Découvrir Vue.js pour la première fois a été une étape intéressante dans mon parcours de développement. Malgré ma familiarité avec React, j'ai découvert que Vue apporte sa propre perspective unique au développement web. Ce site de pizzeria m'a donné l'occasion d'explorer la bibliothèque Vue et de créer un site fonctionnel. Bien que j'ai fait des progrès significatifs, je reconnais qu'il y a encore beaucoup à apprendre et à maîtriser dans l'écosystème de Vue."
+                },
+                {
+                  "subtitle": "Tailwind CSS",
+                  "content": "Poussant ma familiarité avec Tailwind CSS au niveau supérieur, j'ai décidé de l'appliquer à ce site. Bien que j'ai déjà expérimenté Tailwind par le passé, ce projet a marqué ma première expérience complète avec celui-ci. La force de Tailwind réside dans ses classes utilitaires, qui m'ont permis de simplifier la mise en forme sans devoir créer des noms de classes personnalisés complexes. En conséquence, j'ai passé moins de temps à gérer des styles CSS complexes et plus de temps à me concentrer sur la fonctionnalité et le design. L'efficacité de Tailwind a vraiment résonné en moi, ajoutant une valeur précieuse à mes compétences."
+                }
+              ]
+            },
+            {
+              "title": "Rétrospective",
+              "question": "Qu'ai-je appris ?",
+              "content": "Je suis actuellement en train d'ajouter le backend Wordpress, permettant aux propriétaires de la pizzeria de gérer eux-mêmes le contenu et les prix. Ce projet m'a montré la valeur d'un CMS pour simplifier la gestion de contenu et la collaboration.",
+              "content2": "J'ai expérimenté l'efficacité de Tailwind CSS en utilisant des classes utilitaires pour simplifier la mise en forme, ce qui m'a permis de consacrer plus de temps à la fonctionnalité et au design.",
+              "content3": "En construisant ce site, j'ai acquis des connaissances sur les capacités uniques de Vue.js pour les interfaces dynamiques et j'ai hâte de les explorer davantage.",
+              "question2": "Quelle est la prochaine étape ?",
+              "content5": "J'explore des moyens d'incorporer un support multilingue dans le CMS pour une expérience utilisateur plus inclusive.",
+              "content6": "Je me concentre sur l'amélioration du SEO pour garantir une meilleure visibilité et portée sur les moteurs de recherche.",
+              "content7": "J'évalue également la possibilité de refactorer le site en utilisant Next.js pour optimiser ses performances et son expérience utilisateur."
+            }
+          ]
+        },
+        "design": false
       }
     ]
   },
