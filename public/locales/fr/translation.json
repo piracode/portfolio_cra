@@ -389,8 +389,8 @@
         "design": false
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "4",
         "title": "Ai Summit",
         "slug": "ai-summit",
@@ -685,7 +685,7 @@
         "workshop": false,
         "featured": true,
         "id": "16",
-        "title": "Pizzeria l'Arena (en cours)",
+        "title": "Pizzeria l'Arena",
         "slug": "pizzeria",
         "thumbnail": "/images/pizzeriaDesktop.webp",
         "thumbnailMobile": "/images/pizzeria-mobile.webp",
@@ -693,7 +693,7 @@
         "skills": ["Vue.js", "Tailwind", "Headless CMS"],
         "excerpt": "Il s'agit d'un site web de pizzeria construit en utilisant une approche 'headless CMS'. Le front-end est développé avec Vue.js et Tailwind CSS, tandis que WordPress est utilisé en tant que CMS.",
         "gitHubLink": "https://github.com/piracode/pizzeria-vue-tailwind",
-        "liveSiteLink": "https://martha.codes/pizzeria-arena/",
+        "liveSiteLink": "https://www.pizzerialarena.es/",
         "liveSiteCTA": "Site",
         "gitHubCTA": "Code",
         "detailsCTA": "Détails",

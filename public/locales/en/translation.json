@@ -123,7 +123,7 @@
   "hero": {
     "greeting": "Hello, my name is",
     "name": "Martha Villa Martin.",
-    "role": "Scrum Certified Web Developer / Designer.",
+    "role": "Scrum Certified Web Developer.",
     "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I recently graduated from the ",
     "descriptionPart2": "Front-End Development program at BCIT.",
     "SeeProjectsCTA": "See my projects"
@@ -391,8 +391,8 @@
         "design": false
       },
       {
-        "workshop": false,
-        "featured": true,
+        "workshop": true,
+        "featured": false,
         "id": "4",
         "title": "Ai Summit",
         "slug": "ai-summit",
@@ -687,7 +687,7 @@
         "workshop": false,
         "featured": true,
         "id": "16",
-        "title": "Pizzeria l'Arena (WIP)",
+        "title": "Pizzeria l'Arena",
         "slug": "pizzeria",
         "thumbnail": "/images/pizzeriaDesktop.webp",
         "thumbnailMobile": "/images/pizzeria-mobile.webp",
@@ -695,7 +695,7 @@
         "skills": ["Vue.js", "Tailwind", "Headless CMS"],
         "excerpt": "This is a pizzeria website built using a headless CMS approach. The front-end is developed using Vue.js and Tailwind CSS, while Wordpress serves as the backend.",
         "gitHubLink": "https://github.com/piracode/pizzeria-vue-tailwind",
-        "liveSiteLink": "https://martha.codes/pizzeria-arena/",
+        "liveSiteLink": "https://www.pizzerialarena.es/",
         "liveSiteCTA": "Site",
         "gitHubCTA": "Code",
         "detailsCTA": "Details",
@@ -731,6 +731,112 @@
               "content5": "I'm exploring ways to incorporate multilingual support into the CMS for a more inclusive user experience.",
               "content6": "I'm focused on improving the site's SEO to ensure better visibility and reach on search engines.",
               "content7": "I'm also evaluating the possibility of refactoring the site using Next.js to optimize its performance and user experience."
+            }
+          ]
+        },
+        "design": false
+      },
+      {
+        "workshop": true,
+        "featured": false,
+        "id": "17",
+        "title": "Quillerina Paper Art (WIP)",
+        "slug": "quillerina",
+        "thumbnail": "/images/quillerinaDesktop.webp",
+        "thumbnailMobile": "/images/quillerina-mobile.webp",
+        "alt": "quillerina website screenshot",
+        "skills": ["Vue.js", "Tailwind", "Headless CMS"],
+        "excerpt": "This is a woocommerce website still on construction that showcases the work of an artist in British Columbia",
+        "gitHubLink": "https://github.com/piracode/quillerina_woocommerce",
+        "liveSiteLink": "https://martha.codes/quillerina/",
+        "liveSiteCTA": "Site",
+        "gitHubCTA": "Code",
+        "detailsCTA": "Details",
+        "post": {
+          "titleOverview": "Overview",
+          "overview1": "This is a woocommerce website still on construction that showcases the work of an artist in British Columbia",
+          "accordions": [
+            {
+              "title": "Project Requirements",
+              "content": "This woocommerce needs to showcase 3 types of products (custom pet portraits, earrings and other artworks). It also needs to accept Credit Card payments."
+            },
+            {
+              "title": "Development Highlights",
+              "intro": "This project served as a valuable opportunity for me to delve into WordPress and the Woocommerce ecosystem. Initially, I faced a learning curve in understanding these platforms, but as I progressed, I gained a better grasp of their functionalities.",
+              "tabs": [
+                {
+                  "subtitle": "ACF and CPT",
+                  "content": "By building my own website, I've learned when to use ACF fields or Custom Post Types. I found that using ACF fields for most things made a big difference. Their flexibility and capabilities have truly amazed me, helping me unlock their full potential."
+                },
+                {
+                  "subtitle": "Custom Template vs WordPress Hierarchy",
+                  "content": "I've figured out the difference between custom templates and the WordPress hierarchy. Custom templates let me create special designs for different parts of my website. On the other hand, the WordPress hierarchy helps the website pick the right template for each page. This new knowledge makes building websites with WordPress much easier for me. "
+                }
+              ]
+            },
+            {
+              "title": "Retrospective",
+              "question": "What did I learn?",
+              "content": "Reflecting on my journey, I've acquired an in-depth understanding of the structure within WordPress and WooCoomerce.",
+              "content2": "Additionally, I've learned the intricate process of transferring a WordPress site from a localhost environment to a live server, enhancing my practical skills in web development.",
+              "content3": "",
+              "question2": "What's next?",
+              "content5": "As I near the completion of building the site, I'm currently tackling a few remaining bugs that need fixing. With the finishing touches in sight, I'll be thoroughly reviewing the entire project to ensure its functionality and aesthetics align with my vision.",
+              "content6": "",
+              "content7": ""
+            }
+          ]
+        },
+        "design": false
+      },
+      {
+        "workshop": true,
+        "featured": false,
+        "id": "16",
+        "title": "JavaScript DrumKit ",
+        "slug": "drumkit",
+        "thumbnail": "/images/drumkitDesktop.webp",
+        "thumbnailMobile": "/images/drumkit-mobile.webp",
+        "alt": "Javascript Drumkit exercise screenshot",
+        "skills": ["HTML5", "CSS", "JavaScript"],
+        "excerpt": "A simple JavaScript exercise made a few years back from JavaScript30.com website where users can play music by pressing any keybaord key",
+        "gitHubLink": "https://github.com/piracode/",
+        "liveSiteLink": "https://martha.codes/js-drumKit",
+        "liveSiteCTA": "Site",
+        "gitHubCTA": "Code",
+        "detailsCTA": "Details",
+        "post": {
+          "titleOverview": "Overview",
+          "overview1": "A simple JavaScript exercise made a few years back from JavaScript30.com website where users can play music by pressing any keybaord key",
+          "accordions": [
+            {
+              "title": "Project Requirements",
+              "content": ""
+            },
+            {
+              "title": "",
+              "intro": "",
+              "tabs": [
+                {
+                  "subtitle": "",
+                  "content": ""
+                },
+                {
+                  "subtitle": "",
+                  "content": " "
+                }
+              ]
+            },
+            {
+              "title": "Retrospective",
+              "question": "What did I learn?",
+              "content": " ",
+              "content2": "",
+              "content3": "",
+              "question2": "What's next?",
+              "content5": "",
+              "content6": "",
+              "content7": ""
             }
           ]
         },
