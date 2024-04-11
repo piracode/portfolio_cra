@@ -37,7 +37,7 @@ const Hero = () => {
               </strong>
             </div>
               <a className=' primary-button hero-button button-link' 
-                  style={{ color: isDarkMode ? '#13385c' : '#202022'}}
+                  // style={{ color: isDarkMode ? '#13385c' : '#202022'}}
                   href='#projects'>
                 {t('hero.SeeProjectsCTA')}
               </a>

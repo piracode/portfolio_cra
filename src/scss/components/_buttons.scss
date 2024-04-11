@@ -55,6 +55,16 @@
 
 //Dark theme
 .dark {
+
+  a.button-link.primary-button:hover,
+  a.about-button.primary-button:hover{
+     color: $dark-bg-button;
+background-color: $purple-accent-color;
+  }
+
+  a.about-button.primary-button{
+    color: $dark-blue-color-2;
+  }
   a.button-link:visited {
     color: $light-text-main;
   }
@@ -81,6 +91,8 @@
     a.button-link:visited {
       color: $light-bg-nav;
     }
+
+  
   }
 
   .project-button:hover {
@@ -125,4 +137,33 @@
 }
 .primary-button a.button-link {
   color: $light-heading-primary;
+}
+
+.hero {
+  &-button {
+    // display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@include mq(760) {
+  .hero-button {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
+.about {
+  button.about-button {
+    display: block;
+    margin: 0 auto;
+    width: 13rem;
+    margin-top: 3rem;
+  }
 }

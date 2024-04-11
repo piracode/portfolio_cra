@@ -89,7 +89,8 @@ const About = () => {
               </div>
               <Link to='/gallery' 
               className='button-link primary-button about-button'
-              style={{ color: isDarkMode ? '#13385c' : '#202022'}}>
+              // style={{ color: isDarkMode ? '#13385c' : '#202022'}}
+              >
                   {t('about.seePhotosCTA')}
                 </Link>
             </article>

@@ -1,16 +1,7 @@
 @import '../base/settings';
 
-.aboutAndSkills-box {
-  // max-width: 34.5rem;
-}
 .about {
   padding: 0 0.2rem 7.5rem 0;
-
-  &-container {
-    // padding: 8.5rem 0 4.5rem 0;
-    // padding-bottom: 4.5rem;
-  }
-
   &-text-container {
     margin-bottom: 4.5rem;
   }
@@ -31,12 +22,12 @@
     text-decoration: underline;
   }
 
-  button.about-button {
-    display: block;
-    margin: 0 auto;
-    width: 13rem;
-    margin-top: 3rem;
-  }
+  // button.about-button {
+  //   display: block;
+  //   margin: 0 auto;
+  //   width: 13rem;
+  //   margin-top: 3rem;
+  // }
 
   &-stack-title {
     font-weight: 500;
@@ -131,12 +122,6 @@ a.about-link {
   }
 }
 
-@include mq(490) {
-  .about {
-    // padding-left: 1.5rem;
-  }
-}
-
 @include mq(600) {
   .aboutAndSkills-box {
     // padding: 0 2.5rem;
@@ -144,11 +129,6 @@ a.about-link {
 }
 
 @include mq(950) {
-  .aboutAndSkills-box {
-    // max-width: 100%;
-    // display: grid;
-    // grid-template-columns: 3fr 2.5fr;
-  }
   .about {
     &-container {
       padding-top: 0;
@@ -159,8 +139,6 @@ a.about-link {
     }
 
     &-text-container {
-      // max-width: 33rem;
-      // padding-right: 2rem;
       margin-bottom: 4rem;
     }
 
@@ -174,14 +152,7 @@ a.about-link {
 }
 
 @include mq(768) {
-  .about-container {
-    // padding-bottom: 9rem;
-  }
-
   .about {
     padding-bottom: 10rem;
   }
-
-  // .skills-container {
-  // }
 }
