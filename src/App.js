@@ -18,7 +18,7 @@ export const ThemeContext = createContext()
 export const AOSContext = createContext()
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
   const [animationComplete, setAnimationComplete] = useState(false)
 
   useEffect(() => {
