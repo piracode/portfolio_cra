@@ -3,7 +3,7 @@
     "titleSectionAbout": "About Me",
     "paragraph1": "Welcome! I'm Martha. I grew up between France and Spain and I am now based in Vancouver, BC.",
     "paragraph2": "My interest in web development started to flourish in 2018 when I wanted to help my parents build a website for their restaurant in Spain.",
-    "paragraph3": "I finally took the leap to pursue programming seriously by enrolling in the Front-End Development program at BCIT. Additionally, I am a Scrum Certified Developer, having obtained my certification from Scrum Alliance in June 2023.",
+    "paragraph3": "I finally took the leap to pursue programming seriously by enrolling in the Front-End Web Development program at BCIT. Additionally, I am a Scrum Certified Developer, having obtained my certification from Scrum Alliance in June 2023.",
     "paragraph4": "When I'm not refining my skills on the laptop, you can find me hiking with my dog, singing, playing ",
     "youtubeLink": "musical instruments",
     "paragraph4-continued1": ", creating ",
@@ -124,7 +124,7 @@
     "greeting": "Hello, my name is",
     "name": "Martha Villa Martin.",
     "role": "Scrum Certified Web Developer.",
-    "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I recently graduated from the ",
+    "descriptionPart1": "Trilingual in French, English and Spanish with a background in hospitality and education. I am a graduate of the ",
     "descriptionPart2": "Front-End Development program at BCIT.",
     "SeeProjectsCTA": "See my projects"
   },
@@ -407,7 +407,7 @@
         "detailsCTA": "Details",
         "post": {
           "titleOverview": "Overview",
-          "overview1": "Ai-Summit is a WordPress and Woocomerce website integrating various plugins to enable users to purchase tickets seamlessly and sign up for our newsletter.",
+          "overview1": "Ai Summit is a WordPress and WooCommerce website integrating various plugins to enable users to purchase tickets seamlessly and sign up for our newsletter.",
           "overview2": "Throughout the development process, we efficiently managed tasks using Asana for project management.",
           "accordions": [
             {

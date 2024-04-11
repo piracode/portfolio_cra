@@ -1,31 +1,24 @@
 import { useTranslation } from 'react-i18next'
 import profilePic from '../assets/profile.webp'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext} from 'react'
 import Loading from './Loading'
-// import AOS from 'aos'
-// import 'aos/dist/aos.css'
+import { ThemeContext } from '../App'
 
 const Hero = () => {
   const { t, ready } = useTranslation()
   const [showHero, setShowHero] = useState(false)
+  const { isDarkMode } = useContext(ThemeContext);
 
   useEffect(() => {
     setShowHero(true)
   }, [])
 
-  // useEffect(() => {
-  //   AOS.init()
-  //   AOS.refresh()
-  // }, [])
-
   return (
     <>
       {ready ? (
         <section
-          // data-aos='fade-up'
           className={`hero ${showHero ? 'fade-up fade-up-active' : ''}`}
         >
-          {/* <section className='hero'> */}
           <img
             className='hero-img'
             src={profilePic}
@@ -43,11 +36,11 @@ const Hero = () => {
                 {t('hero.descriptionPart2')}
               </strong>
             </div>
-            <button className='primary-button hero-button'>
-              <a className='button-link' href='#projects'>
+              <a className=' primary-button hero-button button-link' 
+                  // style={{ color: isDarkMode ? '#13385c' : '#202022'}}
+                  href='#projects'>
                 {t('hero.SeeProjectsCTA')}
               </a>
-            </button>
           </div>
         </section>
       ) : (

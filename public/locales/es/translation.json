@@ -124,7 +124,7 @@
     "greeting": "Hola, mi nombre es",
     "name": "Martha Villa Martin.",
     "role": "Desarrolladora y Diseñadora certificada Scrum.",
-    "descriptionPart1": "Trilingüe en francés, inglés y español, con experiencia en hostelería y educación. Recientemente me gradué del programa de ",
+    "descriptionPart1": "Trilingüe en francés, inglés y español, con experiencia en hostelería y educación. Me gradué del programa de ",
     "descriptionPart2": "Desarrollo Front-End en BCIT.",
     "SeeProjectsCTA": "Ver mis proyectos"
   },
@@ -405,7 +405,7 @@
         "detailsCTA": "Detalles",
         "post": {
           "titleOverview": "Vista General",
-          "overview1": "AI-Summit es un sitio web de WordPress y WooCommerce que integra varios complementos para permitir a los usuarios comprar entradas de manera sencilla y registrarse en nuestro boletín.",
+          "overview1": "Ai Summit es un sitio web de WordPress y WooCommerce que integra varios complementos para permitir a los usuarios comprar entradas de manera sencilla y registrarse en nuestro boletín.",
           "overview2": "A lo largo del proceso de desarrollo, gestionamos eficientemente las tareas utilizando Asana para la gestión del proyecto.",
           "accordions": [
             {

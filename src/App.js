@@ -18,7 +18,7 @@ export const ThemeContext = createContext()
 export const AOSContext = createContext()
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
   const [animationComplete, setAnimationComplete] = useState(false)
 
   useEffect(() => {
@@ -64,7 +64,7 @@ function App() {
       <BrowserRouter>
         <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
           <AOSContext.Provider value={AOS}>
-            <main>
+            <main id='main-content  '>
               {!animationComplete ? (
                 <div
                   className={`introduction ${isDarkMode ? 'dark' : 'light'}`}

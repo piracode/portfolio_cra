@@ -2,16 +2,22 @@
 
 @mixin primary-btn {
   // padding: 0.4em;
-  padding: 0.6rem;
+  padding: 1rem;
   border-radius: 7px;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .input-container input {
   width: 100%;
   border: none;
   font-size: 1rem;
+}
+
+.button-link{
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 //Desktop Navigation button
@@ -49,6 +55,16 @@
 
 //Dark theme
 .dark {
+
+  a.button-link.primary-button:hover,
+  a.about-button.primary-button:hover{
+     color: $dark-bg-button;
+background-color: $purple-accent-color;
+  }
+
+  a.about-button.primary-button{
+    color: $dark-blue-color-2;
+  }
   a.button-link:visited {
     color: $light-text-main;
   }
@@ -56,6 +72,7 @@
   .primary-button {
     border: none;
     color: $light-text-main;
+    background-color: $dark-bg-button;
     @include primary-btn;
   }
 
@@ -74,6 +91,8 @@
     a.button-link:visited {
       color: $light-bg-nav;
     }
+
+  
   }
 
   .project-button:hover {
@@ -118,4 +137,33 @@
 }
 .primary-button a.button-link {
   color: $light-heading-primary;
+}
+
+.hero {
+  &-button {
+    // display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@include mq(760) {
+  .hero-button {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
+.about {
+  button.about-button {
+    display: block;
+    margin: 0 auto;
+    width: 13rem;
+    margin-top: 3rem;
+  }
 }
