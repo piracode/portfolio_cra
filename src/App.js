@@ -64,7 +64,7 @@ function App() {
       <BrowserRouter>
         <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
           <AOSContext.Provider value={AOS}>
-            <main>
+            <main id='main-content  '>
               {!animationComplete ? (
                 <div
                   className={`introduction ${isDarkMode ? 'dark' : 'light'}`}

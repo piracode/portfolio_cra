@@ -8,6 +8,7 @@ import React, { useEffect } from 'react'
 const Home = () => {
   return (
     <div className='parallax-container'>
+           <a href="#main-content" className="sr-only">Skip to Content</a>
       <div className='section-container' id='main-content'>
         <Hero />
         <About />
