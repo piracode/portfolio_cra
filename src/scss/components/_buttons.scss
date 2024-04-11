@@ -2,16 +2,22 @@
 
 @mixin primary-btn {
   // padding: 0.4em;
-  padding: 0.6rem;
+  padding: 1rem;
   border-radius: 7px;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .input-container input {
   width: 100%;
   border: none;
   font-size: 1rem;
+}
+
+.button-link{
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 //Desktop Navigation button
@@ -56,6 +62,7 @@
   .primary-button {
     border: none;
     color: $light-text-main;
+    background-color: $dark-bg-button;
     @include primary-btn;
   }
 

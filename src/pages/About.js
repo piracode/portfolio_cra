@@ -2,13 +2,15 @@ import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import Loading from '../components/Loading'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { ThemeContext } from '../App'
 
 const About = () => {
   const { t, ready } = useTranslation()
   const [ref, inView] = useInView()
+  const { isDarkMode } = useContext(ThemeContext);
 
   //retrieves the skills object from the translation file using the t function provided by the useTranslation hook.
   const skillsData = t('skills.skills', { returnObjects: true })
@@ -85,11 +87,11 @@ const About = () => {
                   {t('about.flamencoCBCLink')}
                 </a>
               </div>
-              <button className='primary-button about-button'>
-                <Link to='/gallery' className='button-link'>
+              <Link to='/gallery' 
+              className='button-link primary-button about-button'
+              style={{ color: isDarkMode ? '#13385c' : '#202022'}}>
                   {t('about.seePhotosCTA')}
                 </Link>
-              </button>
             </article>
           </section>
           <section
