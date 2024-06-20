@@ -39,4 +39,9 @@
   a:hover {
     color: $teal-accent-color;
   }
+
+   a.primary-button:link, 
+  a.primary-button:visited {
+    color: #13385c;
+  }
 }
